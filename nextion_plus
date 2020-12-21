@@ -1,0 +1,4 @@
+Display=Nextion
+Port=/dev/ttyAMA0
+ScreenLayout=3
+IdleBrightness=20
