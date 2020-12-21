@@ -273,7 +273,7 @@ sleep 3
                             then
                             sudo rm /home/pi/.config/autostart/IRCDDB.desktop
                             else
-                       		cd /home/pi/AUTOARRANQUEV105
+                       		cd /home/pi/AUTOARRANQUEV106
                   		    sudo cp IRCDDB.desktop /home/pi/.config/autostart
                             fi
 
@@ -282,7 +282,7 @@ sleep 3
                             then
                             sudo rm /home/pi/.config/autostart/BLUEDV.desktop
                             else
-                            cd /home/pi/AUTOARRANQUEV105
+                            cd /home/pi/AUTOARRANQUEV106
                             sudo cp BLUEDV.desktop /home/pi/.config/autostart
                             fi
 
@@ -291,7 +291,7 @@ sleep 3
                             then
                             sudo rm /home/pi/.config/autostart/YSF.desktop
                             else
-                            cd /home/pi/AUTOARRANQUEV105
+                            cd /home/pi/AUTOARRANQUEV106
                             sudo cp YSF.desktop /home/pi/.config/autostart
                             fi
 
@@ -300,7 +300,7 @@ sleep 3
                             then
                             sudo rm /home/pi/.config/autostart/DV4MINI.desktop
                             else
-                            cd /home/pi/AUTOARRANQUEV105
+                            cd /home/pi/AUTOARRANQUEV106
                             sudo cp DV4MINI.desktop /home/pi/.config/autostart
                             fi
 
@@ -309,7 +309,7 @@ sleep 3
                             then
                             sudo rm /home/pi/.config/autostart/RADIO.desktop
                             else
-                            cd /home/pi/AUTOARRANQUEV105
+                            cd /home/pi/AUTOARRANQUEV106
                             sudo cp RADIO.desktop /home/pi/.config/autostart
                             fi
 
@@ -318,7 +318,7 @@ sleep 3
                             then
                             sudo rm /home/pi/.config/autostart/DMRPLUS.desktop
                             else
-                            cd /home/pi/AUTOARRANQUEV105
+                            cd /home/pi/AUTOARRANQUEV106
                             sudo cp DMRPLUS.desktop /home/pi/.config/autostart
                             fi
 
@@ -327,7 +327,7 @@ sleep 3
                             then
                             sudo rm /home/pi/.config/autostart/LIBRE.desktop
                             else
-                            cd /home/pi/AUTOARRANQUEV105
+                            cd /home/pi/AUTOARRANQUEV106
                             sudo cp LIBRE.desktop /home/pi/.config/autostart
                             fi
 
@@ -336,7 +336,7 @@ sleep 3
                             then
                             sudo rm /home/pi/.config/autostart/BM.desktop
                             else
-                            cd /home/pi/AUTOARRANQUEV105
+                            cd /home/pi/AUTOARRANQUEV106
                             sudo cp BM.desktop /home/pi/.config/autostart
                             fi
 
@@ -345,7 +345,7 @@ sleep 3
                             then
                             sudo rm /home/pi/.config/autostart/SVXLINK.desktop
                             else
-                            cd /home/pi/AUTOARRANQUEV105
+                            cd /home/pi/AUTOARRANQUEV106
                             sudo cp SVXLINK.desktop /home/pi/.config/autostart
                             fi
 
@@ -354,7 +354,7 @@ sleep 3
                             then
                             sudo rm /home/pi/.config/autostart/DSTARSOLO_05.desktop
                             else
-                            cd /home/pi/AUTOARRANQUEV105
+                            cd /home/pi/AUTOARRANQUEV106
                             sudo cp DSTARSOLO_05.desktop /home/pi/.config/autostart
                             fi
 
@@ -363,7 +363,7 @@ sleep 3
                             then
                             sudo rm /home/pi/.config/autostart/FUSIONSOLO.desktop
                             else
-                            cd /home/pi/AUTOARRANQUEV105
+                            cd /home/pi/AUTOARRANQUEV106
                             sudo cp FUSIONSOLO.desktop /home/pi/.config/autostart
                             fi
 
@@ -372,7 +372,7 @@ sleep 3
                             then
                             sudo rm /home/pi/.config/autostart/DVRPTR.desktop
                             else
-                            cd /home/pi/AUTOARRANQUEV105
+                            cd /home/pi/AUTOARRANQUEV106
                             sudo cp DVRPTR.desktop /home/pi/.config/autostart
                             fi
 
@@ -381,7 +381,7 @@ sleep 3
                             then
                             sudo rm /home/pi/.config/autostart/AMBE_SERVER.desktop
                             else
-                            cd /home/pi/AUTOARRANQUEV105
+                            cd /home/pi/AUTOARRANQUEV106
                             sudo cp AMBE_SERVER.desktop /home/pi/.config/autostart
                             fi
 
@@ -390,7 +390,7 @@ sleep 3
                             then
                             sudo rm /home/pi/.config/autostart/YSF2DMR.desktop
                             else
-                            cd /home/pi/AUTOARRANQUEV105
+                            cd /home/pi/AUTOARRANQUEV106
                             sudo cp YSF2DMR.desktop /home/pi/.config/autostart
                             fi
 
@@ -399,7 +399,7 @@ sleep 3
                             then
                             sudo rm /home/pi/.config/autostart/DMR2YSF.desktop
                             else
-                            cd /home/pi/AUTOARRANQUEV105
+                            cd /home/pi/AUTOARRANQUEV106
                             sudo cp DMR2YSF.desktop /home/pi/.config/autostart
                             fi
 
@@ -408,7 +408,7 @@ sleep 3
                             then
                             sudo rm /home/pi/.config/autostart/DMR2NXDN.desktop
                             else
-                            cd /home/pi/AUTOARRANQUEV105
+                            cd /home/pi/AUTOARRANQUEV106
                             sudo cp DMR2NXDN.desktop /home/pi/.config/autostart
                             fi
 
@@ -417,7 +417,7 @@ sleep 3
                             then
                             sudo rm /home/pi/.config/autostart/NXDN.desktop
                             else
-                            cd /home/pi/AUTOARRANQUEV105
+                            cd /home/pi/AUTOARRANQUEV106
                             sudo cp NXDN.desktop /home/pi/.config/autostart
                             fi
 
@@ -426,7 +426,7 @@ sleep 3
                             then
                             sudo rm /home/pi/.config/autostart/DMRGateway.desktop
                             else
-                            cd /home/pi/AUTOARRANQUEV105
+                            cd /home/pi/AUTOARRANQUEV106
                             sudo cp DMRGateway.desktop /home/pi/.config/autostart
                             fi
 
@@ -435,7 +435,7 @@ sleep 3
                             then
                             sudo rm /home/pi/.config/autostart/ABRIR_DMR2M17.desktop
                             else
-                            cd /home/pi/AUTOARRANQUEV105
+                            cd /home/pi/AUTOARRANQUEV106
                             cp /home/pi/Desktop/ABRIR_DMR2M17.desktop /home/pi/.config/autostart
                             fi      
                                 

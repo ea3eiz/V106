@@ -21,7 +21,7 @@ sleep 3
 
 # Desactiva DVSWITCH 
 sed -i "18c DVSWITCH=OFF" /home/pi/status.ini
-cd /home/pi/V105
+cd /home/pi/V106
 sh stop_dvswitch.sh
 
 # pone marca en ON porque se está utilizando DVSWITCH

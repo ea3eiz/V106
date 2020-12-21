@@ -27,11 +27,11 @@ sleep 2
                         git pull
                         sleep 1
 
-                        # Actualiza AUTORRANQUEV105
-                        cd $usuario/AUTOARRANQUEV105
+                        # Actualiza AUTORRANQUEV106
+                        cd $usuario/AUTOARRANQUEV106
                         git pull
                         sleep 1
-                        sudo chmod 777 -R /home/pi/AUTOARRANQUEV105
+                        sudo chmod 777 -R /home/pi/AUTOARRANQUEV106
                         
                         # 31-10-2020 poner version V-25-10-20 en Web DVSWITCH
 			            sed -i "11c 25-10-20" $usuario/info.ini
@@ -44,7 +44,7 @@ sleep 2
                         cd $usuario/YSFClients/YSFGateway
 
                         # 02-08-2020 cambio quitar sistema actual:
-                        cd /home/pi/V105
+                        cd /home/pi/V106
                         sudo rm /var/www/html/panel_configuracion.php
                         cp panel_configuracion.php /var/www/html
 
@@ -95,105 +95,105 @@ if [ -f /home/pi/.local/memoria_bm ]
 then
 echo ""
 else
-cp /home/pi/V105/memoria_bm /home/pi/.local/
+cp /home/pi/V106/memoria_bm /home/pi/.local/
 fi
 
 if [ -f /home/pi/.local/memoria_dmrplus ]
 then
 echo ""
 else
-cp /home/pi/V105/memoria_dmrplus /home/pi/.local/
+cp /home/pi/V106/memoria_dmrplus /home/pi/.local/
 fi
 
 if [ -f /home/pi/.local/memoria_radio ]
 then
 echo ""
 else
-cp /home/pi/V105/memoria_radio /home/pi/.local/
+cp /home/pi/V106/memoria_radio /home/pi/.local/
 fi
 
 if [ -f /home/pi/.local/memoria_especial ]
 then
 echo ""
 else
-cp /home/pi/V105/memoria_especial /home/pi/.local/
+cp /home/pi/V106/memoria_especial /home/pi/.local/
 fi
 
 if [ -f /home/pi/.local/memoria_solofusion ]
 then
 echo ""
 else
-cp /home/pi/V105/memoria_solofusion /home/pi/.local/
+cp /home/pi/V106/memoria_solofusion /home/pi/.local/
 fi
 
 if [ -f /home/pi/.local/memoria_solo_dstar ]
 then
 echo ""
 else
-cp /home/pi/V105/memoria_solo_dstar /home/pi/.local/
+cp /home/pi/V106/memoria_solo_dstar /home/pi/.local/
 fi
 
 if [ -f /home/pi/.local/memoria_ysf2dmr ]
 then
 echo ""
 else
-cp /home/pi/V105/memoria_ysf2dmr /home/pi/.local/
+cp /home/pi/V106/memoria_ysf2dmr /home/pi/.local/
 fi
 
 if [ -f /home/pi/.local/memoria_dmr2ysf ]
 then
 echo ""
 else
-cp /home/pi/V105/memoria_dmr2ysf /home/pi/.local/
+cp /home/pi/V106/memoria_dmr2ysf /home/pi/.local/
 fi
 
 if [ -f /home/pi/.local/memoria_dmr2nxdn ]
 then
 echo ""
 else
-cp /home/pi/V105/memoria_dmr2nxdn /home/pi/.local/
+cp /home/pi/V106/memoria_dmr2nxdn /home/pi/.local/
 fi
 
 if [ -f /home/pi/.local/memoria_nxdn ]
 then
 echo ""
 else
-cp /home/pi/V105/memoria_nxdn /home/pi/.local/
+cp /home/pi/V106/memoria_nxdn /home/pi/.local/
 fi
 
 if [ -f /home/pi/.local/memorias ] 
 then
 echo ""
 else
-cp /home/pi/V105/memorias /home/pi/.local/
+cp /home/pi/V106/memorias /home/pi/.local/
 fi
 
 if [ -f /home/pi/.local/nextion_bm ]
 then
 echo ""
 else
-cp /home/pi/V105/nextion_bm /home/pi/.local/
+cp /home/pi/V106/nextion_bm /home/pi/.local/
 fi
 
 if [ -f /home/pi/.local/oled_bm ]
 then
 echo ""
 else
-cp /home/pi/V105/oled_bm /home/pi/.local/
+cp /home/pi/V106/oled_bm /home/pi/.local/
 fi
 
 if [ -f /home/pi/.local/nextion_plus ]
 then
 echo ""
 else
-cp /home/pi/V105/nextion_plus /home/pi/.local/
+cp /home/pi/V106/nextion_plus /home/pi/.local/
 fi
 
 if [ -f /home/pi/.local/oled_plus ]
 then
 echo ""
 else
-cp /home/pi/V105/oled_plus /home/pi/.local/
+cp /home/pi/V106/oled_plus /home/pi/.local/
 fi
 
                         #Lee el fichero INFO_RXF para poner los datos en los iconos INFO TXF 
@@ -230,7 +230,7 @@ fi
                         sudo rm $usuario/RXF_NXDN.desktop
 
 clear
-/home/pi/V105/./imagen_actualizada
+/home/pi/V106/./imagen_actualizada
 # echo "${VERDE}"
 # echo "\v\v\v\v\v"
 # echo "   *************************************************************************"

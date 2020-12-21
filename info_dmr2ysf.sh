@@ -45,7 +45,7 @@ Startup=$(awk "NR==42" /home/pi/YSFClients/YSFGateway/YSFGateway.ini)
 Startup=`expr substr $Startup 9 20`
 sudo sed -i "7c Sala C4FM:    $Startup" /home/pi/.local/memoria_dmr2ysf               
 
-/home/pi/V105/./qt_info_dmr2ysf
+/home/pi/V106/./qt_info_dmr2ysf
 
 ##Colores
 #ROJO="\033[1;31m"

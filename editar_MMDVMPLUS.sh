@@ -6,7 +6,7 @@ clear
 
 actualizacion=$(awk "NR==1" /home/pi/.config/autostart/actualizacion)
 if [ $actualizacion = 25-10-2020 ]; then
-/home/pi/V105/./qt_editor_dmrplus
+/home/pi/V106/./qt_editor_dmrplus
 exit;
 else
 echo ""
@@ -591,7 +591,7 @@ do
                           case $actualizar in
                           [sS]* ) echo ""
 #sh Puertos_MMDVMPLUS.sh
-/home/pi/V105/./qt_puertos_modem_plus
+/home/pi/V106/./qt_puertos_modem_plus
                           break;;
                           [nN]* ) echo ""
                           break;;
@@ -885,7 +885,7 @@ do
                           [sS]* ) echo ""
                           #V=`echo "$V" | tr -d '[[:space:]]'`       
                           #sed -i "$linea Display=$V" $usuario/MMDVMHost/$DIRECTORIO 
-                          /home/pi/V105/./qt_config_display_plus         
+                          /home/pi/V106/./qt_config_display_plus         
                           break;;
                           [nN]* ) echo ""
                           break;;
@@ -1107,7 +1107,7 @@ do
                           case $actualizar in
 			                    [sS]* ) echo ""
 #sh Puertos_Nextion_PLUS.sh
-/home/pi/V105/./qt_puertos_nextion_dmrplus
+/home/pi/V106/./qt_puertos_nextion_dmrplus
 			                    break;;
 			                    [nN]* ) echo ""
 			                    break;;
@@ -1250,7 +1250,7 @@ do
                           sed -i "$linea4 Options=StartRef=$opcion;RelinkTime=10;" $usuario/MMDVMHost/$DIRECTORIO
                           fi
 
-                          #/home/pi/V105/./qt_ipsc2_plus
+                          #/home/pi/V106/./qt_ipsc2_plus
                           
                           break;;
                           [nN]* ) echo ""

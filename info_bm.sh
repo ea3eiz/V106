@@ -48,7 +48,7 @@ sudo sed -i "5c Puerto:     $puerto" /home/pi/.local/memoria_bm
 sudo sed -i "6c Address:    $address" /home/pi/.local/memoria_bm
 sudo sed -i "7c Memoria:      $memoria" /home/pi/.local/memoria_bm
 
-/home/pi/V105/./qt_info_bm
+/home/pi/V106/./qt_info_bm
 
 ##Colores
 #ROJO="\033[1;31m"

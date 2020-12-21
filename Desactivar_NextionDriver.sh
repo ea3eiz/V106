@@ -1,5 +1,5 @@
 #!/bin/bash
-/home/pi/V105/./nextiondriver_desactivar
+/home/pi/V106/./nextiondriver_desactivar
 # path usuario
 usuario="/home/pi"
 usuario="$usuario"

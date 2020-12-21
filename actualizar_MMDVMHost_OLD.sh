@@ -1,5 +1,5 @@
 ﻿#!/bin/bash
-#/home/pi/V105/./qt_mmdvmhost_off
+#/home/pi/V106/./qt_mmdvmhost_off
 #exit;
 clear
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)

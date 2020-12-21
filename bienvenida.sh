@@ -15,7 +15,7 @@ echo "   ***********************************************************************
 echo -n "${BLANCO}"
 echo "   *************************************************************************"
 echo -n "${AMARILLO}"
-echo "                    BIENVENIDO A LA IMAGEN ADER V105.05"
+echo "                    BIENVENIDO A LA IMAGEN ADER V106.05"
 echo "                   MULTIPROTOCOLO PARA  RADIOAFICIONADOS"
 echo -n "${BLANCO}"
 echo "   *************************************************************************"

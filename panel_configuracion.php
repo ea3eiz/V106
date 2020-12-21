@@ -503,7 +503,7 @@ elseif ($sistema=="DMR+") {
 ?>
 
     <div class="col-md-2 callsign">
-        <span>V105 - <?php echo $indicativo;?></span>
+        <span>V106 - <?php echo $indicativo;?></span>
     </div>
 
 </div>

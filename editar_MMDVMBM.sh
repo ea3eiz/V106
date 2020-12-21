@@ -583,8 +583,8 @@ do
                           case $actualizar in
                           [sS]* ) echo ""
 #sh Puertos_MMDVMBM.sh
-#/home/pi/V105/./qt_PuertosBm
-/home/pi/V105/./qt_puertos_modem_bm
+#/home/pi/V106/./qt_PuertosBm
+/home/pi/V106/./qt_puertos_modem_bm
                           break;;
                           [nN]* ) echo ""
                           break;;
@@ -879,7 +879,7 @@ do
                           #V=`echo "$V" | tr -d '[[:space:]]'` 
                           #sed -i "1c Display=$V" $usuario/.local/nextion_bm      
                           #sed -i "$linea Display=$V" $usuario/MMDVMHost/$DIRECTORIO
-                          /home/pi/V105/./qt_config_display_bm             
+                          /home/pi/V106/./qt_config_display_bm             
                           break;;
                           [nN]* ) echo ""
                           break;;
@@ -1103,7 +1103,7 @@ do
                           case $actualizar in
 			                    [sS]* ) echo ""
 #sh Puertos_Nextion_BM.sh
-/home/pi/V105/./qt_puertos_nextion_bm
+/home/pi/V106/./qt_puertos_nextion_bm
 			                    break;;
 			                    [nN]* ) echo ""
 			                    break;;
@@ -1245,7 +1245,7 @@ do
                           sed -i "$linea4 Options=StartRef=$opcion;RelinkTime=10;" $usuario/MMDVMHost/$DIRECTORIO
                           fi
                           
-                          #/home/pi/V105/./qt_ipsc2_bm
+                          #/home/pi/V106/./qt_ipsc2_bm
                           
                           break;;
                           [nN]* ) echo ""

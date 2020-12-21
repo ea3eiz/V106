@@ -397,7 +397,7 @@ clear
 			[sS]* ) echo ""
 			echo "Poniendo roger beep >>>>>"
 			sleep 3
-			sudo cp -f /home/pi/V105/roger_beep.wav /usr/local/share/svxlink/sounds/en_US/Core/
+			sudo cp -f /home/pi/V106/roger_beep.wav /usr/local/share/svxlink/sounds/en_US/Core/
 			sed -i '252c playMsg "Core" "roger_beep";' /usr/local/share/svxlink/events.d/Logic.tcl
 			sed -i '258c # playTone 440 500 100' /usr/local/share/svxlink/events.d/Logic.tcl
 			echo ""

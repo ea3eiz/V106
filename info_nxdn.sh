@@ -45,7 +45,7 @@ Startup=$(awk "NR==61" /home/pi/NXDNClients/NXDNGateway/NXDNGateway.ini)
 Startup=`expr substr $Startup 9 20`
 sudo sed -i "7c Sala NXDN:    $Startup" /home/pi/.local/memoria_nxdn               
 
-/home/pi/V105/./qt_info_nxdn
+/home/pi/V106/./qt_info_nxdn
 
 ##Colores
 #ROJO="\033[1;31m"

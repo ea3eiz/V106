@@ -52,8 +52,8 @@ Startup=$(awk "NR==42" /home/pi/YSFClients/YSFGateway/YSFGateway.ini)
 Startup=`expr substr $Startup 9 20`
 sudo sed -i "8c Sala Fusion:  $Startup" /home/pi/.local/memoria_solofusion
 
-chmod 777 /home/pi/V105/qt_info_solofusion
-/home/pi/V105/./qt_info_solofusion
+chmod 777 /home/pi/V106/qt_info_solofusion
+/home/pi/V106/./qt_info_solofusion
 #Colores
 #ROJO="\033[1;31m"
 #VERDE="\033[1;32m"

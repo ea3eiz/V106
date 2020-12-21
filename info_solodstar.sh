@@ -53,7 +53,7 @@ contenido_reflector=`echo "$contenido_reflector" | tr -d '[[:space:]]'`
 contenido_reflector=`expr substr $contenido_reflector 12 13`
 sudo sed -i "8c Reflector:    $contenido_reflector" /home/pi/.local/memoria_solo_dstar
 
-/home/pi/V105/./qt_info_solodstar
+/home/pi/V106/./qt_info_solodstar
 
 ##Colores
 #ROJO="\033[1;31m"

@@ -81,7 +81,7 @@ clear
                         case $instalarsi in
                         [sS]* ) echo ""
                         clear
-                        cd /home/pi/V105
+                        cd /home/pi/V106
                         sudo sh restaurar_original.sh                 
                         break;;
                         [nN]* ) echo ""
@@ -98,7 +98,7 @@ clear
                         case $instalarsi in
                         [sS]* ) echo ""
                         clear
-                        cd /home/pi/V105
+                        cd /home/pi/V106
                         sh colocar_iconos1.sh                 
                         break;;
                         [nN]* ) echo ""
@@ -115,7 +115,7 @@ clear
                         case $instalarsi in
                         [sS]* ) echo ""
                         clear
-                        cd /home/pi/V105
+                        cd /home/pi/V106
                         sh colocar_iconos2.sh
                         break;;
                         [nN]* ) echo ""
@@ -699,11 +699,11 @@ clear
 
                                 if [ -d /home/pi/mvoice/ ];
 			                    then
-                                version_a_instalar=$(awk "NR==1" /home/pi/V105/mvoice/version)
+                                version_a_instalar=$(awk "NR==1" /home/pi/V106/mvoice/version)
                                 version_instalada=$(awk "NR==3" /home/pi/info.ini)
                                 if [ $version_a_instalar != $version_instalada ];then
                                 rm -R /home/pi/mvoice
-                                cp -R /home/pi/V105/mvoice /home/pi
+                                cp -R /home/pi/V106/mvoice /home/pi
                                 sleep 2
                                 cd /home/pi/mvoice
                                 make
@@ -712,11 +712,11 @@ clear
                                 ./start-mvoice
                                 sed -i "3c $version_a_instalar" /home/pi/info.ini
                                 else
-                                /home/pi/V105/./aviso_mvoice_version
+                                /home/pi/V106/./aviso_mvoice_version
                                 fi
 
                                 else
-                                cd /home/pi/V105
+                                cd /home/pi/V106
                                 ./aviso
                                 fi
 
@@ -744,7 +744,7 @@ clear
                                 make clean all
                                 sudo make install
 
-                                cp -R /home/pi/V105/DMR2M17 /home/pi
+                                cp -R /home/pi/V106/DMR2M17 /home/pi
                                 sleep 1
                                 cd /home/pi/DMR2M17
                                 make
@@ -758,10 +758,10 @@ clear
                                 cd /home/pi/MMDVMHost
                                 cp MMDVMDMR2YSF.ini  MMDVMDMR2M17.ini
 
-                                cp /home/pi/V105/ABRIR_DMR2M17.desktop /home/pi/Desktop
-                                cp /home/pi/V105/Editar_DMR2M17.desktop /home/pi/Desktop
+                                cp /home/pi/V106/ABRIR_DMR2M17.desktop /home/pi/Desktop
+                                cp /home/pi/V106/Editar_DMR2M17.desktop /home/pi/Desktop
 
-                                sudo cp /home/pi/V105/FONDO_ADER_V105_M17.jpg /home/pi/V105/FONDO_ADER_V105.jpg
+                                sudo cp /home/pi/V106/FONDO_ADER_V106_M17.jpg /home/pi/V106/FONDO_ADER_V106.jpg
 
                                 echo ""
                                 exit;
@@ -792,7 +792,7 @@ clear
                                 sleep 1
                                 rm /home/pi/Desktop/Editar_DMR2M17.desktop
                                 sleep 1
-                                sudo cp /home/pi/V105/FONDO_ADER_V105_SIN_M17.jpg /home/pi/V105/FONDO_ADER_V105.jpg
+                                sudo cp /home/pi/V106/FONDO_ADER_V106_SIN_M17.jpg /home/pi/V106/FONDO_ADER_V106.jpg
                                 echo ""
                                 exit;
                                 break;;

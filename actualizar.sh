@@ -19,14 +19,14 @@ fi
 # path usuario
 usuario="/home/pi"
 usuario="$usuario"
-SCRIPTS_version="V105"
+SCRIPTS_version="V106"
 actualizacion=$(awk "NR==1" /home/pi/.config/autostart/actualizacion)
-SCRIPTS_version="V105"
+SCRIPTS_version="V106"
 if [ -d /home/pi/DMR2M17 ]
 then
-version="V105-DMR2M17"
+version="V106-DMR2M17"
 else
-version="V105-"
+version="V106-"
 version=$version$actualizacion
 fi
 #pone todos los status de inicio en OFF
@@ -278,7 +278,7 @@ sudo systemctl stop nxdngateway.service
 else
 echo ""
 fi
-sudo rm -R /home/pi/V105/associacioader.com
-sudo rm -R /home/pi/V105/Desktop/associacioader.com
-sudo rm /home/pi/V105/Desktop/st-data
+sudo rm -R /home/pi/V106/associacioader.com
+sudo rm -R /home/pi/V106/Desktop/associacioader.com
+sudo rm /home/pi/V106/Desktop/st-data
 sudo rm /home/pi/Desktop/st-data

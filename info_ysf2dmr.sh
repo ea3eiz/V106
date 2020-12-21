@@ -58,7 +58,7 @@ sudo sed -i "6c Address:    $address" /home/pi/.local/memoria_ysf2dmr
 sudo sed -i "7c $options" /home/pi/.local/memoria_ysf2dmr
 sudo sed -i "8c Memoria:      $memoria" /home/pi/.local/memoria_ysf2dmr
 
-/home/pi/V105/./qt_info_ysf2dmr
+/home/pi/V106/./qt_info_ysf2dmr
 
 #Colores
 #ROJO="\033[1;31m"

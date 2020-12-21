@@ -48,7 +48,7 @@ sudo sed -i "5c Puerto:     $puerto" /home/pi/.local/memoria_dmrplus
 sudo sed -i "6c Address:    $address" /home/pi/.local/memoria_dmrplus
 sudo sed -i "7c Memoria:      $memoria" /home/pi/.local/memoria_dmrplus
 
-/home/pi/V105/./qt_info_dmrplus
+/home/pi/V106/./qt_info_dmrplus
 
 ##Colores
 #ROJO="\033[1;31m"

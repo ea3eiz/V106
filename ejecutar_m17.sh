@@ -18,7 +18,7 @@ sudo rm /home/pi/top.desktop
             cd /home/pi/mvoice
             ./mvoice
             else
-            cd /home/pi/V105
+            cd /home/pi/V106
             ./aviso
-#zenity --warning --ok-label=CERRAR --title=Sistema_M17 --window-icon=/home/pi/V105/ICONO_DMRGATEWAY_ON.png --width=500 --text "\nYa está disponible la versión ADER V105 (25-10-2020) M17\npuedes descargarla de la web:\nhttp://www.associacioader.com\n\ncon la nueva versión ya puedes usar el Sistema M17."
+#zenity --warning --ok-label=CERRAR --title=Sistema_M17 --window-icon=/home/pi/V106/ICONO_DMRGATEWAY_ON.png --width=500 --text "\nYa está disponible la versión ADER V106 (25-10-2020) M17\npuedes descargarla de la web:\nhttp://www.associacioader.com\n\ncon la nueva versión ya puedes usar el Sistema M17."
             fi

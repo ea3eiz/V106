@@ -69,8 +69,8 @@ clear
 # echo "   ***************************************************************************"
 # sleep 3
 
-#zenity --info --ok-label= --title=DVSWITCH --window-icon=/home/pi/V105/ICONO_DVSWITCH_ON.png --width=400 --timeout=5 --text "\n\nDVSWITCH ACTIVADO"
+#zenity --info --ok-label= --title=DVSWITCH --window-icon=/home/pi/V106/ICONO_DVSWITCH_ON.png --width=400 --timeout=5 --text "\n\nDVSWITCH ACTIVADO"
 
-/home/pi/V105/./dvswitch_activado
+/home/pi/V106/./dvswitch_activado
 sed -i "18c DVSWITCH=ON" /home/pi/status.ini	
 			
