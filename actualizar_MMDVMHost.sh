@@ -1,6 +1,6 @@
 ﻿#!/bin/bash
-#/home/pi/V106/./qt_mmdvmhost_off
-#exit;
+hecho "pausa"
+read a
 clear
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 #Colores
