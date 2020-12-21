@@ -1,4 +1,5 @@
-﻿#!/bin/bash
+﻿E567U-   452#!/bin/bash
+# -*- ENCODING: UTF-8 -*-
 clear
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 #Colores
