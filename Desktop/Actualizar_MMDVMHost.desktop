@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c 'cd /home/pi/V106;sudo sh actualizar_MMDVMHost.sh'
+Exec=sh -c 'cd /home/pi/V106;lxterminal --geometry=77x18 -e sudo sh actualizar_MMDVMHost.sh'
 Icon=/home/pi/V106/ICONO_ACTUALIZAR_MMDVMHOST.png
 Type=Application
 StartupNotify=false
