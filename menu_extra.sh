@@ -23,12 +23,12 @@ echo -n "${ROJO}"
 echo "                              $SCRIPTS_version by EA3EIZ"
 echo -n "${VERDE}"
 echo "   ************************************************************************"
-echo "\33[1;36m   R)${AMARILLO} Restaurar IMAGEN ORIGINAL tal como la grabastes en su día"
-echo "\33[1;32m      APARTADO SKINS"
-echo "\33[1;32m      =============="
-echo "\33[1;36m   a)${BLANCO} Seleccionar Skin Fondo de Imagen A"
-echo "\33[1;36m   b)${BLANCO} Seleccionar Skin Fondo de Imagen B"
-echo ""
+#echo "\33[1;36m   R)${AMARILLO} Restaurar IMAGEN ORIGINAL tal como la grabastes en su día"
+#echo "\33[1;32m      APARTADO SKINS"
+#echo "\33[1;32m      =============="
+#echo "\33[1;36m   a)${BLANCO} Seleccionar Skin Fondo de Imagen A"
+#echo "\33[1;36m   b)${BLANCO} Seleccionar Skin Fondo de Imagen B"
+#echo ""
 echo "\33[1;36m   1)${AMARILLO} Actualizar DVSWITCH"
 echo "\33[1;36m   2)${AMARILLO} Actualizar ${AMARILLO}YSF,${AMARILLO} YSF2DMR, DMR2YSF, DMR2NXDN y NXDNClients"
 echo ""
@@ -52,7 +52,7 @@ echo -n "\33[1;36m   Elige una opción: "
 read escoger_menu
 echo ""
 case $escoger_menu in
-R) echo ""
+Rbloqueado) echo ""
 while true
 do
 clear                     
@@ -69,7 +69,7 @@ clear
                         break;;
 esac
 done;;
-a) echo ""
+abloqueado) echo ""
 while true
 do
 clear                     
@@ -86,7 +86,7 @@ clear
                         break;;
 esac
 done;;
-b) echo ""
+bloqueado) echo ""
 while true
 do
 clear                     
