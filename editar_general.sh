@@ -464,29 +464,29 @@ do
             sed -i "$numero_linea_letrac Location=$tu_ciudad" /home/pi/MMDVMHost/TODOS_LOS_INIS.ini
                      
             #LOCATION  DMRGATEWAY
-            sed -i "19c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMDMRGateway.ini
+            sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMDMRGateway.ini
             sed -i "33c Location=$tu_ciudad" /home/pi/DMRGateway/DMRGateway.ini
             
             #DMR+
-            sed -i "19c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMPLUS.ini
-            sed -i "19c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia
-            sed -i "19c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia2
-            sed -i "19c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia3
+            sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMPLUS.ini
+            sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia
+            sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia2
+            sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia3
             #BM
-            sed -i "19c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMBM.ini
-            sed -i "19c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMBM.ini_copia
-            sed -i "19c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMBM.ini_copia2
-            sed -i "19c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMBM.ini_copia3
+            sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMBM.ini
+            sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMBM.ini_copia
+            sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMBM.ini_copia2
+            sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMBM.ini_copia3
             #RADIO
-            sed -i "19c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVM.ini
-            sed -i "19c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVM.ini_copia
-            sed -i "19c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVM.ini_copia2
-            sed -i "19c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVM.ini_copia3
+            sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVM.ini
+            sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVM.ini_copia
+            sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVM.ini_copia2
+            sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVM.ini_copia3
             #ESPECIAL
-            sed -i "19c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMESPECIAL.ini
-            sed -i "19c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia
-            sed -i "19c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia2
-            sed -i "19c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia3
+            sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMESPECIAL.ini
+            sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia
+            sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia2
+            sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia3
             
             sudo sed -i "10c description1=$tu_ciudad" /usr/local/etc/opendv/ircddbgateway
             sudo sed -i "27c description_1=$tu_ciudad" /usr/local/etc/opendv/ircddbgateway
@@ -514,18 +514,18 @@ sed -i "$numero_linea_letrac Name=$tu_ciudad" /home/pi/YSFClients/YSFGateway/YSF
             sed -i "8c Location=$tu_ciudad" /home/pi/YSF2DMR/YSF2DMR.ini_copia_04
             
             #MMDVMDMR2YSF.ini
-            sed -i "19c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini
+            sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini
 
             #MMDVMDMR2NXDN.ini
-            sed -i "19c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
+            sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
 
             #MMDVMNXDN.ini
-            sed -i "19c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMNXDN.ini
+            sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMNXDN.ini
 
             #SOLODSTAR
-            sed -i "19c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMDSTAR.ini
+            sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMDSTAR.ini
             #SOLOFUSION
-            sed -i "19c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMFUSION.ini
+            sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMFUSION.ini
 
 			  break;;
 			  [nN]* ) echo ""
@@ -554,29 +554,29 @@ echo "Valor de  la  URL   Web: \33[1;33m${url#*=}\33[1;37m"
             sed -i "$linea URL=$tu_url" /home/pi/MMDVMHost/TODOS_LOS_INIS.ini
             
             #LURL  DMRGATEWAY
-            sed -i "21c URL=$tu_url" /home/pi/MMDVMHost/MMDVMDMRGateway.ini
+            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMDMRGateway.ini
             sed -i "35c URL=$tu_url" /home/pi/DMRGateway/DMRGateway.ini
             
             #DMR+
-            sed -i "21c URL=$tu_url" /home/pi/MMDVMHost/MMDVMPLUS.ini
-            sed -i "21c URL=$tu_url" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia
-            sed -i "21c URL=$tu_url" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia2
-            sed -i "21c URL=$tu_url" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia3
+            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMPLUS.ini
+            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia
+            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia2
+            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia3
             #BM
-            sed -i "21c URL=$tu_url" /home/pi/MMDVMHost/MMDVMBM.ini
-            sed -i "21c URL=$tu_url" /home/pi/MMDVMHost/MMDVMBM.ini_copia
-            sed -i "21c URL=$tu_url" /home/pi/MMDVMHost/MMDVMBM.ini_copia2
+            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMBM.ini
+            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMBM.ini_copia
+            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMBM.ini_copia2
             sed -i "21c URL=$tu_url" /home/pi/MMDVMHost/MMDVMBM.ini_copia3
             #RADIO
-            sed -i "21c URL=$tu_url" /home/pi/MMDVMHost/MMDVM.ini
-            sed -i "21c URL=$tu_url" /home/pi/MMDVMHost/MMDVM.ini_copia
-            sed -i "21c URL=$tu_url" /home/pi/MMDVMHost/MMDVM.ini_copia2
-            sed -i "21c URL=$tu_url" /home/pi/MMDVMHost/MMDVM.ini_copia3
+            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVM.ini
+            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVM.ini_copia
+            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVM.ini_copia2
+            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVM.ini_copia3
             #ESPECIAL
-            sed -i "21c URL=$tu_url" /home/pi/MMDVMHost/MMDVMESPECIAL.ini
-            sed -i "21c URL=$tu_url" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia
-            sed -i "21c URL=$tu_url" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia2
-            sed -i "21c URL=$tu_url" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia3
+            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMESPECIAL.ini
+            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia
+            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia2
+            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia3
             
             #YSF2DMR
             sed -i "10c URL=$tu_url" /home/pi/YSF2DMR/YSF2DMR.ini
@@ -585,18 +585,18 @@ echo "Valor de  la  URL   Web: \33[1;33m${url#*=}\33[1;37m"
             sed -i "10c URL=$tu_url" /home/pi/YSF2DMR/YSF2DMR.ini_copia_03
             sed -i "10c URL=$tu_url" /home/pi/YSF2DMR/YSF2DMR.ini_copia_04
             #MMDVMDMR2YSF.ini
-            sed -i "21c URL=$tu_url" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini
+            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini
 
             #MMDVMDMR2NXDN.ini
-            sed -i "21c URL=$tu_url" /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
+            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
 
             #MMDVMNXDN.ini
-            sed -i "21c URL=$tu_url" /home/pi/MMDVMHost/MMDVMNXDN.ini
+            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMNXDN.ini
 
             #SOLODSTAR
-            sed -i "21c URL=$tu_url" /home/pi/MMDVMHost/MMDVMDSTAR.ini
+            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMDSTAR.ini
             #SOLOFUSION
-            sed -i "21c URL=$tu_url" /home/pi/MMDVMHost/MMDVMFUSION.ini
+            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMFUSION.ini
 
             sudo sed -i "12c url=$tu_url" /usr/local/etc/opendv/ircddbgateway
             sudo sed -i "29c url1=$tu_url" /usr/local/etc/opendv/ircddbgateway
@@ -717,40 +717,40 @@ do
                       sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/TODOS_LOS_INIS.ini
 
             #DMR+
-            sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/MMDVMPLUS.ini
-            sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia
-            sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia2
-            sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia3
+            sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/MMDVMPLUS.ini
+            sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia
+            sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia2
+            sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia3
             #BM
-            sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/MMDVMBM.ini
-            sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/MMDVMBM.ini_copia
-            sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/MMDVMBM.ini_copia2
-            sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/MMDVMBM.ini_copia3
+            sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/MMDVMBM.ini
+            sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/MMDVMBM.ini_copia
+            sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/MMDVMBM.ini_copia2
+            sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/MMDVMBM.ini_copia3
             #RADIO
-            sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/MMDVM.ini
-            sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/MMDVM.ini_copia
-            sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/MMDVM.ini_copia2
-            sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/MMDVM.ini_copia3
+            sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/MMDVM.ini
+            sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/MMDVM.ini_copia
+            sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/MMDVM.ini_copia2
+            sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/MMDVM.ini_copia3
             #ESPECIAL
-            sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/MMDVMESPECIAL.ini
-            sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia
-            sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia2
-            sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia3
+            sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/MMDVMESPECIAL.ini
+            sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia
+            sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia2
+            sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia3
 
             
             #MMDVMDMR2YSF
-            sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini
+            sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini
 
             #MMDVMDMR2NXDN.ini
-            sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
+            sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
 
             #MMDVMNXDN.ini
-            sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/MMDVMNXDN.ini
+            sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/MMDVMNXDN.ini
 
             #SOLODSTAR
-            sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/MMDVMDSTAR.ini
+            sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/MMDVMDSTAR.ini
             #SOLOFUSION
-            sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/MMDVMFUSION.ini                      
+            sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/MMDVMFUSION.ini                      
                       break;;
                       [nN]* ) echo ""
                       break;;
@@ -972,25 +972,25 @@ echo "Valor de la Latitud: \33[1;33m${lat#*=}\33[1;37m"
 			  [sS]* ) echo ""
                           sed -i "$linea Latitude=$tu_latitud" /home/pi/MMDVMHost/TODOS_LOS_INIS.ini
             #DMR+
-            sed -i "16c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMPLUS.ini
-            sed -i "16c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia
-            sed -i "16c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia2
-            sed -i "16c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia3
+            sed -i "17c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMPLUS.ini
+            sed -i "17c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia
+            sed -i "17c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia2
+            sed -i "17c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia3
             #BM
-            sed -i "16c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMBM.ini
-            sed -i "16c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMBM.ini_copia
-            sed -i "16c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMBM.ini_copia2
-            sed -i "16c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMBM.ini_copia3
+            sed -i "17c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMBM.ini
+            sed -i "17c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMBM.ini_copia
+            sed -i "17c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMBM.ini_copia2
+            sed -i "17c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMBM.ini_copia3
             #RADIO
-            sed -i "16c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVM.ini
-            sed -i "16c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVM.ini_copia
-            sed -i "16c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVM.ini_copia2
-            sed -i "16c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVM.ini_copia3
+            sed -i "17c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVM.ini
+            sed -i "17c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVM.ini_copia
+            sed -i "17c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVM.ini_copia2
+            sed -i "17c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVM.ini_copia3
             #ESPECIAL
-            sed -i "16c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMESPECIAL.ini
-            sed -i "16c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia
-            sed -i "16c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia2
-            sed -i "16c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia3
+            sed -i "17c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMESPECIAL.ini
+            sed -i "17c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia
+            sed -i "17c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia2
+            sed -i "17c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia3
 
             sudo sed -i "8c latitude=$tu_latitud" /usr/local/etc/opendv/ircddbgateway
 
@@ -1013,18 +1013,18 @@ sed -i "$numero_linea_letrac Latitude=$tu_latitud" /home/pi/YSFClients/YSFGatewa
             sed -i "5c Latitude=$tu_latitud" /home/pi/YSF2DMR/YSF2DMR.ini_copia_03
             sed -i "5c Latitude=$tu_latitud" /home/pi/YSF2DMR/YSF2DMR.ini_copia_04
             #MMDVMDMR2YSF
-            sed -i "16c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini
+            sed -i "17c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini
 
             #MMDVMDMR2NXDN.ini
-            sed -i "16c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
+            sed -i "17c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
 
             #MMDVMNXDN.ini
-            sed -i "16c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMNXDN.ini
+            sed -i "17c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMNXDN.ini
 
             #SOLODSTAR
-            sed -i "16c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMDSTAR.ini
+            sed -i "17c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMDSTAR.ini
             #SOLOFUSION
-            sed -i "16c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMFUSION.ini
+            sed -i "17c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMFUSION.ini
 
 			  break;;
 			  [nN]* ) echo ""
@@ -1052,25 +1052,25 @@ echo "Valor de la Longitud: \33[1;33m${long#*=}\33[1;37m"
                           sed -i "$linea Longitude=$tu_longitud" /home/pi/MMDVMHost/TODOS_LOS_INIS.ini
 
             #DMR+
-            sed -i "17c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMPLUS.ini
-            sed -i "17c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia
-            sed -i "17c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia2
-            sed -i "17c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia3
+            sed -i "18c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMPLUS.ini
+            sed -i "18c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia
+            sed -i "18c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia2
+            sed -i "18c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia3
             #BM
-            sed -i "17c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMBM.ini
-            sed -i "17c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMBM.ini_copia
-            sed -i "17c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMBM.ini_copia2
-            sed -i "17c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMBM.ini_copia3
+            sed -i "18c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMBM.ini
+            sed -i "18c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMBM.ini_copia
+            sed -i "18c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMBM.ini_copia2
+            sed -i "18c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMBM.ini_copia3
             #RADIO
-            sed -i "17c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVM.ini
-            sed -i "17c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVM.ini_copia
-            sed -i "17c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVM.ini_copia2
-            sed -i "17c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVM.ini_copia3
+            sed -i "18c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVM.ini
+            sed -i "18c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVM.ini_copia
+            sed -i "18c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVM.ini_copia2
+            sed -i "18c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVM.ini_copia3
             #ESPECIAL
-            sed -i "17c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMESPECIAL.ini
-            sed -i "17c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia
-            sed -i "17c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia2
-            sed -i "17c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia3
+            sed -i "18c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMESPECIAL.ini
+            sed -i "18c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia
+            sed -i "18c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia2
+            sed -i "18c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia3
 
             sudo sed -i "9c longitude=$tu_longitud" /usr/local/etc/opendv/ircddbgateway
 
@@ -1094,18 +1094,18 @@ sed -i "$numero_linea_letrac Longitude=$tu_longitud" /home/pi/YSFClients/YSFGate
             sed -i "6c Longitude=$tu_longitud" /home/pi/YSF2DMR/YSF2DMR.ini_copia_04 
 
             #MMDVMDMR2YSF         
-            sed -i "17c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini
+            sed -i "18c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini
 
             #MMDVMDMR2NXDN.ini
-            sed -i "17c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
+            sed -i "18c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
 
             #MMDVMNXDN.ini
-            sed -i "17c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMNXDN.ini          
+            sed -i "18c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMNXDN.ini          
 
             #SOLODSTAR
-            sed -i "17c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMDSTAR.ini
+            sed -i "18c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMDSTAR.ini
             #SOLOFUSION 
-            sed -i "17c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMFUSION.ini
+            sed -i "18c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMFUSION.ini
 
 
 
