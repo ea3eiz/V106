@@ -15,13 +15,7 @@ CIAN="\033[1;36m"
 GRIS="\033[0m"
 MARRON="\33[38;5;138m"
 
-echo "${VERDE}"
-echo "   *************************************************************************"
-echo "   *                     ACTUALIZANDO POSIBLES CAMBIOS                     *"
-echo "   *                         EN LA IMAGEN ADER ${AMARILLO}$SCRIPTS_version${VERDE}                        *"
-echo "   *************************************************************************"
-echo "${CIAN}"
-sleep 2
+
                         # Actualiza IMAGEN 
                         cd $usuario/$SCRIPTS_version
                         git pull
