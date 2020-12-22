@@ -45,9 +45,6 @@ echo "${CIAN}   8)${AMARILLO} Instalar Anydesk"
 echo "${CIAN}   9)${BLANCO} Grabar pantalla Nextion"
 echo "${CIAN}  10)${VERDE} Menú Actualizar MMDVM_HS Libre kit y ZUMSpot"
 echo "${CIAN}  11)${CIAN} Configuración especial de Red"
-echo "${CIAn}  12)${AMARILLO} Actualizar mvoice M17"
-echo -n "${CIAN}1000)${VERDE} Instalar DMR2M17"
-echo "${CIAN}\t\t1001)${ROJO} Desinstalar DMR2M17"
 echo ""
 echo "   ${ROJO}0) Salir"
 echo ""
@@ -55,24 +52,6 @@ echo -n "\33[1;36m   Elige una opción: "
 read escoger_menu
 echo ""
 case $escoger_menu in
-m17) echo ""
-while true
-do
-clear                     
-                        instalarsi=S
-                        case $instalarsi in
-                        [sS]* ) echo ""
-                        clear
-$usuario/$SCRIPTS_version/./wm17                
-                        break;;
-                        [nN]* ) echo ""
-                        clear
-                        exit;
-                        break;;
-esac
-done;;
-
-
 R) echo ""
 while true
 do
@@ -720,79 +699,6 @@ clear
                                 ./aviso
                                 fi
 
-                                echo ""
-                                exit;
-                                break;;
-                                [nN]* ) echo ""
-clear
-exit;
-break;;
-esac
-done;;
-1000) echo ""
-while true
-do
-clear
-                                ejecutar1=S
-                                case $ejecutar1 in
-                                [sS]* ) echo ""
-                                                                
-                                cd /home/pi/
-                                git clone https://github.com/nostar/md380_vocoder
-                                sleep 1
-                                cd /home/pi/md380_vocoder
-                                make clean all
-                                sudo make install
-
-                                cp -R /home/pi/V106/DMR2M17 /home/pi
-                                sleep 1
-                                cd /home/pi/DMR2M17
-                                make
-                                sudo make install
-
-                                # Crea el ejecutable DMR2M17
-                                cd /home/pi/MMDVMHost
-                                cp DMR2YSF MMDVMDMR2M17
-
-                                # Crea el ejecutable DMR2M17.ini
-                                cd /home/pi/MMDVMHost
-                                cp MMDVMDMR2YSF.ini  MMDVMDMR2M17.ini
-
-                                cp /home/pi/V106/ABRIR_DMR2M17.desktop /home/pi/Desktop
-                                cp /home/pi/V106/Editar_DMR2M17.desktop /home/pi/Desktop
-
-                                sudo cp /home/pi/V106/FONDO_ADER_V106_M17.jpg /home/pi/V106/FONDO_ADER_V106.jpg
-
-                                echo ""
-                                exit;
-                                break;;
-                                [nN]* ) echo ""
-clear
-exit;
-break;;
-esac
-done;;
-1001) echo ""
-while true
-do
-clear
-                                ejecutar1=S
-                                case $ejecutar1 in
-                                [sS]* ) echo ""                                                                
-                                sudo rm -R /home/pi/md380_vocoder
-                                sleep 1
-                                sudo rm -R /home/pi/DMR2M17
-                                sleep 1
-                                cd /home/pi/MMDVMHost
-                                sudo rm MMDVMDMR2M17.ini
-                                sleep 1
-                                sudo rm MMDVMDMR2M17
-                                sleep 1
-                                rm /home/pi/Desktop/ABRIR_DMR2M17.desktop
-                                sleep 1
-                                rm /home/pi/Desktop/Editar_DMR2M17.desktop
-                                sleep 1
-                                sudo cp /home/pi/V106/FONDO_ADER_V106_SIN_M17.jpg /home/pi/V106/FONDO_ADER_V106.jpg
                                 echo ""
                                 exit;
                                 break;;
