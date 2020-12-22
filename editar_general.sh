@@ -554,28 +554,28 @@ echo "Valor de  la  URL   Web: \33[1;33m${url#*=}\33[1;37m"
             sed -i "$linea URL=$tu_url" /home/pi/MMDVMHost/TODOS_LOS_INIS.ini
             
             #LURL  DMRGATEWAY
-            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMDMRGateway.ini
+            sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVMDMRGateway.ini
             sed -i "35c URL=$tu_url" /home/pi/DMRGateway/DMRGateway.ini
             
             #DMR+
-            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMPLUS.ini
-            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia
-            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia2
-            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia3
+            sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVMPLUS.ini
+            sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia
+            sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia2
+            sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia3
             #BM
-            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMBM.ini
-            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMBM.ini_copia
-            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMBM.ini_copia2
-            sed -i "21c URL=$tu_url" /home/pi/MMDVMHost/MMDVMBM.ini_copia3
+            sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVMBM.ini
+            sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVMBM.ini_copia
+            sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVMBM.ini_copia2
+            sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVMBM.ini_copia3
             #RADIO
-            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVM.ini
-            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVM.ini_copia
-            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVM.ini_copia2
-            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVM.ini_copia3
+            sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVM.ini
+            sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVM.ini_copia
+            sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVM.ini_copia2
+            sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVM.ini_copia3
             #ESPECIAL
-            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMESPECIAL.ini
-            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia
-            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia2
+            sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVMESPECIAL.ini
+            sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia
+            sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia2
             sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMESPECIAL.ini_copia3
             
             #YSF2DMR
@@ -585,18 +585,18 @@ echo "Valor de  la  URL   Web: \33[1;33m${url#*=}\33[1;37m"
             sed -i "10c URL=$tu_url" /home/pi/YSF2DMR/YSF2DMR.ini_copia_03
             sed -i "10c URL=$tu_url" /home/pi/YSF2DMR/YSF2DMR.ini_copia_04
             #MMDVMDMR2YSF.ini
-            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini
+            sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini
 
             #MMDVMDMR2NXDN.ini
-            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
+            sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
 
             #MMDVMNXDN.ini
-            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMNXDN.ini
+            sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVMNXDN.ini
 
             #SOLODSTAR
-            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMDSTAR.ini
+            sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVMDSTAR.ini
             #SOLOFUSION
-            sed -i "20c URL=$tu_url" /home/pi/MMDVMHost/MMDVMFUSION.ini
+            sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVMFUSION.ini
 
             sudo sed -i "12c url=$tu_url" /usr/local/etc/opendv/ircddbgateway
             sudo sed -i "29c url1=$tu_url" /usr/local/etc/opendv/ircddbgateway
