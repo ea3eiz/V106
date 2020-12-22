@@ -230,7 +230,7 @@ fi
                         sudo rm $usuario/RXF_NXDN.desktop
 
 clear
-/home/pi/V106/./imagen_actualizada
+/home/pi/V106/./qt_imagen_actualizada
 # echo "${VERDE}"
 # echo "\v\v\v\v\v"
 # echo "   *************************************************************************"
