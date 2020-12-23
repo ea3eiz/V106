@@ -406,37 +406,17 @@ linea_sed_oled=$numero_linea$letra
 echo "${CIAN}     \t\t   ${GRIS}Tipo OLED   - ${CIAN}$tipo_oled"
 
 #27)reflector DMR+=
-
-
-#echo -n "${CIAN}  13)${GRIS} Modificar Password    - ${AMARILLO}"
 pas=`grep -n '^Password=' $usuario/MMDVMHost/$DIRECTORIO`
-
 echo "pas : $pas"
-OPCION=`expr substr $pas 1 3` #linea del 194 Password=
-OPCION=`expr $OPCION + 4` #linea Password= + 4 que es la linea 198 Options=
-echo "OPCION: $OPCION"
-read a
-
-
-
-
-
-
+OPCION=`expr substr $pas 1 3` #linea del 197 Password=
+OPCION=`expr $OPCION + 4` #linea Password= + 4 que es la linea 201 Options=
 echo -n "${CIAN}  27)${GRIS} Entra reflector DMR+  - ${AMARILLO}"
-OPCION=`expr substr $pas 7 3`
-OPCION=`expr $OPCION + 1`
 linea33port=$OPCION
 letra=p
 linea22port=$OPCION$letra
 var300port= sed -n $linea22port  $usuario/MMDVMHost/$DIRECTORIO;
 
-echo "OPCION: $OPCION"
-
-echo "inea22port $linea22port"
-read a
-
-
-
+#28)Abrir fichero para hacer cualquier cambio
 echo ""
 echo "${CIAN}  28)${AMARILLO} Abrir fichero $DIRECTORIO para hacer cualquier cambio${AMARILLO}"
 
