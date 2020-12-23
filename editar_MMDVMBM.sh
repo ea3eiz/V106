@@ -164,6 +164,17 @@ pas=`grep -n '\<Password\>' $usuario/MMDVMHost/$DIRECTORIO`
 pas1=`expr substr $pas 5 30`
 echo "$pas1"
 
+
+
+
+echo -n "${CIAN}  13)${GRIS} Modificar Password    - ${AMARILLO}"
+ad="DMR Network"          
+password=$(sudo crudini --get $usuario/MMDVMHost/$DIRECTORIO "${ad}" Password)
+echo "$password"
+
+
+
+
 echo -n "${CIAN}  14)${GRIS} Modificar TXInvert    - ${AMARILLO}"
 txinv=`grep -n '\<TXInvert\>' $usuario/MMDVMHost/$DIRECTORIO`
 txinv1=`expr substr $txinv 4 30`
