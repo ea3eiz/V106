@@ -412,8 +412,8 @@ echo "${CIAN}     \t\t   ${GRIS}Tipo OLED   - ${CIAN}$tipo_oled"
 pas=`grep -n '^Password=' $usuario/MMDVMHost/$DIRECTORIO`
 
 echo "pas : $pas"
-OPCION=`expr substr $pas 1 3`
-OPCION=`expr $OPCION + 1`
+OPCION=`expr substr $pas 1 3` #linea del 194 Password=
+OPCION=`expr $OPCION + 4` #linea Password= + 4 que es la linea 198 Options=
 echo "OPCION: $OPCION"
 read a
 
