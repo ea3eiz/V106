@@ -406,7 +406,6 @@ linea_sed_oled=$numero_linea$letra
 echo "${CIAN}     \t\t   ${GRIS}Tipo OLED   - ${CIAN}$tipo_oled"
 
 #27)reflector DMR+=
-pas=`grep -n '\<Password\>' $usuario/MMDVMHost/$DIRECTORIO`
 echo -n "${CIAN}  27)${GRIS} Entra reflector DMR+  - ${AMARILLO}"
 OPCION=`expr substr $pas 1 $largo1`
 OPCION=`expr $OPCION + 1`
