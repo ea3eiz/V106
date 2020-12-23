@@ -159,10 +159,10 @@ letra=p
 linea2port=$lineaport$letra
 var100port= sed -n $linea2port  $usuario/MMDVMHost/$DIRECTORIO;
 
-echo -n "${CIAN}  13)${GRIS} Modificar Password    - ${AMARILLO}"
-pas=`grep -n '\<Password\>' $usuario/MMDVMHost/$DIRECTORIO`
-pas1=`expr substr $pas 5 30`
-echo "$pas1"
+#echo -n "${CIAN}  13)${GRIS} Modificar Password    - ${AMARILLO}"
+#pas=`grep -n '\<Password\>' $usuario/MMDVMHost/$DIRECTORIO`
+#pas1=`expr substr $pas 5 30`
+#echo "$pas1"
 
 
 
