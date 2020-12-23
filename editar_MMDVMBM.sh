@@ -421,7 +421,7 @@ read a
 
 
 echo -n "${CIAN}  27)${GRIS} Entra reflector DMR+  - ${AMARILLO}"
-OPCION=`expr substr $pas 1 4`
+OPCION=`expr substr $pas 7 3`
 OPCION=`expr $OPCION + 1`
 linea33port=$OPCION
 letra=p
