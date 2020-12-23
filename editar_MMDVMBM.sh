@@ -408,7 +408,7 @@ echo "${CIAN}     \t\t   ${GRIS}Tipo OLED   - ${CIAN}$tipo_oled"
 #27)reflector DMR+=
 echo -n "${CIAN}  27)${GRIS} Entra reflector DMR+  - ${AMARILLO}"
 OPCION=`expr substr $pas 1 $largo1`
-OPCION=`expr $OPCION + 1`
+OPCION=`expr $OPCION + 4`
 linea33port=$OPCION
 letra=p
 linea22port=$OPCION$letra
@@ -668,11 +668,7 @@ do
                           actualizar=S 
                           case $actualizar in
 			                    [sS]* ) echo ""
-ad="DMR Network"  
-echo "ad $ad"
-echo "pas1 $pas1"
-
-read a
+ad="DMR Network"          
 sudo crudini --set $usuario/MMDVMHost/$DIRECTORIO "${ad}" Password $pas1
 			                    break;;
 			                    [nN]* ) echo ""
