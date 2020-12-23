@@ -663,23 +663,13 @@ done;;
 13) echo ""
 while true
 do
-                          buscar=":"
-                          largo=`expr index $pas $buscar`
-                          echo "   Valor actual del Password: ${AMARILLO}${pas#*=}\33[1;37m"
-           	              read -p '   Introduce Password Personal de Brandmeister = ' pas1
-                          letra=c
-                          if [ $largo = 3 ]
-                          then
-                          linea=`expr substr $pas 1 2`
-                          else
-                          linea=`expr substr $pas 1 3`
-                          fi
-                          linea=$linea$letra
+                          echo "   Valor  actual  del Password: $pasword\33[1;37m"
+           	              read -p '   Password para DMR+=PASSWORD: ' pas1
                           actualizar=S 
                           case $actualizar in
 			                    [sS]* ) echo ""
-			                    pas1=`echo "$pas1" | tr -d '[[:space:]]'`
-                          sed -i "$linea Password=$pas1" $usuario/MMDVMHost/$DIRECTORIO
+ad="DMR Network"          
+sudo crudini --set $usuario/MMDVMHost/$DIRECTORIO "${ad}" Password $pas1
 			                    break;;
 			                    [nN]* ) echo ""
 			                    break;;
