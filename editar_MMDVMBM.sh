@@ -413,6 +413,7 @@ pas=`grep -n '^Password=' $usuario/MMDVMHost/$DIRECTORIO`
 
 echo "pas : $pas"
 OPCION=`expr substr $pas 1 3`
+OPCION=`expr $OPCION + 1`
 echo "OPCION: $OPCION"
 read a
 
