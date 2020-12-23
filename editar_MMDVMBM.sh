@@ -407,7 +407,6 @@ echo "${CIAN}     \t\t   ${GRIS}Tipo OLED   - ${CIAN}$tipo_oled"
 
 #27)reflector DMR+=
 pas=`grep -n '^Password=' $usuario/MMDVMHost/$DIRECTORIO`
-echo "pas : $pas"
 OPCION=`expr substr $pas 1 3` #linea del 197 Password=
 OPCION=`expr $OPCION + 4` #linea Password= + 4 que es la linea 201 Options=
 echo -n "${CIAN}  27)${GRIS} Entra reflector DMR+  - ${AMARILLO}"
