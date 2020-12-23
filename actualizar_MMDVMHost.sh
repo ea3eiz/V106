@@ -55,6 +55,12 @@ MARRON="\33[38;5;138m"
                     sudo ./NextionDriver_ConvertConfig /home/pi/MMDVMHost/MMDVM.ini
                     sleep 2                  
                     
+                    sed -i "5c Duplex=0" /home/pi/MMDVMHost/MMDVM.ini
+                    sed -i "193c Type=Direct" /home/pi/MMDVMHost/MMDVM.ini
+                    sed -i "196c #Local=62032" /home/pi/MMDVMHost/MMDVM.ini
+                    sed -i "197c Password=PASSWORD" /home/pi/MMDVMHost/MMDVM.ini
+
+
                     # Crea los ejecutables para estas aplicaciones 
                     cd /home/pi/MMDVMHost
                     cp MMDVMHost MMDVMBM
