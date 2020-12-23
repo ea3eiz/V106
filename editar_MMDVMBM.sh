@@ -1,5 +1,8 @@
 ﻿#!/bin/bash
 clear
+
+/home/pi/V106/./qt_editor_bm
+
 while true
 do
 clear
