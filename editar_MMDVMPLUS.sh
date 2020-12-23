@@ -4,13 +4,8 @@ while true
 do
 clear
 
-actualizacion=$(awk "NR==1" /home/pi/.config/autostart/actualizacion)
-if [ $actualizacion = 25-10-2020 ]; then
 /home/pi/V106/./qt_editor_dmrplus
-exit;
-else
-echo ""
-fi
+
 # path usuario
 usuario=$(awk "NR==1" /home/pi/.config/autostart/usuario)
 
