@@ -668,7 +668,11 @@ do
                           actualizar=S 
                           case $actualizar in
 			                    [sS]* ) echo ""
-ad="DMR Network"          
+ad="DMR Network"  
+echo "ad $ad"
+echo "pas1 $pas1"
+
+read a
 sudo crudini --set $usuario/MMDVMHost/$DIRECTORIO "${ad}" Password $pas1
 			                    break;;
 			                    [nN]* ) echo ""
