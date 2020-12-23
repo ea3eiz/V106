@@ -410,7 +410,7 @@ echo "${CIAN}     \t\t   ${GRIS}Tipo OLED   - ${CIAN}$tipo_oled"
 
 #echo -n "${CIAN}  13)${GRIS} Modificar Password    - ${AMARILLO}"
 pas=`grep -n '\<Password\>' $usuario/MMDVMHost/$DIRECTORIO`
-pas1=`expr substr $pas 5 30`
+pas1=`expr substr $pas 6 30`
 #echo "$pas1"
 
 
