@@ -417,7 +417,7 @@ pas1=`expr substr $pas 6 30`
 
 
 echo -n "${CIAN}  27)${GRIS} Entra reflector DMR+  - ${AMARILLO}"
-OPCION=`expr substr $pas 1 $largo1`
+OPCION=`expr substr $pas 1 4`
 OPCION=`expr $OPCION + 1`
 linea33port=$OPCION
 letra=p
