@@ -408,11 +408,18 @@ echo "${CIAN}     \t\t   ${GRIS}Tipo OLED   - ${CIAN}$tipo_oled"
 #27)reflector DMR+=
 echo -n "${CIAN}  27)${GRIS} Entra reflector DMR+  - ${AMARILLO}"
 OPCION=`expr substr $pas 1 $largo1`
-OPCION=`expr $OPCION + 4`
+OPCION=`expr $OPCION + 1`
 linea33port=$OPCION
 letra=p
 linea22port=$OPCION$letra
 var300port= sed -n $linea22port  $usuario/MMDVMHost/$DIRECTORIO;
+
+echo "OPCION: $OPCION"
+
+echo "inea22port $linea22port"
+read a
+
+
 
 echo ""
 echo "${CIAN}  28)${AMARILLO} Abrir fichero $DIRECTORIO para hacer cualquier cambio${AMARILLO}"
