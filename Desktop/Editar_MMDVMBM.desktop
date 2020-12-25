@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c "cd /home/pi/V106;sudo sh  editar_MMDVMBM.sh"
+Exec=sh -c "cd /home/pi/V106;./qt_editor_bm"
 Icon=/home/pi/V106/ICONO_EDITAR_BM.png
 Type=Application
 StartupNotify=false
