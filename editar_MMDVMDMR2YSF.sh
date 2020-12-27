@@ -103,7 +103,7 @@ linea2port=$lineaport$letra
 var100port= sed -n $linea2port  $usuario/MMDVMHost/$DIRECTORIO;
 
 echo -n "\33[1;36m  13)\33[0m Modificar Password    - \33[1;33m"
-pas=`grep -n '\<Password\>' $usuario/MMDVMHost/$DIRECTORIO`
+pas=`grep -n '^Password=' $usuario/MMDVMHost/$DIRECTORIO`
 pas1=`expr substr $pas 5 30`
 echo "$pas1"
 
