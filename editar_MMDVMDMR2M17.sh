@@ -333,13 +333,32 @@ letra=c
 linea_sed_oled=$numero_linea$letra
 echo "${CIAN}     \t\tm) ${GRIS}Tipo OLED   - ${AMARILLO}$tipo_oled"
 
-echo -n "\33[1;36m  27)\33[0m Entra reflector DMR+  - \33[1;33m"
-OPCION=`expr substr $pas 1 $largo1`
-OPCION=`expr $OPCION + 1`
+#echo -n "\33[1;36m  27)\33[0m Entra reflector DMR+  - \33[1;33m"
+#OPCION=`expr substr $pas 1 $largo1`
+#OPCION=`expr $OPCION + 1`
+#linea33port=$OPCION
+#letra=p
+#linea22port=$OPCION$letra
+#var300port= sed -n $linea22port  $usuario/MMDVMHost/$DIRECTORIO;
+
+
+
+
+#27)reflector DMR+=
+pas=`grep -n '^Password=' $usuario/MMDVMHost/$DIRECTORIO`
+OPCION=`expr substr $pas 1 3` #linea del 197 Password=
+OPCION=`expr $OPCION + 4` #linea Password= + 4 que es la linea 201 Options=
+echo -n "${CIAN}  27)${GRIS} Entra reflector DMR+  - ${AMARILLO}"
 linea33port=$OPCION
 letra=p
 linea22port=$OPCION$letra
 var300port= sed -n $linea22port  $usuario/MMDVMHost/$DIRECTORIO;
+
+
+
+
+
+
 
 echo ""
 echo "\33[1;36m  28)\33[1;33m Abrir fichero $DIRECTORIO para hacer cualquier cambio\33[1;33m"
