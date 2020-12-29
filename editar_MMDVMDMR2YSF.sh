@@ -107,6 +107,7 @@ pas=`grep -n '^Password=' $usuario/MMDVMHost/$DIRECTORIO`
 pas1=`expr substr $pas 5 30`
 echo "$pas1"
 
+
 echo -n "\33[1;36m  14)\33[0m Modificar TXInvert    - \33[1;33m"
 txinv=`grep -n '\<TXInvert\>' $usuario/MMDVMHost/$DIRECTORIO`
 txinv1=`expr substr $txinv 4 30`
