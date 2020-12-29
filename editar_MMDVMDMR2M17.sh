@@ -1104,13 +1104,13 @@ done;;
 h) echo ""
 while true
 do
-                          actualizar=S 
-                          case $actualizar in
-			                    [sS]* ) echo ""
-                          sh Puertos_Nextion_DMR2YSF.sh
-			                    break;;
-			                    [nN]* ) echo ""
-			                    break;;
+                        actualizar=S 
+                        case $actualizar in
+			      [sS]* ) echo ""
+                        sh Puertos_Nextion_DMR2M17.sh
+			      break;;
+			      [nN]* ) echo ""
+			      break;;
 esac
 done;;
 i) echo ""
