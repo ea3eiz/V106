@@ -1,5 +1,5 @@
 #!/bin/bash
-
+/home/pi/V106/./qt_info_bm
 DIRECTORIO="MMDVMBM.ini"
 #linea_info_memoria="313c" #Linea del MMDVM donde guardamos el nombre de la memoria
 
