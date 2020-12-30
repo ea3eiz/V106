@@ -40,8 +40,8 @@ echo " *************************************************************************
 echo "                               ABRIENDO DMR+                              "
 echo " **************************************************************************"
 sleep 2
-#/home/pi/V106/./qt_ejecuta_dmrplus & sudo ./MMDVMPLUS MMDVMPLUS.ini
-sudo ./MMDVMPLUS MMDVMPLUS.ini
+/home/pi/V106/./qt_ejecuta_dmrplus & sudo ./MMDVMPLUS MMDVMPLUS.ini
+#sudo ./MMDVMPLUS MMDVMPLUS.ini
 cd /home/pi/Desktop
 sudo cp Abrir_MMDVMPLUS.desktop /home/pi
 sudo sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version;lxterminal --geometry=77x18 -e sudo sh ejecutar_DMRPLUS.sh'" /home/pi/Abrir_MMDVMPLUS.desktop
