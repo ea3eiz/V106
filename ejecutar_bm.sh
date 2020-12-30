@@ -40,8 +40,8 @@ echo " *************************************************************************
 echo "                          ABRIENDO BRANDMEISTER                            "
 echo " **************************************************************************"
 sleep 2
-#/home/pi/V106/./qt_ejecuta_bm & sudo ./MMDVMBM MMDVMBM.ini
-sudo ./MMDVMBM MMDVMBM.ini
+/home/pi/V106/./qt_info_bm & sudo ./MMDVMBM MMDVMBM.ini
+#sudo ./MMDVMBM MMDVMBM.ini
 cd /home/pi/Desktop
 sudo cp Abrir_MMDVMBM.desktop /home/pi
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; lxterminal --geometry=77x18 -e sudo sh ejecutar_bm.sh'" /home/pi/Abrir_MMDVMBM.desktop
