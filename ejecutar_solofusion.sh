@@ -35,9 +35,9 @@ sudo cp Abrir_solofusion.desktop /home/pi/Desktop
 sudo rm /home/pi/Abrir_solofusion.desktop
 
 echo "\33[38;5;138m"
-echo " ******************************************************************************"
-echo " ************************    ABRIENDO SOLO FUSION    **************************"
-echo " ******************************************************************************"
+echo " **************************************************************************"
+echo "                          ABRIENDO SOLO FUSION                             "
+echo " **************************************************************************"
 sleep 2
 cd /home/pi/YSFClients/YSFGateway
 sudo lxterminal --geometry=77x12 -e ./YSFGateway YSFGateway.ini & 
