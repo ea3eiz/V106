@@ -35,8 +35,8 @@ MARRON="\33[38;5;138m"
                     cp /home/pi/MMDVMHost/MMDVMDMRGateway.ini /home/pi
                     cd /home/pi
                     sudo rm -r /home/pi/MMDVMHost
-                    git clone https://github.com/g4klx/MMDVMHost
-                    #git clone https://github.com/ea3eiz/MMDVMHost
+                    #git clone https://github.com/g4klx/MMDVMHost
+                    git clone https://github.com/ea3eiz/MMDVMHost_01-01-2021
                     cd /home/pi/MMDVMHost
 
                     HOY=$(date +%Y%m%d)
@@ -102,6 +102,7 @@ MARRON="\33[38;5;138m"
                     cp MMDVM.ini MMDVMFUSION.ini_copia2
                     cp MMDVM.ini MMDVMFUSION.ini_copia3  
 
+       
                     cp MMDVM.ini MMDVMESPECIAL.ini
                     cp MMDVM.ini MMDVMESPECIAL.ini_copia
                     cp MMDVM.ini MMDVMESPECIAL.ini_copia2
