@@ -34,9 +34,14 @@ MARRON="\33[38;5;138m"
                     # guarda el fichero MMDVMDMRGateway.ini para recuperarlo después de la actualización
                     cp /home/pi/MMDVMHost/MMDVMDMRGateway.ini /home/pi
                     cd /home/pi
-                    sudo rm -r /home/pi/MMDVMHost
+                    mv MMDVMHost MMDVMHost_OLD
                     #git clone https://github.com/g4klx/MMDVMHost
                     git clone https://github.com/ea3eiz/MMDVMHost_01-01-2021
+
+                    mv MMDVMHost_01-01-2021 MMDVMHost
+echo "pausa"
+read a
+
                     cd /home/pi/MMDVMHost
 
                     HOY=$(date +%Y%m%d)
