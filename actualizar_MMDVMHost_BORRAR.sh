@@ -1,6 +1,5 @@
-﻿#!/bin/bash
-#/home/pi/V105/./qt_mmdvmhost_off
-#exit;
+﻿E567U-   452#!/bin/bash
+# -*- ENCODING: UTF-8 -*-
 clear
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 #Colores
@@ -36,14 +35,7 @@ MARRON="\33[38;5;138m"
                     cp /home/pi/MMDVMHost/MMDVMDMRGateway.ini /home/pi
                     cd /home/pi
                     sudo rm -r /home/pi/MMDVMHost
-                    sudo apt-get install build-essential git-core libi2c-dev i2c-tools lm-sensors
                     git clone https://github.com/g4klx/MMDVMHost
-                    cd MMDVMHost
-                    git clone https://github.com/hallard/ArduiPi_OLED
-                    cd ArduiPi_OLED
-                    sudo make clean
-                    sudo make
-                                        
                     #git clone https://github.com/ea3eiz/MMDVMHost
                     cd /home/pi/MMDVMHost
 
@@ -53,25 +45,22 @@ MARRON="\33[38;5;138m"
                     HOY1=$HOY$PI
                     PUNTO=";"   
                     
-                    sed -i "22c $FIJA$HOY1$PUNTO" /home/pi/MMDVMHost/Version.h
-
-
-
-# cp /home/pi/$SCRIPTS_version/YSFControl.cpp /home/pi/MMDVMHost
-# cp /home/pi/$SCRIPTS_version/MMDVMHost.cpp /home/pi/MMDVMHost
-# cp /home/pi/$SCRIPTS_version/Conf.cpp /home/pi/MMDVMHost
-# cp /home/pi/$SCRIPTS_version/Conf.h /home/pi/MMDVMHost
-# cp /home/pi/$SCRIPTS_version/YSFControl.h /home/pi/MMDVMHost
-
+                    #sed -i "22c $FIJA$HOY1$PUNTO" /home/pi/MMDVMHost/Version.h
 
                     make clean
-                    make -f Makefile.Pi.OLED
+                    make
 
                     #Instala la secion [NextionDriver] en todos los .ini y todas sus memorias
                     cd /home/pi/NextionDriverInstaller
                     sudo ./NextionDriver_ConvertConfig /home/pi/MMDVMHost/MMDVM.ini
                     sleep 2                  
                     
+                    sed -i "5c Duplex=0" /home/pi/MMDVMHost/MMDVM.ini
+                    sed -i "193c Type=Direct" /home/pi/MMDVMHost/MMDVM.ini
+                    sed -i "196c #Local=62032" /home/pi/MMDVMHost/MMDVM.ini
+                    sed -i "197c Password=PASSWORD" /home/pi/MMDVMHost/MMDVM.ini
+
+
                     # Crea los ejecutables para estas aplicaciones 
                     cd /home/pi/MMDVMHost
                     cp MMDVMHost MMDVMBM
@@ -125,6 +114,8 @@ MARRON="\33[38;5;138m"
                     cp MMDVM.ini MMDVMDMR2NXDN.ini
 
                     cp MMDVM.ini MMDVMNXDN.ini
+
+                    cp MMDVM.ini MMDVMDMR2M17.ini
 
                     # recoge el fichero MMDVMDMRGateway.ini para ponerlo en el MMDVMHost
                     cp /home/pi/MMDVMDMRGateway.ini /home/pi/MMDVMHost
