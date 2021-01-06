@@ -348,7 +348,7 @@ buscar=":"
 largo_linea=`expr index $var2 $buscar` #comprueba el largo incluyendo los dos puntos (:)
 largo_linea=`expr $largo_linea - 1` #comprueba el largo quitando los dos puntos (:)
 numero_linea=`expr substr $var2 1 $largo_linea` # recoge el numero de linea (138)
-numero_linea=`expr $numero_linea + 7` # y le suma uno qudando coomo: (143)
+numero_linea_local=`expr $numero_linea + 7` # y le suma uno qudando coomo: (143)
 letra=p
 numero_linea_p=$numero_linea$letra #crea 196p
 echo -n "\33[1;36m  29)\33[0m Local port            - ${VERDE}"
@@ -1315,7 +1315,7 @@ do
                           case $actualizar in
                           [sS]* ) echo ""
                           letrac=c
-                          linea=$numero_linea$letrac
+                          linea=$numero_linea_local$letrac
                           sed -i "$linea Local=$dmrac1" $usuario/MMDVMHost/$DIRECTORIO
 
                           break;;
