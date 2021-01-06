@@ -348,7 +348,7 @@ buscar=":"
 largo_linea=`expr index $var2 $buscar` #comprueba el largo incluyendo los dos puntos (:)
 largo_linea=`expr $largo_linea - 1` #comprueba el largo quitando los dos puntos (:)
 numero_linea=`expr substr $var2 1 $largo_linea` # recoge el numero de linea (138)
-numero_linea=`expr $numero_linea + 7` # y le suma uno qudando coomo: (143)
+numero_linea_local=`expr $numero_linea + 7` # y le suma uno qudando coomo: (143)
 letra=p
 numero_linea_p=$numero_linea$letra #crea 196p
 echo -n "\33[1;36m  29)\33[0m Local port            - ${VERDE}"
@@ -1308,14 +1308,14 @@ done;;
 29) echo ""
 while true
 do
-                          echo "Valor actual Local \33[1;33m${Local#*=}\33[1;37m"
+                          echo "Valor actual Local \33[1;33m${presenta_valor#*=}\33[1;37m"
                           read -p 'Introducir el puerto: 62032  '   dmrac1
                           actualizar=S 
                           case $actualizar in
                           [sS]* ) echo ""
                           letrac=c
                           linea=$numero_linea$letrac
-                          sed -i "$linea_sed_29 Local=$dmrac1" $usuario/MMDVMHost/$DIRECTORIO
+                          sed -i "$numero_linea_local Local=$dmrac1" $usuario/MMDVMHost/$DIRECTORIO
 
                           break;;
                           [nN]* ) echo ""
