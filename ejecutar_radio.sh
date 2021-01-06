@@ -36,9 +36,9 @@ sudo rm /home/pi/Abrir_Radio.desktop
 cd /home/pi/MMDVMHost
 clear
 echo "\33[1;36m"
-echo " ******************************************************************************"
-echo " ***************************    ABRIENDO RADIO    *****************************"
-echo " ******************************************************************************"
+echo " **************************************************************************"
+echo "                             ABRIENDO RADIO                                "
+echo " **************************************************************************"
 sleep 2
 #/home/pi/V106/./qt_ejecuta_radio & sudo ./MMDVMHost MMDVM.ini
 /home/pi/V106/./qt_info_radio & sudo ./MMDVMHost MMDVM.ini
