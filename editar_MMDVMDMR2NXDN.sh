@@ -1314,8 +1314,8 @@ do
                           case $actualizar in
                           [sS]* ) echo ""
                           letrac=c
-                          linea=$numero_linea$letrac
-                          sed -i "$numero_linea_local Local=$dmrac1" $usuario/MMDVMHost/$DIRECTORIO
+                          linea=$numero_linea_local$letrac
+                          sed -i "$linea Local=$dmrac1" $usuario/MMDVMHost/$DIRECTORIO
 
                           break;;
                           [nN]* ) echo ""
