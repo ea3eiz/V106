@@ -557,8 +557,8 @@ do
                           actualizar=S 
                           case $actualizar in
                           [sS]* ) echo ""
-#sh Puertos_MMDVMDMR2YSF.sh
-/home/pi/V106/./qt_puertos_modem_dmr2ysf
+sh Puertos_MMDVMDMR2YSF.sh
+#/home/pi/V106/./qt_puertos_modem_dmr2ysf
                           break;;
                           [nN]* ) echo ""
                           break;;
