@@ -1308,7 +1308,7 @@ done;;
 29) echo ""
 while true
 do
-                          echo "Valor actual Local \33[1;33m${presenta_valor#*=}\33[1;37m"
+                          echo  "   Valor actual $presenta_valor${AMARILLO}"
                           read -p 'Introducir el puerto: 62032  '   dmrac1
                           actualizar=S 
                           case $actualizar in
