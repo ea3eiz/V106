@@ -1333,7 +1333,7 @@ do
                           break;;
 esac
 done;;
-31) echo ""
+31bloqueado) echo ""
 while true
 do
                           echo  "Valor actual Sala $sala"
@@ -1347,7 +1347,7 @@ do
                           break;;
 esac
 done;;
-32) echo ""
+32bloqueado) echo ""
 while true
 do
                           echo  "Valor actual $Inactiv"
