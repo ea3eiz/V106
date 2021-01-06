@@ -46,9 +46,9 @@ sudo rm /home/pi/Abrir_ESPECIAL.desktop
 
 cd /home/pi/MMDVMHost
 echo "${AMARILLO}"
-echo " ******************************************************************************"
-echo " **************************    ABRIENDO ESPECIAL    ***************************"
-echo " ******************************************************************************"
+echo " **************************************************************************"
+echo "                           ABRIENDO ESPECIAL                               "
+echo " **************************************************************************"
 sleep 2
 #/home/pi/V106/./qt_ejecuta_especial & sudo ./MMDVMESPECIAL MMDVMESPECIAL.ini
 sudo ./MMDVMESPECIAL MMDVMESPECIAL.ini
