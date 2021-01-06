@@ -329,9 +329,11 @@ letra=c
 linea_sed_oled=$numero_linea$letra
 echo "${CIAN}     \t\tm) ${GRIS}Tipo OLED   - ${AMARILLO}$tipo_oled"
 
-echo -n "\33[1;36m  27)\33[0m Entra reflector DMR+  - \33[1;33m"
-OPCION=`expr substr $pas 1 $largo1`
-OPCION=`expr $OPCION + 1`
+#27)reflector DMR+=
+pas=`grep -n '^Password=' $usuario/MMDVMHost/$DIRECTORIO`
+OPCION=`expr substr $pas 1 3` #linea del 197 Password=
+OPCION=`expr $OPCION + 4` #linea Password= + 4 que es la linea 201 Options=
+echo -n "${CIAN}  27)${GRIS} Entra reflector DMR+  - ${AMARILLO}"
 linea33port=$OPCION
 letra=p
 linea22port=$OPCION$letra
@@ -339,18 +341,19 @@ var300port= sed -n $linea22port  $usuario/MMDVMHost/$DIRECTORIO;
 
 echo "\33[1;36m  28)${BLANCO} Abrir fichero $DIRECTORIO para hacer cualquier cambio\33[1;33m"
 
-echo -n "\33[1;36m  29)${GRIS} Local port            - ${VERDE}"
+echo ""
 var1=`grep -n "\[DMR Network\]" $usuario/MMDVMHost/$DIRECTORIO` # devuelve ejem: 138:Enable=1
-var=`echo "$var1" | tr -d '[[:space:]]'`
+var2=`echo "$var1" | tr -d '[[:space:]]'`
 buscar=":"
-largo_linea=`expr index $var $buscar`
-largo_linea=`expr $largo_linea - 1`
-numero_linea=`expr substr $var 1 $largo_linea`
-numero_linea=`expr $numero_linea + 5`
-Local=$(awk "NR==$numero_linea" $usuario/MMDVMHost/$DIRECTORIO)
-letra=c
-linea_sed_29=$numero_linea$letra
-echo "$Local"
+largo_linea=`expr index $var2 $buscar` #comprueba el largo incluyendo los dos puntos (:)
+largo_linea=`expr $largo_linea - 1` #comprueba el largo quitando los dos puntos (:)
+numero_linea=`expr substr $var2 1 $largo_linea` # recoge el numero de linea (138)
+numero_linea=`expr $numero_linea + 7` # y le suma uno qudando coomo: (143)
+letra=p
+numero_linea_p=$numero_linea$letra #crea 196p
+echo -n "\33[1;36m  29)\33[0m Local port            - ${VERDE}"
+presentar_valor= sed -n $numero_linea_p  $usuario/MMDVMHost/$DIRECTORIO; #presenta el valor en pantalla
+echo ""
 
 echo ""
 var1=`grep -n "\[DMR Network\]" $usuario/DMR2NXDN/DMR2NXDN.ini` 
