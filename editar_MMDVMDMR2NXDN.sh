@@ -355,6 +355,9 @@ echo -n "\33[1;36m  29)\33[0m Local port            - ${VERDE}"
 presentar_valor_local= sed -n $numero_linea_p  $usuario/MMDVMHost/$DIRECTORIO; #presenta el valor en pantalla
 echo ""
 
+echo "local: $presentar_valor_local"
+read a
+
 echo ""
 var1=`grep -n "\[DMR Network\]" $usuario/DMR2NXDN/DMR2NXDN.ini` 
 var=`echo "$var1" | tr -d '[[:space:]]'`
