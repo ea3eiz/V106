@@ -410,28 +410,28 @@ numero_linea_daemon=$numero_linea$letrac
 contenido_daemon=$(awk "NR==$numero_linea" $usuario/NXDNClients/NXDNGateway/NXDNGateway.ini)
 echo "$contenido_daemon"
 
-echo -n " ${CIAN} 31)${GRIS} Sala NXDN a conectar  - ${VERDE}"
-var=`grep -n -m 1 '\<Startup\>' $usuario/NXDNClients/NXDNGateway/NXDNGateway.ini`
-buscar=":"
-largo_linea=`expr index $var $buscar`
-largo_linea=`expr $largo_linea - 1`
-numero_linea=`expr substr $var 1 $largo_linea`
-sala=$(awk "NR==$numero_linea" $usuario/NXDNClients/NXDNGateway/NXDNGateway.ini)
-letra=c
-linea_sed_31=$numero_linea$letra
-echo "$sala"
-
-echo -n " ${CIAN} 32)${GRIS} InactivityTimeout     - ${VERDE}"
-var=`grep -n -m 1 '\<InactivityTimeout\>' $usuario/NXDNClients/NXDNGateway/NXDNGateway.ini`
-buscar=":"
-largo_linea=`expr index $var $buscar`
-largo_linea=`expr $largo_linea - 1`
-numero_linea=`expr substr $var 1 $largo_linea`
-Inact=$(awk "NR==$numero_linea" $usuario/NXDNClients/NXDNGateway/NXDNGateway.ini)
-letra=c
-linea_sed_32=$numero_linea$letra
-echo "$Inact"
-echo ""
+#echo -n " ${CIAN} 31)${GRIS} Sala NXDN a conectar  - ${VERDE}"
+#var=`grep -n -m 1 '\<Startup\>' $usuario/NXDNClients/NXDNGateway/NXDNGateway.ini`
+#buscar=":"
+#largo_linea=`expr index $var $buscar`
+#largo_linea=`expr $largo_linea - 1`
+#numero_linea=`expr substr $var 1 $largo_linea`
+#sala=$(awk "NR==$numero_linea" $usuario/NXDNClients/NXDNGateway/NXDNGateway.ini)
+#letra=c
+#linea_sed_31=$numero_linea$letra
+#echo "$sala"
+#
+#echo -n " ${CIAN} 32)${GRIS} InactivityTimeout     - ${VERDE}"
+#var=`grep -n -m 1 '\<InactivityTimeout\>' $usuario/NXDNClients/NXDNGateway/NXDNGateway.ini`
+#buscar=":"
+#largo_linea=`expr index $var $buscar`
+#largo_linea=`expr $largo_linea - 1`
+#numero_linea=`expr substr $var 1 $largo_linea`
+#Inact=$(awk "NR==$numero_linea" $usuario/NXDNClients/NXDNGateway/NXDNGateway.ini)
+#letra=c
+#linea_sed_32=$numero_linea$letra
+#echo "$Inact"
+#echo ""
 
 echo "\33[1;36m  33)${AMARILLO} Actualizar listado NXDNHosts.txt"
 
