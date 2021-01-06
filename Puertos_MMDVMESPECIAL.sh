@@ -45,7 +45,7 @@ CIAN="\033[1;36m"
 GRIS="\033[0m"
 MARRON="\33[38;5;138m"
 
-# cuando hice este editor la linea es la 46
+# cuando hice este editor la linea es la 48
 mode=`grep -n -m 1 "^Port=" $usuario/MMDVMHost/$DIRECTORIO`
 buscar=":"
 caracteres=`expr index $mode $buscar`
@@ -53,8 +53,6 @@ caracteres_linea=`expr $caracteres - 1`
 numero_linea_port=`expr substr $mode 1 $caracteres_linea`
 letra=c
 numero_linea_port=$numero_linea_port$letra
-echo "numero linea port: $numero_linea_port"
-read activada
 
 echo "${VERDE}"
 echo "   ***************************************************************************************"

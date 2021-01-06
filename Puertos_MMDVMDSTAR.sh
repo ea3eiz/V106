@@ -45,7 +45,7 @@ CIAN="\033[1;36m"
 GRIS="\033[0m"
 MARRON="\33[38;5;138m"
 
-# cuando hice este editor la linea es la 46
+# cuando hice este editor la linea es la 48
 mode=`grep -n -m 1 "^Port=" $usuario/MMDVMHost/$DIRECTORIO`
 buscar=":"
 caracteres=`expr index $mode $buscar`
