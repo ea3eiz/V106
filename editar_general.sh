@@ -146,6 +146,10 @@ echo "Valor actual Indicativo: \33[1;33m${ind#*=}\33[1;37m"
                         #iNDICATIVO DMRGATEWAY
                         sed -i "2c Callsign=$tu_indicativo" /home/pi/MMDVMHost/MMDVMDMRGateway.ini
 
+                        #iNDICATIVO DMR2M17
+                        sed -i "2c Callsign=$tu_indicativo" /home/pi/DMR2M17/DMR2M17.ini
+                        sed -i "2c Callsign=$tu_indicativo" /home/pi/MMDVMHost/MMDVMDMR2M17.ini
+
                         #iNDICATIVO PLUS
                         sed -i "2c Callsign=$tu_indicativo" /home/pi/MMDVMHost/MMDVMPLUS.ini
                         sed -i "2c Callsign=$tu_indicativo" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia
@@ -267,6 +271,10 @@ echo "Valor actual del RXFrequency: \33[1;33m${rxf#*=}\33[1;37m"
             sed -i "13c RXFrequency=$rxtxfrecuencia" /home/pi/MMDVMHost/MMDVMDMRGateway.ini
             sed -i "14c TXFrequency=$rxtxfrecuencia" /home/pi/MMDVMHost/MMDVMDMRGateway.ini           
             
+            #TX Y RX FRECUENCIA DMR2M17
+            sed -i "13c RXFrequency=$rxtxfrecuencia" /home/pi/MMDVMHost/MMDVMDMR2M17.ini
+            sed -i "14c TXFrequency=$rxtxfrecuencia" /home/pi/MMDVMHost/MMDVMDMR2M17.ini
+
             #DMR+
             sed -i "13c RXFrequency=$rxtxfrecuencia" /home/pi/MMDVMHost/MMDVMPLUS.ini
             sed -i "13c RXFrequency=$rxtxfrecuencia" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia
@@ -395,7 +403,10 @@ echo "Valor actual del TXFrequency: \33[1;33m${txf#*=}\33[1;37m"
 
             #TX FRECUENCIA DMRGATEWAY
             sed -i "14c TXFrequency=$frecuenciatx" /home/pi/MMDVMHost/MMDVMDMRGateway.ini           
-                        
+
+            #TX FRECUENCIA DMR2M17
+            sed -i "14c TXFrequency=$frecuenciatx" /home/pi/MMDVMHost/MMDVMDMR2M17.ini           
+
             #DMR+
             sed -i "14c TXFrequency=$frecuenciatx" /home/pi/MMDVMHost/MMDVMPLUS.ini
             sed -i "14c TXFrequency=$frecuenciatx" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia
@@ -466,7 +477,10 @@ do
             #LOCATION  DMRGATEWAY
             sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMDMRGateway.ini
             sed -i "33c Location=$tu_ciudad" /home/pi/DMRGateway/DMRGateway.ini
-            
+
+            #LOCATION DMR2M17
+            sed -i "19c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMDMR2M17.ini
+
             #DMR+
             sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMPLUS.ini
             sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia
@@ -556,7 +570,10 @@ echo "Valor de  la  URL   Web: \33[1;33m${url#*=}\33[1;37m"
             #LURL  DMRGATEWAY
             sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVMDMRGateway.ini
             sed -i "35c URL=$tu_url" /home/pi/DMRGateway/DMRGateway.ini
-            
+
+            #URL DMR2M17
+            sed -i "21c URL=$tu_url" /home/pi/MMDVMHost/MMDVMDMR2M17.ini
+
             #DMR+
             sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVMPLUS.ini
             sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia
@@ -633,6 +650,10 @@ echo "Valor  actual  del Id: \33[1;33m${idd#*=}\33[1;37m"
             #ID DMRGATEWAY
             id_corta=`expr substr $tu_id 1 7`
             sed -i "3c Id=$id_corta" /home/pi/MMDVMHost/MMDVMDMRGateway.ini
+
+            #ID DMR2M17
+            sed -i "12c Id=$tu_id" /home/pi/DMR2M17/DMR2M17.ini
+            sed -i "3c Id=$tu_id" /home/pi/MMDVMHost/MMDVMDMR2M17.ini
 
             #DMR+
             sed -i "3c Id=$tu_id" /home/pi/MMDVMHost/MMDVMPLUS.ini
@@ -715,6 +736,8 @@ do
                       case $actualizar in
                       [sS]* ) echo ""
                       sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/TODOS_LOS_INIS.ini
+            #BALIZA DMR2M17
+            sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/MMDVMDMR2M17.ini
 
             #DMR+
             sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/MMDVMPLUS.ini
@@ -783,6 +806,10 @@ echo "Valor actual del RFModeHang = : \33[1;33m${modehang1#*=}\33[1;37m"
                     [sS]* ) echo ""
                     V=`echo "$V" | tr -d '[[:space:]]'`       
                           sed -i "$linea RFModeHang=$rfmodehang" /home/pi/MMDVMHost/TODOS_LOS_INIS.ini 
+
+            #RFMODEHANG DMR2M17
+            sed -i "7c RFModeHang=$rfmodehang" /home/pi/MMDVMHost/MMDVMDMR2M17.ini 
+
             #DMR+
             sed -i "7c RFModeHang=$rfmodehang" /home/pi/MMDVMHost/MMDVMPLUS.ini
             sed -i "7c RFModeHang=$rfmodehang" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia
@@ -850,6 +877,9 @@ echo "Valor actual del Timeout = : \33[1;33m${timeo1#*=}\33[1;37m"
                     [sS]* ) echo ""
                     V=`echo "$V" | tr -d '[[:space:]]'`       
                           sed -i "$linea Timeout=$timeou" /home/pi/MMDVMHost/TODOS_LOS_INIS.ini 
+            #TIMEOUT DMR2M17
+            sed -i "4c Timeout=$timeou" /home/pi/MMDVMHost/MMDVMDMR2M17.ini
+
             #DMR+
             sed -i "4c Timeout=$timeou" /home/pi/MMDVMHost/MMDVMPLUS.ini
             sed -i "4c Timeout=$timeou" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia
@@ -912,6 +942,9 @@ echo "Valor actual del Duplex: \33[1;33m${dup#*=}\33[1;37m"
             
             #DUPLEX DMRGATEWAY
             sed -i "5c Duplex=$duplex" /home/pi/MMDVMHost/MMDVMDMRGateway.ini
+
+            #DUPLEX DMR2M17
+            sed -i "5c Duplex=$duplex" /home/pi/MMDVMHost/MMDVMDMR2M17.ini            
             
             #DMR+
             sed -i "5c Duplex=$duplex" /home/pi/MMDVMHost/MMDVMPLUS.ini
@@ -971,6 +1004,10 @@ echo "Valor de la Latitud: \33[1;33m${lat#*=}\33[1;37m"
                           case $actualizar in
 			  [sS]* ) echo ""
                           sed -i "$linea Latitude=$tu_latitud" /home/pi/MMDVMHost/TODOS_LOS_INIS.ini
+
+            #LATITUDE DMR2M17
+            sed -i "16c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMDMR2M17.ini
+
             #DMR+
             sed -i "17c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMPLUS.ini
             sed -i "17c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia
@@ -1051,6 +1088,9 @@ echo "Valor de la Longitud: \33[1;33m${long#*=}\33[1;37m"
 			  [sS]* ) echo ""
                           sed -i "$linea Longitude=$tu_longitud" /home/pi/MMDVMHost/TODOS_LOS_INIS.ini
 
+            #LONGITUDE DMR2M17
+            sed -i "17c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMDMR2M17.ini                          
+
             #DMR+
             sed -i "18c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMPLUS.ini
             sed -i "18c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia
@@ -1126,6 +1166,10 @@ do
                           #Convierte de minúsculas a Mayúsculas
                           module=`echo "$module" | tr [:lower:] [:upper:]`
                           sed -i "$linea_sed_MODULE Module=$module" /home/pi/MMDVMHost/TODOS_LOS_INIS.ini
+
+            #MODULE DMR2M17
+            sed -i "$linea_sed_MODULE Module=$module" /home/pi/MMDVMHost/MMDVMDMR2M17.ini
+
             #DMR+
             sed -i "$linea_sed_MODULE Module=$module" /home/pi/MMDVMHost/MMDVMPLUS.ini
             sed -i "$linea_sed_MODULE Module=$module" /home/pi/MMDVMHost/MMDVMPLUS.ini_copia
