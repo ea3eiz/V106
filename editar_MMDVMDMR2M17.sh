@@ -1050,7 +1050,7 @@ fi
 buscar=":"
 largo=`expr index $modehang $buscar`
 echo "Valor actual del RFModeHang = : \33[1;33m${modehang1#*=}\33[1;37m"
-                      read -p 'Introduce el valor para RFModeHang (optimo=3): ' V
+                      read -p 'Introduce el valor para RFModeHang (optimo=5): ' V
                           letra=c
                           if [ $largo = 2 ]
                           then
