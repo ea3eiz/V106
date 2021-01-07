@@ -168,6 +168,7 @@ dstar=`sed -n '2p'  $usuario/MMDVMHost/MMDVMDSTAR.ini`
 fusion=`sed -n '2p'  $usuario/MMDVMHost/MMDVMFUSION.ini`
 frbm=`sed -n '13p'  $usuario/MMDVMHost/MMDVMBM.ini`
 frplus=`sed -n '13p'  $usuario/MMDVMHost/MMDVMPLUS.ini`
+sleep 3
 sudo wget -post-data http://associacioader.com/prueba1.php?callBM=$bm'&'callPLUS=$plus'&'masterBM=$masterbm'&'masterPLUS=$masterplus'&'radio=$masterradio'&'version=$version'&'DMR2YSF=$masterDMR2YSF'&'YSFGateway=$masterYSFGateway                        
 frecuencia=$(awk "NR==1" $usuario/INFO_RXF)
 cd $usuario/Desktop/
