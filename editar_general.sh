@@ -479,7 +479,7 @@ do
             sed -i "33c Location=$tu_ciudad" /home/pi/DMRGateway/DMRGateway.ini
 
             #LOCATION DMR2M17
-            sed -i "19c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMDMR2M17.ini
+            sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMDMR2M17.ini
 
             #DMR+
             sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMPLUS.ini
@@ -572,7 +572,7 @@ echo "Valor de  la  URL   Web: \33[1;33m${url#*=}\33[1;37m"
             sed -i "35c URL=$tu_url" /home/pi/DMRGateway/DMRGateway.ini
 
             #URL DMR2M17
-            sed -i "21c URL=$tu_url" /home/pi/MMDVMHost/MMDVMDMR2M17.ini
+            sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVMDMR2M17.ini
 
             #DMR+
             sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVMPLUS.ini
@@ -1006,7 +1006,7 @@ echo "Valor de la Latitud: \33[1;33m${lat#*=}\33[1;37m"
                           sed -i "$linea Latitude=$tu_latitud" /home/pi/MMDVMHost/TODOS_LOS_INIS.ini
 
             #LATITUDE DMR2M17
-            sed -i "16c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMDMR2M17.ini
+            sed -i "17c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMDMR2M17.ini
 
             #DMR+
             sed -i "17c Latitude=$tu_latitud" /home/pi/MMDVMHost/MMDVMPLUS.ini
@@ -1089,7 +1089,7 @@ echo "Valor de la Longitud: \33[1;33m${long#*=}\33[1;37m"
                           sed -i "$linea Longitude=$tu_longitud" /home/pi/MMDVMHost/TODOS_LOS_INIS.ini
 
             #LONGITUDE DMR2M17
-            sed -i "17c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMDMR2M17.ini                          
+            sed -i "18c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMDMR2M17.ini                          
 
             #DMR+
             sed -i "18c Longitude=$tu_longitud" /home/pi/MMDVMHost/MMDVMPLUS.ini
