@@ -79,7 +79,7 @@ if ($sistema=="FCS")
 {
     $sistema="FCS";
     $OPTION="";
-    $sala_fcs = exec("sed -n '42p' /home/pi/YSFClients/YSFGateway/YSFGateway.ini");
+    $sala_fcs = exec("sed -n '41p' /home/pi/YSFClients/YSFGateway/YSFGateway.ini");
     $sala_fcs = substr("$sala_fcs", 8, 15);  
     $IPCS22=$sala_fcs;
 }
@@ -158,7 +158,7 @@ $sala_nxdn = substr("$sala_nxdn", 0, 5);
 $selfcare = exec("sed -n '74p' /opt/MMDVM_Bridge/brandmeister_esp.ini");
 $selfcare = substr("$selfcare", 9, 20);
 
-$sala_fcs = exec("sed -n '42p' /home/pi/YSFClients/YSFGateway/YSFGateway.ini");
+$sala_fcs = exec("sed -n '41p' /home/pi/YSFClients/YSFGateway/YSFGateway.ini");
 $sala_fcs = substr("$sala_fcs", 8, 15);
 
 //COMPROBAMOS SI EL DVSWITCH ESTÁ ACTIVADO EN EL ESCRITORIO DE LA IMAGEN V10
@@ -439,7 +439,7 @@ h6{
 <div class="row">
 
     <div class="col-md-4 version">
-        <span>Dvswitch IMAGEN ADER V-<?php echo $version_dvswitch;?></span>       
+        <span>Dvswitch Versión: <?php echo $version_dvswitch;?></span>       
     </div>
 <?php
 if ($sistema=="ESPECIAL"){
