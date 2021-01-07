@@ -131,6 +131,8 @@ MARRON="\33[38;5;138m"
 
                     cp MMDVM.ini MMDVMNXDN.ini
 
+                    cp MMDVM.ini MMDVMDMR2M17.ini
+
                     # recoge el fichero MMDVMDMRGateway.ini para ponerlo en el MMDVMHost
                     cp /home/pi/MMDVMDMRGateway.ini /home/pi/MMDVMHost
 
