@@ -19,12 +19,16 @@ fi
 # path usuario
 usuario="/home/pi"
 usuario="$usuario"
-SCRIPTS_version="V106"
+SCRIPTS_version="V105"
 actualizacion=$(awk "NR==1" /home/pi/.config/autostart/actualizacion)
-
-version="V106-"
+SCRIPTS_version="V105"
+if [ -d /home/pi/DMR2M17 ]
+then
+version="V105-DMR2M17"
+else
+version="V105-"
 version=$version$actualizacion
-
+fi
 #pone todos los status de inicio en OFF
 sed -i "1c D-STAR=OFF" $usuario/status.ini
 sed -i "2c BlueDV=OFF" $usuario/status.ini
