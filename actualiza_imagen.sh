@@ -25,10 +25,7 @@ MARRON="\33[38;5;138m"
                         cd $usuario/AUTOARRANQUEV106
                         git pull
                         sleep 1
-                        sudo chmod 777 -R /home/pi/AUTOARRANQUEV106
-                        
-                        # 31-10-2020 poner version V-25-10-20 en Web DVSWITCH
-			            sed -i "11c 25-10-20" $usuario/info.ini
+                        sudo chmod 777 -R /home/pi/AUTOARRANQUEV106                   
 
                         # 14-08-2020 cambio actualizar para que salgan los indicativos en DVSWITCH:
                         cd /var/lib/mmdvm
