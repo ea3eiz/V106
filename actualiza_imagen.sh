@@ -35,19 +35,19 @@ MARRON="\33[38;5;138m"
                         cd $usuario/YSFClients/YSFGateway
 
                         # 02-08-2020 cambio quitar sistema actual:
-                        cd /home/pi/V106
-                        sudo rm /var/www/html/panel_configuracion.php
-                        cp panel_configuracion.php /var/www/html
+                        #cd /home/pi/V106
+                        #sudo rm /var/www/html/panel_configuracion.php
+                        #cp panel_configuracion.php /var/www/html
 
                         # 14-07-2020 agrega esta linea a TGIF
-                        tgif_on_off=$(awk "NR==21" /home/pi/status.ini)
-                        if [ $tgif_on_off = "MARCA_TGIF=OFF" ]
-                        then
-			            sed -i "107c TGRewrite0=2,10,2,9,1" $usuario/DMRGateway/DMRGateway.ini
-                        sed -i "21c MARCA_TGIF=ON" /home/pi/status.ini
-                        else
-                        echo ""
-                        fi
+                        #tgif_on_off=$(awk "NR==21" /home/pi/status.ini)
+                        #if [ $tgif_on_off = "MARCA_TGIF=OFF" ]
+                        #then
+			            #sed -i "107c TGRewrite0=2,10,2,9,1" $usuario/DMRGateway/DMRGateway.ini
+                        #sed -i "21c MARCA_TGIF=ON" /home/pi/status.ini
+                        #else
+                        #echo ""
+                        #fi
 
                         # 26-08-2020 actualizar salas DSTAR
                         cd /usr/share/opendv/
@@ -69,123 +69,123 @@ MARRON="\33[38;5;138m"
                         sudo cp DExtra_Hosts.txt $usuario/dv4mini/xref.ip
 
                         # Cambio 04-10-2020 para que funcione el cambiar de sistemas desde la app dvswitch
-                        sudo cp $usuario/$SCRIPTS_version/ab-restart.sh /usr/local/sbin/
-                        sudo cp $usuario/$SCRIPTS_version/call_id.sh /usr/local/sbin/
-                        sudo cp $usuario/$SCRIPTS_version/ssz.sh /usr/local/sbin/
-                        sudo cp $usuario/$SCRIPTS_version/test.sh /usr/local/sbin/
-
-                        sudo chmod +x /usr/local/sbin/ab-restart.sh
-                        sudo chmod +x /usr/local/sbin/call_id.sh
-                        sudo chmod +x /usr/local/sbin/ssz.sh
-                        sudo chmod +x /usr/local/sbin/test.sh
+                        #sudo cp $usuario/$SCRIPTS_version/ab-restart.sh /usr/local/sbin/
+                        #sudo cp $usuario/$SCRIPTS_version/call_id.sh /usr/local/sbin/
+                        #sudo cp $usuario/$SCRIPTS_version/ssz.sh /usr/local/sbin/
+                        #sudo cp $usuario/$SCRIPTS_version/test.sh /usr/local/sbin/
+#
+                        #sudo chmod +x /usr/local/sbin/ab-restart.sh
+                        #sudo chmod +x /usr/local/sbin/call_id.sh
+                        #sudo chmod +x /usr/local/sbin/ssz.sh
+                        #sudo chmod +x /usr/local/sbin/test.sh
                         #sudo chmod +x /usr/local/sbin/tune.sh
 
 #Cambios 01-11-2020
 
-if [ -f /home/pi/.local/memoria_bm ]
-then
-echo ""
-else
-cp /home/pi/V106/memoria_bm /home/pi/.local/
-fi
-
-if [ -f /home/pi/.local/memoria_dmrplus ]
-then
-echo ""
-else
-cp /home/pi/V106/memoria_dmrplus /home/pi/.local/
-fi
-
-if [ -f /home/pi/.local/memoria_radio ]
-then
-echo ""
-else
-cp /home/pi/V106/memoria_radio /home/pi/.local/
-fi
-
-if [ -f /home/pi/.local/memoria_especial ]
-then
-echo ""
-else
-cp /home/pi/V106/memoria_especial /home/pi/.local/
-fi
-
-if [ -f /home/pi/.local/memoria_solofusion ]
-then
-echo ""
-else
-cp /home/pi/V106/memoria_solofusion /home/pi/.local/
-fi
-
-if [ -f /home/pi/.local/memoria_solo_dstar ]
-then
-echo ""
-else
-cp /home/pi/V106/memoria_solo_dstar /home/pi/.local/
-fi
-
-if [ -f /home/pi/.local/memoria_ysf2dmr ]
-then
-echo ""
-else
-cp /home/pi/V106/memoria_ysf2dmr /home/pi/.local/
-fi
-
-if [ -f /home/pi/.local/memoria_dmr2ysf ]
-then
-echo ""
-else
-cp /home/pi/V106/memoria_dmr2ysf /home/pi/.local/
-fi
-
-if [ -f /home/pi/.local/memoria_dmr2nxdn ]
-then
-echo ""
-else
-cp /home/pi/V106/memoria_dmr2nxdn /home/pi/.local/
-fi
-
-if [ -f /home/pi/.local/memoria_nxdn ]
-then
-echo ""
-else
-cp /home/pi/V106/memoria_nxdn /home/pi/.local/
-fi
-
-if [ -f /home/pi/.local/memorias ] 
-then
-echo ""
-else
-cp /home/pi/V106/memorias /home/pi/.local/
-fi
-
-if [ -f /home/pi/.local/nextion_bm ]
-then
-echo ""
-else
-cp /home/pi/V106/nextion_bm /home/pi/.local/
-fi
-
-if [ -f /home/pi/.local/oled_bm ]
-then
-echo ""
-else
-cp /home/pi/V106/oled_bm /home/pi/.local/
-fi
-
-if [ -f /home/pi/.local/nextion_plus ]
-then
-echo ""
-else
-cp /home/pi/V106/nextion_plus /home/pi/.local/
-fi
-
-if [ -f /home/pi/.local/oled_plus ]
-then
-echo ""
-else
-cp /home/pi/V106/oled_plus /home/pi/.local/
-fi
+#if [ -f /home/pi/.local/memoria_bm ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/memoria_bm /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/memoria_dmrplus ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/memoria_dmrplus /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/memoria_radio ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/memoria_radio /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/memoria_especial ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/memoria_especial /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/memoria_solofusion ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/memoria_solofusion /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/memoria_solo_dstar ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/memoria_solo_dstar /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/memoria_ysf2dmr ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/memoria_ysf2dmr /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/memoria_dmr2ysf ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/memoria_dmr2ysf /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/memoria_dmr2nxdn ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/memoria_dmr2nxdn /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/memoria_nxdn ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/memoria_nxdn /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/memorias ] 
+#then
+#echo ""
+#else
+#cp /home/pi/V106/memorias /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/nextion_bm ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/nextion_bm /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/oled_bm ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/oled_bm /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/nextion_plus ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/nextion_plus /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/oled_plus ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/oled_plus /home/pi/.local/
+#fi
 
                         #Lee el fichero INFO_RXF para poner los datos en los iconos INFO TXF 
                         frecuencia=$(awk "NR==1" $usuario/INFO_RXF)
