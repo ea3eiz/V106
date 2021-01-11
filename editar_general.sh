@@ -687,6 +687,7 @@ letrac=c
 numero_linea_letrac=$numero_linea$letrac
 sed -i "$numero_linea_letrac Id=$tu_id" /home/pi/YSFClients/YSFGateway/YSFGateway.ini
 
+echo "loc1 $loc1"
 echo "numero_linea $numero_linea"
 echo "numero_linea_letrac $numero_linea_letrac"
   read a          
