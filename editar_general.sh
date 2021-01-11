@@ -678,19 +678,16 @@ echo "Valor  actual  del Id: \33[1;33m${idd#*=}\33[1;37m"
             
 
 #Id YSF
-loc1=`grep -n "^Id=" /home/pi/YSFClients/YSFGateway/YSFGateway.ini`
+ysfid=`grep -n "^Id=" /home/pi/YSFClients/YSFGateway/YSFGateway.ini`
 buscar=":"
-largo_linea=`expr index $loc1 $buscar`
-largo_linea=`expr $largo_linea - 1`
-numero_linea=`expr substr $loc1 1 $largo_linea`
-letrac=c
-numero_linea_letrac=$numero_linea$letrac
-sed -i "$numero_linea_letrac Id=$tu_id" /home/pi/YSFClients/YSFGateway/YSFGateway.ini
+largo_linea_ysf=`expr index $ysfid $buscar`
+largo_linea_ysf=`expr $largo_linea_ysf - 1`
+numero_linea=`expr substr $ysfid 1 $largo_linea_ysf`
+letracysf=c
+numero_linea_ysf_letrac=$numero_linea$letracysf
+sed -i "$numero_linea_ysf_letrac Id=$tu_id" /home/pi/YSFClients/YSFGateway/YSFGateway.ini
 
-echo "loc1 $loc1"
-echo "numero_linea $numero_linea"
-echo "numero_linea_letrac $numero_linea_letrac"
-  read a          
+          
             #YSF2DMR
             var1=`grep -n -m 1 "\[DMR Network\]" /home/pi/YSF2DMR/YSF2DMR.ini`
             var2=`echo "$var1" | tr -d '[[:space:]]'`
