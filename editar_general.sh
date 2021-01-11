@@ -686,7 +686,10 @@ numero_linea=`expr substr $loc1 1 $largo_linea`
 letrac=c
 numero_linea_letrac=$numero_linea$letrac
 sed -i "$numero_linea_letrac Id=$tu_id" /home/pi/YSFClients/YSFGateway/YSFGateway.ini
-            
+
+ech "numero_linea $numero_linea"
+echo "numero_linea_letrac $numero_linea_letrac"
+  read a          
             #YSF2DMR
             var1=`grep -n -m 1 "\[DMR Network\]" /home/pi/YSF2DMR/YSF2DMR.ini`
             var2=`echo "$var1" | tr -d '[[:space:]]'`
