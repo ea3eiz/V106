@@ -220,7 +220,7 @@ txh1=`expr substr $txh 5 30`
 echo -n "$txh1"
 
 echo -n "${CIAN}          \te)${GRIS} Baliza      - ${AMARILLO}"
-cw= sed -n "31p"  $usuario/MMDVMHost/$DIRECTORIO;
+cw= sed -n "33p"  $usuario/MMDVMHost/$DIRECTORIO;
 
 echo -n "${CIAN}  19)${GRIS} Modificar Tramas      - ${AMARILLO}"
 lg=`grep -n -m 1 '\<DisplayLevel\>' $usuario/MMDVMHost/$DIRECTORIO`
@@ -1000,7 +1000,7 @@ do
                           actualizar=S 
                           case $actualizar in
                           [sS]* ) echo ""
-                          sed -i "31c Enable=$baliza" $usuario/MMDVMHost/$DIRECTORIO
+                          sed -i "33c Enable=$baliza" $usuario/MMDVMHost/$DIRECTORIO
                           break;;
                           [nN]* ) echo ""
                           break;;
