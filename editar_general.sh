@@ -738,7 +738,7 @@ do
                       [sS]* ) echo ""
                       sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/TODOS_LOS_INIS.ini
             #BALIZA DMR2M17
-            sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/MMDVMDMR2M17.ini
+            sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/MMDVMDMR2M17.ini
 
             #DMR+
             sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/MMDVMPLUS.ini
