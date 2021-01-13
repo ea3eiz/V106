@@ -80,7 +80,7 @@ sudo systemctl stop ircddbgateway.service
 
 # Ejecuta Solo D-STAR
 cd /home/pi/MMDVMHost
-sudo ircddbgateway -gui & sudo ./MMDVMDSTAR MMDVMDSTAR.ini
+/home/pi/V106/./qt_info_solodstar & sudo ircddbgateway -gui & sudo ./MMDVMDSTAR MMDVMDSTAR.ini
 
 # Cierra el icono Abrir Solo Dstar si no hay conexión  
 cd /home/pi/Desktop
@@ -171,7 +171,7 @@ sudo systemctl stop ircddbgateway.service
 
 # Ejecuta Solo D-STAR
 cd /home/pi/MMDVMHost
-sudo ircddbgateway -gui & sudo ./MMDVMDSTAR MMDVMDSTAR.ini
+/home/pi/V106/./qt_info_solodstar & sudo ircddbgateway -gui & sudo ./MMDVMDSTAR MMDVMDSTAR.ini
 
 # Cierra el icono Abrir Solo Dstar si no hay conexión 
 cd /home/pi/Desktop
@@ -194,15 +194,8 @@ sed -i "10c Name[es_ES]=Abrir ircDDB" /home/pi/Abrir_ircDDB.desktop
 sed -i "1c D-STAR=OFF" /home/pi/status.ini
 sleep 1
 
-
-
-
 cd /home/pi
 sudo cp Abrir_ircDDB.desktop /home/pi/Desktop
-
-
-
-
 fi
 
 
