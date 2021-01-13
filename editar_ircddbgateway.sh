@@ -211,7 +211,7 @@ do
                         case $actualizar in
                         [sS]* ) echo ""
                         # ========================================================================
-                        sudo sed -i "8c frequency1=$latitud" /etc/ircddbgateway
+                        sudo sed -i "8c latitude=$latitud" /etc/ircddbgateway
                         # ========================================================================
 
                         # =========================para la versión ircddb 2016====================
@@ -232,7 +232,7 @@ do
                         case $actualizar in
                         [sS]* ) echo ""
                         # ========================================================================
-                        sudo sed -i "9c frequency1=$longitud" /etc/ircddbgateway
+                        sudo sed -i "9c longitude=$longitud" /etc/ircddbgateway
                         # ========================================================================
 
                         # =========================para la versión ircddb 2016====================
