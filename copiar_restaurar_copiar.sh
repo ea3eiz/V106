@@ -1,12 +1,5 @@
 #!/bin/bash
 clear
-echo "${BLANCO}"
-echo "\v\v\v"
-echo " ******************************************************************************"
-echo " ***********************  SE ESTÁ REALIZANDO LA COPIA  ************************"
-echo " *********************  ${ROJO}AL ACABAR SE CERRARÁ EL TERMINAL  ${BLANCO}*********************"
-echo " ******************************************************************************"
-sleep 3
             sudo rm /home/pi/.local/COPIA_SEGURIDAD/Downloads/*.*
             
             cp /home/pi/.local/datos_dvswitch /home/pi/.local/COPIA_SEGURIDAD/Downloads
