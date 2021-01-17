@@ -21,6 +21,8 @@ MARRON="\33[38;5;138m"
                         git pull
                         sleep 1
 
+                        sudo chmod 777 /home/pi/V106/qt_copiar_restaurar
+
                         # Actualiza AUTORRANQUEV106
                         cd $usuario/AUTOARRANQUEV106
                         git pull
