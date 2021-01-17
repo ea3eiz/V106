@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Terminal=true
-"Exec=sh -c "cd /home/pi/V106;./qt_copiar_restaurar""
+Exec=sh -c "cd /home/pi/V106;./qt_copiar_restaurar"
 Icon=/home/pi/V106/ICONO_COPIAR_RESTAURAR.png
 Type=Application
 Categories=GTK;Utility;TerminalEmulator;
