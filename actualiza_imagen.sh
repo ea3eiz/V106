@@ -22,6 +22,7 @@ MARRON="\33[38;5;138m"
                         sleep 1
 
                         sudo chmod 777 /home/pi/V106/qt_copiar_restaurar
+                        sudo chmod 777 /home/pi/V106/qt_notas_version
 
                         # Actualiza AUTORRANQUEV106
                         cd $usuario/AUTOARRANQUEV106
