@@ -4,6 +4,8 @@ clear
 #sudo rm /var/log/irc*.log
 sudo rm /home/pi/YSFClients/YSFGateway/*.log
 clear
+sudo rm /home/pi/YSF2DMR/*.log
+clear
 sudo rm /home/pi/DMR2NXDN/*.log
 clear
 sudo rm /home/pi/DMR2YSF/*.log
