@@ -668,14 +668,6 @@ clear
                                 ejecutar1=S
                                 case $ejecutar1 in
                                 [sS]* ) echo ""
-
-			
-
-
-
-
-
-
                                 if [ -d /home/pi/mvoice/ ];
 			                    then
                                 version_a_instalar=$(awk "NR==1" /home/pi/V106/mvoice/version)
@@ -699,6 +691,25 @@ clear
                                 ./aviso
                                 fi
 
+                                echo ""
+                                exit;
+                                break;;
+                                [nN]* ) echo ""
+clear
+exit;
+break;;
+esac
+done;;
+reset) echo ""
+while true
+do
+clear
+                                ejecutar1=S
+                                case $ejecutar1 in
+                                [sS]* ) echo ""
+                                sudo rm -R /home/pi/V106
+                                cd /home/pi/
+                                git clone http://github.com/ea3eiz/V106
                                 echo ""
                                 exit;
                                 break;;
