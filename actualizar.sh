@@ -261,8 +261,6 @@ rm $usuario/RXF_NXDN.desktop
 sudo chmod 777 -R $usuario/Desktop
 sleep 2
 
-
-sudoo chmod 777 -R $usuario/V106
 # Comprueba si DVSWITCH está activado
 estado_dvswitch=$(awk "NR==18" /home/pi/status.ini)
 if [ "$estado_dvswitch" = 'DVSWITCH=OFF' ];then
