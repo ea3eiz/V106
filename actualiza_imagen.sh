@@ -23,6 +23,7 @@ MARRON="\33[38;5;138m"
 
                         sudo chmod 777 /home/pi/V106/qt_copiar_restaurar
                         sudo chmod 777 /home/pi/V106/qt_notas_version
+                        sudo chmod 777 /home/pi/V106/qt_editor_ysf2dmr
 
                         # Actualiza AUTORRANQUEV106
                         cd $usuario/AUTOARRANQUEV106
