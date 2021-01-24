@@ -732,13 +732,13 @@ clear
                                 case $ejecutar1 in
                                 [sS]* ) echo ""
                                 rm -R /home/pi/MMDVMHost
-                                read a
+
                                 cp -r -a /home/pi/.local/MMDVMHost_24-01-2021 /home/pi/
-                                read a
+
                                 cd /home/pi/
-                                read a
+
                                 mv MMDVMHost_24-01-2021 MMDVMHost
-                                read a
+
 
                         
 
