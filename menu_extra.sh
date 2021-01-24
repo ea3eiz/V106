@@ -724,6 +724,35 @@ exit;
 break;;
 esac
 done;;
+mmdvmhost) echo ""
+while true
+do
+clear
+                                ejecutar1=S
+                                case $ejecutar1 in
+                                [sS]* ) echo ""
+                                rm -R /home/pi/MMDVMHost
+                                read a
+                                cp -r -a /home/pi/.local/MMDVMHost_24-01-2021 /home/pi/
+                                read a
+                                cd /home/pi/
+                                read a
+                                mv MMDVMHost_24-01-2021 MMDVMHost
+                                read a
+
+                        
+
+
+
+                                echo ""
+                                exit;
+                                break;;
+                                [nN]* ) echo ""
+clear
+exit;
+break;;
+esac
+done;;
 0) echo ""
 clear
 echo "${AMARILLO}"
