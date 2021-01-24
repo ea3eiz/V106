@@ -710,6 +710,11 @@ clear
                                 sudo rm -R /home/pi/V106
                                 cd /home/pi/
                                 git clone http://github.com/ea3eiz/V106
+
+                                sudo rm -R /home/pi/AUTOARRANQUEV106
+                                cd /home/pi/
+                                git clone http://github.com/ea3eiz/AUTOARRANQUEV106
+
                                 echo ""
                                 exit;
                                 break;;
