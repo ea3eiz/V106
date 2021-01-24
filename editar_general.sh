@@ -63,7 +63,7 @@ idd1=`expr substr $idd 3 30`
 echo "$idd1"
 
 echo -n "\33[1;36m   7)\33[0m Baliza                - \33[1;33m"
-cw= sed -n "31p"  /home/pi/MMDVMHost/TODOS_LOS_INIS.ini; #presenta el valor en pantalla
+cw= sed -n "33p"  /home/pi/MMDVMHost/TODOS_LOS_INIS.ini; #presenta el valor en pantalla
 
 echo -n "\33[1;36m   8)\33[0m RFModeHang            - \33[1;33m"
 modehang=`grep -n -m 1 -c '\<RFModeHang\>' /home/pi/MMDVMHost/TODOS_LOS_INIS.ini`
@@ -137,7 +137,7 @@ echo "Valor actual Indicativo: \33[1;33m${ind#*=}\33[1;37m"
                           actualizar=S 
                           case $actualizar in
 			                   [sS]* ) echo ""
-                          #Convierte indicativo si se introduce en minúsculas a Mayúsculas
+                          #Convierte indicativo si se introduce en minúsculas a Mayúsculas 
                           tu_indicativo=`echo "$tu_indicativo" | tr [:lower:] [:upper:]`
 			            tu_indicativo=`echo "$tu_indicativo" | tr -d '[[:space:]]'` # Anula los espacios
                         sed -i "$linea Callsign=$tu_indicativo" /home/pi/MMDVMHost/TODOS_LOS_INIS.ini
@@ -736,7 +736,7 @@ do
                       actualizar=S 
                       case $actualizar in
                       [sS]* ) echo ""
-                      sed -i "31c Enable=$baliza" /home/pi/MMDVMHost/TODOS_LOS_INIS.ini
+                      sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/TODOS_LOS_INIS.ini
             #BALIZA DMR2M17
             sed -i "33c Enable=$baliza" /home/pi/MMDVMHost/MMDVMDMR2M17.ini
 
