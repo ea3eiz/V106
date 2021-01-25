@@ -18,10 +18,10 @@
 						echo ""
 						echo "\33[1;31m" #color rojo
 						echo "********************************************************************"
-						echo "* SE NECESITA REINICIAR EL SISTEMA PARA ANCLAR EL PUERTO rfcomm1   *"
+						echo "*    SE VA A REINICIAR EL SISTEMA PARA ANCLAR EL PUERTO rfcomm1    *"
 						echo "********************************************************************"
 						echo "\33[1;37m" #color
-						echo "Pulsa Enter para salir"
+						echo "Pulsa Enter para seguir"
 			            read a
-						exit
+						sudo reboot
 
