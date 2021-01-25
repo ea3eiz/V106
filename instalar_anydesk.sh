@@ -5,9 +5,10 @@ clear
                         estado_anydesk=$(awk "NR==12" /home/pi/info.ini)
                         if [ "$estado_anydesk" = 'ANYDESK=ON' ];then
                         echo "\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v"
-                        echo "${VERDE}"
+                        echo "${BLANCO}"
                         echo "***********************************************************************"
-                        echo "                         INSTALANDO ANYDESK                            "
+                        echo "                       ANYDESK YA ESTÁ INSTALADO                       "
+                        echo "                      NO PUEDES VOLVER A INSTALARLO                    "
                         echo "***********************************************************************"
                         sleep 4
                         else
