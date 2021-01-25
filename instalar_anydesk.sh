@@ -4,11 +4,13 @@ clear
                         # Comprueba si Anydesk está instalado
                         estado_anydesk=$(awk "NR==12" /home/pi/info.ini)
                         if [ "$estado_anydesk" = 'ANYDESK=ON' ];then
-                        echo "\v\v\v\v\v\v\v\v"
+                        echo "\v\v\v\v\v\v"
                         echo "${AMARILLO}"
+                        echo "***********************************************************************"
                         echo "***********************************************************************"
                         echo "                       ANYDESK YA ESTÁ INSTALADO                       "
                         echo "                      NO PUEDES VOLVER A INSTALARLO                    "
+                        echo "***********************************************************************"
                         echo "***********************************************************************"
                         sleep 4
                         else
