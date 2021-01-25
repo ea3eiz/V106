@@ -1,5 +1,6 @@
 #!/bin/bash
-		                echo "\33[1;32m<<<< ESCANEANDO DISPOSITIVOS BLUETOOTH >>>>"
+		                clear
+						echo "\33[1;32m<<<< ESCANEANDO DISPOSITIVOS BLUETOOTH >>>>"
 						echo ""
 						echo "\33[1;36m" # color Cian
 						sudo hcitool scan
@@ -22,4 +23,5 @@
 						echo "\33[1;37m" #color
 						echo "Pulsa Enter para salir"
 			            read a
+						exit
 
