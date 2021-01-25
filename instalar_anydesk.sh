@@ -39,7 +39,7 @@ MARRON="\33[38;5;138m"
                         sudo rm /home/pi/.local/RESTAURAR/Downloads/anydesk_2.9.4-1_armhf.deb
                         clear
                         echo "\v\v\v\v\v\v"
-                        echo "${AMARILLO}"
+                        echo "${VERDE}"
                         echo "***********************************************************************"
                         echo "***********************************************************************"
                         echo "                  SE HA INSTALADO ANYDESK CON EXITO                    "
