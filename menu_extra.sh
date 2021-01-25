@@ -731,6 +731,12 @@ clear
                                 ejecutar1=S
                                 case $ejecutar1 in
                                 [sS]* ) echo ""
+                                echo "${AMARILLO}"
+echo "   ************************************************************************"
+echo "   *                                                                      *"
+echo "                Restaurando MMDVMHost del dia 24-01-2021                   "
+echo "   *                                                                      *"
+echo "   ************************************************************************"
                                 rm -R /home/pi/MMDVMHost
 
                                 cp -r -a /home/pi/.local/MMDVMHost_24-01-2021 /home/pi/
@@ -738,6 +744,8 @@ clear
                                 cd /home/pi/
 
                                 mv MMDVMHost_24-01-2021 MMDVMHost
+
+                                sleep 3
 
 
                         
