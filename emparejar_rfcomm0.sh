@@ -27,4 +27,4 @@
 			            read a
 			            break;;
 		                [nN]* ) echo ""
-                        exit;
+                        break;;
