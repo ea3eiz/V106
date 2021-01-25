@@ -7,9 +7,9 @@ clear
                         echo "no hace nada"
                         else
                         echo "${VERDE}"
-                        echo "***************************************************************************"
-                        echo "                         INSTALANDO ANYDESK                       "
-                        echo "***************************************************************************"
+                        echo "***********************************************************************"
+                        echo "                         INSTALANDO ANYDESK                            "
+                        echo "***********************************************************************"
                         sleep 2  
                         sudo rm -R /home/pi/.anydesk
                         mkdir /home/pi/.temp
@@ -21,9 +21,9 @@ clear
                         sudo rm /home/pi/.local/RESTAURAR/Downloads/anydesk_2.9.4-1_armhf.deb
                         clear
                         echo "${AMARILLO}"
-                        echo "***************************************************************************"
-                        echo "                  SE HA INSTALADO ANYDESK CON EXITO                        "
-                        echo "***************************************************************************"                       
+                        echo "***********************************************************************"
+                        echo "                  SE HA INSTALADO ANYDESK CON EXITO                    "
+                        echo "***********************************************************************"                       
                         sed -i "12c ANYDESK=ON" /home/pi/info.ini                        
                         sleep 3
                         sudo reboot
