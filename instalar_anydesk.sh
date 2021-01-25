@@ -12,7 +12,7 @@ MARRON="\33[38;5;138m"
                         estado_anydesk=$(awk "NR==12" /home/pi/info.ini)
                         if [ "$estado_anydesk" = 'ANYDESK=ON' ];then
                         echo "\v\v\v\v\v\v"
-                        echo "${AMARILLO}"
+                        echo "${ROJO}"
                         echo "***********************************************************************"
                         echo "***********************************************************************"
                         echo "                        ANYDESK YA ESTÁ INSTALADO                       "
