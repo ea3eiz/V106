@@ -746,7 +746,7 @@ echo "   ***********************************************************************
                                 cd /home/pi/
 
                                 mv MMDVMHost_24-01-2021 MMDVMHost
-
+                                sudo chmod 777 -R MMDVMHost
                                 sleep 3
 
 
