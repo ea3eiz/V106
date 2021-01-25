@@ -28,9 +28,9 @@ MARRON="\33[38;5;138m"
                         # Actualiza AUTORRANQUEV106
                         cd $usuario/AUTOARRANQUEV106
                         git pull
-                        sleep 1
-                        sudo chmod 777 -R /home/pi/AUTOARRANQUEV106
-                        sudo chmod 777 -R /home/pi/V106                   
+                        #sleep 1
+                        #sudo chmod 777 -R /home/pi/AUTOARRANQUEV106
+                        #sudo chmod 777 -R /home/pi/V106                   
 
                         # 14-08-2020 cambio actualizar para que salgan los indicativos en DVSWITCH:
                         cd /var/lib/mmdvm
