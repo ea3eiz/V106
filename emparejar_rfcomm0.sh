@@ -22,4 +22,4 @@
 						echo "\33[1;37m" #color
 						echo "Pulsa Enter para salir"
 			            read a
-;
+
