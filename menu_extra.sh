@@ -48,7 +48,7 @@ echo "${CIAN}  11)${CIAN} Configuración especial de Red"
 echo ""
 echo "${CIAN}  12)${ROJO} Restaurar MMDVMHost del día 24-01-2021"
 echo ""
-echo "   ${ROJO}0) Salir"
+echo "   ${CIAN}0) Salir"
 echo ""
 echo -n "\33[1;36m   Elige una opción: " 
 read escoger_menu
