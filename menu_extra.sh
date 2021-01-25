@@ -46,6 +46,8 @@ echo "${CIAN}   9)${BLANCO} Grabar pantalla Nextion"
 echo "${CIAN}  10)${VERDE} Menú Actualizar MMDVM_HS Libre kit y ZUMSpot"
 echo "${CIAN}  11)${CIAN} Configuración especial de Red"
 echo ""
+echo "${CIAN}  12)${ROJO} Restaurar MMDVMHost del día 24-01-2021"
+echo ""
 echo "   ${ROJO}0) Salir"
 echo ""
 echo -n "\33[1;36m   Elige una opción: " 
@@ -724,7 +726,7 @@ exit;
 break;;
 esac
 done;;
-mmdvmhost) echo ""
+12) echo ""
 while true
 do
 clear
