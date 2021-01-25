@@ -22,6 +22,6 @@
 						echo "********************************************************************"
 						echo "\33[1;37m" #color
 						echo "Pulsa Enter para seguir"
-			            read a
+			            sleep 3
 						sudo reboot
 
