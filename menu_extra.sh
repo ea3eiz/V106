@@ -663,7 +663,7 @@ clear
 break;;
 esac
 done;;
-12) echo ""
+12bloqueado) echo ""
 while true
 do
 clear
