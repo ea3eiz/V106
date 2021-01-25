@@ -739,7 +739,7 @@ echo "   *                                                                      
 echo "                Restaurando MMDVMHost del dia 24-01-2021                   "
 echo "   *                                                                      *"
 echo "   ************************************************************************"
-                                rm -R /home/pi/MMDVMHost
+                                sudo rm -R /home/pi/MMDVMHost
 
                                 cp -r -a /home/pi/.local/MMDVMHost_24-01-2021 /home/pi/
 
