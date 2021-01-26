@@ -1,13 +1,13 @@
 #!/bin/bash
 cd /var/www/html/upload/files
 
-cp copia.tar.gz /home/pi/.local/COPIA_SEGURIDAD
+cp Copia_V106.zip /home/pi/.local/COPIA_SEGURIDAD
 
 sudo rm -R /home/pi/.local/COPIA_SEGURIDAD/Dowloads
 cd /home/pi/.local/COPIA_SEGURIDAD
-tar -xvzf copia.tar.gz
+tar -xvzf Copia_V106.zip
 
-sudo rm copia.tar.gz
+sudo rm Copia_V106.zip
 echo "\33[1;32m" #color verde 
 echo "***************************************************"
 echo "* ESTAS RESTAURANDO UNA COPIA DE LA MISMA VERSIÓN *"
