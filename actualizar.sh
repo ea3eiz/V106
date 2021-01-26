@@ -249,20 +249,6 @@ rm $usuario/RXF_NXDN.desktop
 sudo chmod 777 -R $usuario/Desktop
 sleep 2
 
-# Comprueba si DVSWITCH está activado
-estado_dvswitch=$(awk "NR==18" /home/pi/status.ini)
-if [ "$estado_dvswitch" = "DVSWITCH=OFF" ];then
-sudo systemctl stop ysfgateway.service
-sudo systemctl stop dmr2ysf.service
-sudo systemctl stop analog_bridge.service
-sudo systemctl stop ircddbgateway.service
-sudo systemctl stop md380-emu.service
-#sudo systemctl stop mmdvm_bridge.service
-sudo systemctl stop nxdngateway.service
-else
-echo ""
-fi
-
 sudo rm -R /home/pi/V106/associacioader.com
 sudo rm -R /home/pi/V106/Desktop/associacioader.com
 sudo rm /home/pi/V106/Desktop/st-data
