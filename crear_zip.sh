@@ -145,8 +145,8 @@ sed -i "14c $selfcare" /home/pi/.local/COPIA_SEGURIDAD/Downloads/datos_dvswitch
 sed -i "15c $reflector_dstar" /home/pi/.local/COPIA_SEGURIDAD/Downloads/datos_dvswitch
 
 cd /home/pi/.local/COPIA_SEGURIDAD
-tar -zcvf copia.tar.gz Downloads
-cp  copia.tar.gz /var/www/html/upload/files
+tar -zcvf Copia_V106.zip Downloads
+cp  Copia_V106.zip /var/www/html/upload/files
 sudo rm copia.tar.gz
 
 
