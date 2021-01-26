@@ -5,20 +5,13 @@ sleep 2
 xfdesktop --reload
 # Comprueba si DVSWITCH está activado
 estado_dvswitch=$(awk "NR==18" /home/pi/status.ini)
-if [ "$estado_dvswitch" = 'DVSWITCH=OFF' ];then
-sleep 2
+if [ "$estado_dvswitch" = "DVSWITCH=OFF" ];then
 sudo systemctl stop ysfgateway.service
-sleep 2
 sudo systemctl stop dmr2ysf.service
-sleep 2
 sudo systemctl stop analog_bridge.service
-sleep 2
 sudo systemctl stop ircddbgateway.service
-sleep 2
 sudo systemctl stop md380-emu.service
-sleep 2
 sudo systemctl stop mmdvm_bridge.service
-sleep 2
 sudo systemctl stop nxdngateway.service
 else
 echo ""
