@@ -1,49 +1,6 @@
 #!/bin/bash
 
-mode=`grep -n -m 1 "^Port=" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini`
-buscar=":"
-caracteres=`expr index $mode $buscar`
-caracteres_linea=`expr $caracteres - 1`
-numero_linea_port=`expr substr $mode 1 $caracteres_linea`
-mode=$(awk "NR==$numero_linea_port" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini)
-puerto=`expr substr $mode 11 9`
-puerto="  "$puerto
-
-rxfrecuencia=$(awk "NR==13" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini)
-rxfrecuencia=`expr substr $rxfrecuencia 13 17`
-rxfrecuencia=$rxfrecuencia
-
-txfrecuencia=$(awk "NR==14" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini)
-txfrecuencia=`expr substr $txfrecuencia 13 17`
-txfrecuencia=$txfrecuencia
-
-id=$(awk "NR==3" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini)
-id=`expr substr $id 4 9`
-id=$id
-
-indicativo=$(awk "NR==2" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini)
-indicativo=`expr substr $indicativo 10 8`
-indicativo=$indicativo
-
-address=`grep -n -m 1 "^Address=" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini`
-buscar=":"
-caracteres=`expr index $address $buscar`
-caracteres_linea=`expr $caracteres - 1`
-numero_linea_address=`expr substr $address 1 $caracteres_linea`
-mode=$(awk "NR==$numero_linea_address" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini)
-address=`expr substr $address 13 35`
-address="  "$address
-
-#Modificación 31-10-2020 
-sudo sed -i "1c Indicativo:   $indicativo" /home/pi/.local/memoria_dmr2ysf
-sudo sed -i "2c Id:           $id" /home/pi/.local/memoria_dmr2ysf
-sudo sed -i "3c RXFrecuencia: $rxfrecuencia" /home/pi/.local/memoria_dmr2ysf
-sudo sed -i "4c TXFrecuencia: $txfrecuencia" /home/pi/.local/memoria_dmr2ysf
-sudo sed -i "5c Puerto:     $puerto" /home/pi/.local/memoria_dmr2ysf
-sudo sed -i "6c Address:    $address" /home/pi/.local/memoria_dmr2ysf
-Startup=$(awk "NR==42" /home/pi/YSFClients/YSFGateway/YSFGateway.ini)
-Startup=`expr substr $Startup 9 20`
-sudo sed -i "7c Sala C4FM:    $Startup" /home/pi/.local/memoria_dmr2ysf               
+           
 
 /home/pi/V106/./qt_info_dmr2ysf
 
