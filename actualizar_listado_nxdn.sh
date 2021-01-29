@@ -3,10 +3,7 @@
 # path usuario
 usuario=$(awk "NR==1" /home/pi/.config/autostart/usuario)
 
-SCRIPTS_version=$(awk "NR==1" $usuario/.config/autostart/version)                                               
-actualizar=S 
-case $actualizar in
-[sS]* ) echo ""                        
+SCRIPTS_version=$(awk "NR==1" $usuario/.config/autostart/version)                                                                       
 cd $usuario/NXDNClients/NXDNGateway/
 rm -R private
 mkdir private
