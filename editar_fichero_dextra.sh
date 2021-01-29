@@ -1,6 +1,5 @@
 ﻿#!/bin/bash
-
-                        sudo geany /usr/share/opendv/DExtra_Hosts.txt                        
-                        exit	
+sudo geany /usr/share/opendv/DExtra_Hosts.txt                      
+	
 
 
