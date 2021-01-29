@@ -67,7 +67,7 @@ cd /home/pi/DMR2NXDN
 
 sudo lxterminal --geometry=75x12 -e ./DMR2NXDN DMR2NXDN.ini & 
 cd /home/pi/MMDVMHost
-/home/pi/V106/./qt_info_dmr2ysf & sudo lxterminal --geometry=75x12 -e ./DMR2NXDN MMDVMDMR2NXDN.ini &
+/home/pi/V106/./qt_info_dmr2nxdn & sudo lxterminal --geometry=75x12 -e ./DMR2NXDN MMDVMDMR2NXDN.ini &
 
 cd /home/pi/NXDNClients/NXDNGateway
 sudo ./NXDNGateway NXDNGateway.ini
