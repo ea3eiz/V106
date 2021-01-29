@@ -33,7 +33,8 @@ MARRON="\33[38;5;138m"
                         sudo cp DExtra_Hosts.txt /home/pi/dv4mini/xref.ip
                         sleep 2     
                        
-                        clear       
+                        clear  
+                        echo "\v\v"  
                         echo "${VERDE}"
                         echo "            ********************************************************"
                         echo "${AMARILLO}"
