@@ -21,7 +21,7 @@ MARRON="\33[38;5;138m"
                         git pull
                         sleep 1
 
-                        #sudo chmod 777 /home/pi/V106/qt_copiar_restaurar
+                        sudo chmod 777 /home/pi/V106/qt_editor_dmr2nxdn
                         #sudo chmod 777 /home/pi/V106/qt_notas_version
                         #sudo chmod 777 /home/pi/V106/qt_editor_ysf2dmr
 
