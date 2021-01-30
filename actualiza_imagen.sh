@@ -21,16 +21,9 @@ MARRON="\33[38;5;138m"
                         git pull
                         sleep 1
 
-                        sudo chmod 777 /home/pi/V106/qt_editor_dmr2nxdn
-                        #sudo chmod 777 /home/pi/V106/qt_notas_version
-                        #sudo chmod 777 /home/pi/V106/qt_editor_ysf2dmr
-
                         # Actualiza AUTORRANQUEV106
                         cd $usuario/AUTOARRANQUEV106
-                        git pull
-                        #sleep 1
-                        #sudo chmod 777 -R /home/pi/AUTOARRANQUEV106
-                        #sudo chmod 777 -R /home/pi/V106                   
+                        git pull                  
 
                         # 14-08-2020 cambio actualizar para que salgan los indicativos en DVSWITCH:
                         cd /var/lib/mmdvm
@@ -38,21 +31,6 @@ MARRON="\33[38;5;138m"
                         sudo chmod 777 -R /var/lib/mmdvm
 
                         cd $usuario/YSFClients/YSFGateway
-
-                        # 02-08-2020 cambio quitar sistema actual:
-                        #cd /home/pi/V106
-                        #sudo rm /var/www/html/panel_configuracion.php
-                        #cp panel_configuracion.php /var/www/html
-
-                        # 14-07-2020 agrega esta linea a TGIF
-                        #tgif_on_off=$(awk "NR==21" /home/pi/status.ini)
-                        #if [ $tgif_on_off = "MARCA_TGIF=OFF" ]
-                        #then
-			            #sed -i "107c TGRewrite0=2,10,2,9,1" $usuario/DMRGateway/DMRGateway.ini
-                        #sed -i "21c MARCA_TGIF=ON" /home/pi/status.ini
-                        #else
-                        #echo ""
-                        #fi
 
                         # 26-08-2020 actualizar salas DSTAR
                         cd /usr/share/opendv/
