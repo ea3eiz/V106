@@ -147,7 +147,7 @@ sed -i "15c $reflector_dstar" /home/pi/.local/COPIA_SEGURIDAD/Downloads/datos_dv
 cd /home/pi/.local/COPIA_SEGURIDAD
 tar -zcvf Copia_V106.zip Downloads
 cp  Copia_V106.zip /var/www/html/upload/files
-sudo rm copia.tar.gz
+sudo Copia_V106.zip
 
 
 
