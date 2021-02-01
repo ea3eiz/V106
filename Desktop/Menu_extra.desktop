@@ -2,7 +2,7 @@
 Encoding=UTF-8
 Terminal=true
 Exec=sh -c "cd /home/pi/V106; ./qt_menu_extra"
-Icon=/home/pi/V106/ICONO_MENU_EXTRA.png
+Icon=/home/pi/V106/ICONO_MENU_EXTRA1.png
 Type=Application
 Categories=GTK;Utility;TerminalEmulator;
 Name[en_US]=MMDVM Connect Screen
