@@ -2,7 +2,7 @@
 Encoding=UTF-8
 TryExec=lxterminal
 Exec=sh -c "cd /home/pi/V106; lxterminal --geometry=75x37 -e sudo sh md380tools.sh"
-Icon=/home/pi/V106/ICONO_MD380TOOLS.png
+Icon=/home/pi/V106/ICONO_MD380TOOLS1.png
 Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
