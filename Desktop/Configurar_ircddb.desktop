@@ -1,6 +1,6 @@
 [Desktop Entry]
 Comment=EA3EIZ
-Exec=sh -c "cd /home/pi/V106; lxterminal --geometry=78x18 -e sh popus_editar_ircddb.sh"
+Exec=sh -c "cd /home/pi/V106;./qt_editor_ircddb"
 Type=Application
 Terminal=false
 Comment[es_ES]=
