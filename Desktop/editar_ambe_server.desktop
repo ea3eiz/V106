@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c 'cd /home/pi/V106;lxterminal --geometry=77x20 -e sudo sh editar_ambe_server.sh'
+Exec=sh -c "cd /home/pi/V106;./qt_editor_ambe_server"
 Icon=/home/pi/V106/ICONO_EDITAR_BLUEDV.png
 Type=Application
 StartupNotify=false
