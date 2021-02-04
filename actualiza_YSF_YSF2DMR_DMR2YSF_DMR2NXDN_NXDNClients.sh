@@ -25,6 +25,7 @@ MARRON="\33[38;5;138m"
                         cd /home/pi
                         sudo rm -R YSFClients
                         git clone https://github.com/ea3eiz/YSFClients
+                        sudo chmod 777 -R YSFClients
                         cd YSFClients
                         cd YSFGateway
                         
@@ -33,6 +34,7 @@ MARRON="\33[38;5;138m"
                         sudo sed -i '28c const char* YSF_VERSION = "ADER V106";' YSFNetwork.cpp # Se ha de crear esta linea nueva SALE EN EL DSAHBOARD EN SERVICES Y Device
 
                         make
+
                         clear
                         echo "\v\v\v\v\v\v\v\v\v\v\v"
                         echo "${ROJO}"
