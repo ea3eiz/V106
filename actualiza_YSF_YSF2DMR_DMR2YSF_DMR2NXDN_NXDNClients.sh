@@ -25,7 +25,6 @@ MARRON="\33[38;5;138m"
                         cd /home/pi
                         sudo rm -R YSFClients
                         git clone https://github.com/ea3eiz/YSFClients
-                        sudo chmod 777 -R YSFClients
                         cd YSFClients
                         cd YSFGateway
                         
