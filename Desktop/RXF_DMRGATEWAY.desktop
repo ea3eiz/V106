@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c "cd /home/pi/V106; ./qt_info_dmr2nxdn"
+Exec=sh -c "cd /home/pi/V106; ./qt_info_dmrgateway"
 Icon=/home/pi/V106/ICONO_INFO.png
 Type=Application
 StartupNotify=false
