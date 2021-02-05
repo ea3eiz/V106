@@ -91,6 +91,8 @@
 
                     cp MMDVM.ini MMDVMDMR2M17.ini
 
+                    cp MMDVM.ini MMDVMDMRGateway.ini
+
                     # recoge el fichero MMDVMDMRGateway.ini para ponerlo en el MMDVMHost
                     #cp /home/pi/MMDVMDMRGateway.ini /home/pi/MMDVMHost
 
