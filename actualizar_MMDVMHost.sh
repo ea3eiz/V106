@@ -1,6 +1,8 @@
 ﻿#!/bin/bash
                     # guarda el fichero MMDVMDMRGateway.ini para recuperarlo después de la actualización
-                    cp /home/pi/MMDVMHost/MMDVMDMRGateway.ini /home/pi
+                    
+                    #cp /home/pi/MMDVMHost/MMDVMDMRGateway.ini /home/pi
+                    
                     cd /home/pi
                     sudo rm -r /home/pi/MMDVMHost
                     sudo apt-get install build-essential git-core libi2c-dev i2c-tools lm-sensors
@@ -91,10 +93,10 @@
 
                     cp MMDVM.ini MMDVMDMR2M17.ini
 
-                    #cp MMDVM.ini MMDVMDMRGateway.ini
+                    cp MMDVM.ini MMDVMDMRGateway.ini 
 
                     # recoge el fichero MMDVMDMRGateway.ini para ponerlo en el MMDVMHost
-                    cp /home/pi/MMDVMDMRGateway.ini /home/pi/MMDVMHost
+                    # cp /home/pi/MMDVMDMRGateway.ini /home/pi/MMDVMHost
 
                     #=================================================
 
