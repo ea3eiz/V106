@@ -245,6 +245,19 @@ cd $usuario
 cp RXF_NXDN.desktop $usuario/Desktop
 rm $usuario/RXF_NXDN.desktop
 
+
+frecuencia=$(awk "NR==18" $usuario/INFO_RXF)
+cd $usuario/Desktop/
+cp RXF_DMRGATEWAY.desktop $usuario/
+sed -i "11c Name=$frecuencia" $usuario/RXF_DMRGATEWAY.desktop
+cd $usuario
+cp RXF_DMRGATEWAY.desktop $usuario/Desktop
+rm $usuario/RXF_DMRGATEWAY.desktop
+
+
+
+
+
 # Dar permisos al Escritorio
 sudo chmod 777 -R $usuario/Desktop
 sleep 2
