@@ -18,7 +18,6 @@ sed -i "11c Name=$frecuencia" /home/pi/RXF_DMRGATEWAY.desktop
 cp /home/pi/RXF_DMRGATEWAY.desktop /home/pi/Desktop
 
 sudo rm /home/pi/RXF_DMRGATEWAY.desktop
-
 #Escribe en el fichero INFO_RXF para poner los datos en el icono INFO TXF                         
 sed -i "18c $frecuencia" /home/pi/INFO_RXF
 
