@@ -30,6 +30,7 @@ BLANCO="\033[1;37m"
 AMARILLO="\033[1;33m"
 CIAN="\033[1;36m"
 GRIS="\033[0m"
+
 cd /home/pi/Desktop
 cp Abrir_dmrgateway.desktop /home/pi/
 #sleep 1
