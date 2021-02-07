@@ -13,14 +13,14 @@ mode=$(awk "NR==$numero_linea_port" /home/pi/MMDVMHost/MMDVMDMRGateway.ini)
 puerto=`expr substr $mode 11 9`
 puerto="  "$puerto
 cd /home/pi/Desktop
-sudo cp RXF_DMRGATEWAY.desktop /home/pi
+cp RXF_DMRGATEWAY.desktop /home/pi
 
 frecuencia=$(awk "NR==13" /home/pi/MMDVMHost/MMDVMDMRGateway.ini)
 frecuencia=`expr substr $frecuencia 13 17`
 frecuencia=$frecuencia$puerto
 sed -i "11c Name=$frecuencia" /home/pi/RXF_DMRGATEWAY.desktop
 
-sudo cp /home/pi/RXF_DMRGATEWAY.desktop /home/pi/Desktop
+cp /home/pi/RXF_DMRGATEWAY.desktop /home/pi/Desktop
 
 sudo rm /home/pi/RXF_DMRGATEWAY.desktop
 
@@ -46,7 +46,7 @@ AMARILLO="\033[1;33m"
 CIAN="\033[1;36m"
 GRIS="\033[0m"
 cd /home/pi/Desktop
-sudo cp Abrir_dmrgateway.desktop /home/pi/
+cp Abrir_dmrgateway.desktop /home/pi/
 #sleep 1
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh cerrar_dmrgateway.sh'" /home/pi/Abrir_dmrgateway.desktop
 sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_DMRGATEWAY_ON.png" /home/pi/Abrir_dmrgateway.desktop
@@ -54,7 +54,7 @@ sed -i "10c Name[es_ES]=Cerrar DMRGateway" /home/pi/Abrir_dmrgateway.desktop
 sed -i "19c DMRGateway=ON" /home/pi/status.ini
 #sleep 1
 cd /home/pi/
-sudo cp Abrir_dmrgateway.desktop /home/pi/Desktop
+cp Abrir_dmrgateway.desktop /home/pi/Desktop
 #sleep 1
 sudo rm /home/pi/Abrir_dmrgateway.desktop
 
@@ -89,7 +89,7 @@ sed -i "10c Name[es_ES]=Abrir DMRGateway" /home/pi/Abrir_dmrgateway.desktop
 sed -i "19c DMRGateway=OFF" /home/pi/status.ini
 sleep 1
 cd /home/pi/
-sudo cp Abrir_dmrgateway.desktop /home/pi/Desktop
+cp Abrir_dmrgateway.desktop /home/pi/Desktop
 sleep 1
 sudo rm /home/pi/Abrir_dmrgateway.desktop
 
