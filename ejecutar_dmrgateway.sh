@@ -1,9 +1,4 @@
 #!/bin/bash
-
-
-
-
-
 mode=`grep -n -m 1 "^Port=" /home/pi/MMDVMHost/MMDVMDMRGateway.ini`
 buscar=":"
 caracteres=`expr index $mode $buscar`
@@ -26,15 +21,6 @@ sudo rm /home/pi/RXF_DMRGATEWAY.desktop
 
 #Escribe en el fichero INFO_RXF para poner los datos en el icono INFO TXF                         
 sed -i "18c $frecuencia" /home/pi/INFO_RXF
-
-
-
-
-
-
-
-
-
 
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 
