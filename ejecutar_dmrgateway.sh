@@ -22,7 +22,6 @@ sudo rm /home/pi/RXF_DMRGATEWAY.desktop
 sed -i "18c $frecuencia" /home/pi/INFO_RXF
 
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
-
 #Colores
 ROJO="\033[1;31m"
 VERDE="\033[1;32m"
