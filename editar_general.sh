@@ -476,7 +476,7 @@ do
                      
             #LOCATION  DMRGATEWAY
             sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMDMRGateway.ini
-            sed -i "33c Location=$tu_ciudad" /home/pi/DMRGateway/DMRGateway.ini
+            sed -i "30c Location=$tu_ciudad" /home/pi/DMRGateway/DMRGateway.ini
 
             #LOCATION DMR2M17
             sed -i "20c Location=$tu_ciudad" /home/pi/MMDVMHost/MMDVMDMR2M17.ini
@@ -569,7 +569,7 @@ echo "Valor de  la  URL   Web: \33[1;33m${url#*=}\33[1;37m"
             
             #LURL  DMRGATEWAY
             sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVMDMRGateway.ini
-            sed -i "35c URL=$tu_url" /home/pi/DMRGateway/DMRGateway.ini
+            sed -i "32c URL=$tu_url" /home/pi/DMRGateway/DMRGateway.ini
 
             #URL DMR2M17
             sed -i "22c URL=$tu_url" /home/pi/MMDVMHost/MMDVMDMR2M17.ini
