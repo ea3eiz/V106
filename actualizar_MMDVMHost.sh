@@ -96,6 +96,9 @@
                     cp MMDVM.ini MMDVMDMR2M17.ini
 
                     cp MMDVM.ini MMDVMDMRGateway.ini 
+                    
+                    sed -i "193c Type=Gateway" /home/pi/MMDVMHost/MMDVMDMRGateway.ini
+                    sed -i "196c Local=62032" /home/pi/MMDVMHost/MMDVMDMRGateway.ini
 
                     # recoge el fichero MMDVMDMRGateway.ini para ponerlo en el MMDVMHost
                     # cp /home/pi/MMDVMDMRGateway.ini /home/pi/MMDVMHost
