@@ -3,7 +3,7 @@ Version=1.0
 Type=Application
 Name=Editar DMR2M17
 Comment=
-Exec=lxterminal --geometry=93x52 -e sh editar_MMDVMDMR2M17.sh
+Exec=sh -c "cd /home/pi/V106;./qt_editor_dmr2m17"
 Icon=/home/pi/V106/Editar_repeater.png
 Path=/home/pi/V106
 Terminal=false
