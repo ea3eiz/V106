@@ -328,6 +328,7 @@ echo "Valor actual del RXFrequency: \33[1;33m${rxf#*=}\33[1;37m"
             letrac=c
             numero_linea_letrac=$numero_linea$letrac
             sed -i "$numero_linea_letrac RXFrequency=$rxtxfrecuencia" /home/pi/YSFClients/YSFGateway/YSFGateway.ini
+            sed -i "17c TXFrequency=$rxtxfrecuencia" /home/pi/YSFClients/YSFGateway/YSFGateway.ini
             
             #YSF2DMR
             sed -i "2c RXFrequency=$rxtxfrecuencia" /home/pi/YSF2DMR/YSF2DMR.ini
