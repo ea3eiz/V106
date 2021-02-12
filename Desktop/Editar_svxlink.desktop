@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c "cd /home/pi/V106;lxterminal --geometry=80x50 -e sudo sh editar_svxlink.sh"
+Exec=sh -c "cd /home/pi/V106; ./qt_editor_svxlink"
 Icon=/home/pi/V106/ICONO_EDITAR_DMRPLUS.png
 Type=Application
 StartupNotify=false
