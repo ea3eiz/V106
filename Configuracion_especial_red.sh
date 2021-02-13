@@ -40,7 +40,7 @@ MARRON="\33[38;5;138m"
                         echo "${CIAN}"
                         read -p '   Quieres grabar los datos? S/N ' seguir   
                         if [ "$seguir" = 'S' -o "$seguir" = 's' ];then 
-                        
+                        sudo sed -i "9c allow-hotplug eth0" /etc/network/interfaces
                         sudo sed -i "10c iface eth0 inet static" /etc/network/interfaces
                         sudo sed -i "11c address $ip" /etc/network/interfaces
                         sudo sed -i "12c netmask 255.255.255.0" /etc/network/interfaces
