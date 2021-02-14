@@ -36,6 +36,8 @@ MARRON="\33[38;5;138m"
                         echo "           ERROR DE RED            "
                         echo -n "${VERDE}"
                         echo "***********************************"
+                        clear
+                        echo "${GRIS}"
                         sleep 5
                         exit
                         fi
