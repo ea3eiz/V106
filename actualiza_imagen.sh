@@ -20,10 +20,7 @@ MARRON="\33[38;5;138m"
                         
                         cd /home/pi/.local
                         git clone http://github.com/ea3eiz/V106 
-                        sleep 5
-                        echo "borra V106 de locar para probar"
-                        read a    
-
+                        sleep 2
                         if [ -d /home/pi/.local/V106 ]
                         then
                         sudo rm -R /home/pi/V106
@@ -33,14 +30,20 @@ MARRON="\33[38;5;138m"
                         cd /home/pi/.local
                         sudo rm -R V106
                         else
-                        echo "Error de red"
+                        echo "${VERDE}"
+                        echo "***********************************"
+                        echo -n "${ROJO}"
+                        echo "           ERROR DE RED            "
+                        echo -n "${VERDE}"
+                        echo "***********************************"
                         sleep 5
                         exit
                         fi
 
                         # Actualiza AUTORRANQUEV106
                         cd /home/pi/.local
-                        git clone http://github.com/ea3eiz/AUTOARRANQUEV106                       
+                        git clone http://github.com/ea3eiz/AUTOARRANQUEV106 
+                        sleep 2                      
                         if [ -d /home/pi/.local/AUTOARRANQUEV106 ]
                         then
                         sudo rm -R /home/pi/AUTOARRANQUEV106
