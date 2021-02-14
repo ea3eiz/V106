@@ -19,6 +19,7 @@ MARRON="\33[38;5;138m"
                         # Actualiza V106
                         
                         cd /home/pi/.local
+                        sudo rm -R V106
                         git clone http://github.com/ea3eiz/V106
                         if [ -d /home/pi/.local/V106 ]
                         then
@@ -32,6 +33,8 @@ MARRON="\33[38;5;138m"
                         fi
 
                         # Actualiza AUTORRANQUEV106
+                        cd /home/pi/.local
+                        sudo rm -R AUTORRANQUEV106
                         git clone http://github.com/ea3eiz/AUTOARRANQUEV106
                         if [ -d /home/pi/.local/AUTOARRANQUEV106 ]
                         then
