@@ -17,14 +17,17 @@ MARRON="\33[38;5;138m"
 
 
                         # Actualiza IMAGEN 
-                        cd $usuario/$SCRIPTS_version
-                        git pull
-                        sleep 1
-
+                        sudo rm -R $usuario/V106
+                        cd $usuario
+                        git clone http://github.com/ea3eiz/V106
+                        sudo chmod 777 -R V106
+                        
                         # Actualiza AUTORRANQUEV106
-                        cd $usuario/AUTOARRANQUEV106
-                        git pull                  
-
+                        sudo rm -R $usuario/AUTOARRANQUEV106
+                        cd $usuario
+                        git clone http://github.com/ea3eiz/AUTOARRANQUEV106
+                        sudo chmod 777 -R AUTOARRANQUEV106
+         
                         # 14-08-2020 cambio actualizar para que salgan los indicativos en DVSWITCH:
                         cd /var/lib/mmdvm
                         sudo curl --fail -o DMRIds.dat -s http://www.pistar.uk/downloads/DMRIds.dat
