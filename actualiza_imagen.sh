@@ -19,11 +19,12 @@ MARRON="\33[38;5;138m"
                         # Actualiza V106
                         
                         cd /home/pi/.local
-                        git clone http://github.com/ea3eiz/V106  
+                        git clone http://github.com/ea3eiz/V107 
+sleep 5
                         echo "borra V106 de locar para probar"
                         read a    
 
-                        if [ -f /home/pi/.local/V106/info_bm.sh ]
+                        if [ -d /home/pi/.local/V107 ]
                         then
                         sudo rm -R /home/pi/V106
                         cp -R /home/pi/.local/V106 /home/pi                        
