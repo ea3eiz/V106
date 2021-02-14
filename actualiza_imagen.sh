@@ -21,7 +21,7 @@ MARRON="\33[38;5;138m"
                         cd /home/pi/.local
                         git clone http://github.com/ea3eiz/V106  
                         echo "borra V106 de locar para probar"
-                        read     
+                        read a    
 
                         if [ -d /home/pi/.local/V106 ]
                         then
