@@ -16,18 +16,33 @@ GRIS="\033[0m"
 MARRON="\33[38;5;138m"
 
 
-                        # Actualiza IMAGEN 
-                        sudo rm -R $usuario/V106
-                        cd $usuario
+                        # Actualiza V106
+                        
+                        cd /home/pi/.local
                         git clone http://github.com/ea3eiz/V106
+                        if [ -d /home/pi/.local/V106 ]
+                        then
+                        sudo rm -R /home/pi/V106
+                        mv -R /home/pi/.local/V106 /home/pi
                         sudo chmod 777 -R V106
                         
+                        else
+                        echo "Error de red"
+                        exit
+                        fi
+
                         # Actualiza AUTORRANQUEV106
-                        sudo rm -R $usuario/AUTOARRANQUEV106
-                        cd $usuario
                         git clone http://github.com/ea3eiz/AUTOARRANQUEV106
+                        if [ -d /home/pi/.local/AUTOARRANQUEV106 ]
+                        then
+                        sudo rm -R /home/pi/AUTOARRANQUEV106
+                        mv -R /home/pi/.local/AUTOARRANQUEV106 /home/pi                       
                         sudo chmod 777 -R AUTOARRANQUEV106
-         
+                        else
+                        echo "Error de red"
+                        exit
+                        fi
+                        
                         # 14-08-2020 cambio actualizar para que salgan los indicativos en DVSWITCH:
                         cd /var/lib/mmdvm
                         sudo curl --fail -o DMRIds.dat -s http://www.pistar.uk/downloads/DMRIds.dat
