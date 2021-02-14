@@ -41,7 +41,7 @@ MARRON="\33[38;5;138m"
                         sudo rm -R /home/pi/AUTOARRANQUEV106
                         cp -R /home/pi/.local/AUTOARRANQUEV106 /home/pi                       
                         sudo chmod 777 -R AUTOARRANQUEV106
-                        sudo rm -R AUTORRANQUEV106
+                        sudo rm -R AUTOARRANQUEV106
                         else
                         echo "Error de red"
                         exit
