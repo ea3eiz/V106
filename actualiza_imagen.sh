@@ -30,13 +30,14 @@ MARRON="\33[38;5;138m"
                         cd /home/pi/.local
                         sudo rm -R V106
                         else
+                        clear
                         echo "${VERDE}"
                         echo "***********************************"
                         echo -n "${ROJO}"
                         echo "           ERROR DE RED            "
                         echo -n "${VERDE}"
                         echo "***********************************"
-                        clear
+                        
                         echo "${GRIS}"
                         sleep 5
                         exit
