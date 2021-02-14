@@ -23,7 +23,7 @@ MARRON="\33[38;5;138m"
                         echo "borra V106 de locar para probar"
                         read a    
 
-                        if [ -d /home/pi/.local/V106 ]
+                        if [ -f /home/pi/.local/V106/info_bm.sh ]
                         then
                         sudo rm -R /home/pi/V106
                         cp -R /home/pi/.local/V106 /home/pi                        
