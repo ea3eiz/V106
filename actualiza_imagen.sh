@@ -33,6 +33,7 @@ MARRON="\33[38;5;138m"
                         sudo rm -R V106
                         else
                         echo "Error de red"
+                        sleep 5
                         exit
                         fi
 
