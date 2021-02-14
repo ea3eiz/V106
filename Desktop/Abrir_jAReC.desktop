@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=jAReC
+Comment=
+Exec=/home/pi/jAReC.sh
+Icon=/home/pi/V106/ICONO_JAREC.png
+Path=
+Terminal=false
+StartupNotify=false
