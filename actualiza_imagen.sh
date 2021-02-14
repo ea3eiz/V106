@@ -19,14 +19,14 @@ MARRON="\33[38;5;138m"
                         # Actualiza V106
                         
                         cd /home/pi/.local
-                        sudo rm -R V106
                         git clone http://github.com/ea3eiz/V106
+                        
                         if [ -d /home/pi/.local/V106 ]
                         then
                         sudo rm -R /home/pi/V106
                         cp -R /home/pi/.local/V106 /home/pi
                         sudo chmod 777 -R V106
-                        
+                        sudo rm -R V106
                         else
                         echo "Error de red"
                         exit
@@ -34,13 +34,14 @@ MARRON="\33[38;5;138m"
 
                         # Actualiza AUTORRANQUEV106
                         cd /home/pi/.local
-                        sudo rm -R AUTORRANQUEV106
                         git clone http://github.com/ea3eiz/AUTOARRANQUEV106
+                        
                         if [ -d /home/pi/.local/AUTOARRANQUEV106 ]
                         then
                         sudo rm -R /home/pi/AUTOARRANQUEV106
                         cp -R /home/pi/.local/AUTOARRANQUEV106 /home/pi                       
                         sudo chmod 777 -R AUTOARRANQUEV106
+                        sudo rm -R AUTORRANQUEV106
                         else
                         echo "Error de red"
                         exit
