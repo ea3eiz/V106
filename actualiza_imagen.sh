@@ -23,7 +23,7 @@ MARRON="\33[38;5;138m"
                         if [ -d /home/pi/.local/V106 ]
                         then
                         sudo rm -R /home/pi/V106
-                        mv -R /home/pi/.local/V106 /home/pi
+                        cp -R /home/pi/.local/V106 /home/pi
                         sudo chmod 777 -R V106
                         
                         else
@@ -36,7 +36,7 @@ MARRON="\33[38;5;138m"
                         if [ -d /home/pi/.local/AUTOARRANQUEV106 ]
                         then
                         sudo rm -R /home/pi/AUTOARRANQUEV106
-                        mv -R /home/pi/.local/AUTOARRANQUEV106 /home/pi                       
+                        cp -R /home/pi/.local/AUTOARRANQUEV106 /home/pi                       
                         sudo chmod 777 -R AUTOARRANQUEV106
                         else
                         echo "Error de red"
