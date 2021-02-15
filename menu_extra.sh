@@ -54,7 +54,7 @@ echo -n "\33[1;36m   Elige una opción: "
 read escoger_menu
 echo ""
 case $escoger_menu in
-Rbloqueado) echo ""
+editor) echo ""
 while true
 do
 clear                     
@@ -63,7 +63,7 @@ clear
                         [sS]* ) echo ""
                         clear
                         cd /home/pi/V106
-                        sudo sh restaurar_original.sh                 
+                        ./qt_editor_general                
                         break;;
                         [nN]* ) echo ""
                         clear
@@ -81,23 +81,6 @@ clear
                         clear
                         cd /home/pi/V106
                         sh colocar_iconos1.sh                 
-                        break;;
-                        [nN]* ) echo ""
-                        clear
-                        exit;
-                        break;;
-esac
-done;;
-bloqueado) echo ""
-while true
-do
-clear                     
-                        instalarsi=S
-                        case $instalarsi in
-                        [sS]* ) echo ""
-                        clear
-                        cd /home/pi/V106
-                        sh colocar_iconos2.sh
                         break;;
                         [nN]* ) echo ""
                         clear
@@ -663,70 +646,6 @@ clear
 break;;
 esac
 done;;
-12bloqueado) echo ""
-while true
-do
-clear
-                                ejecutar1=S
-                                case $ejecutar1 in
-                                [sS]* ) echo ""
-                                if [ -d /home/pi/mvoice/ ];
-			                    then
-                                version_a_instalar=$(awk "NR==1" /home/pi/V106/mvoice/version)
-                                version_instalada=$(awk "NR==3" /home/pi/info.ini)
-                                if [ $version_a_instalar != $version_instalada ];then
-                                rm -R /home/pi/mvoice
-                                cp -R /home/pi/V106/mvoice /home/pi
-                                sleep 2
-                                cd /home/pi/mvoice
-                                make
-                                make install
-                                sudo chmod +x -R /home/pi/mvoice                       
-                                ./start-mvoice
-                                sed -i "3c $version_a_instalar" /home/pi/info.ini
-                                else
-                                /home/pi/V106/./aviso_mvoice_version
-                                fi
-
-                                else
-                                cd /home/pi/V106
-                                ./aviso
-                                fi
-
-                                echo ""
-                                exit;
-                                break;;
-                                [nN]* ) echo ""
-clear
-exit;
-break;;
-esac
-done;;
-reset) echo ""
-while true
-do
-clear
-                                ejecutar1=S
-                                case $ejecutar1 in
-                                [sS]* ) echo ""
-                                sudo rm -R /home/pi/V106
-                                cd /home/pi/
-                                git clone http://github.com/ea3eiz/V106
-                                sudo chmod 777 -R V106
-
-                                sudo rm -R /home/pi/AUTOARRANQUEV106
-                                cd /home/pi/
-                                git clone http://github.com/ea3eiz/AUTOARRANQUEV106
-                                sudo chmod 777 -R AUTOARRANQUEV106
-                                echo ""
-                                exit;
-                                break;;
-                                [nN]* ) echo ""
-clear
-exit;
-break;;
-esac
-done;;
 12) echo ""
 while true
 do
@@ -737,7 +656,7 @@ clear
                                 echo "${AMARILLO}"
 echo "   ************************************************************************"
 echo "   *                                                                      *"
-echo "                Restaurando MMDVMHost del dia 24-01-2021                   "
+echo "                Restaurando MMDVMHost del dia 13-02-2021                   "
 echo "   *                                                                      *"
 echo "   ************************************************************************"
                                 sudo rm -R /home/pi/MMDVMHost
@@ -749,12 +668,6 @@ echo "   ***********************************************************************
                                 mv MMDVMHost_24-01-2021 MMDVMHost
                                 sudo chmod 777 -R MMDVMHost
                                 sleep 3
-
-
-                        
-
-
-
                                 echo ""
                                 exit;
                                 break;;
@@ -765,14 +678,6 @@ break;;
 esac
 done;;
 0) echo ""
-clear
-echo "${AMARILLO}"
-echo "   ************************************************************************"
-echo "   *                                                                      *"
-echo "   *                          CERRANDO SCRIPT                             *"
-echo "   *                                                                      *"
-echo "   ************************************************************************"
-sleep 2
 clear
 exit;;	
 esac
