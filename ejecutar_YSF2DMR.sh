@@ -19,7 +19,7 @@ sudo cp /home/pi/RXF_YSF2DMR.desktop /home/pi/Desktop
 
 sudo rm /home/pi/RXF_YSF2DMR.desktop
 
-#Escribe en el fichero INFO_RXF para poner los datos en los iconos INFO TXF  
+#Escribe en el fichero INFO_RXF para poner los datos en los iconos INFO TXF   
 sed -i "13c $frecuencia" /home/pi/INFO_RXF
 
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
@@ -38,7 +38,7 @@ cd /home/pi/YSF2DMR
 sudo lxterminal --geometry=80x12 -e ./YSF2DMR YSF2DMR.ini & 
 sleep 2
 cd /home/pi/MMDVMHost
-sudo ./MMDVMFUSION MMDVMFUSION.ini
+/home/pi/V106/./qt_info_ysf2dmr & sudo ./MMDVMFUSION MMDVMFUSION.ini
 
 cd /home/pi/Desktop
 sudo cp Abrir_YSF2DMR.desktop /home/pi
