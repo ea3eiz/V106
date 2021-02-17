@@ -16,7 +16,7 @@ sudo rm /home/pi/ABRIR_DMR2M17.desktop
 
 
 cd /home/pi/DMR2M17
-sudo lxterminal --geometry=75x12 -e ./DMR2M17 DMR2M17.ini & 
+sudo lxterminal --geometry=75x12 -e sudo ./DMR2M17 DMR2M17.ini & 
 
 cd /home/pi/MMDVMHost
 sudo lxterminal --geometry=80x12 -e ./MMDVMDMR2M17 MMDVMDMR2M17.ini
