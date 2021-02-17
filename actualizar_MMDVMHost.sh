@@ -48,6 +48,7 @@
                     cp MMDVMHost MMDVMFUSION
                     cp MMDVMHost DMR2NXDN
                     cp MMDVMHost DMR2YSF
+                    cp MMDVMHost DMR2M17
                     cp MMDVMHost MMDVMNXDN
                     cp MMDVMHost MMDVMESPECIAL
                     cp MMDVMHost MMDVMDMRGATEWAY                 
@@ -91,6 +92,8 @@
                     cp MMDVM.ini MMDVMDMR2YSF.ini
                     
                     cp MMDVM.ini MMDVMDMR2NXDN.ini
+
+                    cp MMDVM.ini MMDVMDMR2M17.ini
 
                     cp MMDVM.ini MMDVMNXDN.ini
 
