@@ -3,6 +3,9 @@ clear
             sudo rm /home/pi/.local/COPIA_SEGURIDAD/Downloads/*.*
             
             cp /home/pi/.local/datos_dvswitch /home/pi/.local/COPIA_SEGURIDAD/Downloads
+
+            cp /home/pi/.local/bluetooth.sh /home/pi/.local/COPIA_SEGURIDAD/Downloads
+
             cd /home/pi/MMDVMHost
             cp -f TODOS_LOS_INIS.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads
             cp -f MMDVM.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads

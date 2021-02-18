@@ -2,6 +2,8 @@
             cd /home/pi/.local/COPIA_SEGURIDAD/Downloads
             cp -f TODOS_LOS_INIS.ini /home/pi/MMDVMHost
 
+             cp -f bluetooth.sh /home/pi/.local
+
             cp -f MMDVM.ini /home/pi/MMDVMHost
             cp -f MMDVM.ini_copia /home/pi/MMDVMHost
             cp -f MMDVM.ini_copia2 /home/pi/MMDVMHost
@@ -211,7 +213,7 @@
                             cp /home/pi/Desktop/ABRIR_DMR2M17.desktop /home/pi/.config/autostart
                             fi      
                                 
- cd /home/pi/.local/COPIA_SEGURIDAD/Downloads           
+            cd /home/pi/.local/COPIA_SEGURIDAD/Downloads           
 
             cp -f MMDVMDMR2NXDN.ini /home/pi/MMDVMHost
             cp -f MMDVMNXDN.ini /home/pi/MMDVMHost
