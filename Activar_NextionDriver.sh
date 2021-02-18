@@ -12,8 +12,8 @@ AMARILLO="\033[1;33m"
 CIAN="\033[1;36m"
 GRIS="\033[0m"
 MARRON="\33[38;5;138m"
-echo "\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v"
 echo "${AMARILLO}"
+echo "\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v"
 echo -n " Quieres Activar NextionDriver S/N ? "
 read activar
 case "$activar" in
@@ -44,5 +44,3 @@ break;;
 [nN]*) 
 exit ;;
 esac
-
-

@@ -2,7 +2,6 @@
 /home/pi/V106/./nextiondriver_desactivar
 # path usuario
 usuario="/home/pi"
-usuario="$usuario"
 usuario=$(awk "NR==1" $usuario/.config/autostart/usuario)
 SCRIPTS_version=$(awk "NR==1" $usuario/.config/autostart/version)
 #Colores
@@ -15,7 +14,6 @@ GRIS="\033[0m"
 MARRON="\33[38;5;138m"
 echo "${AMARILLO}"
 echo "\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v"
-echo "${AMARILLO}"
 echo -n " Quieres Desactivar NextionDriver S/N ? "
 read desactivar
 case "$desactivar" in
