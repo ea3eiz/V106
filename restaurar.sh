@@ -14,9 +14,12 @@ echo "* ESTAS RESTAURANDO UNA COPIA DE LA MISMA VERSIÓN *"
 echo "*      DEL MMDVMHOST QUE TIENES ACTUALIZADO       *"
 echo "***************************************************"
             sudo chmod -R 777 /home/pi/.local/COPIA_SEGURIDAD/Downloads
-            cd /home/pi/.local/COPIA_SEGURIDAD/Downloads
             
+            cd /home/pi/.local/COPIA_SEGURIDAD/Downloads            
             cp -f TODOS_LOS_INIS.ini /home/pi/MMDVMHost
+
+            cp -f bluetooth.sh /home/pi/.local
+
             cp -f MMDVM.ini /home/pi/MMDVMHost
             cp -f MMDVM.ini_copia /home/pi/MMDVMHost
             cp -f MMDVM.ini_copia2 /home/pi/MMDVMHost
