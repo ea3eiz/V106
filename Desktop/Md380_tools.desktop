@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c "cd /home/pi/V106; lxterminal --geometry=75x37 -e sudo sh md380tools.sh"
+Exec=sh -c "cd /home/pi/V106; ./qt_editor_md380tools"
 Icon=/home/pi/V106/ICONO_MD380TOOLS1.png
 Type=Application
 StartupNotify=false
