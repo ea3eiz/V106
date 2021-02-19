@@ -224,6 +224,9 @@
             cp -f DMR2YSF.ini /home/pi/DMR2YSF
 
             cp -f YSFGateway.ini /home/pi/YSFClients/YSFGateway/
+            cp -f YSFGateway.ini_1 /home/pi/YSFClients/YSFGateway/
+            cp -f YSFGateway.ini_2 /home/pi/YSFClients/YSFGateway/
+            cp -f YSFGateway.ini_3 /home/pi/YSFClients/YSFGateway/
 
             cp -f BlueDVconfig.ini /home/pi/bluedv/
 

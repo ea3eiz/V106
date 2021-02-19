@@ -59,6 +59,10 @@ clear
             
             cd  /home/pi/YSFClients/YSFGateway/
             cp -f YSFGateway.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads
+            cp -f YSFGateway.ini_1 /home/pi/.local/COPIA_SEGURIDAD/Downloads
+            cp -f YSFGateway.ini_2 /home/pi/.local/COPIA_SEGURIDAD/Downloads
+            cp -f YSFGateway.ini_3 /home/pi/.local/COPIA_SEGURIDAD/Downloads
+
             
             cd /home/pi/bluedv/
             cp -f BlueDVconfig.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads
