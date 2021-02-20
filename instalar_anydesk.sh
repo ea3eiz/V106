@@ -35,7 +35,7 @@ MARRON="\33[38;5;138m"
                         wget http://download.anydesk.com/rpi/anydesk_2.9.4-1_armhf.deb
                         sudo apt update
                         sudo dpkg -i anydesk_2.9.4-1_armhf.deb
-                        sudo apt-get install -f
+                        sudo apt-get install -f -s
                         sudo rm /home/pi/.local/RESTAURAR/Downloads/anydesk_2.9.4-1_armhf.deb
                         clear
                         echo "\v\v\v\v\v\v"
