@@ -62,6 +62,7 @@
             cp -f tg_ysf.txt /home/pi/.local/COPIA_SEGURIDAD/Downloads
             cp -f nombre_salas_ysf.txt /home/pi/.local/COPIA_SEGURIDAD/Downloads
             cp -f autoarranque.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads
+            cp -f memoria_ysf2dmr /home/pi/.local/COPIA_SEGURIDAD/Downloads
 
             cd  /home/pi/YSFClients/YSFGateway/
             cp -f YSFGateway.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads

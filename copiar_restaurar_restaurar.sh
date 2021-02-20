@@ -41,6 +41,8 @@
             cp -f tg_ysf.txt /home/pi/.local
             cp -f nombre_salas_ysf.txt /home/pi/.local
             cp -f autoarranque.ini /home/pi/.local
+            cp -f memoria_ysf2dmr /home/pi/.local
+
 
                             info=$(awk "NR==1" /home/pi/.local/autoarranque.ini)
                             if [ $info = "ircDDB=OFF" ]
