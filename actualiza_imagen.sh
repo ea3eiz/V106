@@ -18,6 +18,11 @@ MARRON="\33[38;5;138m"
 
                         # Actualiza V106
                         
+                        cd /home/pi/V106/Desktop
+                        cp * /home/pi/Desktop
+
+
+
                         cd /home/pi/.local
                         git clone http://github.com/ea3eiz/V106 
                         sleep 2
