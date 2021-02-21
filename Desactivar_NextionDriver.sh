@@ -37,7 +37,8 @@ sleep 2
 sudo rm Activar_NextionDriver.desktop
 
 sudo sed -i "4c #Exec=sh -c 'cd $usuario/NextionDriver/;sudo ./NextionDriver -c $usuario/MMDVMHost/MMDVM.ini'" $usuario/.config/autostart/nextiondriver.desktop
-
+sed -i "22c NEXTIONDRIVER=OFF" /home/pi/status.ini
+read a
 sudo reboot
 
 break;;
