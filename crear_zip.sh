@@ -63,6 +63,12 @@
             cp -f nombre_salas_ysf.txt /home/pi/.local/COPIA_SEGURIDAD/Downloads
             cp -f autoarranque.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads
             cp -f memoria_ysf2dmr /home/pi/.local/COPIA_SEGURIDAD/Downloads
+            cp -f memoria_dmrplus /home/pi/.local/COPIA_SEGURIDAD/Downloads #22-02-2021
+            cp -f memoria_bm /home/pi/.local/COPIA_SEGURIDAD/Downloads #22-02-2021
+            cp -f memoria_radio /home/pi/.local/COPIA_SEGURIDAD/Downloads #22-02-2021
+            cp -f memoria_especial /home/pi/.local/COPIA_SEGURIDAD/Downloads #22-02-2021
+            cp -f memoria_solodstar /home/pi/.local/COPIA_SEGURIDAD/Downloads #22-02-2021
+            cp -f memoria_solofusion /home/pi/.local/COPIA_SEGURIDAD/Downloads #22-02-2021
 
             cd  /home/pi/YSFClients/YSFGateway/
             cp -f YSFGateway.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads

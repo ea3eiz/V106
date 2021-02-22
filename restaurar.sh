@@ -65,6 +65,13 @@ echo "***************************************************"
             cp -f nombre_salas_ysf.txt /home/pi/.local
             cp -f autoarranque.ini /home/pi/.local
             cp -f memoria_ysf2dmr /home/pi/.local
+            cp -f memoria_dmrplus /home/pi/.local #22-02-2021
+            cp -f memoria_bm /home/pi/.local #22-02-2021
+            cp -f memoria_radio /home/pi/.local #22-02-2021
+            cp -f memoria_especial /home/pi/.local #22-02-2021
+            cp -f memoria_solodstar /home/pi/.local #22-02-2021
+            cp -f memoria_solofusion /home/pi/.local #22-02-2021
+
 
 
                             info=$(awk "NR==1" /home/pi/.local/autoarranque.ini)
