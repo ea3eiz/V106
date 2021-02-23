@@ -19,12 +19,12 @@ MARRON="\33[38;5;138m"
 #sleep 3
 
 # Desactiva DVSWITCH 
-sed -i "18c DVSWITCH=OFF" /home/pi/status.ini
-cd /home/pi/V106
-sh stop_dvswitch.sh
+#sed -i "18c DVSWITCH=OFF" /home/pi/status.ini
+#cd /home/pi/V106
+#sh stop_dvswitch.sh
 
 # pone marca en ON porque se está utilizando DVSWITCH 
-sed -i "20c MARCA_DVSWITCH=ON" /home/pi/status.ini
+#sed -i "20c MARCA_DVSWITCH=ON" /home/pi/status.ini
 
 clear
 
@@ -81,7 +81,7 @@ sudo cp Abrir_DMR2YSF.desktop /home/pi/Desktop
 
 sudo rm /home/pi/Abrir_DMR2YSF.desktop
 
-else
+#else
 
 mode=`grep -n -m 1 "^Port=" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini`
 buscar=":"
