@@ -1,6 +1,5 @@
 #!/bin/bash
-estado_dvswitch=$(awk "NR==18" /home/pi/status.ini)
-if [ "$estado_dvswitch" = 'DVSWITCH=ON' ];then
+#if [ "$estado_dvswitch" = 'DVSWITCH=ON' ];then
 
 #Colores
 ROJO="\033[1;31m"
@@ -11,13 +10,13 @@ CIAN="\033[1;36m"
 GRIS="\033[0m"
 MARRON="\33[38;5;138m"
 
-echo "${BLANCO}"
-echo "                  ******************************************"
-echo "                  *           Al abrir DMR2YSF             *"
-echo "                  *         ${ROJO}se desactiva DVSWITCH${BLANCO}          *"
-echo "                  ******************************************"
-echo "${GRIS}"
-sleep 3
+#echo "${BLANCO}"
+#echo "                  ******************************************"
+#echo "                  *           Al abrir DMR2YSF             *"
+#echo "                  *         ${ROJO}se desactiva DVSWITCH${BLANCO}          *"
+#echo "                  ******************************************"
+#echo "${GRIS}"
+#sleep 3
 
 # Desactiva DVSWITCH 
 sed -i "18c DVSWITCH=OFF" /home/pi/status.ini
@@ -137,6 +136,6 @@ sudo cp Abrir_DMR2YSF.desktop /home/pi/Desktop
 
 sudo rm /home/pi/Abrir_DMR2YSF.desktop
 
-fi
+#fi
  
   
