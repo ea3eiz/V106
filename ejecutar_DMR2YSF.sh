@@ -1,7 +1,14 @@
 #!/bin/bash
 
-#para el sevicio dmrysf
+#para el sevicio dmrysf y desactiva DVSWITCH
+sudo systemctl stop ysfgateway.service
 sudo systemctl stop dmr2ysf.service
+sudo systemctl stop analog_bridge.service
+sudo systemctl stop ircddbgateway.service
+sudo systemctl stop md380-emu.service
+sudo systemctl stop mmdvm_bridge.service
+sudo systemctl stop nxdngateway.service
+/home/pi/V106/./dvswitch_desactivado
 
 #Colores
 ROJO="\033[1;31m"
