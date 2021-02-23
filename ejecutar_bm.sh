@@ -40,7 +40,8 @@ echo " *************************************************************************
 echo "                          ABRIENDO BRANDMEISTER                            "
 echo " **************************************************************************"
 sleep 2
-/home/pi/V106/./qt_info_bm & sudo ./MMDVMBM MMDVMBM.ini
+#/home/pi/V106/./qt_info_bm & sudo ./MMDVMBM MMDVMBM.ini
+sudo ./MMDVMBM MMDVMBM.ini
 #sudo ./MMDVMBM MMDVMBM.ini
 cd /home/pi/Desktop
 sudo cp Abrir_MMDVMBM.desktop /home/pi

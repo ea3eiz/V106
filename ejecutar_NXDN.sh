@@ -36,8 +36,8 @@ sudo rm /home/pi/Abrir_NXDN.desktop
 
 
 cd /home/pi/MMDVMHost
-/home/pi/V106/./qt_info_nxdn & sudo lxterminal --geometry=80x12 -e ./MMDVMNXDN MMDVMNXDN.ini &
-
+#/home/pi/V106/./qt_info_nxdn & sudo lxterminal --geometry=80x12 -e ./MMDVMNXDN MMDVMNXDN.ini &
+sudo lxterminal --geometry=80x12 -e ./MMDVMNXDN MMDVMNXDN.ini &
 cd /home/pi/NXDNClients/NXDNGateway
 sudo ./NXDNGateway NXDNGateway.ini
 

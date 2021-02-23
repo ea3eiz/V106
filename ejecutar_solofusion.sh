@@ -42,9 +42,8 @@ sleep 2
 cd /home/pi/YSFClients/YSFGateway
 sudo lxterminal --geometry=77x12 -e ./YSFGateway YSFGateway.ini & 
 cd /home/pi/MMDVMHost
-
-/home/pi/V106/./qt_info_solofusion & sudo ./MMDVMFUSION MMDVMFUSION.ini
-#sudo ./MMDVMFUSION MMDVMFUSION.ini
+#/home/pi/V106/./qt_info_solofusion & sudo ./MMDVMFUSION MMDVMFUSION.ini
+sudo ./MMDVMFUSION MMDVMFUSION.ini
 cd /home/pi/Desktop
 sudo cp Abrir_solofusion.desktop /home/pi
 
