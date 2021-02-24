@@ -243,8 +243,8 @@
             
             cp -f ModuleEchoLink.conf /usr/local/etc/svxlink/svxlink.d/
 
-            cp ircddbgateway /etc/
-            cp dstarrepeater /etc/
+            cp ircddbgateway /usr/local/etc/opendv/
+            cp dstarrepeater /usr/local/etc/opendv/
 
             cp info_panel_control.ini /home/pi/
 
