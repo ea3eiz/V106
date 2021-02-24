@@ -1,6 +1,6 @@
 #!/bin/bash
 #Colores
-./qt_bienvenida
+/home/pi/V106/ ./qt_bienvenida
 
 
 
