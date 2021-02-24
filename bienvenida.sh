@@ -2,7 +2,7 @@
 #Colores
 cd/home/pi/V106 
 ./qt_bienvenida
-
+sleep 10
 
 
 #ROJO="\033[1;31m"
