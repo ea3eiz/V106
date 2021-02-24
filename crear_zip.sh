@@ -88,8 +88,8 @@
             cp /usr/local/etc/opendv/ircddbgateway /home/pi/.local/COPIA_SEGURIDAD/Downloads
             cp /usr/local/etc/opendv/dstarrepeater /home/pi/.local/COPIA_SEGURIDAD/Downloads
 
-            cp /etc/ircddbgateway /home/pi/.local/COPIA_SEGURIDAD/Downloads
-            cp /etc/dstarrepeater /home/pi/.local/COPIA_SEGURIDAD/Downloads
+            #cp /etc/ircddbgateway /home/pi/.local/COPIA_SEGURIDAD/Downloads
+            #cp /etc/dstarrepeater /home/pi/.local/COPIA_SEGURIDAD/Downloads
 
             cd /home/pi
             cp info_panel_control.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads

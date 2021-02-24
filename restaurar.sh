@@ -269,8 +269,8 @@ cd /home/pi/.local/COPIA_SEGURIDAD/Downloads
             cp ircddbgateway /usr/local/etc/opendv/
             cp dstarrepeater /usr/local/etc/opendv/
 
-            cp ircddbgateway /etc/
-            cp dstarrepeater /etc/
+            #cp ircddbgateway /etc/
+            #cp dstarrepeater /etc/
 
             cp info_panel_control.ini /home/pi/
 
