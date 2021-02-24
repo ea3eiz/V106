@@ -1,5 +1,8 @@
 #!/bin/bash
-#Colores
+#Colore
+echo "parada"
+read a
+sleep 2
 cd/home/pi/V106 
 ./qt_bienvenida
 sleep 10
