@@ -25,7 +25,7 @@ sed -i "6c $frecuencia" /home/pi/INFO_RXF
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 cd /home/pi/Desktop
 sudo cp Abrir_solofusion.desktop /home/pi
-sed -i "6c Exec=sudo sh cerrar_solofusion.sh" /home/pi/Abrir_solofusion.desktop
+sed -i "6c Exec=sh -c 'cd /home/pi/V106/;lxterminal --geometry=77x18 -e sudo sh cerrar_solofusion.sh'" /home/pi/Abrir_solofusion.desktop
 sed -i "7c Icon=/home/pi/$SCRIPTS_version/SOLO_YSF_ON.png" /home/pi/Abrir_solofusion.desktop
 sed -i "11c Name[es_ES]=Cerrar solo FUSION" /home/pi/Abrir_solofusion.desktop
 sed -i "12c SOLOFUSION=ON" /home/pi/status.ini
