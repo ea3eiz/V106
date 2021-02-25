@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c 'cd /home/pi/V106;lxterminal --geometry=77x18 -e sudo sh ejecutar_bm.sh'
+Exec=sh -c 'cd /home/pi/V106;lxterminal --geometry=77x18 --title=BRANDMEISTER -e sudo sh ejecutar_bm.sh'
 Icon=/home/pi/V106/ICONO_BM_OFF.png
 Type=Application
 StartupNotify=false
