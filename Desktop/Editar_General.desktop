@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c "cd /home/pi/V106;./qt_editor_general"
+Exec=sh -c "cd /home/pi/V106;lxterminal --geometry=80x28 --title=EDITOR GENERAL -e sh editar_general.sh"
 Icon=/home/pi/V106/ICONO_EDITOR_GENERAL1.png
 Type=Application
 StartupNotify=false
