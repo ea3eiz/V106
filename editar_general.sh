@@ -1223,8 +1223,8 @@ done;;
 while true
 do
         echo "Valor  actual  del  Module: $rpi"
-        read -p 'Introduce el nombre de la raspi que tienes conectada o cuelquier otra cosa: '  info
-        echo ""
+        echo "Introduce el nombre de la raspi que tienes conectada o cuelquier otra cosa:"
+        echo "${AMARILLO}"
         actualizar=S 
         case $actualizar in
         [sS]* ) echo ""                          
