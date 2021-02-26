@@ -1205,7 +1205,7 @@ do
             sed -i "$linea_sed_MODULE Module=$module" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini
 
             #MMDVMNXDN.ini
-            sed -i "87c Module=$module" /home/pi/MMDVMHost/MMDVMNXDN.ini
+            sed -i "90c Module=$module" /home/pi/MMDVMHost/MMDVMNXDN.ini
 
             #MMDVMDMR2NXDN.ini
             sed -i "$linea_sed_MODULE Module=$module" /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini  
