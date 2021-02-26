@@ -1219,6 +1219,20 @@ do
         break;;
 esac
 done;;
+14) echo ""
+while true
+do
+        echo "Valor  actual  del  Module: $rpi"
+        read -p 'Introduce el nombre de la raspi que tienes conectada o cuelquier otra cosa '  info
+        actualizar=S 
+        case $actualizar in
+        [sS]* ) echo ""                          
+        sed -i "10c $info" /home/pi/info.ini                        
+        break;;
+        [nN]* ) echo ""
+        break;;
+esac
+done;;
 0) echo ""
 clear
 echo "\33[1;33m   **************************************************"
