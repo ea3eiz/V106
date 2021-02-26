@@ -1224,7 +1224,7 @@ while true
 do
         echo "Valor  actual  del  Module: $rpi"
         echo "Introduce el nombre de la raspi que tienes conectada o cuelquier otra cosa:"
-        echo "${AMARILLO}>"
+        echo "${AMARILLO}"
         read info
         actualizar=S 
         case $actualizar in
