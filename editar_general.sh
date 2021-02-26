@@ -114,7 +114,7 @@ linea_sed_MODULE=$numero_linea$letra
 echo "$MODULE"
 
 
-echo -n "\33[1;36m  14)\33[0m Información Raspi conectadaModificar indicativo  - \33[1;33m"
+echo -n "\33[1;36m  14)\33[0m Info Raspi conectada  - \33[1;33m"
 rpi=$(awk "NR==10" /home/pi/info.ini)
 echo "$rpi"
 
