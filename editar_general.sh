@@ -189,7 +189,7 @@ echo "Valor actual Indicativo: \33[1;33m${ind#*=}\33[1;37m"
 
                         #Convierte indicativo si se introduce en minúsculas a Mayúsculas
                         tu_indicativo=`echo "$tu_indicativo" | tr [:lower:] [:upper:]`
-                        sudo sed -i "116c dplusLogin=$tu_indicativo  " /usr/local/etc/opendv/ircddbgateway
+                        sudo sed -i "117c dplusLogin=$tu_indicativo  " /usr/local/etc/opendv/ircddbgateway
 
 
                         #Convierte indicativo si se introduce en minúsculas a Mayúsculas
