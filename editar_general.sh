@@ -112,6 +112,13 @@ MODULE=$(awk "NR==$numero_linea" /home/pi/MMDVMHost/TODOS_LOS_INIS.ini)
 letra=c
 linea_sed_MODULE=$numero_linea$letra
 echo "$MODULE"
+
+
+echo -n "\33[1;36m  14)\33[0m Información Raspi conectadaModificar indicativo  - \33[1;33m"
+rpi=$(awk "NR==10" /home/pi/info.ini)
+echo "$rpi"
+
+
 echo ""
 echo "   ${ROJO}0) Salir"
 echo ""
