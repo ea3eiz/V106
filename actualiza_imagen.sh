@@ -89,7 +89,7 @@ MARRON="\33[38;5;138m"
                         sudo curl --fail -o DPlus_Hosts.txt -s http://www.pistar.uk/downloads/DPlus_Hosts.txt
                         
                         # 26-08-2020 actualizar salas dv4mini
-                        sudo cp DExtra_Hosts.txt $usuario/dv4mini/xref.ip
+                        sudo cp DExtra_Hosts.txt $usuario/dv4mini/xref.ip 
 
                         # Cambio 04-10-2020 para que funcione el cambiar de sistemas desde la app dvswitch
                         #sudo cp $usuario/$SCRIPTS_version/ab-restart.sh /usr/local/sbin/
@@ -241,10 +241,10 @@ MARRON="\33[38;5;138m"
                         sed -i "11c Name=$frecuencia" $usuario/RXF_NXDN.desktop
                         cd $usuario
                         sudo cp RXF_NXDN.desktop $usuario/Desktop
-                        sudo rm $usuario/RXF_NXDN.desktop
+                        sudo rm $usuario/RXF_NXDN.desktop &
 
 clear
-/home/pi/V106/./qt_imagen_actualizada&
+/home/pi/V106/./qt_imagen_actualizada
 # echo "${VERDE}"
 # echo "\v\v\v\v\v"
 # echo "   *************************************************************************"
