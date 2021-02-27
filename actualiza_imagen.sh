@@ -244,4 +244,4 @@ MARRON="\33[38;5;138m"
                         sudo rm $usuario/RXF_NXDN.desktop
 
 clear
-/home/pi/V106/./qt_imagen_actualizada&
+/home/pi/V106/./qt_imagen_actualizada &
