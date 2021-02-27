@@ -241,10 +241,10 @@ MARRON="\33[38;5;138m"
                         sed -i "11c Name=$frecuencia" $usuario/RXF_NXDN.desktop
                         cd $usuario
                         sudo cp RXF_NXDN.desktop $usuario/Desktop
-                        sudo rm $usuario/RXF_NXDN.desktop &
+                        sudo rm $usuario/RXF_NXDN.desktop
 
 clear
-/home/pi/V106/./qt_imagen_actualizada
+/home/pi/V106/./qt_imagen_actualizada&
 # echo "${VERDE}"
 # echo "\v\v\v\v\v"
 # echo "   *************************************************************************"
