@@ -1229,6 +1229,8 @@ do
         actualizar=S 
         case $actualizar in
         [sS]* ) echo ""                          
+        #copia y pega
+        
         sed -i "10c $info" /home/pi/info.ini 
         sudo killall qt_indicativo
         cd /home/pi/V106     
