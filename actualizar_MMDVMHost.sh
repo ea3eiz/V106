@@ -101,6 +101,7 @@
                     
                     sed -i "193c Type=Gateway" /home/pi/MMDVMHost/MMDVMDMRGateway.ini
                     sed -i "196c Local=62032" /home/pi/MMDVMHost/MMDVMDMRGateway.ini
+                    
                     sed -i "196c Local=62032" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini
                     sed -i "196c Local=62032" /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
                     sed -i "196c Local=62037" /home/pi/MMDVMHost/MMDVMDMR2M17.ini
