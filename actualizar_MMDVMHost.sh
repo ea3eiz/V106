@@ -87,6 +87,8 @@
                     cp MMDVM.ini MMDVMESPECIAL.ini_copia2
                     cp MMDVM.ini MMDVMESPECIAL.ini_copia3                
 
+                    cp MMDVM.ini MMDVMNXDN.ini
+                    
                     cp MMDVM.ini TODOS_LOS_INIS.ini
 
                     cp MMDVM.ini MMDVMDMR2YSF.ini
@@ -94,15 +96,14 @@
                     cp MMDVM.ini MMDVMDMR2NXDN.ini
 
                     cp MMDVM.ini MMDVMDMR2M17.ini
-
-                    cp MMDVM.ini MMDVMNXDN.ini
-
-                    cp MMDVM.ini MMDVMDMR2M17.ini
-
+                  
                     cp MMDVM.ini MMDVMDMRGateway.ini 
                     
                     sed -i "193c Type=Gateway" /home/pi/MMDVMHost/MMDVMDMRGateway.ini
                     sed -i "196c Local=62032" /home/pi/MMDVMHost/MMDVMDMRGateway.ini
+                    sed -i "196c Local=62032" /home/pi/MMDVMHost/MMDVMDMR2YSF.ini
+                    sed -i "196c Local=62032" /home/pi/MMDVMHost/MMDVMDMR2NXDN.ini
+                    sed -i "196c Local=62037" /home/pi/MMDVMHost/MMDVMDMR2M17.ini
 
                     # recoge el fichero MMDVMDMRGateway.ini para ponerlo en el MMDVMHost
                     # cp /home/pi/MMDVMDMRGateway.ini /home/pi/MMDVMHost
