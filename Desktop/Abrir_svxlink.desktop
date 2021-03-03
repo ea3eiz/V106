@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c 'cd /home/pi/V106;lxterminal --geometry=80x27 --title=SVXLINK -e sudo sh ejecutar_svxlink.sh'
+Exec=sh -c 'cd /home/pi/V106;lxterminal --geometry=50x42 --title=SVXLINK -e sudo sh ejecutar_svxlink.sh'
 Icon=/home/pi/V106/ICONO_SVXLINK_OFF.png
 Type=Application
 StartupNotify=false
