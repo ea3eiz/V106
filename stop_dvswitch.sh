@@ -26,4 +26,4 @@ sudo systemctl stop nxdngateway.service
 
 #zenity --info --ok-label= --title=DVSWITCH --window-icon=/home/pi/V106/ICONO_DVSWITCH_OFF.png --width=400 --timeout=5 --text "\n\n\nDVSWITCH DESACTIVADO"
 
-/home/pi/V106/./dvswitch_desactivado
+/home/pi/V106/./qt_dvswitch_desactivado
