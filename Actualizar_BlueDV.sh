@@ -77,7 +77,8 @@ do
 			echo "   **************************************************************************"
 			sleep 3
  			else
-			sudo geany /home/pi/bluedv/BlueDVconfig.ini
+		
+		    cp /home/pi/bluedv/BlueDVconfig_original.ini /home/pi/bluedv/BlueDVconfig.ini
 			#mkdir bluedv_anterior
 			#cp bluedv/*.* bluedv_anterior/
 			#rm -r /home/pi/bluedv
