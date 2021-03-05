@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c "cd /home/pi/V106;lxterminal -e sudo sh ejecutar_dvswitch.sh"
+Exec=sh -c "cd /home/pi/V106;sh ejecutar_dvswitch.sh"
 Icon=/home/pi/V106/ICONO_DVSWITCH_OFF.png
 Type=Application
 StartupNotify=false
