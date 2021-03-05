@@ -71,6 +71,6 @@ clear
 
 #zenity --info --ok-label= --title=DVSWITCH --window-icon=/home/pi/V106/ICONO_DVSWITCH_ON.png --width=400 --timeout=5 --text "\n\nDVSWITCH ACTIVADO"
 
-/home/pi/V106/./dvswitch_activado
+/home/pi/V106/./qt_dvswitch_activado
 sed -i "18c DVSWITCH=ON" /home/pi/status.ini	
 			
