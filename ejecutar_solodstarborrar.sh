@@ -11,6 +11,9 @@ GRIS="\033[0m"
 
 estado_dvswitch=$(awk "NR==18" /home/pi/status.ini)
 if [ "$estado_dvswitch" = 'DVSWITCH=ON' ];then
+echo "pausa estado dvswitch$estado_dvswitch"
+read a
+
 
 echo "${ROJO}"
 echo "                  ******************************************"
