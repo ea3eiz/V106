@@ -1,9 +1,9 @@
 #!/bin/bash
 cd /home/pi/
 mkdir PROXY
+sudo chmod +x -R PROXY
 cd PROXY
 wget http://www.echolink.org/downloads/EchoLinkProxy_1_2_3.zip
-sleep 10
 unzip EchoLinkProxy_1_2_3.zip
 sudo sed -i "23c /home/pi/PROXY" /etc/rc.local
 sudo sed -i "24c java -jar EchoLinkProxy.jar ELProxy.conf &" /etc/rc.local
