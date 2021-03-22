@@ -1,7 +1,8 @@
 ﻿#!/bin/bash
 
-                    # guarda el fichero DMRGateway.ini para recuperarlo después de la actualización 
-                    # cp /home/pi/DMRGateway/DMRGateway.ini /home/pi
+                    # Antes de actualizar, hace una copia de seguridad para que cuando acabe la restaure
+                    cd /home/pi/V106
+                    sh copiar_restaurar_copiar.sh
                     
                     # Guarda el fichero TODOS_LOS_INIS.ini para recuperarlo después de la actualización
                     cp /home/pi/MMDVMHost/TODOS_LOS_INIS.ini /home/pi
@@ -112,11 +113,15 @@
                     # recoge el fichero DMRGateway.ini para ponerlo en el DMRGateway
                     # cp /home/pi/DMRGateway.ini /home/pi/DMRGateway
                     
-                    # Recoge el fichero ODOS_LOS_INIS.ini para ponerlo en el MMDVMHost
+                    # Recoge el fichero TODOS_LOS_INIS.ini para ponerlo en el MMDVMHost
                     cp /home/pi/TODOS_LOS_INIS.ini /home/pi/MMDVMHost
                 
 
                     #=================================================
+
+                    # Despues de actualizar, restaura la copia de seguridad
+                    cd /home/pi/V106
+                    sh copiar_restaurar_restaurar.sh
 
                     sudo chmod 777 -R /home/pi/MMDVMHost
                     exit;
