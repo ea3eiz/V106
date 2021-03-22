@@ -16,6 +16,6 @@ echo "   *                                                                      
 echo "   ************************************************************************"
                                 sudo rm -R /home/pi/MMDVMHost
                                 cp -r -a /home/pi/.local/MMDVMHost /home/pi/
-                                sudo chmod 777 -R MMDVMHost
+                                sudo chmod 777 -R /home/pi/MMDVMHost
                                 sleep 3
                                 exit;
