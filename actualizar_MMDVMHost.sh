@@ -2,7 +2,7 @@
 
                     # Antes de actualizar, hace una copia de seguridad para que cuando acabe la restaure
                     cd /home/pi/V106
-                    sh copiar_restaurar_copiar.sh
+                    sudo sh copiar_restaurar_copiar.sh
                     
                     # Guarda el fichero TODOS_LOS_INIS.ini para recuperarlo después de la actualización
                     cp /home/pi/MMDVMHost/TODOS_LOS_INIS.ini /home/pi
@@ -121,7 +121,7 @@
 
                     # Despues de actualizar, restaura la copia de seguridad
                     cd /home/pi/V106
-                    sh copiar_restaurar_restaurar.sh
+                    sudo sh copiar_restaurar_restaurar.sh
 
                     sudo chmod 777 -R /home/pi/MMDVMHost
                     exit;
