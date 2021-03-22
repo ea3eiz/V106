@@ -237,7 +237,7 @@ echo "***************************************************"
                             fi
 
                             info=$(awk "NR==19" /home/pi/.local/autoarranque.ini)
-                            if [ $info = "DMRGateway=OFF" ]
+                            if [ $info = "DMR2M17=OFF" ]
                             then
                             sudo rm /home/pi/.config/autostart/ABRIR_DMR2M17.desktop
                             else
