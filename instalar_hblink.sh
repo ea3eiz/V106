@@ -1,5 +1,5 @@
 #!/bin/bash
-
+clear
 #Colores
 ROJO="\033[1;31m"
 VERDE="\033[1;32m"
@@ -19,7 +19,7 @@ sudo python3 get-pip.py
 
 echo "${CIAN}"
 sudo apt install python3-twisted
-
+echo "${BLANCO}"
 sudo apt install python3-bitarray
 sudo apt install python3-dev
 git clone https://github.com/lz5pn/HBlink3
