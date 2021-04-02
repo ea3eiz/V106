@@ -93,14 +93,16 @@ echo "pulsa una tecla para continuar"
 read a
 #Instalar Parrot para  Echotest:
 sudo chmod +x playback.py
-echo "********** PARA AQUI *******"
-read a
+
+echo "pulsa una tecla para continuar"
 read a
 #Crear directorio  /var/log/hblink si no está creado
-mkdir /var/log/hblink
+sudo mkdir /var/log/hblink
 
+echo "pulsa una tecla para continuar"
+read a
 #Crear servicio para el parrot /lib/systemd/system/parrot.service 
-nano /lib/systemd/system/parrot.service
+sudo nano /lib/systemd/system/parrot.service
 #Copiar y pegar el contenido siguiente:
 ____________________________________________
 [Unit]
@@ -117,32 +119,51 @@ Restart=on-abort
 WantedBy=multi-user.target
 ____________________________________________
 
-systemctl enable parrot.service
-systemctl start parrot.service
+echo "pulsa una tecla para continuar"
+read a
+sudo systemctl enable parrot.service
+sudo systemctl start parrot.service
 systemctl status parrot.service
 
+echo "pulsa una tecla para continuar"
+read a
 #Configurar HBlink
-nano /opt/HBlink3/hblink.cfg
-nano /opt/HBlink3/rules.py
+sudo nano /opt/HBlink3/hblink.cfg
+sudo nano /opt/HBlink3/rules.py
 
+echo "pulsa una tecla para continuar"
+read a
 #Test de configuración:
-python3 /opt/HBlink3/bridge.py
+sudo python3 /opt/HBlink3/bridge.py
 
 #Si es ok salir con  "ctrl-c" y start los servicios
 
-systemctl start hblink
-systemctl status hblink
+sudo systemctl start hblink
+sudo systemctl status hblink
 
+echo "pulsa una tecla para continuar"
+read a
 #Instalar web monitor para HBLink.
 cd /opt/HBmonitor
-chmod +x install.sh
-./install.sh
-cp config_SAMPLE.py config.py
-nano /opt/HBmonitor/config.py
+sudo chmod +x install.sh
 
+echo "pulsa una tecla para continuar"
+read a
+sudo ./install.sh
+
+echo "pulsa una tecla para continuar"
+read a
+sudo cp config_SAMPLE.py config.py
+sudo nano /opt/HBmonitor/config.py
+
+echo "pulsa una tecla para continuar"
+read a
 #Start monitor service:
-cp utils/hbmon.service /lib/systemd/system/
-systemctl enable hbmon
-systemctl start hbmon
-systemctl status hbmon
+sudo cp utils/hbmon.service /lib/systemd/system/
+
+echo "pulsa una tecla para continuar"
+read a
+sudo systemctl enable hbmon
+sudo systemctl start hbmon
+sudo systemctl status hbmon
 
