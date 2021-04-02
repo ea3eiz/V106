@@ -1,47 +1,78 @@
 #!/bin/bash
-
-
-
 clear
-sudo apt update
+
 echo "apt update"
 read a
-#apt upgrade
-#apt dist-upgrade
-#apt autoremove
-#apt autoclean
+sudo apt update
 
-#install hblink
-#apt install git
-sudo apt install python3-distutils
 echo "apt install python3-distutils"
 read a
+sudo apt install python3-distutils
+
 cd /opt/
 wget https://bootstrap.pypa.io/get-pip.py
-python3 get-pip.py
-apt install python3-twisted
-apt install python3-bitarray
-apt install python3-dev
+echo "pulsa una tecla para continuar"
+read a
+
+sudo python3 get-pip.py
+echo "pulsa una tecla para continuar"
+read a
+sudo apt install python3-twisted
+
+echo "pulsa una tecla para continuar"
+read a
+sudo apt install python3-bitarray
+
+echo "pulsa una tecla para continuar"
+read a
+sudo apt install python3-dev
+
+echo "pulsa una tecla para continuar"
+read a
 git clone https://github.com/lz5pn/HBlink3
-mv /opt/HBlink3/ /opt/backup/
-mv /opt/backup/HBlink3/ /opt/
-mv /opt/backup/HBmonitor/ /opt/
 
-chmod 777 -R /opt/HBmonitor
+echo "pulsa una tecla para continuar"
+read a
+sudo mv /opt/HBlink3/ /opt/backup/
+sudo mv /opt/backup/HBlink3/ /opt/
+sudo mv /opt/backup/HBmonitor/ /opt/
 
-mv /opt/backup/dmr_utils3/ /opt/
-rm -r /opt/backup/
+echo "pulsa una tecla para continuar"
+read a
+sudo chmod 777 -R /opt/HBmonitor
+
+echo "pulsa una tecla para continuar"
+read a
+sudo mv /opt/backup/dmr_utils3/ /opt/
+sudo rm -r /opt/backup/
+
+echo "pulsa una tecla para continuar"
+read a
 cd /opt/dmr_utils3
-chmod +x install.sh
-./install.sh
-/usr/bin/python3 -m pip install --upgrade pip
-pip install --upgrade dmr_utils3
+sudo chmod +x install.sh
+
+echo "pulsa una tecla para continuar"
+read a
+sudo ./install.sh
+
+echo "pulsa una tecla para continuar"
+read a
+sudo /usr/bin/python3 -m pip install --upgrade pip
+
+echo "pulsa una tecla para continuar"
+read a
+sudo pip install --upgrade dmr_utils3
+
+echo "pulsa una tecla para continuar"
+read a
 cd /opt/HBlink3
-cp hblink-SAMPLE.cfg hblink.cfg
-cp rules-SAMPLE.py rules.py
+sleep 1
+sudo cp hblink-SAMPLE.cfg hblink.cfg
+sleep 1
+sudo cp rules-SAMPLE.py rules.py
 
 #Autostart HBLink:
-nano /lib/systemd/system/hblink.service
+sudo nano /lib/systemd/system/hblink.service
 #Copiar y pegar el contenido siguiente:
 ____________________________________________
 [Unit]
@@ -53,12 +84,18 @@ ExecStart=/usr/bin/python3 /opt/HBlink3/bridge.py
 WantedBy=multi-user.target
 ______________________________________________
 
-systemctl daemon-reload
-systemctl enable hblink
+echo "pulsa una tecla para continuar"
+read a
+sudo systemctl daemon-reload
+sudo systemctl enable hblink
 
+echo "pulsa una tecla para continuar"
+read a
 #Instalar Parrot para  Echotest:
-chmod +x playback.py
-
+sudo chmod +x playback.py
+echo "********** PARA AQUI *******"
+read a
+read a
 #Crear directorio  /var/log/hblink si no está creado
 mkdir /var/log/hblink
 
