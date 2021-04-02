@@ -1,11 +1,25 @@
 #!/bin/bash
+
+#Colores
+ROJO="\033[1;31m"
+VERDE="\033[1;32m"
+BLANCO="\033[1;37m"
+AMARILLO="\033[1;33m"
+CIAN="\033[1;36m"
+GRIS="\033[0m"
+MARRON="\33[38;5;138m"
+
+echo "${MARRON}"
 sudo apt update
 sudo apt install python3-distutils
 
 cd /opt/
 wget https://bootstrap.pypa.io/get-pip.py
 sudo python3 get-pip.py
+
+echo "${CIAN}"
 sudo apt install python3-twisted
+echo "${VERDE}"
 sudo apt install python3-bitarray
 sudo apt install python3-dev
 git clone https://github.com/lz5pn/HBlink3
@@ -18,6 +32,8 @@ sudo rm -r /opt/backup/
 sleep2
 cd /opt/dmr_utils3
 sudo chmod +x install.sh
+
+echo "${AMARILLO}"
 sudo ./install.sh
 sudo /usr/bin/python3 -m pip install --upgrade pip
 sudo pip install --upgrade dmr_utils3
@@ -58,6 +74,7 @@ sudo systemctl start parrot.service
 sudo systemctl start hblink
 #sudo systemctl status hblink
 
+echo "${CIAN}"
 sleep 2
 #Instalar web monitor para HBLink.
 cd /opt/HBmonitor
@@ -78,11 +95,12 @@ echo "********* FIN *****"
 echo "********* FIN *****"
 echo "********* FIN *****"
 echo "********* FIN *****"
-echo ""
-echo "********** SE REINICIARA EL SISTEMA EN 5 SEGUNDOS ***********"
-echo "********** SE REINICIARA EL SISTEMA EN 5 SEGUNDOS ***********"
-echo "********** SE REINICIARA EL SISTEMA EN 5 SEGUNDOS ***********"
-echo "********** SE REINICIARA EL SISTEMA EN 5 SEGUNDOS ***********"
-echo "********** SE REINICIARA EL SISTEMA EN 5 SEGUNDOS ***********"
+# echo ""
+# # echo "********** SE REINICIARA EL SISTEMA EN 5 SEGUNDOS ***********"
+# # echo "********** SE REINICIARA EL SISTEMA EN 5 SEGUNDOS ***********"
+# # echo "********** SE REINICIARA EL SISTEMA EN 5 SEGUNDOS ***********"
+# # echo "********** SE REINICIARA EL SISTEMA EN 5 SEGUNDOS ***********"
+# echo "********** SE REINICIARA EL SISTEMA EN 5 SEGUNDOS ***********"
 sleep 5
-#reboot
+# #reboot
+exit
