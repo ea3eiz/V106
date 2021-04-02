@@ -1,10 +1,9 @@
 #!/bin/bash
 
-sudo su
-echo "sudo su"
-read a
+
+
 clear
-apt update
+sudo apt update
 echo "apt update"
 read a
 #apt upgrade
@@ -14,7 +13,9 @@ read a
 
 #install hblink
 #apt install git
-apt install python3-distutils
+sudo apt install python3-distutils
+echo "apt install python3-distutils"
+read a
 cd /opt/
 wget https://bootstrap.pypa.io/get-pip.py
 python3 get-pip.py
