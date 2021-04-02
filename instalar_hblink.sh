@@ -113,8 +113,7 @@ python3 /opt/HBlink3/bridge.py
 
 #Si es ok salir con  "ctrl-c" y start los servicios
 
-systemctl start hblink
-#sudo systemctl status hblink
+
 
 sleep 2
 #Instalar web monitor para HBLink.
@@ -133,6 +132,12 @@ cp utils/hbmon.service /lib/systemd/system/
 
 sleep 2
 systemctl enable hbmon
-systemctl start hbmon
+systemctl start hbmon & systemctl start hblink &
+#sudo systemctl status hblink
 #systemctl status hbmon
+echo "********* FIN *****"
+echo "********* FIN *****"
+echo "********* FIN *****"
+echo "********* FIN *****"
+echo "********* FIN *****"
 echo "********* FIN *****"
