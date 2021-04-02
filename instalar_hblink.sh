@@ -92,17 +92,10 @@ clear
 echo "${rojo}"
 echo "\v\v\v\v\v\v"
 
-echo "*******************   EL SISTEMA SE REINICIARÁ EN 5 SEGUNDOS  ***************"
-echo "*******************   EL SISTEMA SE REINICIARÁ EN 5 SEGUNDOS  ***************"
-echo "*******************   EL SISTEMA SE REINICIARÁ EN 5 SEGUNDOS  ***************"
-echo "*******************   EL SISTEMA SE REINICIARÁ EN 5 SEGUNDOS  ***************"
-echo "*******************   EL SISTEMA SE REINICIARÁ EN 5 SEGUNDOS  ***************"
-# echo ""
-# # echo "********** SE REINICIARA EL SISTEMA EN 5 SEGUNDOS ***********"
-# # echo "********** SE REINICIARA EL SISTEMA EN 5 SEGUNDOS ***********"
-# # echo "********** SE REINICIARA EL SISTEMA EN 5 SEGUNDOS ***********"
-# # echo "********** SE REINICIARA EL SISTEMA EN 5 SEGUNDOS ***********"
-# echo "********** SE REINICIARA EL SISTEMA EN 5 SEGUNDOS ***********"
-sleep 5
-sudo reboot
+echo "*****************************************************************************"
+echo "*****************************************************************************"
+echo "*******************   HA FINALIZADO LA INSTALACIÓN CON EXITO  ***************"
+echo "*****************************************************************************"
+echo "*****************************************************************************"
+exit
 
