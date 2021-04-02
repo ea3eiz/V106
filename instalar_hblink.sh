@@ -158,8 +158,8 @@ sleep 2
 #Start monitor service:
 cp utils/hbmon.service /lib/systemd/system/
 
-echo "pulsa una tecla para continuar"
-read a
+clear
+sleep 2
 systemctl enable hbmon
 systemctl start hbmon
 #systemctl status hbmon
