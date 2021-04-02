@@ -19,7 +19,7 @@ sudo python3 get-pip.py
 
 echo "${CIAN}"
 sudo apt install python3-twisted
-echo "${VERDE}"
+
 sudo apt install python3-bitarray
 sudo apt install python3-dev
 git clone https://github.com/lz5pn/HBlink3
@@ -33,7 +33,7 @@ sleep2
 cd /opt/dmr_utils3
 sudo chmod +x install.sh
 
-echo "${AMARILLO}"
+echo "${VERDE}"
 sudo ./install.sh
 sudo /usr/bin/python3 -m pip install --upgrade pip
 sudo pip install --upgrade dmr_utils3
@@ -89,13 +89,14 @@ sudo systemctl enable hbmon
 sudo systemctl start hbmon
 #sudo systemctl status hbmon
 clear
+echo "${rojo}"
 echo "\v\v\v\v\v\v"
-echo "*********************************  FIN  *************************************"
-echo "*********************************  FIN  *************************************"
-echo "*********************************  FIN  *************************************"
-echo "*********************************  FIN  *************************************"
-echo "*********************************  FIN  *************************************"
-echo "*********************************  FIN  *************************************"
+
+echo "*******************   EL SISTEMA SE REINICIARÁ EN 5 SEGUNDOS  ***************"
+echo "*******************   EL SISTEMA SE REINICIARÁ EN 5 SEGUNDOS  ***************"
+echo "*******************   EL SISTEMA SE REINICIARÁ EN 5 SEGUNDOS  ***************"
+echo "*******************   EL SISTEMA SE REINICIARÁ EN 5 SEGUNDOS  ***************"
+echo "*******************   EL SISTEMA SE REINICIARÁ EN 5 SEGUNDOS  ***************"
 # echo ""
 # # echo "********** SE REINICIARA EL SISTEMA EN 5 SEGUNDOS ***********"
 # # echo "********** SE REINICIARA EL SISTEMA EN 5 SEGUNDOS ***********"
@@ -103,5 +104,5 @@ echo "*********************************  FIN  **********************************
 # # echo "********** SE REINICIARA EL SISTEMA EN 5 SEGUNDOS ***********"
 # echo "********** SE REINICIARA EL SISTEMA EN 5 SEGUNDOS ***********"
 sleep 5
-# #reboot
-exit
+sudo reboot
+
