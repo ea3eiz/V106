@@ -112,7 +112,7 @@ ____________________________________________
 sleep 2
 echo "${VERDE}"
 systemctl enable parrot.service
-systemctl start parrot.service
+#systemctl start parrot.service
 #sudo systemctl status parrot.service
 
 sleep 2
@@ -146,7 +146,7 @@ cp utils/hbmon.service /lib/systemd/system/
 
 sleep 2
 systemctl enable hbmon
-systemctl start hbmon & systemctl start hblink &
+systemctl start parrot.service & systemctl start hbmon & systemctl start hblink & 
 #sudo systemctl status hblink
 #systemctl status hbmon
 clear
