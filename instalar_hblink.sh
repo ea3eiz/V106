@@ -89,12 +89,12 @@ sudo systemctl enable hbmon
 sudo systemctl start hbmon
 #sudo systemctl status hbmon
 clear
-echo "${rojo}"
+echo "${AMARILLO}"
 echo "\v\v\v\v\v\v"
 
 echo "*****************************************************************************"
 echo "*****************************************************************************"
-echo "*******************   HA FINALIZADO LA INSTALACIÓN CON EXITO  ***************"
+echo "*******************  LA INSTALACIÓN HA FINALIZADO CON EXITO  ****************"
 echo "*****************************************************************************"
 echo "*****************************************************************************"
 exit
