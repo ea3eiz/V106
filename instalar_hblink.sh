@@ -159,7 +159,7 @@ sudo nano /opt/HBmonitor/config.py
 echo "pulsa una tecla para continuar"
 read a
 #Start monitor service:
-sudo cp utils/hbmon.service /lib/systemd/system/
+sudo cp /opt/HBmonitor/utils/hbmon.service /lib/systemd/system/
 
 echo "pulsa una tecla para continuar"
 read a
