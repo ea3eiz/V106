@@ -120,9 +120,9 @@ sleep 2
 #nano /opt/HBlink3/hblink.cfg
 #nano /opt/HBlink3/rules.py
 
-sleep 2
+#sleep 2
 #Test de configuración:
-python3 /opt/HBlink3/bridge.py
+#python3 /opt/HBlink3/bridge.py
 
 #Si es ok salir con  "ctrl-c" y start los servicios
 
