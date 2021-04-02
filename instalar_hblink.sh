@@ -1,4 +1,12 @@
 #!/bin/bash
+#Colores
+ROJO="\033[1;31m"
+VERDE="\033[1;32m"
+BLANCO="\033[1;37m"
+AMARILLO="\033[1;33m"
+CIAN="\033[1;36m"
+GRIS="\033[0m"
+MARRON="\33[38;5;138m"
 apt update
 
 sleep 2
@@ -7,7 +15,7 @@ apt install python3-distutils
 cd /opt/
 wget https://bootstrap.pypa.io/get-pip.py
 sleep 2
-
+echo "${VERDE}"
 python3 get-pip.py
 sleep 2
 apt install python3-twisted
@@ -19,6 +27,7 @@ sleep 2
 apt install python3-dev
 
 sleep 2
+echo "${CIAN}"
 git clone https://github.com/lz5pn/HBlink3
 
 sleep 2
@@ -34,6 +43,7 @@ sudo mv /opt/backup/dmr_utils3/ /opt/
 sudo rm -r /opt/backup/
 
 sleep 2
+echo "${AMARILLO}"
 cd /opt/dmr_utils3
 chmod +x install.sh
 
@@ -44,6 +54,7 @@ sleep 2
 /usr/bin/python3 -m pip install --upgrade pip
 
 sleep 2
+echo "${MARRON}"
 pip install --upgrade dmr_utils3
 
 sleep 2
@@ -67,6 +78,7 @@ WantedBy=multi-user.target
 ______________________________________________
 
 sleep 2
+echo "${BLANCO}"
 sudo systemctl daemon-reload
 sudo systemctl enable hblink
 
@@ -98,6 +110,7 @@ WantedBy=multi-user.target
 ____________________________________________
 
 sleep 2
+echo "${VERDE}"
 systemctl enable parrot.service
 systemctl start parrot.service
 #sudo systemctl status parrot.service
@@ -121,6 +134,7 @@ cd /opt/HBmonitor
 chmod +x install.sh
 
 sleep 2
+echo "${AMARILLO}"
 ./install.sh
 
 sleep 2
@@ -136,6 +150,7 @@ systemctl start hbmon & systemctl start hblink &
 #sudo systemctl status hblink
 #systemctl status hbmon
 clear
+echo "${ROJO}"
 echo "********* FIN *****"
 echo "********* FIN *****"
 echo "********* FIN *****"
