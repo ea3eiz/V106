@@ -135,9 +135,18 @@ systemctl enable hbmon
 systemctl start hbmon & systemctl start hblink &
 #sudo systemctl status hblink
 #systemctl status hbmon
+clear
 echo "********* FIN *****"
 echo "********* FIN *****"
 echo "********* FIN *****"
 echo "********* FIN *****"
 echo "********* FIN *****"
 echo "********* FIN *****"
+echo ""
+echo "********** SE REINICIARA EL SISTEMA EN 5 SEGUNDOS ***********"
+echo "********** SE REINICIARA EL SISTEMA EN 5 SEGUNDOS ***********"
+echo "********** SE REINICIARA EL SISTEMA EN 5 SEGUNDOS ***********"
+echo "********** SE REINICIARA EL SISTEMA EN 5 SEGUNDOS ***********"
+echo "********** SE REINICIARA EL SISTEMA EN 5 SEGUNDOS ***********"
+sleep 5
+reboot
