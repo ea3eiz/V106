@@ -23,14 +23,14 @@
                         mv temp.cfg hblink.cfg
 
 						#echo "Longitud que hay ahora"
-						Longitud=0.0
+						Longitud=longitude
 						echo "Introduce Longitud"
 						read Longitud_nueva
 						sed "s/$Longitud/$Longitud_nueva/g" hblink.cfg > temp.cfg
                         mv temp.cfg hblink.cfg
 
 						#echo "Latitud que hay ahora"
-						Latitud=0.0
+						Latitud=latitude
 						echo "Introduce Latitud"
 						read Latitud_nueva
 						sed "s/$Latitud/$Latitud_nueva/g" hblink.cfg > temp.cfg
