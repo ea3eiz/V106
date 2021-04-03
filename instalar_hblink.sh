@@ -91,6 +91,7 @@ sudo systemctl start hbmon
 
 sudo cp /home/pi/V106/hblink.cfg /opt/HBlink3/
 sudo cp /home/pi/V106/rules.py /opt/HBlink3/
+sudo cp /home/pi/V106/index_template.html /opt/HBmonitor/
 clear
 echo "${AMARILLO}"
 echo "\v\v\v\v\v\v"
