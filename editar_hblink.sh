@@ -13,7 +13,7 @@
                         mv temp.cfg hblink.cfg
 
                         sed "s/$indicativo/$indicativo_nuevo/g" rules.py > temp.py
-                        mv temp.py hb_confbridge_rules.py
+                        mv temp.py rules.py
                         
                         #echo "Password que hay ahora (PASSWORD)"
 						password=PASSMASTER
@@ -42,10 +42,6 @@
 						read Id_nueva
 						sed "s/$Id/$Id_nueva/g" hblink.cfg > temp.cfg
                         mv temp.cfg hblink.cfg
-
-                        cd /opt/HBmonitor
-                        sed "s/$indicativo/$indicativo_nuevo/g" index_template.html > temp.html
-                        mv temp.html index_template.html
 
 						sudo systemctl restart hblink & sudo systemctl restart hbmon &
 
