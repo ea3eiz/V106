@@ -43,11 +43,11 @@
 						sed "s/$Id/$Id_nueva/g" hblink.cfg > temp.cfg
                         mv temp.cfg hblink.cfg
 
-                        cd /home/ubuntu/HBmonitor
+                        cd /opt/HBmonitor
                         sed "s/$indicativo/$indicativo_nuevo/g" index_template.html > temp.html
                         mv temp.html index_template.html
 
-						systemctl restart hblink & systemctl restart hbmon &
+						sudo systemctl restart hblink & sudo systemctl restart hbmon &
 
                         break;;
                         [Nn]* ) echo ""
