@@ -37,45 +37,44 @@ MARRON="\33[38;5;138m"
 						echo "Introduce indicativo"
 						read indicativo_nuevo
 						cd /opt/HBlink3
-                        sed "s/$indicativo/$indicativo_nuevo/g" hblink.cfg > temp.cfg
+                        sudo sed "s/$indicativo/$indicativo_nuevo/g" hblink.cfg > temp.cfg
                         mv temp.cfg hblink.cfg
 
-                        sed "s/$indicativo/$indicativo_nuevo/g" rules.py > temp.py
+                        sudo sed "s/$indicativo/$indicativo_nuevo/g" rules.py > temp.py
                         mv temp.py rules.py
                         
                         #echo "Password que hay ahora (PASSWORD)"
 						password=PASSMASTER
 						echo "Introduce Password"
 						read password_nuevo
-						sed "s/$password/$password_nuevo/g" hblink.cfg > temp.cfg
+						sudo sed "s/$password/$password_nuevo/g" hblink.cfg > temp.cfg
                         mv temp.cfg hblink.cfg
 
 						#echo "Latitud que hay ahora"
 						Latitud=latitude
 						echo "Introduce Latitud"
 						read Latitud_nueva
-						sed "s/$Latitud/$Latitud_nueva/g" hblink.cfg > temp.cfg
+						sudo sed "s/$Latitud/$Latitud_nueva/g" hblink.cfg > temp.cfg
                         mv temp.cfg hblink.cfg
 
 						#echo "Longitud que hay ahora"
 						Longitud=longitude
 						echo "Introduce Longitud"
 						read Longitud_nueva
-						sed "s/$Longitud/$Longitud_nueva/g" hblink.cfg > temp.cfg
+						sudo sed "s/$Longitud/$Longitud_nueva/g" hblink.cfg > temp.cfg
                         mv temp.cfg hblink.cfg
 
                         #echo "Id de 7 cifras que hay ahora"
 						Id=1234567
 						echo "Introduce Id de 7 cifras"
 						read Id_nueva
-						sed "s/$Id/$Id_nueva/g" hblink.cfg > temp.cfg
+						sudo sed "s/$Id/$Id_nueva/g" hblink.cfg > temp.cfg
                         mv temp.cfg hblink.cfg
 
 						#echo "Dashboard of local DMR network"
-						cd /opt/HBmonitor
-						dsahboard=of local DMR network
-						sed "s/$dsahboard/$indicativo_nuevo/g" config.py > temp.cfg
-                        mv temp.cfg config.py
+						echo "Introduce el titulo del dashboard ej: Dashboard EA3EIZ 2143175 "
+						read dashboard
+						sudo sed -i "1c REPORT_NAME     = '$dashboard'" /opt/HBmonitor/config.py
 
 						sudo systemctl restart hblink & sudo systemctl restart hbmon &
 
