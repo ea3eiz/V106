@@ -84,4 +84,5 @@ MARRON="\33[38;5;138m"
                         clear
                         break;;
 esac
+sed -i "15c HBLINK_EDITADO=ON" /home/pi/info.ini 
 fi
