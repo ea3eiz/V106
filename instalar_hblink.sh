@@ -9,6 +9,31 @@ CIAN="\033[1;36m"
 GRIS="\033[0m"
 MARRON="\33[38;5;138m"
 
+                        # Comprueba si HBlink está instalado
+                        estado_anydesk=$(awk "NR==14" /home/pi/info.ini)
+                        if [ "$estado_anydesk" = 'HBLINK_INSTALADO=ON' ];then
+                        echo "\v\v\v\v\v\v"
+                        echo "${ROJO}"
+                        echo "***********************************************************************"
+                        echo "***********************************************************************"
+                        echo "                        HBLINK YA ESTÁ INSTALADO                       "
+                        echo "                      NO PUEDES VOLVER A INSTALARLO                    "
+                        echo "***********************************************************************"
+                        echo "***********************************************************************"
+                        sleep 4
+                        else
+                        echo "\v\v\v\v\v\v"
+                        echo "${VERDE}"
+                        echo "***********************************************************************"
+                        echo "***********************************************************************"
+                        echo "                         INSTALANDO HBLINK                             "
+                        echo "***********************************************************************"
+                        echo "***********************************************************************"
+
+
+
+
+
 echo "${MARRON}"
 sudo apt update
 sudo apt install python3-distutils
@@ -87,8 +112,9 @@ sleep 2
 sudo cp /home/pi/V106/hblink.cfg /opt/HBlink3/
 sudo cp /home/pi/V106/rules.py /opt/HBlink3/
 sudo cp /home/pi/V106/index_template.html /opt/HBmonitor/
-
-
+sudo cp /home/pi/V106/monitor.py /opt/HBmonitor/
+sudo cp /home/pi/V106/bridge_table.html /opt/HBmonitor/templates/
+sudo cp /home/pi/V106/hblink_table.html /opt/HBmonitor/templates/
 
 #Start monitor service:
 sudo cp utils/hbmon.service /lib/systemd/system/
@@ -109,5 +135,5 @@ echo "**************************************************************************
 echo "*******************  LA INSTALACIÓN HA FINALIZADO CON EXITO  *******************"
 echo "********************************************************************************"
 echo "********************************************************************************"
-exit
+fi
 
