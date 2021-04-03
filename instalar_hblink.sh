@@ -83,15 +83,23 @@ sudo ./install.sh
 sudo cp config_SAMPLE.py config.py
 #sudo nano /opt/HBmonitor/config.py
 
+sleep 2
+sudo cp /home/pi/V106/hblink.cfg /opt/HBlink3/
+sudo cp /home/pi/V106/rules.py /opt/HBlink3/
+sudo cp /home/pi/V106/index_template.html /opt/HBmonitor/
+
+
+
 #Start monitor service:
 sudo cp utils/hbmon.service /lib/systemd/system/
 sudo systemctl enable hbmon
 sudo systemctl start hbmon
 #sudo systemctl status hbmon
 
-sudo cp /home/pi/V106/hblink.cfg /opt/HBlink3/
-sudo cp /home/pi/V106/rules.py /opt/HBlink3/
-sudo cp /home/pi/V106/index_template.html /opt/HBmonitor/
+
+sudo systemctl restart hbmon
+sudo systemctl restart hblink
+
 clear
 echo "${AMARILLO}"
 echo "\v\v\v\v\v\v"
