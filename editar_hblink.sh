@@ -16,7 +16,7 @@
                         mv temp.py hb_confbridge_rules.py
                         
                         #echo "Password que hay ahora (PASSWORD)"
-						password=PASSWORD
+						password=PASSMASTER
 						echo "Introduce Password"
 						read password_nuevo
 						sed "s/$password/$password_nuevo/g" hblink.cfg > temp.cfg
