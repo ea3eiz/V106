@@ -29,7 +29,7 @@ MARRON="\33[38;5;138m"
                         #echo "puerto del Dashboard"
 						echo "Introduce puerto del dashboard ej: 8080 u otro"
 						read puerto
-						sudo sed -i "9c WEB_SERVER_PORT =  $puerto" /opt/HBmonitor/config.py
+						sudo sed -i "9c WEB_SERVER_PORT = $puerto" /opt/HBmonitor/config.py
 
 						sudo systemctl restart hblink & sudo systemctl restart hbmon &
 
