@@ -33,7 +33,7 @@ configuration file.
 BRIDGES = {
         'ECHOTEST': [
             {'SYSTEM': 'EAXXXX', 'TS': 2, 'TGID': 9999, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE', 'ON': [], 'OFF': [],'RESET': []},
-            {'SYSTEM': 'LORO', 'TS': 2, 'TGID': 9999, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE', 'ON': [], 'OFF': [],'RESET': []},
+            {'SYSTEM': 'ECHOTEST', 'TS': 2, 'TGID': 9999, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE', 'ON': [], 'OFF': [],'RESET': []},
         ],
         'DMR+4370': [
             {'SYSTEM': 'EAXXXX', 'TS': 2, 'TGID': 4370, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [4370], 'OFF': [84370], 'RESET': []},
