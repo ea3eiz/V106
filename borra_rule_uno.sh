@@ -54,6 +54,7 @@ sudo sed -i "243c # " /opt/HBlink3/hblink.cfg
 sudo sed -i "244c # " /opt/HBlink3/hblink.cfg
 sudo sed -i "245c # " /opt/HBlink3/hblink.cfg
 sudo sed -i "246c # " /opt/HBlink3/hblink.cfg
+sudo sed -i "247c # " /opt/HBlink3/hblink.cfg
 sudo sed -i "248c # " /opt/HBlink3/hblink.cfg
 sudo sed -i "249c # " /opt/HBlink3/hblink.cfg
 sudo sed -i "250c # " /opt/HBlink3/hblink.cfg
