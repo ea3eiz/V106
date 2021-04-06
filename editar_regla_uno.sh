@@ -11,26 +11,26 @@ MARRON="\33[38;5;138m"
 
                         echo "\v\v\v\v\v\v"
                         echo "${VERDE}"
-                        echo "*****************************************************************************"
-                        echo "*****************************************************************************"
-                        echo "                             EDITANDO REGLA Y PEER UNO                       "
-                        echo "*****************************************************************************"
-                        echo "*****************************************************************************"
+                        echo "********************************************************************************"
+                        echo "********************************************************************************"
+                        echo "                             EDITANDO REGLA Y PEER UNO                          "
+                        echo "********************************************************************************"
+                        echo "********************************************************************************"
 
                         actualizar=S
                         case $actualizar in
                         [sSyY]* ) echo ""
 
 						#echo "Indicativo tg conexión y tg desconexión Reflector"
-						echo "Introduce indicativo  ej: EA3EIZ "
+						echo "${VERDE}Introduce indicativo  ej: EA3EIZ "
 						read ind
-                        echo "Introduce TGID conexión ej: 4373 "
+                        echo "${AMARILLO}Introduce TGID conexión ej: 4373 "
 						read tgid
-                        echo "Introduce tg conexión ej: 4373 "
+                        echo "${BLANCO}Introduce tg conexión ej: 4373 "
 						read tgc
-                        echo "Introduce tg de desconexión ej: 84373"
+                        echo "${CIAN}Introduce tg de desconexión ej: 84373"
                         read tgd
-                        echo "Introduce reflector ej: DMR+4373"
+                        echo "${MARRON}Introduce reflector ej: DMR+4373"
                         read ref
 
 sudo sed -i "40c ]," /opt/HBlink3/rules.py
