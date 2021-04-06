@@ -32,10 +32,12 @@ MARRON="\33[38;5;138m"
                         read tgd
                         echo "Introduce reflector ej: DMR+4373"
                         read ref
-sudo sed -i "38c '$ref': [ " /opt/HBlink3/rules.py                        
-sudo sed -i "39c {'SYSTEM': '$ind', 'TS': 2, 'TGID': $tgid, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [$tgc], 'OFF': [$tgd], 'RESET': []}," /opt/HBlink3/rules.py
-sudo sed -i "40c {'SYSTEM': '$ref', 'TS': 2, 'TGID': 9, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []}," /opt/HBlink3/rules.py
-sudo sed -i "213c [$ref] " /opt/HBlink3/hblink.cfg
+
+sudo sed -i "40c ]," /opt/HBlink3/rules.py
+sudo sed -i "41c '$ref': [ " /opt/HBlink3/rules.py                        
+sudo sed -i "42c {'SYSTEM': '$ind', 'TS': 2, 'TGID': $tgid, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [$tgc], 'OFF': [$tgd], 'RESET': []}," /opt/HBlink3/rules.py
+sudo sed -i "43c {'SYSTEM': '$ref', 'TS': 2, 'TGID': 9, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []}," /opt/HBlink3/rules.py
+sudo sed -i "220c [$ref] " /opt/HBlink3/hblink.cfg
 
                         break;;
                         [Nn]* ) echo ""
