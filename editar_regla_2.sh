@@ -24,8 +24,9 @@ MARRON="\33[38;5;138m"
 						#echo "Indicativo tg conexión y tg desconexión Reflector"
 						echo "${VERDE}Introduce indicativo  ej: EA3EIZ "
 						read ind
-                        if [ $id == ""] then
-
+                        if [ $id = ""] 
+                        then
+                        echo "no hace nada"
                         else
                         sudo sed -i "1c $ind" /opt/HBlink3/rules.py
                         fi
