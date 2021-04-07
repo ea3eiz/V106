@@ -50,7 +50,7 @@ do
                                                                     
                         if [ $ind != "" ] 
                         then
-                        sudo sed -i "2c $ind" /opt/HBlink3/rules.py                        
+                        sudo sed -i "42c {'SYSTEM': '$ind', 'TS': 2, 'TGID': $tgid, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [$tgc], 'OFF': [$tgd], 'RESET': []}," /opt/HBlink3/rules.py                       
                         else
                         echo "no hace nada"
                         fi
