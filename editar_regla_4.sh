@@ -24,15 +24,15 @@ MARRON="\33[38;5;138m"
 						#echo "Indicativo tg conexión y tg desconexión Reflector"
 						echo "${VERDE}Introduce indicativo  ej: EA3EIZ "
 						read ind
-                        echo "${AMARILLO}Introduce TGID ej: 4373 "
+                        echo "${AMARILLO}Introduce TGID ej: 4374 "
 						read tgid                        
                         echo "${AMARILLO}Introduce TGID por el que quieras salir ej: 214"
 						read tgidsalir
-                        echo "${BLANCO}Introduce tg conexión ej: 4373 "
+                        echo "${BLANCO}Introduce tg conexión ej: 4374 "
 						read tgc
-                        echo "${CIAN}Introduce tg de desconexión ej: 84373"
+                        echo "${CIAN}Introduce tg de desconexión ej: 84374"
                         read tgd
-                        echo "${MARRON}Introduce reflector ej: DMR+4373"
+                        echo "${MARRON}Introduce reflector ej: DMR+4374"
                         read ref
 
 sudo sed -i "60c ]," /opt/HBlink3/rules.py
