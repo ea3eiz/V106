@@ -47,7 +47,7 @@ BRIDGES = {
         
         
         #regla 3
-        #3],    
+        #],    
         #'DMR+4371': [
             #{'SYSTEM': 'EAXXXX', 'TS': 2, 'TGID': 4371, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [4371], 'OFF': [84371], 'RESET': []},
             #{'SYSTEM': 'DMR+4371', 'TS': 2, 'TGID': 9, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []},
@@ -57,7 +57,7 @@ BRIDGES = {
         
         
         #regla 4
-        #4], 
+        #], 
         #'DMR+4374': [
             #{'SYSTEM': 'EAXXXX', 'TS': 2, 'TGID': 4374, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [4374], 'OFF': [84374], 'RESET': []},
             #{'SYSTEM': 'DMR+4374', 'TS': 2, 'TGID': 9, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []},
@@ -67,7 +67,7 @@ BRIDGES = {
         
         
         #regla 5
-        #5],  
+        #],  
         #'DMR+21465': [
             #{'SYSTEM': 'EAXXXX', 'TS': 2, 'TGID': 21465, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [21465], 'OFF': [821465], 'RESET': []},
             #{'SYSTEM': 'DMR+21465', 'TS': 2, 'TGID': 21465, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []},
@@ -77,30 +77,30 @@ BRIDGES = {
         
         
         #regla 6
-        #6],
-            #'DMR+21465': [
-            #{'SYSTEM': 'EAXXXX', 'TS': 2, 'TGID': 21465, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [21465], 'OFF': [821465], 'RESET': []},
-            #{'SYSTEM': 'DMR+21465', 'TS': 2, 'TGID': 21465, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []},
+        #],
+            #'DMR+4376': [
+            #{'SYSTEM': 'EAXXXX', 'TS': 2, 'TGID': 4376, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [4376], 'OFF': [84376], 'RESET': []},
+            #{'SYSTEM': 'DMR+4376', 'TS': 2, 'TGID': 9, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []},
         
         
         
         
         
         #regla 7
-        #7],
-            #'DMR+21465': [
-            #{'SYSTEM': 'EAXXXX', 'TS': 2, 'TGID': 21465, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [21465], 'OFF': [821465], 'RESET': []},
-            #{'SYSTEM': 'DMR+21465', 'TS': 2, 'TGID': 21465, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []},
+        #],
+            #'DMR+4377': [
+            #{'SYSTEM': 'EAXXXX', 'TS': 2, 'TGID': 4377, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [4377], 'OFF': [84377], 'RESET': []},
+            #{'SYSTEM': 'DMR+4377', 'TS': 2, 'TGID': 9, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []},
         
         
         
         
         
         #regla 8
-        #8],
-            #'DMR+21465': [
-            #{'SYSTEM': 'EAXXXX', 'TS': 2, 'TGID': 21465, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [21465], 'OFF': [821465], 'RESET': []},
-            #{'SYSTEM': 'DMR+21465', 'TS': 2, 'TGID': 21465, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []},
+        #],
+            #'DMR+4378': [
+            #{'SYSTEM': 'EAXXXX', 'TS': 2, 'TGID': 4378, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [4378], 'OFF': [84378], 'RESET': []},
+            #{'SYSTEM': 'DMR+4378', 'TS': 2, 'TGID': 9, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []},
         
         
         
@@ -108,25 +108,15 @@ BRIDGES = {
         
         #regla 9
         #],
-        #'DMR+21465': [
-        #{'SYSTEM': 'EAXXXX', 'TS': 2, 'TGID': 21465, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [21465], 'OFF': [821465], 'RESET': []},
-        #{'SYSTEM': 'DMR+21465', 'TS': 2, 'TGID': 21465, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []},
-        
-        
-        
-        
-        
+            #'DMR+4379': [
+            #{'SYSTEM': 'EAXXXX', 'TS': 2, 'TGID': 4379, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [4379], 'OFF': [84379], 'RESET': []},
+            #{'SYSTEM': 'DMR+4379', 'TS': 2, 'TGID': 9, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []},
+    
+
+
+
+
         #regla 10
-        #],
-        #'DMR+21465': [
-        #{'SYSTEM': 'EAXXXX', 'TS': 2, 'TGID': 21465, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [21465], 'OFF': [821465], 'RESET': []},
-        #{'SYSTEM': 'DMR+21465', 'TS': 2, 'TGID': 21465, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []},
-
-
-
-
-
-        #regla 11
         #],
         #'XLX266-Z': [
             #{'SYSTEM': 'EAXXXX', 'TS': 2, 'TGID': 4026, 'ACTIVE': True, 'TIMEOUT': 10, 'TO_TYPE': 'NONE',  'ON': [4026], 'OFF': [84026], 'RESET': []},
