@@ -24,7 +24,7 @@ MARRON="\33[38;5;138m"
 						#echo "Indicativo tg conexión y tg desconexión Reflector"
 						echo "${VERDE}Introduce indicativo  ej: EA3EIZ "
 						read ind
-                        echo "${AMARILLO}Introduce TGID conexión ej: 4373 "
+                        echo "${AMARILLO}Introduce TGID ej: 4373 "
 						read tgid
                         echo "${BLANCO}Introduce tg conexión ej: 4373 "
 						read tgc
@@ -38,27 +38,26 @@ sudo sed -i "41c '$ref': [ " /opt/HBlink3/rules.py
 sudo sed -i "42c {'SYSTEM': '$ind', 'TS': 2, 'TGID': $tgid, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [$tgc], 'OFF': [$tgd], 'RESET': []}," /opt/HBlink3/rules.py
 sudo sed -i "43c {'SYSTEM': '$ref', 'TS': 2, 'TGID': 9, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []}," /opt/HBlink3/rules.py
 
-                        sudo sed -i "220c [$ref] " /opt/HBlink3/hblink.cfg 
-                        sudo sed -i "221c MODE: PEER" /opt/HBlink3/hblink.cfg
-                        sudo sed -i "222c ENABLED: True" /opt/HBlink3/hblink.cfg
-                        sudo sed -i "223c LOOSE: True" /opt/HBlink3/hblink.cfg
-                        sudo sed -i "224c EXPORT_AMBE: False" /opt/HBlink3/hblink.cfg
-                        sudo sed -i "225c IP: " /opt/HBlink3/hblink.cfg
-                        sudo sed -i "226c PORT: 54002" /opt/HBlink3/hblink.cfg # el siguiente del 54002 sería 54003
-
-                        echo "${VERDE}Introduce Address  ej: 212.237.3.141 "
+                        sudo sed -i "220c [$ref] " /opt/HBlink3/hblink.cfg # no tocar 
+                        sudo sed -i "221c MODE: PEER" /opt/HBlink3/hblink.cfg # no tocar
+                        sudo sed -i "222c ENABLED: True" /opt/HBlink3/hblink.cfg # no tocar
+                        sudo sed -i "223c LOOSE: True" /opt/HBlink3/hblink.cfg # no tocar
+                        sudo sed -i "224c EXPORT_AMBE: False" /opt/HBlink3/hblink.cfg # no tocar
+                        sudo sed -i "225c IP: " /opt/HBlink3/hblink.cfg # no tocar
+                        sudo sed -i "226c PORT: 54002" /opt/HBlink3/hblink.cfg # #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO DIGITOS 54002
+                        echo "${VERDE}Introduce Address  ej: Brandmeister = master.spain-dmr.es / DMR+= 212.237.3.141 "
 						read address
                         sudo sed -i "227c MASTER_IP: $address" /opt/HBlink3/hblink.cfg
 
-						echo "${AMARILLO}Introduce puerto  ej: 55555 "
+						echo "${AMARILLO}Introduce puerto  ej: Brandmeister= 62031 / DMR+= 55555 "
 						read puerto
                         sudo sed -i "228c MASTER_PORT: $puerto" /opt/HBlink3/hblink.cfg
 
                         sudo sed -i "229c PASSPHRASE:" /opt/HBlink3/hblink.cfg #no tocar
 
-                        sudo sed -i "230c CALLSIGN: $ind" /opt/HBlink3/hblink.cfg
+                        sudo sed -i "230c CALLSIGN: $ind" /opt/HBlink3/hblink.cfg #no tocar
 
-						echo "${CIAN}Introduce indicativo  ej: 123456789 9 dígitos "
+						echo "${CIAN}Introduce indicativo  ej: 214317502 9 dígitos " #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO DIGITOS 89 = 02
 						read id
                         sudo sed -i "231c RADIO_ID: $id" /opt/HBlink3/hblink.cfg
 
@@ -98,7 +97,7 @@ sudo sed -i "43c {'SYSTEM': '$ref', 'TS': 2, 'TGID': 9, 'ACTIVE': True, 'TIMEOUT
                         sudo sed -i "244c PACKAGE_ID: HBLLINK RASPI" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "245c GROUP_HANGTIME: 5" /opt/HBlink3/hblink.cfg #no tocar
 
-						echo "${VERDE}Introduce Options ej: StartRef=4370;RelinkTime=15; "
+						echo "${VERDE}Introduce Options ej: Brandmeister = #Options / DMR+ = StartRef=4370;RelinkTime=15; "
 						read options
                         sudo sed -i "246c OPTIONS: $options" /opt/HBlink3/hblink.cfg
 
