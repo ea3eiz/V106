@@ -24,7 +24,7 @@ MARRON="\33[38;5;138m"
 						#echo "Indicativo tg conexión y tg desconexión Reflector"
 						echo "${VERDE}Introduce indicativo  ej: EA3EIZ "
 						read ind
-                        if [ $ind = ""] 
+                        if [ $ind = "" ] 
                         then
                         echo "no hace nada"
                         else
