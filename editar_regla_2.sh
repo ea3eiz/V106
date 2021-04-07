@@ -24,10 +24,10 @@ MARRON="\33[38;5;138m"
 						#echo "Indicativo tg conexión y tg desconexión Reflector"
 						echo "${VERDE}Introduce indicativo  ej: EA3EIZ "
 						read ind
-                        echo "${AMARILLO}Introduce TGID ej: 4372 "
-						read tgid
                         echo "${AMARILLO}Introduce PASSWORD ej: passw0rd, PASSWORD, password selfcare etc."
-						read password                         
+						read password 
+                        echo "${AMARILLO}Introduce TGID ej: 4372 "
+						read tgid                        
                         echo "${AMARILLO}Introduce TGID por el que quieras salir ej: 214"
 						read tgidsalir
                         echo "${BLANCO}Introduce tg conexión ej: 4372 "
@@ -55,7 +55,7 @@ sudo sed -i "43c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True,
 						echo "${AMARILLO}Introduce puerto  ej: Brandmeister= 62031 / DMR+= 55555 "
 						read puerto
                         sudo sed -i "228c MASTER_PORT: $puerto" /opt/HBlink3/hblink.cfg
-                        sudo sed -i "229c PASSPHRASE: $password" /opt/HBlink3/hblink.cfg #no tocar
+                        sudo sed -i "229c PASSPHRASE: $password" /opt/HBlink3/hblink.cfg
                         sudo sed -i "230c CALLSIGN: $ind" /opt/HBlink3/hblink.cfg #no tocar
 						echo "${CIAN}Introduce indicativo  ej: 214317502 9 dígitos " #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO DIGITOS 89 = 02
 						read id

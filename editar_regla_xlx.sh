@@ -24,6 +24,8 @@ MARRON="\33[38;5;138m"
 						#echo "Indicativo tg conexión y tg desconexión Reflector"
 						echo "${VERDE}Introduce indicativo  ej: EA3EIZ "
 						read ind
+                        echo "${AMARILLO}Introduce PASSWORD ej: passw0rd, PASSWORD, password selfcare etc."
+						read password                        
                         echo "${AMARILLO}Introduce TGID ej: 4026 "
 						read tgid                        
                         echo "${AMARILLO}Introduce TGID por el que quieras salir ej: 4026"
@@ -37,14 +39,9 @@ MARRON="\33[38;5;138m"
 
 sudo sed -i "120c ]," /opt/HBlink3/rules.py
 sudo sed -i "121c '$ref': [ " /opt/HBlink3/rules.py                        
-
 sudo sed -i "122c {'SYSTEM': '$ind', 'TS': 2, 'TGID': $tgid, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [$tgc], 'OFF': [$tgd], 'RESET': []}," /opt/HBlink3/rules.py
 sudo sed -i "123c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgid, 'ACTIVE': True, 'TIMEOUT': 10, 'TO_TYPE': 'NONE',  'ON': [$tgid], 'OFF': [], 'RESET': []}," /opt/HBlink3/rules.py
 sudo sed -i "124c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True, 'TIMEOUT': 10, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []}," /opt/HBlink3/rules.py
-
-
-
-
 
                         sudo sed -i "1020c [$ref] " /opt/HBlink3/hblink.cfg # no tocar 
                         sudo sed -i "1021c MODE: PEER" /opt/HBlink3/hblink.cfg # no tocar
@@ -59,7 +56,7 @@ sudo sed -i "124c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True
 						echo "${AMARILLO}Introduce puerto  ej: Brandmeister= 62031 / DMR+= 55555 "
 						read puerto
                         sudo sed -i "1028c MASTER_PORT: $puerto" /opt/HBlink3/hblink.cfg
-                        sudo sed -i "1029c PASSPHRASE:" /opt/HBlink3/hblink.cfg #no tocar
+                        sudo sed -i "1029c PASSPHRASE: $password" /opt/HBlink3/hblink.cfg
                         sudo sed -i "1030c CALLSIGN: $ind" /opt/HBlink3/hblink.cfg #no tocar
 						echo "${CIAN}Introduce indicativo  ej: 214317502 9 dígitos " #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO DIGITOS 89 = 02
 						read id
