@@ -13,7 +13,7 @@ MARRON="\33[38;5;138m"
                         echo "${VERDE}"
                         echo "********************************************************************************"
                         echo "********************************************************************************"
-                        echo "                             EDITANDO REGLA Y PEER UNO                          "
+                        echo "                             EDITANDO REGLA Y PEER 3                            "
                         echo "********************************************************************************"
                         echo "********************************************************************************"
 
@@ -50,63 +50,48 @@ sudo sed -i "53c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True,
                         echo "${VERDE}Introduce Address  ej: Brandmeister = master.spain-dmr.es / DMR+= 212.237.3.141 "
 						read address
                         sudo sed -i "327c MASTER_IP: $address" /opt/HBlink3/hblink.cfg
-
 						echo "${AMARILLO}Introduce puerto  ej: Brandmeister= 62031 / DMR+= 55555 "
 						read puerto
                         sudo sed -i "328c MASTER_PORT: $puerto" /opt/HBlink3/hblink.cfg
-
                         sudo sed -i "329c PASSPHRASE:" /opt/HBlink3/hblink.cfg #no tocar
-
                         sudo sed -i "330c CALLSIGN: $ind" /opt/HBlink3/hblink.cfg #no tocar
-
 						echo "${CIAN}Introduce indicativo  ej: 214317502 9 dígitos " #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO DIGITOS 89 = 02
 						read id
                         sudo sed -i "331c RADIO_ID: $id" /opt/HBlink3/hblink.cfg
-
 						echo "${MARRON}Introduce RXfrecuencia  ej: 9 dígitos sin punto "
 						read rxf
                         sudo sed -i "332c RX_FREQ: $rxf" /opt/HBlink3/hblink.cfg
-
 						echo "${VERDE}Introduce TXfrecuencia  ej: 9 dígitos sin punto "
 						read txf
                         sudo sed -i "333c TX_FREQ: $txf" /opt/HBlink3/hblink.cfg
                         sudo sed -i "334c TX_POWER: 25" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "335c COLORCODE: 1" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "336c SLOTS: 2" /opt/HBlink3/hblink.cfg #no tocar
-
 						echo "${AMARILLO}Introduce Latitud  ej: 4x.xxxxxx"
 						read lat
                         sudo sed -i "337c LATITUDE: $lat" /opt/HBlink3/hblink.cfg
-
 						echo "${BLANCO}Introduce Longitud  ej: 2.xxxxxx"
 						read lon
                         sudo sed -i "338c LONGITUDE: $lon" /opt/HBlink3/hblink.cfg
                         sudo sed -i "339c HEIGHT: 209" /opt/HBlink3/hblink.cfg #no tocar
-
 						echo "${CIAN}Introduce tu Ciudad"
 						read ciudad
                         sudo sed -i "340c LOCATION: $ciudad" /opt/HBlink3/hblink.cfg
-
                         sudo sed -i "341c DESCRIPTION: This is a cool Hotspot" /opt/HBlink3/hblink.cfg #no tocar
-
 						echo "${MARRON}Introduce tu URL preferida"
 						read url
                         sudo sed -i "342c URL: $url" /opt/HBlink3/hblink.cfg
-
                         sudo sed -i "343c SOFTWARE_ID: 20191001" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "344c PACKAGE_ID: HBLLINK RASPI" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "345c GROUP_HANGTIME: 5" /opt/HBlink3/hblink.cfg #no tocar
-
 						echo "${VERDE}Introduce Options ej: Brandmeister = #Options / DMR+ = StartRef=4370;RelinkTime=15; "
 						read options
                         sudo sed -i "346c OPTIONS: $options" /opt/HBlink3/hblink.cfg
-
                         sudo sed -i "347c USE_ACL: True" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "348c REG_ACL: DENY:1" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "349c SUB_ACL: DENY:1" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "350c TGID_TS1_ACL: PERMIT:ALL" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "351c TGID_TS2_ACL: PERMIT:ALL" /opt/HBlink3/hblink.cfg #no tocar
-
                         break;;
                         [Nn]* ) echo ""
                         clear
