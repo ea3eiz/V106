@@ -25,7 +25,9 @@ MARRON="\33[38;5;138m"
 						echo "${VERDE}Introduce indicativo  ej: EA3EIZ "
 						read ind
                         echo "${AMARILLO}Introduce TGID ej: 4373 "
-						read tgid
+						read tgid                        
+                        echo "${AMARILLO}Introduce TGID por el que quieras salir ej: 214"
+						read tgidsalir
                         echo "${BLANCO}Introduce tg conexión ej: 4373 "
 						read tgc
                         echo "${CIAN}Introduce tg de desconexión ej: 84373"
@@ -36,7 +38,7 @@ MARRON="\33[38;5;138m"
 sudo sed -i "40c ]," /opt/HBlink3/rules.py
 sudo sed -i "41c '$ref': [ " /opt/HBlink3/rules.py                        
 sudo sed -i "42c {'SYSTEM': '$ind', 'TS': 2, 'TGID': $tgid, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [$tgc], 'OFF': [$tgd], 'RESET': []}," /opt/HBlink3/rules.py
-sudo sed -i "43c {'SYSTEM': '$ref', 'TS': 2, 'TGID': 9, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []}," /opt/HBlink3/rules.py
+sudo sed -i "43c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []}," /opt/HBlink3/rules.py
 
                         sudo sed -i "220c [$ref] " /opt/HBlink3/hblink.cfg # no tocar 
                         sudo sed -i "221c MODE: PEER" /opt/HBlink3/hblink.cfg # no tocar
