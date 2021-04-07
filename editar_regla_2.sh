@@ -28,7 +28,7 @@ MARRON="\33[38;5;138m"
                         then
                         echo "no hace nada"
                         else
-                        sudo sed -i "1c $ind" /opt/HBlink3/rules.py
+                        sudo sed -i "2c $ind" /opt/HBlink3/rules.py
                         fi
                         echo "${AMARILLO}Introduce TGID ej: 4373 "
 						read tgid
