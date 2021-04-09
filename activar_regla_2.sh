@@ -23,10 +23,6 @@ MARRON="\33[38;5;138m"
 
 sudo sed -i "222c ENABLED: True" /opt/HBlink3/hblink.cfg
 
-string="|abcdefg|" string2=${string#"|"} string2=${string2%"|"} echo $string2
-
-Fuente: https://www.enmimaquinafunciona.com/pregunta/25223/-bash-elimina-el-primer-y-el-ultimo-caracter-de-una-cadena-
-
 line40=$(awk "NR==40" /opt/HBlink3/rules.py)
 line40${line40#"#"} #borra la primera letra de la variable
 sleep 2
