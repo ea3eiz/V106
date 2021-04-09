@@ -26,10 +26,8 @@ MARRON="\33[38;5;138m"
                         echo "${CIAN}Configura tu Id ej: 214317502 9 dígitos " #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO DIGITOS 89 = 02
 						read id
                         sudo sed -i "231c RADIO_ID: $id" /opt/HBlink3/hblink.cfg
-                        echo ""
-                        echo ""
-                        echo "${AMARILLO}*********************************************************************************"
-                        echo ""
+                        clear
+                        echo "${BLANCO}*********************************************************************************"
                         echo ""
                         
                         echo "${MARRON}Configura el Nombre que le darás a tu Conexión ej: DMR+4370"
@@ -51,12 +49,9 @@ MARRON="\33[38;5;138m"
 						echo "${VERDE}Configura Options ej: Brandmeister = #Options / DMR+ = StartRef=4370;RelinkTime=15; "
 						read options
                         sudo sed -i "246c OPTIONS: $options" /opt/HBlink3/hblink.cfg
+                        clear
+                        echo "${BLANCO}*********************************************************************************"
                         echo ""
-                        echo ""
-                        echo "${AMARILLO}*********************************************************************************"
-                        echo ""
-                        echo ""
-
                         echo "${AMARILLO}Configura el TG que utilizarás para transmitir ej: 4370 "
 						read tgid                        
                         echo "${AMARILLO}Configura el TG por el que quieres que salga tu transmisión ej: DMR+ = 9 Brandmeister = 214"
@@ -65,11 +60,9 @@ MARRON="\33[38;5;138m"
 						read tgc
                         echo "${CIAN}Configura el número que utilizarás para desconectarte del Servidor ej: 84370"
                         read tgd
-                        echo ""
-                        echo ""
-                        echo "${AMARILLO}*********************************************************************************"
-                        echo ""
-                        echo ""                      
+                        clear
+                        echo "${BLANCO}*********************************************************************************"
+                        echo ""                     
 
 sudo sed -i "40c ]," /opt/HBlink3/rules.py
 sudo sed -i "41c '$ref': [ " /opt/HBlink3/rules.py                        
