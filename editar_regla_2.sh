@@ -44,7 +44,7 @@ MARRON="\33[38;5;138m"
 						read password 
                         sudo sed -i "229c PASSPHRASE: $password" /opt/HBlink3/hblink.cfg
 
-						echo "${VERDE}Configura Options ej: Brandmeister = #Options / DMR+ = StartRef=4370;RelinkTime=15; "
+						echo "${VERDE}Configura Options ej: Brandmeister =#Options / DMR+=StartRef=4370;RelinkTime=15; "
 						read options
                         sudo sed -i "246c OPTIONS: $options" /opt/HBlink3/hblink.cfg
                         clear
