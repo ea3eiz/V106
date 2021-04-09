@@ -57,7 +57,7 @@ sudo sed -i "43c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True,
                         sudo sed -i "228c MASTER_PORT: $puerto" /opt/HBlink3/hblink.cfg
                         sudo sed -i "229c PASSPHRASE: $password" /opt/HBlink3/hblink.cfg
                         sudo sed -i "230c CALLSIGN: $ind" /opt/HBlink3/hblink.cfg #no tocar
-						echo "${CIAN}Introduce indicativo  ej: 214317502 9 dígitos " #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO DIGITOS 89 = 02
+						echo "${CIAN}Introduce Id  ej: 214317502 9 dígitos " #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO DIGITOS 89 = 02
 						read id
                         sudo sed -i "231c RADIO_ID: $id" /opt/HBlink3/hblink.cfg
 						echo "${MARRON}Introduce RXfrecuencia  ej: 9 dígitos sin punto "

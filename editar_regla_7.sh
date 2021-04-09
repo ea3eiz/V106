@@ -48,7 +48,7 @@ sudo sed -i "93c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True,
                         sudo sed -i "723c LOOSE: True" /opt/HBlink3/hblink.cfg # no tocar
                         sudo sed -i "724c EXPORT_AMBE: False" /opt/HBlink3/hblink.cfg # no tocar
                         sudo sed -i "725c IP: " /opt/HBlink3/hblink.cfg # no tocar
-                        sudo sed -i "726c PORT: 54002" /opt/HBlink3/hblink.cfg # #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO DIGITOS 54002
+                        sudo sed -i "726c PORT: 54007" /opt/HBlink3/hblink.cfg # #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO DIGITOS 54002
                         echo "${VERDE}Introduce Address  ej: Brandmeister = master.spain-dmr.es / DMR+= 212.237.3.141 "
 						read address
                         sudo sed -i "727c MASTER_IP: $address" /opt/HBlink3/hblink.cfg
@@ -57,7 +57,7 @@ sudo sed -i "93c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True,
                         sudo sed -i "728c MASTER_PORT: $puerto" /opt/HBlink3/hblink.cfg
                         sudo sed -i "729c PASSPHRASE: $password" /opt/HBlink3/hblink.cfg
                         sudo sed -i "730c CALLSIGN: $ind" /opt/HBlink3/hblink.cfg #no tocar
-						echo "${CIAN}Introduce indicativo  ej: 214317502 9 dígitos " #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO DIGITOS 89 = 02
+						echo "${CIAN}Introduce Id ej: 214317507 9 dígitos " #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO DIGITOS 89 = 02
 						read id
                         sudo sed -i "731c RADIO_ID: $id" /opt/HBlink3/hblink.cfg
 						echo "${MARRON}Introduce RXfrecuencia  ej: 9 dígitos sin punto "
