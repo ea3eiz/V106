@@ -27,16 +27,16 @@ MARRON="\33[38;5;138m"
 
 
 line40=$(awk "NR==40" /opt/HBlink3/rules.py)
-sudo sed -i "40c # $line40 /opt/HBlink3/rules.py"
+sudo sed -i "40c # $line40" /opt/HBlink3/rules.py
 
 line41=$(awk "NR==41" /opt/HBlink3/rules.py)
-sudo sed -i "41c # $line41 /opt/HBlink3/rules.py"
+sudo sed -i "41c # $line41" /opt/HBlink3/rules.py
 
 line42=$(awk "NR==42" /opt/HBlink3/rules.py)
-sudo sed -i "42c # $line42 /opt/HBlink3/rules.py"
+sudo sed -i "42c # $line42" /opt/HBlink3/rules.py
 
 line43=$(awk "NR==43" /opt/HBlink3/rules.py)
-sudo sed -i "43c # $line43 /opt/HBlink3/rules.py"
+sudo sed -i "43c # $line43" /opt/HBlink3/rules.py
 
 
 #sudo sed -i "43c #" /opt/HBlink3/rules.py
