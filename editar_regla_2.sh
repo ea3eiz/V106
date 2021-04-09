@@ -27,7 +27,9 @@ MARRON="\33[38;5;138m"
 						read id
                         sudo sed -i "231c RADIO_ID: $id" /opt/HBlink3/hblink.cfg
                         echo ""
-                        echo "${CIAN}*********************************************************************************"
+                        echo ""
+                        echo "${AMARILLO}*********************************************************************************"
+                        echo ""
                         echo ""
                         
                         echo "${MARRON}Configura el Nombre que le darás a tu Conexión ej: DMR+4370"
@@ -50,7 +52,9 @@ MARRON="\33[38;5;138m"
 						read options
                         sudo sed -i "246c OPTIONS: $options" /opt/HBlink3/hblink.cfg
                         echo ""
-                        echo "${CIAN}*********************************************************************************"
+                        echo ""
+                        echo "${AMARILLO}*********************************************************************************"
+                        echo ""
                         echo ""
 
                         echo "${AMARILLO}Configura el TG que utilizarás para transmitir ej: 4370 "
@@ -62,8 +66,10 @@ MARRON="\33[38;5;138m"
                         echo "${CIAN}Configura el número que utilizarás para desconectarte del Servidor ej: 84370"
                         read tgd
                         echo ""
-                        echo "${CIAN}*********************************************************************************"
                         echo ""
+                        echo "${AMARILLO}*********************************************************************************"
+                        echo ""
+                        echo ""                      
 
 sudo sed -i "40c ]," /opt/HBlink3/rules.py
 sudo sed -i "41c '$ref': [ " /opt/HBlink3/rules.py                        
