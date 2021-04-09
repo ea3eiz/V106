@@ -47,13 +47,13 @@ MARRON="\33[38;5;138m"
 						read options
                         sudo sed -i "246c OPTIONS: $options" /opt/HBlink3/hblink.cfg
 
-                        echo "${AMARILLO}Configura el TG que utilizarás para transmitir ej: 4372 "
+                        echo "${AMARILLO}Configura el TG que utilizarás para transmitir ej: 4370 "
 						read tgid                        
                         echo "${AMARILLO}Configura el TG por el que quieres que salga tu transmisión ej: 214"
 						read tgidsalir
-                        echo "${BLANCO}Configura el número que utilizarás para conectarte a demanda (10 minutos ) con el Servidor ej: 4372 "
+                        echo "${BLANCO}Configura el número que utilizarás para conectarte a demanda (10 minutos ) con el Servidor ej: 4370 "
 						read tgc
-                        echo "${CIAN}Configura el número que utilizarás para desconectarte del Servidor ej: 84372"
+                        echo "${CIAN}Configura el número que utilizarás para desconectarte del Servidor ej: 84370"
                         read tgd
 
 
