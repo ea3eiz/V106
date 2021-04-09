@@ -26,6 +26,9 @@ MARRON="\33[38;5;138m"
                         echo "${CIAN}Configura tu Id ej: 214317502 9 dígitos " #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO DIGITOS 89 = 02
 						read id
                         sudo sed -i "231c RADIO_ID: $id" /opt/HBlink3/hblink.cfg
+                        echo ""
+                        echo "${CIAN}*********************************************************************************"
+                        echo ""
                         
                         echo "${MARRON}Configura el Nombre que le darás a tu Conexión ej: DMR+4370"
                         read ref
@@ -46,6 +49,9 @@ MARRON="\33[38;5;138m"
 						echo "${VERDE}Configura Options ej: Brandmeister = #Options / DMR+ = StartRef=4370;RelinkTime=15; "
 						read options
                         sudo sed -i "246c OPTIONS: $options" /opt/HBlink3/hblink.cfg
+                        echo ""
+                        echo "${CIAN}*********************************************************************************"
+                        echo ""
 
                         echo "${AMARILLO}Configura el TG que utilizarás para transmitir ej: 4370 "
 						read tgid                        
@@ -55,7 +61,9 @@ MARRON="\33[38;5;138m"
 						read tgc
                         echo "${CIAN}Configura el número que utilizarás para desconectarte del Servidor ej: 84370"
                         read tgd
-
+                        echo ""
+                        echo "${CIAN}*********************************************************************************"
+                        echo ""
 
 sudo sed -i "40c ]," /opt/HBlink3/rules.py
 sudo sed -i "41c '$ref': [ " /opt/HBlink3/rules.py                        
