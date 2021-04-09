@@ -27,7 +27,7 @@ MARRON="\33[38;5;138m"
 						read id
                         sudo sed -i "231c RADIO_ID: $id" /opt/HBlink3/hblink.cfg
                         
-                        echo "${MARRON}Configura el Nombre que le darás a tu Conexión ej: DMR+4372"
+                        echo "${MARRON}Configura el Nombre que le darás a tu Conexión ej: DMR+4370"
                         read ref
                         sudo sed -i "220c [$ref] " /opt/HBlink3/hblink.cfg
 
@@ -104,7 +104,7 @@ sudo sed -i "43c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True,
 						echo "${MARRON}Configura tu URL preferida ej: www.associacioader.com"
 						read url
                         sudo sed -i "242c URL: $url" /opt/HBlink3/hblink.cfg
-                        
+
                         sudo sed -i "243c SOFTWARE_ID: 20191001" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "244c PACKAGE_ID: HBLLINK RASPI" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "245c GROUP_HANGTIME: 5" /opt/HBlink3/hblink.cfg #no tocar
