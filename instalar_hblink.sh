@@ -12,7 +12,7 @@ MARRON="\33[38;5;138m"
                         # Comprueba si HBlink está instalado
                         estado_anydesk=$(awk "NR==14" /home/pi/info.ini)
                         if [ "$estado_anydesk" = 'HBLINK_INSTALADO=ON' ];then
-                        echo "\v\v\v\v\v\v"
+                        echo "\v\v"
                         echo "${ROJO}"
                         echo "********************************************************************************"
                         echo "********************************************************************************"
@@ -128,7 +128,7 @@ sudo systemctl restart hblink
 
 clear
 echo "${AMARILLO}"
-echo "\v\v\v"
+echo "\v\v\v\v\v\v"
 
 echo "********************************************************************************"
 echo "********************************************************************************"
