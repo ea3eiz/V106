@@ -21,7 +21,7 @@ MARRON="\33[38;5;138m"
                         case $actualizar in
                         [sSyY]* ) echo ""
 
-sudo ded -i "222c ENABLED: True" /opt/HBlink3/hblink.cfg
+sudo sed -i "222c ENABLED: True" /opt/HBlink3/hblink.cfg
 
 line40=$(awk "NR==40" /opt/HBlink3/rules.py)
 line40=${line40:1:-1} #borra la primera letra de la variable
