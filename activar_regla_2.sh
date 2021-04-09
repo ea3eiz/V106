@@ -24,7 +24,7 @@ MARRON="\33[38;5;138m"
 sudo sed -i "222c ENABLED: True" /opt/HBlink3/hblink.cfg
 
 line40=$(awk "NR==40" /opt/HBlink3/rules.py)
-line40${line40#"#"} #borra la primera letra de la variable
+line40=${line40#"#"} #borra la primera letra de la variable
 sleep 2
 sudo sed -i "40c $line40" /opt/HBlink3/rules.py
 
