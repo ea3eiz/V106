@@ -21,6 +21,7 @@ MARRON="\33[38;5;138m"
 
 						echo "${VERDE}Configura tu indicativo  ej: EA3EIZ "
 						read ind
+                        ind=`echo "$ind" | tr [:lower:] [:upper:]`
                         echo "${CIAN}Configura tu Id ej: 214317502 9 dígitos " #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO DIGITOS 89 = 02
 						read id
                         sudo sed -i "231c RADIO_ID: $id" /opt/HBlink3/hblink.cfg
