@@ -49,7 +49,7 @@ MARRON="\33[38;5;138m"
 
                         echo "${AMARILLO}Configura el TG que utilizarás para transmitir ej: 4370 "
 						read tgid                        
-                        echo "${AMARILLO}Configura el TG por el que quieres que salga tu transmisión ej: 214"
+                        echo "${AMARILLO}Configura el TG por el que quieres que salga tu transmisión ej: DMR+ = 9 Brandmeister = 214"
 						read tgidsalir
                         echo "${BLANCO}Configura el número que utilizarás para conectarte a demanda (10 minutos ) con el Servidor ej: 4370 "
 						read tgc
