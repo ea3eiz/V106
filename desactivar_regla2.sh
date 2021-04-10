@@ -63,7 +63,9 @@ else
                         echo "                          NO SE HA EFECTUADO NINGUN CAMBIO               "
                         echo "*****************************************************************************"
                         echo "*****************************************************************************"
-                        sleep 5
+                        echo "${CIAN}"
+                        echo "Pulsa Enter para salir "
+                        read a
                         exit
 
 
