@@ -39,6 +39,9 @@ line43=$(awk "NR==43" /opt/HBlink3/rules.py)
 line43=${line43#"#"} #borra la primera letra de la variable
 sudo sed -i "43c $line43" /opt/HBlink3/rules.py
 
+sudo systemctl restart hbmon
+sudo systemctl restart hblink
+
                         break;;
                         [Nn]* ) echo ""
                         clear
