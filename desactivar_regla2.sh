@@ -25,7 +25,7 @@ MARRON="\33[38;5;138m"
 
 estado=$(awk "NR==222" /opt/HBlink3/hblink.cfg)
 estado=`expr substr $estado 1 14`
-if [ $estado = "ENABLED: Fals" ]
+if [ $estado = "ENABLED: False" ]
 then
 echo "La Regla está activada $estado"
 else
