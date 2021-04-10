@@ -59,9 +59,9 @@ sudo sed -i "22c 2" /home/pi/info.ini
                         echo "*****************************************************************************"
                         echo "                      LA REGLA SE HA ACTIVADO CORRECTAMENTE                  "
                         echo "*****************************************************************************"
-                        echo "${CIAN}"
-                        echo "Pulsa Enter para salir "
-                        read a
+                        echo "*****************************************************************************"
+                        sleep 5
+                        exit
 elif [ $estado = 22 ]
 then
 
@@ -73,9 +73,7 @@ then
                         echo "                          LA REGLA  NO ESTÁ CREADA                           "
                         echo "*****************************************************************************"
                         echo "*****************************************************************************"
-                        echo "${CIAN}"
-                        echo "Pulsa Enter para salir "
-                        read a
+                        sleep 5
                         exit
 else
 
@@ -87,9 +85,7 @@ else
                         echo "                         LA REGLA YA ESTABA ACTIVADA                         "
                         echo "*****************************************************************************"
                         echo "*****************************************************************************"
-                        echo "${CIAN}"
-                        echo "Pulsa Enter para salir "
-                        read a
+                        sleep 5
                         exit
 
 
