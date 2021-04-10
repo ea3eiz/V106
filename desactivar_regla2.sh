@@ -21,17 +21,22 @@ MARRON="\33[38;5;138m"
                         case $actualizar in
                         [sSyY]* ) echo ""
 
-#ENABLED: False
+# 0 = La Regla NO está creada
+# 1 = La Regla SI está creada
+# 2 = La Regla está ACTIVADA
+# 3 = La Regla está DESACTIVADA
 
 estado=$(awk "NR==22" /home/pi/info.ini)
-if [ $estado = 0 ];then
-echo "La Regla está activada $estado"
-else
-echo "LaRegla no está activada $estado"
-fi
-echo "aquí ha finalizado la comprovación"
-read activada
+if [ $estado = 0 ];then 
 
+echo "La Regla NO está creada"
+sleep 5
+exit
+elif [ $estado = 2 ];then
+echo "LaRegla está activada y la desactivamos"
+sleep 5
+
+else
 sudo sed -i "222c ENABLED: False" /opt/HBlink3/hblink.cfg
 
 line40=$(awk "NR==40" /opt/HBlink3/rules.py)
@@ -49,7 +54,7 @@ sudo sed -i "43c #$line43" /opt/HBlink3/rules.py
 sudo systemctl restart hbmon
 sudo systemctl restart hblink
 
-
+fi
                         break;;
                         [Nn]* ) echo ""
                         clear
