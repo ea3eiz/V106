@@ -120,6 +120,9 @@ sudo sed -i "43c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True,
                         sudo sed -i "249c SUB_ACL: DENY:1" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "250c TGID_TS1_ACL: PERMIT:ALL" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "251c TGID_TS2_ACL: PERMIT:ALL" /opt/HBlink3/hblink.cfg #no tocar
+
+                        sudo sed -i "22c 2" /home/pi/info.ini
+
                         break;;
                         [Nn]* ) echo ""
                         clear

@@ -42,6 +42,8 @@ sudo sed -i "43c $line43" /opt/HBlink3/rules.py
 sudo systemctl restart hbmon
 sudo systemctl restart hblink
 
+sudo sed -i "22c 2" /home/pi/info.ini
+
                         break;;
                         [Nn]* ) echo ""
                         clear
