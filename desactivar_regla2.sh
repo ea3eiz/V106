@@ -36,7 +36,6 @@ elif [ $estado = 2 ];then
 echo "LaRegla está activada y la desactivamos"
 sleep 5
 
-else
 sudo sed -i "222c ENABLED: False" /opt/HBlink3/hblink.cfg
 
 line40=$(awk "NR==40" /opt/HBlink3/rules.py)
@@ -53,7 +52,7 @@ sudo sed -i "43c #$line43" /opt/HBlink3/rules.py
 
 sudo systemctl restart hbmon
 sudo systemctl restart hblink
-
+else
 fi
                         break;;
                         [Nn]* ) echo ""
