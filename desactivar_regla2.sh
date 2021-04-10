@@ -20,13 +20,16 @@ MARRON="\33[38;5;138m"
                         actualizar=S
                         case $actualizar in
                         [sSyY]* ) echo ""
-estado=$(awk "NR==220" /opt/HBlink3/hblink.cfg)
-estado=`expr substr $estado 1 1`
-if [ $estado = "[" ]
+
+#ENABLED: False
+
+estado=$(awk "NR==222" /opt/HBlink3/hblink.cfg)
+estado=`expr substr $estado 1 15`
+if [ $estado = "ENABLED: False" ]
 then
-echo "La Regla está activada"
+echo "La Regla está activada $estado"
 else
-echo "LaRegla no está activada"
+echo "LaRegla no está activada $estado"
 fi
 echo "aquí ha finalizado la comprovación"
 read activada
