@@ -20,6 +20,16 @@ MARRON="\33[38;5;138m"
                         actualizar=S
                         case $actualizar in
                         [sSyY]* ) echo ""
+estado=$(awk "NR==220" /opt/HBlink3/hblink.cfg)
+estado=`expr substr $estado 1 1`
+if [ $estado = "[" ]
+then
+echo "La Regla está activada"
+else
+echo "LaRegla no está activada"
+fi
+echo "aquí ha finalizado la comprovación"
+read activada
 
 sudo sed -i "222c ENABLED: False" /opt/HBlink3/hblink.cfg
 
