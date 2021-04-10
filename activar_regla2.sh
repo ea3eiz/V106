@@ -17,9 +17,16 @@ MARRON="\33[38;5;138m"
                         echo "*****************************************************************************"
                         echo "*****************************************************************************"
                         sleep 5
-                        actualizar=S
-                        case $actualizar in
-                        [sSyY]* ) echo ""
+
+# 0 = La Regla NO está creada
+# 1 = La Regla SI está creada
+# 2 = La Regla está ACTIVADA
+# 3 = La Regla está DESACTIVADO
+
+estado=$(awk "NR==22" /home/pi/info.ini)
+
+if [ $estado = 3 ]
+then
 
 sudo sed -i "222c ENABLED: True" /opt/HBlink3/hblink.cfg
 
