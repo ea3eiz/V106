@@ -35,6 +35,10 @@ sudo sed -i "42c #$line42" /opt/HBlink3/rules.py
 line43=$(awk "NR==43" /opt/HBlink3/rules.py)
 sudo sed -i "43c #$line43" /opt/HBlink3/rules.py
 
+sudo systemctl restart hbmon
+sudo systemctl restart hblink
+
+
                         break;;
                         [Nn]* ) echo ""
                         clear
