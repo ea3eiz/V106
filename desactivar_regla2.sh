@@ -24,11 +24,10 @@ MARRON="\33[38;5;138m"
 # 3 = La Regla está DESACTIVADO
 
 estado=$(awk "NR==22" /home/pi/info.ini)
-echo "$estado"
-read a
 
 if [ $estado = 2 ]
 then
+
 sudo sed -i "222c ENABLED: False" /opt/HBlink3/hblink.cfg
 
 line40=$(awk "NR==40" /opt/HBlink3/rules.py)
@@ -46,11 +45,11 @@ sudo sed -i "43c #$line43" /opt/HBlink3/rules.py
 sudo systemctl restart hbmon
 sudo systemctl restart hblink
 
-
 sudo sed -i "22c 3" /home/pi/info.ini
 
 else
 
+                        clear
                         echo "\v\v\v"
                         echo "${ROJO}"
                         echo "*****************************************************************************"
@@ -58,8 +57,14 @@ else
                         echo "                      YA ESTABA DESACTIVADA LA REGLA y PEER 2               "
                         echo "*****************************************************************************"
                         echo "*****************************************************************************"
+                        echo "${VERDE}"
+                        echo "*****************************************************************************"
+                        echo "*****************************************************************************"
+                        echo "                          NO SE HA EFECTUADO NINGUN CAMBIO               "
+                        echo "*****************************************************************************"
+                        echo "*****************************************************************************"
                         sleep 5
+                        exit
+
+
 fi
-
-
-
