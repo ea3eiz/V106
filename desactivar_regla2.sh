@@ -23,8 +23,8 @@ MARRON="\33[38;5;138m"
 
 #ENABLED: False
 
-estado=$(awk "NR==222" /opt/HBlink3/hblink.cfg)
-if [ $estado = ENABLED: False ];then
+estado=$(awk "NR==22" /home/pi/info.ini)
+if [ $estado = 0 ];then
 echo "La Regla está activada $estado"
 else
 echo "LaRegla no está activada $estado"
