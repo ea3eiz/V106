@@ -47,7 +47,7 @@ sleep 5
 exit
 elif [ $estado = 2 ]
 then
-echo "LaRegla está activada y la desactivamos"
+echo "LaRegla está activada y se está Desactivando"
 sleep 5
 
 sudo sed -i "222c ENABLED: False" /opt/HBlink3/hblink.cfg
@@ -66,8 +66,11 @@ sudo sed -i "43c #$line43" /opt/HBlink3/rules.py
 
 sudo systemctl restart hbmon
 sudo systemctl restart hblink
+
+sed -i "22c 3" /home/pi/info.ini)
+
 else
-echo " nada"
+echo "No se hace ningún cambio"
 sleep 5
 fi
                         break;;
