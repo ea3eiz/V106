@@ -17,39 +17,18 @@ MARRON="\33[38;5;138m"
                         echo "*****************************************************************************"
                         echo "*****************************************************************************"
                         sleep 5
-                        actualizar=S
-                        case $actualizar in
-                        [sSyY]* ) echo ""
 
 # 0 = La Regla NO está creada
 # 1 = La Regla SI está creada
 # 2 = La Regla está ACTIVADA
-# 3 = La Regla está DESACTIVADA
-
-#read -p "Enter marks: " marks
-#if [ $marks -ge 80 ]
-#then
-#  echo "Excellent"
-# 
-#elif [ $marks -ge 60 ]
-#then
-#  echo "Good"
-# 
-#else
-#  echo "Satisfactory"
-#fi
+# 3 = La Regla está DESACTIVADO
 
 estado=$(awk "NR==22" /home/pi/info.ini)
-if [ $estado = 0 ]
-then 
-echo "La Regla NO está creada"
-sleep 5
-exit
-elif [ $estado = 2 ]
-then
-echo "LaRegla está activada y se está Desactivando"
-sleep 5
+echo "$estado"
+read a
 
+if [ $estado = 2 ]
+then
 sudo sed -i "222c ENABLED: False" /opt/HBlink3/hblink.cfg
 
 line40=$(awk "NR==40" /opt/HBlink3/rules.py)
@@ -67,14 +46,20 @@ sudo sed -i "43c #$line43" /opt/HBlink3/rules.py
 sudo systemctl restart hbmon
 sudo systemctl restart hblink
 
-sed -i "22c 3" /home/pi/info.ini)
+
+sudo sed -i "22c 3" /home/pi/info.ini
 
 else
-echo "No se hace ningún cambio"
-sleep 5
+
+                        echo "\v\v\v"
+                        echo "${ROJO}"
+                        echo "*****************************************************************************"
+                        echo "*****************************************************************************"
+                        echo "                      YA ESTABA DESACTIVADA LA REGLA y PEER 2               "
+                        echo "*****************************************************************************"
+                        echo "*****************************************************************************"
+                        sleep 5
 fi
-                        break;;
-                        [Nn]* ) echo ""
-                        clear
-                        break;;
-                        esac
+
+
+
