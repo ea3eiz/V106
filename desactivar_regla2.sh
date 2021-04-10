@@ -26,13 +26,27 @@ MARRON="\33[38;5;138m"
 # 2 = La Regla está ACTIVADA
 # 3 = La Regla está DESACTIVADA
 
-estado=$(awk "NR==22" /home/pi/info.ini)
-if [ $estado = 0 ];then 
+#read -p "Enter marks: " marks
+#if [ $marks -ge 80 ]
+#then
+#  echo "Excellent"
+# 
+#elif [ $marks -ge 60 ]
+#then
+#  echo "Good"
+# 
+#else
+#  echo "Satisfactory"
+#fi
 
+estado=$(awk "NR==22" /home/pi/info.ini)
+if [ $estado = 0 ]
+then 
 echo "La Regla NO está creada"
 sleep 5
 exit
-elif [ $estado = 2 ];then
+elif [ $estado = 2 ]
+then
 echo "LaRegla está activada y la desactivamos"
 sleep 5
 
@@ -53,6 +67,8 @@ sudo sed -i "43c #$line43" /opt/HBlink3/rules.py
 sudo systemctl restart hbmon
 sudo systemctl restart hblink
 else
+echo " nada"
+sleep 5
 fi
                         break;;
                         [Nn]* ) echo ""
