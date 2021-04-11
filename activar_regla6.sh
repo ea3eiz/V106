@@ -12,34 +12,34 @@ MARRON="\33[38;5;138m"
                         echo "${VERDE}"
                         echo "*****************************************************************************"
                         echo "*****************************************************************************"
-                        echo "                           ACTIVANDO REGLA Y PEER 5                          "
+                        echo "                           ACTIVANDO REGLA Y PEER 6                          "
                         echo "*****************************************************************************"
                         echo "*****************************************************************************"
                         sleep 5
-                        estado=$(awk "NR==25" /home/pi/info.ini) #OJO!!! CAMBIAR A SU NUMEO *********************
+                        estado=$(awk "NR==26" /home/pi/info.ini) #OJO!!! CAMBIAR A SU NUMEO *********************
                         if [ $estado = 3 ]
                         then
-                        sudo sed -i "522c ENABLED: True" /opt/HBlink3/hblink.cfg #OJO!!! CAMBIAR A SU NUMEO *********************
-                        line70=$(awk "NR==70" /opt/HBlink3/rules.py)
-                        line70=${line70#"#"} #borra la primera letra de la variable
-                        sudo sed -i "70c $line70" /opt/HBlink3/rules.py
+                        sudo sed -i "622c ENABLED: True" /opt/HBlink3/hblink.cfg #OJO!!! CAMBIAR A SU NUMEO *********************
+                        line80=$(awk "NR==80" /opt/HBlink3/rules.py)
+                        line80=${line80#"#"} #borra la primera letra de la variable
+                        sudo sed -i "80c $line80" /opt/HBlink3/rules.py
                         
-                        line71=$(awk "NR==71" /opt/HBlink3/rules.py)
-                        line71=${line71#"#"} #borra la primera letra de la variable
-                        sudo sed -i "71c $line71" /opt/HBlink3/rules.py
+                        line81=$(awk "NR==81" /opt/HBlink3/rules.py)
+                        line81=${line81#"#"} #borra la primera letra de la variable
+                        sudo sed -i "81c $line81" /opt/HBlink3/rules.py
                         
-                        line72=$(awk "NR==72" /opt/HBlink3/rules.py)
-                        line72=${line72#"#"} #borra la primera letra de la variable
-                        sudo sed -i "72c $line72" /opt/HBlink3/rules.py
+                        line82=$(awk "NR==82" /opt/HBlink3/rules.py)
+                        line82=${line82#"#"} #borra la primera letra de la variable
+                        sudo sed -i "82c $line82" /opt/HBlink3/rules.py
                         
-                        line73=$(awk "NR==73" /opt/HBlink3/rules.py)
-                        line73=${line73#"#"} #borra la primera letra de la variable
-                        sudo sed -i "73c $line73" /opt/HBlink3/rules.py
+                        line83=$(awk "NR==83" /opt/HBlink3/rules.py)
+                        line83=${line83#"#"} #borra la primera letra de la variable
+                        sudo sed -i "83c $line83" /opt/HBlink3/rules.py
                         
                         sudo systemctl restart hbmon
                         sudo systemctl restart hblink
                         
-                        sudo sed -i "25c 2" /home/pi/info.ini #OJO!!! CAMBIAR A SU NUMEO *********************
+                        sudo sed -i "26c 2" /home/pi/info.ini #OJO!!! CAMBIAR A SU NUMEO *********************
                         clear
                         echo "\v\v\v"
                         echo "${AMARILLO}"

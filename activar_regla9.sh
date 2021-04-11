@@ -12,34 +12,34 @@ MARRON="\33[38;5;138m"
                         echo "${VERDE}"
                         echo "*****************************************************************************"
                         echo "*****************************************************************************"
-                        echo "                           ACTIVANDO REGLA Y PEER 5                          "
+                        echo "                           ACTIVANDO REGLA Y PEER 9                          "
                         echo "*****************************************************************************"
                         echo "*****************************************************************************"
                         sleep 5
-                        estado=$(awk "NR==25" /home/pi/info.ini) #OJO!!! CAMBIAR A SU NUMEO *********************
+                        estado=$(awk "NR==29" /home/pi/info.ini) #OJO!!! CAMBIAR A SU NUMEO *********************
                         if [ $estado = 3 ]
                         then
-                        sudo sed -i "522c ENABLED: True" /opt/HBlink3/hblink.cfg #OJO!!! CAMBIAR A SU NUMEO *********************
-                        line70=$(awk "NR==70" /opt/HBlink3/rules.py)
-                        line70=${line70#"#"} #borra la primera letra de la variable
-                        sudo sed -i "70c $line70" /opt/HBlink3/rules.py
+                        sudo sed -i "922c ENABLED: True" /opt/HBlink3/hblink.cfg #OJO!!! CAMBIAR A SU NUMEO *********************
+                        line110=$(awk "NR==110" /opt/HBlink3/rules.py)
+                        line110=${line110#"#"} #borra la primera letra de la variable
+                        sudo sed -i "110c $line110" /opt/HBlink3/rules.py
                         
-                        line71=$(awk "NR==71" /opt/HBlink3/rules.py)
-                        line71=${line71#"#"} #borra la primera letra de la variable
-                        sudo sed -i "71c $line71" /opt/HBlink3/rules.py
+                        line111=$(awk "NR==111" /opt/HBlink3/rules.py)
+                        line111=${line111#"#"} #borra la primera letra de la variable
+                        sudo sed -i "111c $line111" /opt/HBlink3/rules.py
                         
-                        line72=$(awk "NR==72" /opt/HBlink3/rules.py)
-                        line72=${line72#"#"} #borra la primera letra de la variable
-                        sudo sed -i "72c $line72" /opt/HBlink3/rules.py
+                        line112=$(awk "NR==112" /opt/HBlink3/rules.py)
+                        line112=${line112#"#"} #borra la primera letra de la variable
+                        sudo sed -i "112c $line112" /opt/HBlink3/rules.py
                         
-                        line73=$(awk "NR==73" /opt/HBlink3/rules.py)
-                        line73=${line73#"#"} #borra la primera letra de la variable
-                        sudo sed -i "73c $line73" /opt/HBlink3/rules.py
+                        line113=$(awk "NR==113" /opt/HBlink3/rules.py)
+                        line113=${line113#"#"} #borra la primera letra de la variable
+                        sudo sed -i "113c $line113" /opt/HBlink3/rules.py
                         
                         sudo systemctl restart hbmon
                         sudo systemctl restart hblink
                         
-                        sudo sed -i "25c 2" /home/pi/info.ini #OJO!!! CAMBIAR A SU NUMEO *********************
+                        sudo sed -i "29c 2" /home/pi/info.ini #OJO!!! CAMBIAR A SU NUMEO *********************
                         clear
                         echo "\v\v\v"
                         echo "${AMARILLO}"
@@ -50,7 +50,7 @@ MARRON="\33[38;5;138m"
                         echo "*****************************************************************************"
                         sleep 5
                         exit
-                        elif [ $estado = 26 ] #OJO!!! CAMBIAR A SU NUMEO *********************
+                        elif [ $estado = 29 ] #OJO!!! CAMBIAR A SU NUMEO *********************
                         then
                         clear
                         echo "\v\v\v"
