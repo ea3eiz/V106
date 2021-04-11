@@ -46,7 +46,7 @@ sudo sed -i "124c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True
                         sudo sed -i "1023c LOOSE: True" /opt/HBlink3/hblink.cfg # no tocar
                         sudo sed -i "1024c EXPORT_AMBE: False" /opt/HBlink3/hblink.cfg # no tocar
                         sudo sed -i "1025c IP: " /opt/HBlink3/hblink.cfg # no tocar
-                        sudo sed -i "1026c PORT: 54010" /opt/HBlink3/hblink.cfg # #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO DIGITOS 54010
+                        sudo sed -i "1026c PORT: 54010" /opt/HBlink3/hblink.cfg # #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO DIGITOS 54010 
                         echo "${VERDE}Introduce Address del XLX "
 						read address
                         sudo sed -i "1027c MASTER_IP: $address" /opt/HBlink3/hblink.cfg
