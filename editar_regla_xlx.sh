@@ -16,14 +16,13 @@ MARRON="\33[38;5;138m"
                         echo "                             EDITANDO REGLA Y PEER XLX                          "
                         echo "********************************************************************************"
                         echo "********************************************************************************"
-
                         actualizar=S
                         case $actualizar in
                         [sSyY]* ) echo ""
-
-						#echo "Indicativo tg conexión y tg desconexión Reflector"
-						echo "${VERDE}Introduce indicativo  ej: EA3EIZ "
+						echo "${VERDE}Configura tu indicativo  ej: EA3EIZ "
 						read ind
+                        ind=`echo "$ind" | tr [:lower:] [:upper:]`
+                        echo "$ind"
                         echo "${AMARILLO}Introduce PASSWORD ej: passw0rd, PASSWORD, password selfcare etc."
 						read password                        
                         echo "${AMARILLO}Introduce TGID ej: 4026 "
@@ -36,29 +35,27 @@ MARRON="\33[38;5;138m"
                         read tgd
                         echo "${MARRON}Introduce reflector ej: XLX266-Z"
                         read ref
-
 sudo sed -i "120c ]," /opt/HBlink3/rules.py
 sudo sed -i "121c '$ref': [ " /opt/HBlink3/rules.py                        
 sudo sed -i "122c {'SYSTEM': '$ind', 'TS': 2, 'TGID': $tgid, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [$tgc], 'OFF': [$tgd], 'RESET': []}," /opt/HBlink3/rules.py
 sudo sed -i "123c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgid, 'ACTIVE': True, 'TIMEOUT': 10, 'TO_TYPE': 'NONE',  'ON': [$tgid], 'OFF': [], 'RESET': []}," /opt/HBlink3/rules.py
 sudo sed -i "124c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True, 'TIMEOUT': 10, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []}," /opt/HBlink3/rules.py
-
                         sudo sed -i "1020c [$ref] " /opt/HBlink3/hblink.cfg # no tocar 
                         sudo sed -i "1021c MODE: PEER" /opt/HBlink3/hblink.cfg # no tocar
                         sudo sed -i "1022c ENABLED: True" /opt/HBlink3/hblink.cfg # no tocar
                         sudo sed -i "1023c LOOSE: True" /opt/HBlink3/hblink.cfg # no tocar
                         sudo sed -i "1024c EXPORT_AMBE: False" /opt/HBlink3/hblink.cfg # no tocar
                         sudo sed -i "1025c IP: " /opt/HBlink3/hblink.cfg # no tocar
-                        sudo sed -i "1026c PORT: 54002" /opt/HBlink3/hblink.cfg # #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO DIGITOS 54002
-                        echo "${VERDE}Introduce Address  ej: Brandmeister = master.spain-dmr.es / DMR+= 212.237.3.141 "
+                        sudo sed -i "1026c PORT: 54010" /opt/HBlink3/hblink.cfg # #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO DIGITOS 54010
+                        echo "${VERDE}Introduce Address del XLX "
 						read address
                         sudo sed -i "1027c MASTER_IP: $address" /opt/HBlink3/hblink.cfg
-						echo "${AMARILLO}Introduce puerto  ej: Brandmeister= 62031 / DMR+= 55555 "
+						echo "${AMARILLO}Introduce puerto  ej: Valor óptimo = 62030"
 						read puerto
                         sudo sed -i "1028c MASTER_PORT: $puerto" /opt/HBlink3/hblink.cfg
                         sudo sed -i "1029c PASSPHRASE: $password" /opt/HBlink3/hblink.cfg
                         sudo sed -i "1030c CALLSIGN: $ind" /opt/HBlink3/hblink.cfg #no tocar
-						echo "${CIAN}Introduce indicativo  ej: 214317502 9 dígitos " #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO DIGITOS 89 = 02
+						echo "${CIAN}Introduce Id obligatorio de 7 dígitos"
 						read id
                         sudo sed -i "1031c RADIO_ID: $id" /opt/HBlink3/hblink.cfg
 						echo "${MARRON}Introduce RXfrecuencia  ej: 9 dígitos sin punto "
@@ -95,6 +92,9 @@ sudo sed -i "124c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True
                         sudo sed -i "1049c SUB_ACL: DENY:1" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "1050c TGID_TS1_ACL: PERMIT:ALL" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "1051c TGID_TS2_ACL: PERMIT:ALL" /opt/HBlink3/hblink.cfg #no tocar
+                        sudo sed -i "30c 2" /home/pi/info.ini # #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO 30
+                        sudo systemctl restart hbmon
+                        sudo systemctl restart hblink
                         break;;
                         [Nn]* ) echo ""
                         clear
