@@ -19,7 +19,7 @@ MARRON="\33[38;5;138m"
                         estado=$(awk "NR==24" /home/pi/info.ini) #OJO!!! CAMBIAR A SU NUMEO *********************
                         if [ $estado = 3 ]
                         then
-                        sudo sed -i "422c ENABLED: True" /opt/HBlink3/hblink.cfg
+                        sudo sed -i "422c ENABLED: True" /opt/HBlink3/hblink.cfg #OJO!!! CAMBIAR A SU NUMEO *********************
                         line60=$(awk "NR==60" /opt/HBlink3/rules.py)
                         line60=${line60#"#"} #borra la primera letra de la variable
                         sudo sed -i "60c $line60" /opt/HBlink3/rules.py
