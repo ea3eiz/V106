@@ -32,6 +32,7 @@ MARRON="\33[38;5;138m"
                         
                         echo "${MARRON}Configura el Nombre que le darás a tu Conexión ej: Rule2_DMR+4370"
                         read ref
+
                         sudo sed -i "220c [$ref] " /opt/HBlink3/hblink.cfg
 
                         echo "${VERDE}Configura el Address del Servidor ej: Brandmeister = master.spain-dmr.es / DMR+= 212.237.3.141 "
@@ -52,24 +53,37 @@ MARRON="\33[38;5;138m"
                         clear
                         echo "${BLANCO}*********************************************************************************"
                         echo ""
-                        echo "${AMARILLO}Configura el TG que utilizarás para transmitir ej: 4370 "
+                        echo "Configura el TG que utilizarás para transmitir ej: 4370 "
 						read tgid                        
-                        echo "${AMARILLO}Configura el TG por el que quieres que salga tu transmisión ej: DMR+ = 9 Brandmeister = 214"
+                        echo "Configura el TG por el que quieres que salga tu transmisión ej: DMR+ = 9 Brandmeister = 214"
 						read tgidsalir
-                        echo "${BLANCO}Configura el número que utilizarás para conectarte a demanda (10 minutos ) con el Servidor ej: 4370 "
+                        echo "Configura el número que utilizarás para conectarte a demanda (10 minutos ) con el Servidor ej: 4370 "
 						read tgc
-                        echo "${CIAN}Configura el número que utilizarás para desconectarte del Servidor ej: 84370"
+                        echo "Configura el número que utilizarás para desconectarte del Servidor ej: 84370"
                         read tgd
-                        clear
+                        echo "${VERDE}Configura Conexión a demanda 10 minutos o permanente:"
+                        echo "${CIAN}Introduce la letra ${AMARILLO}D${CIAN} para demanda 10 minutos y ${AMARILLO}P${CIAN} para permanente"
+                        read conexion
+
+if [ $conexion = D ]
+then
+sudo sed -i "42c {'SYSTEM': '$ind', 'TS': 2, 'TGID': $tgid, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [$tgc], 'OFF': [$tgd], 'RESET': []}," /opt/HBlink3/rules.py # a demanda
+else
+sudo sed -i "42c {'SYSTEM': '$ind', 'TS': 2, 'TGID': $tgid, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE', 'ON': [$tgc], 'OFF': [$tgd],'RESET': []}," /opt/HBlink3/rules.py # permanente                        
+ fi                       
+                        
+                        
+                        
+                        
+                        
+                        
                         echo "${BLANCO}*********************************************************************************"
                         echo ""                     
 
 sudo sed -i "40c ]," /opt/HBlink3/rules.py
-sudo sed -i "41c '$ref': [ " /opt/HBlink3/rules.py                        
-sudo sed -i "42c {'SYSTEM': '$ind', 'TS': 2, 'TGID': $tgid, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [$tgc], 'OFF': [$tgd], 'RESET': []}," /opt/HBlink3/rules.py
+sudo sed -i "41c '$ref': [ " /opt/HBlink3/rules.py 
 sudo sed -i "43c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []}," /opt/HBlink3/rules.py
 
-                         
                         sudo sed -i "221c MODE: PEER" /opt/HBlink3/hblink.cfg # no tocar
                         sudo sed -i "222c ENABLED: True" /opt/HBlink3/hblink.cfg # no tocar
                         sudo sed -i "223c LOOSE: True" /opt/HBlink3/hblink.cfg # no tocar
