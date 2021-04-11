@@ -53,16 +53,17 @@ MARRON="\33[38;5;138m"
                         clear
                         echo "${BLANCO}*********************************************************************************"
                         echo ""
-                        echo "Configura el TG que utilizarás para transmitir ej: 4370 "
+                        echo "${AMARILLO}Configura el TG que utilizarás para transmitir ej: 4370 "
 						read tgid                        
-                        echo "Configura el TG por el que quieres que salga tu transmisión ej: DMR+ = 9 Brandmeister = 214"
+                        echo "${AMARILLO}Configura el TG por el que quieres que salga tu transmisión ej: DMR+ = 9 Brandmeister = 214"
 						read tgidsalir
-                        echo "${BLANCO}Configura el número que utilizarás para conectarte al Servidor ej: 4370 "
+                        echo "${BLANCO}Configura el número que utilizarás para conectarte a demanda (10 minutos ) con el Servidor ej: 4370 "
 						read tgc
-                        echo "Configura el número que utilizarás para desconectarte del Servidor ej: 84370"
+                        echo "${CIAN}Configura el número que utilizarás para desconectarte del Servidor ej: 84370"
                         read tgd
-                        echo "${VERDE}Configura Conexión a demanda 10 minutos o permanente:"
-                        echo "${CIAN}Introduce la letra ${AMARILLO}D${CIAN} para demanda 10 minutos y ${AMARILLO}P${CIAN} para permanente"
+                        clear
+                        echo "${MARRON}Configura Conexión a demanda 10 minutos o permanente: D=demanda P=permanente "
+                        echo "${CIAN}Introduce la letra D para DConfigura Conexión a demanda 10 minutos o permanente: D=demanda P=permanente "
                         read conexion
 
 if [ $conexion = D ]
@@ -76,7 +77,7 @@ sudo sed -i "42c {'SYSTEM': '$ind', 'TS': 2, 'TGID': $tgid, 'ACTIVE': True, 'TIM
                         
                         
                         
-                        clear
+                        
                         echo "${BLANCO}*********************************************************************************"
                         echo ""                     
 
@@ -137,9 +138,6 @@ sudo sed -i "43c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True,
                         sudo sed -i "251c TGID_TS2_ACL: PERMIT:ALL" /opt/HBlink3/hblink.cfg #no tocar
 
                         sudo sed -i "22c 2" /home/pi/info.ini
-
-                        sudo systemctl restart hbmon
-                        sudo systemctl restart hblink
 
                         break;;
                         [Nn]* ) echo ""
