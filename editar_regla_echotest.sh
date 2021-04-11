@@ -24,6 +24,7 @@ MARRON="\33[38;5;138m"
 						#echo "Indicativo"
 						echo "${VERDE}Introduce indicativo ECHOTEST ej: EA3EIZ "
 						read indicativo
+                        indicativo=`echo "$indicativo" | tr [:lower:] [:upper:]`
 sudo sed -i "35c {'SYSTEM': '$indicativo', 'TS': 2, 'TGID': 9999, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE', 'ON': [], 'OFF': [],'RESET': []}," /opt/HBlink3/rules.py
                         break;;
                         [Nn]* ) echo ""
