@@ -12,32 +12,32 @@ MARRON="\33[38;5;138m"
                         echo "${VERDE}"
                         echo "*****************************************************************************"
                         echo "*****************************************************************************"
-                        echo "                           DESACTIVANDO REGLA Y PEER 2                       "
+                        echo "                           DESACTIVANDO REGLA Y PEER 8                       "
                         echo "*****************************************************************************"
                         echo "*****************************************************************************"
                         sleep 5
-                        estado=$(awk "NR==22" /home/pi/info.ini) # OJO CAMBIAR POR SU NUMERO ********
+                        estado=$(awk "NR==28" /home/pi/info.ini) # OJO CAMBIAR POR SU NUMERO ********
                         if [ $estado = 2 ]
                         then
 
-                        sudo sed -i "222c ENABLED: False" /opt/HBlink3/hblink.cfg # OJO CAMBIAR POR SU NUMERO ********
+                        sudo sed -i "822c ENABLED: False" /opt/HBlink3/hblink.cfg # OJO CAMBIAR POR SU NUMERO ********
 
-                        line40=$(awk "NR==40" /opt/HBlink3/rules.py)
-                        sudo sed -i "40c #$line40" /opt/HBlink3/rules.py
+                        line100=$(awk "NR==100" /opt/HBlink3/rules.py)
+                        sudo sed -i "100c #$line100" /opt/HBlink3/rules.py
 
-                        line41=$(awk "NR==41" /opt/HBlink3/rules.py)
-                        sudo sed -i "41c #$line41" /opt/HBlink3/rules.py
+                        line101=$(awk "NR==101" /opt/HBlink3/rules.py)
+                        sudo sed -i "101c #$line101" /opt/HBlink3/rules.py
 
-                        line42=$(awk "NR==42" /opt/HBlink3/rules.py)
-                        sudo sed -i "42c #$line42" /opt/HBlink3/rules.py
+                        line102=$(awk "NR==102" /opt/HBlink3/rules.py)
+                        sudo sed -i "102c #$line102" /opt/HBlink3/rules.py
 
-                        line43=$(awk "NR==43" /opt/HBlink3/rules.py)
-                        sudo sed -i "43c #$line43" /opt/HBlink3/rules.py
+                        line103=$(awk "NR==103" /opt/HBlink3/rules.py)
+                        sudo sed -i "103c #$line103" /opt/HBlink3/rules.py
 
                         sudo systemctl restart hbmon
                         sudo systemctl restart hblink
 
-                        sudo sed -i "22c 3" /home/pi/info.ini # OJO CAMBIAR POR SU NUMERO ********
+                        sudo sed -i "28c 3" /home/pi/info.ini # OJO CAMBIAR POR SU NUMERO ********
                         
                         clear
                         echo "\v\v\v"
@@ -49,7 +49,7 @@ MARRON="\33[38;5;138m"
                         echo "*****************************************************************************"
                         sleep 5
                         exit
-                        elif [ $estado = 22 ] # OJO CAMBIAR POR SU NUMERO ********
+                        elif [ $estado = 28 ] # OJO CAMBIAR POR SU NUMERO ********
                         then
                         clear
                         echo "\v\v\v"
