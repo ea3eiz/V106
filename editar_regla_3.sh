@@ -73,7 +73,7 @@ sudo sed -i "53c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True,
                         sudo sed -i "323c LOOSE: True" /opt/HBlink3/hblink.cfg # no tocar
                         sudo sed -i "324c EXPORT_AMBE: False" /opt/HBlink3/hblink.cfg # no tocar
                         sudo sed -i "325c IP: " /opt/HBlink3/hblink.cfg # no tocar
-                        sudo sed -i "326c PORT: 54003" /opt/HBlink3/hblink.cfg # #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO DIGITOS 54002
+                        sudo sed -i "326c PORT: 54003" /opt/HBlink3/hblink.cfg # #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO DIGITOS 54003
                         sudo sed -i "329c PASSPHRASE: $password" /opt/HBlink3/hblink.cfg
                         sudo sed -i "330c CALLSIGN: $ind" /opt/HBlink3/hblink.cfg #no tocar
 						echo "${MARRON}Configura la frecuencia de Recepción  ej: 9 dígitos sin punto "
@@ -107,7 +107,7 @@ sudo sed -i "53c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True,
                         sudo sed -i "349c SUB_ACL: DENY:1" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "350c TGID_TS1_ACL: PERMIT:ALL" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "351c TGID_TS2_ACL: PERMIT:ALL" /opt/HBlink3/hblink.cfg #no tocar
-                        sudo sed -i "23c 2" /home/pi/info.ini
+                        sudo sed -i "23c 2" /home/pi/info.ini # #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO 23
                         sudo systemctl restart hbmon
                         sudo systemctl restart hblink
                         break;;
