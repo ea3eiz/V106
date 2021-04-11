@@ -57,7 +57,7 @@ MARRON="\33[38;5;138m"
 						read tgid                        
                         echo "Configura el TG por el que quieres que salga tu transmisión ej: DMR+ = 9 Brandmeister = 214"
 						read tgidsalir
-                        echo "Configura el número que utilizarás para conectarte a demanda (10 minutos ) con el Servidor ej: 4370 "
+                        echo "${BLANCO}Configura el número que utilizarás para conectarte al Servidor ej: 4370 "
 						read tgc
                         echo "Configura el número que utilizarás para desconectarte del Servidor ej: 84370"
                         read tgd
@@ -76,7 +76,7 @@ sudo sed -i "42c {'SYSTEM': '$ind', 'TS': 2, 'TGID': $tgid, 'ACTIVE': True, 'TIM
                         
                         
                         
-                        
+                        clear
                         echo "${BLANCO}*********************************************************************************"
                         echo ""                     
 
