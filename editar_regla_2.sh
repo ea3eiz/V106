@@ -138,6 +138,9 @@ sudo sed -i "43c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True,
 
                         sudo sed -i "22c 2" /home/pi/info.ini
 
+                        sudo systemctl restart hbmon
+                        sudo systemctl restart hblink
+
                         break;;
                         [Nn]* ) echo ""
                         clear
