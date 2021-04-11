@@ -12,34 +12,34 @@ MARRON="\33[38;5;138m"
                         echo "${VERDE}"
                         echo "*****************************************************************************"
                         echo "*****************************************************************************"
-                        echo "                           ACTIVANDO REGLA Y PEER 2                          "
+                        echo "                           ACTIVANDO REGLA Y PEER 4                          "
                         echo "*****************************************************************************"
                         echo "*****************************************************************************"
                         sleep 5
-                        estado=$(awk "NR==22" /home/pi/info.ini) #OJO!!! CAMBIAR A SU NUMEO *********************
+                        estado=$(awk "NR==24" /home/pi/info.ini) #OJO!!! CAMBIAR A SU NUMEO *********************
                         if [ $estado = 3 ]
                         then
-                        sudo sed -i "222c ENABLED: True" /opt/HBlink3/hblink.cfg
-                        line40=$(awk "NR==40" /opt/HBlink3/rules.py)
-                        line40=${line40#"#"} #borra la primera letra de la variable
-                        sudo sed -i "40c $line40" /opt/HBlink3/rules.py
+                        sudo sed -i "422c ENABLED: True" /opt/HBlink3/hblink.cfg
+                        line60=$(awk "NR==60" /opt/HBlink3/rules.py)
+                        line60=${line60#"#"} #borra la primera letra de la variable
+                        sudo sed -i "60c $line60" /opt/HBlink3/rules.py
                         
-                        line41=$(awk "NR==41" /opt/HBlink3/rules.py)
-                        line41=${line41#"#"} #borra la primera letra de la variable
-                        sudo sed -i "41c $line41" /opt/HBlink3/rules.py
+                        line61=$(awk "NR==61" /opt/HBlink3/rules.py)
+                        line61=${line61#"#"} #borra la primera letra de la variable
+                        sudo sed -i "61c $line61" /opt/HBlink3/rules.py
                         
-                        line42=$(awk "NR==42" /opt/HBlink3/rules.py)
-                        line42=${line42#"#"} #borra la primera letra de la variable
-                        sudo sed -i "42c $line42" /opt/HBlink3/rules.py
+                        line62=$(awk "NR==62" /opt/HBlink3/rules.py)
+                        line62=${line62#"#"} #borra la primera letra de la variable
+                        sudo sed -i "62c $line62" /opt/HBlink3/rules.py
                         
-                        line43=$(awk "NR==43" /opt/HBlink3/rules.py)
-                        line43=${line43#"#"} #borra la primera letra de la variable
-                        sudo sed -i "43c $line43" /opt/HBlink3/rules.py
+                        line63=$(awk "NR==63" /opt/HBlink3/rules.py)
+                        line63=${line63#"#"} #borra la primera letra de la variable
+                        sudo sed -i "63c $line63" /opt/HBlink3/rules.py
                         
                         sudo systemctl restart hbmon
                         sudo systemctl restart hblink
                         
-                        sudo sed -i "22c 2" /home/pi/info.ini #OJO!!! CAMBIAR A SU NUMEO *********************
+                        sudo sed -i "24c 2" /home/pi/info.ini #OJO!!! CAMBIAR A SU NUMEO *********************
                         clear
                         echo "\v\v\v"
                         echo "${AMARILLO}"
@@ -50,7 +50,7 @@ MARRON="\33[38;5;138m"
                         echo "*****************************************************************************"
                         sleep 5
                         exit
-                        elif [ $estado = 22 ] #OJO!!! CAMBIAR A SU NUMEO *********************
+                        elif [ $estado = 24 ] #OJO!!! CAMBIAR A SU NUMEO *********************
                         then
                         clear
                         echo "\v\v\v"
