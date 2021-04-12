@@ -27,7 +27,7 @@ MARRON="\33[38;5;138m"
 						read password                        
                         echo "${AMARILLO}Introduce TGID ej: 4026 "
 						read tgid                        
-                        echo "${AMARILLO}Introduce TGID por el que quieras salir ej: 4026"
+                        echo "${AMARILLO}Introduce TGID por el que quieras salir: valor optimo = 9"
 						read tgidsalir
                         echo "${BLANCO}Introduce tg conexión ej: 4026 "
 						read tgc
