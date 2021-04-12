@@ -27,7 +27,7 @@ MARRON="\33[38;5;138m"
                         clear
                         echo "${BLANCO}*********************************************************************************"
                         echo ""                       
-                        echo "${MARRON}Configura el Nombre que le darás a tu Conexión ej: Rule2_DMR+4370, Rule2_BM, Rule2_TGIF etc."
+                        echo "${MARRON}Configura el Nombre que le darás a tu Conexión ej: Rule2_DMR+437X, Rule2_BM, Rule2_TGIF etc."
                         read ref
                         sudo sed -i "520c [$ref] " /opt/HBlink3/hblink.cfg
                         echo "${VERDE}Configura el Address del Servidor ej: Brandmeister = master.spain-dmr.es / DMR+= id del reflector "
