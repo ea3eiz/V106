@@ -84,9 +84,7 @@ sudo sed -i "124c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True
                         sudo sed -i "1043c SOFTWARE_ID: 20191001" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "1044c PACKAGE_ID: HBLLINK RASPI" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "1045c GROUP_HANGTIME: 5" /opt/HBlink3/hblink.cfg #no tocar
-						echo "${VERDE}Introduce Options ej: Brandmeister = #Options / DMR+ = StartRef=4370;RelinkTime=15; "
-						read options
-                        sudo sed -i "1046c OPTIONS: $options" /opt/HBlink3/hblink.cfg
+                        sudo sed -i "1046c OPTIONS: " /opt/HBlink3/hblink.cfg
                         sudo sed -i "1047c USE_ACL: True" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "1048c REG_ACL: DENY:1" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "1049c SUB_ACL: DENY:1" /opt/HBlink3/hblink.cfg #no tocar
