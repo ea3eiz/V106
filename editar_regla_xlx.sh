@@ -13,7 +13,7 @@ MARRON="\33[38;5;138m"
                         echo "${VERDE}"
                         echo "********************************************************************************"
                         echo "********************************************************************************"
-                        echo "                             EDITANDO REGLA Y PEER XLX                         "
+                        echo "                             EDITANDO REGLA Y PEER XLX                          "
                         echo "********************************************************************************"
                         echo "********************************************************************************"
                         actualizar=S
@@ -22,18 +22,16 @@ MARRON="\33[38;5;138m"
 						echo "${VERDE}Configura tu indicativo  ej: EA3EIZ "
 						read ind
                         ind=`echo "$ind" | tr [:lower:] [:upper:]`
-                        echo "$ind"
-                        echo "${AMARILLO}Introduce PASSWORD ej: passw0rd, PASSWORD, password selfcare etc."
-						read password                        
-                        echo "${AMARILLO}Introduce TGID ej: 4026 "
+                        echo "$ind"                       
+                        echo "${AMARILLO}Configura el TG que utilizarás para transmitir ej: 4026"
 						read tgid                        
-                        echo "${AMARILLO}Introduce TGID por el que quieras salir: valor optimo = 9"
+                        echo "Configura el TG por el que quieres que salga tu transmisión ej: valor óptimo = 9 "
 						read tgidsalir
-                        echo "${BLANCO}Introduce tg conexión ej: 4026 "
+                        echo "${BLANCO}Configura el número que utilizarás para conectarte al Servidor ej: 4026 "
 						read tgc
-                        echo "${CIAN}Introduce tg de desconexión ej: 84026"
+                        echo "Configura el número que utilizarás para desconectarte del Servidor ej: 84026"
                         read tgd
-                        echo "${MARRON}Introduce reflector ej: XLX266-Z"
+                        echo "${MARRON}Configura el Nombre que le darás a tu Conexión ej: Rule10_XLX266-Z"
                         read ref
 sudo sed -i "120c ]," /opt/HBlink3/rules.py
 sudo sed -i "121c '$ref': [ " /opt/HBlink3/rules.py                        
@@ -52,6 +50,8 @@ sudo sed -i "124c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True
                         sudo sed -i "1027c MASTER_IP: $address" /opt/HBlink3/hblink.cfg
 						echo "${AMARILLO}Introduce puerto  ej: Valor óptimo = 62030"
 						read puerto
+                        echo "${AMARILLO}Introduce PASSWORD ej: valor óptimo = PASSWORD"
+						read password 
                         sudo sed -i "1028c MASTER_PORT: $puerto" /opt/HBlink3/hblink.cfg
                         sudo sed -i "1029c PASSPHRASE: $password" /opt/HBlink3/hblink.cfg
                         sudo sed -i "1030c CALLSIGN: $ind" /opt/HBlink3/hblink.cfg #no tocar
