@@ -37,6 +37,10 @@ MARRON="\33[38;5;138m"
                         line123=${line123#"#"} #borra la primera letra de la variable
                         sudo sed -i "123c $line123" /opt/HBlink3/rules.py
                         
+                        line124=$(awk "NR==124" /opt/HBlink3/rules.py)
+                        line124=${line124#"#"} #borra la primera letra de la variable
+                        sudo sed -i "124c $line124" /opt/HBlink3/rules.py
+
                         sudo systemctl restart hbmon
                         sudo systemctl restart hblink
                         
