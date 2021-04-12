@@ -22,7 +22,10 @@ MARRON="\33[38;5;138m"
 						echo "${VERDE}Configura tu indicativo  ej: EA3EIZ "
 						read ind
                         ind=`echo "$ind" | tr [:lower:] [:upper:]`
-                        echo "$ind"                       
+                        echo "$ind" 
+                        echo "${CIAN}Introduce Id obligatorio de 7 dígitos"
+						read id
+                        sudo sed -i "1031c RADIO_ID: $id" /opt/HBlink3/hblink.cfg                      
                         echo "${AMARILLO}Configura el TG que utilizarás para transmitir ej: 4026"
 						read tgid                        
                         echo "Configura el TG por el que quieres que salga tu transmisión ej: valor óptimo = 9 "
@@ -55,9 +58,6 @@ sudo sed -i "124c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True
                         sudo sed -i "1028c MASTER_PORT: $puerto" /opt/HBlink3/hblink.cfg
                         sudo sed -i "1029c PASSPHRASE: $password" /opt/HBlink3/hblink.cfg
                         sudo sed -i "1030c CALLSIGN: $ind" /opt/HBlink3/hblink.cfg #no tocar
-						echo "${CIAN}Introduce Id obligatorio de 7 dígitos"
-						read id
-                        sudo sed -i "1031c RADIO_ID: $id" /opt/HBlink3/hblink.cfg
 						echo "${MARRON}Introduce RXfrecuencia  ej: 9 dígitos sin punto "
 						read rxf
                         sudo sed -i "1032c RX_FREQ: $rxf" /opt/HBlink3/hblink.cfg
