@@ -56,6 +56,7 @@ MARRON="\33[38;5;138m"
                         echo "${VERDE}Configura Conexión a demanda 10 minutos o Permanente:"
                         echo "${CIAN}Introduce la letra ${AMARILLO}D${CIAN} para Demanda 10 minutos y ${AMARILLO}P${CIAN} para Permanente"
                         read conexion
+                        conexion=`echo "$conexion" | tr [:lower:] [:upper:]`                        
 if [ $conexion = D ]
 then
 sudo sed -i "112c {'SYSTEM': '$ind', 'TS': 2, 'TGID': $tgid, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [$tgc], 'OFF': [$tgd], 'RESET': []}," /opt/HBlink3/rules.py # a demanda
