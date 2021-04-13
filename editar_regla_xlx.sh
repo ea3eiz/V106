@@ -25,17 +25,18 @@ MARRON="\33[38;5;138m"
                         echo "$ind" 
                         echo "${CIAN}Introduce Id obligatorio de 7 dígitos"
 						read id
+                        echo "${MARRON}Configura el Nombre que le darás a tu Conexión ej: Rule10_XLX266-Z"
+                        read ref                        
                         sudo sed -i "1031c RADIO_ID: $id" /opt/HBlink3/hblink.cfg                      
                         echo "${AMARILLO}Configura el TG que utilizarás para transmitir ej: 4026"
 						read tgid                        
                         echo "Configura el TG por el que quieres que salga tu transmisión ej: valor óptimo = 9 "
 						read tgidsalir
-                        echo "${BLANCO}Configura el número que utilizarás para conectarte al Servidor ej: 4026 "
+                        echo "${BLANCO}Configura el número que utilizarás para conectarte a esta Regla ej: 4026 "
 						read tgc
-                        echo "Configura el número que utilizarás para desconectarte del Servidor ej: 84026"
+                        echo "Configura el número que utilizarás para desconectarte de esta Regla ej: 84026"
                         read tgd
-                        echo "${MARRON}Configura el Nombre que le darás a tu Conexión ej: Rule10_XLX266-Z"
-                        read ref
+
 sudo sed -i "120c ]," /opt/HBlink3/rules.py
 sudo sed -i "121c '$ref': [ " /opt/HBlink3/rules.py                        
 sudo sed -i "122c {'SYSTEM': '$ind', 'TS': 2, 'TGID': $tgid, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [$tgc], 'OFF': [$tgd], 'RESET': []}," /opt/HBlink3/rules.py
@@ -91,6 +92,14 @@ sudo sed -i "124c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True
                         sudo sed -i "1050c TGID_TS1_ACL: PERMIT:ALL" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "1051c TGID_TS2_ACL: PERMIT:ALL" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "30c 2" /home/pi/info.ini # #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO 30
+                        echo "\v\v\v\v\v\v"
+                        echo "${VERDE}"
+                        echo "********************************************************************************"
+                        echo "********************************************************************************"
+                        echo "       YA PUEDES ABRIR EL DASHBOARD PARA VER  LA CONEXIÓN QUE HAS CREADO        "
+                        echo "               ESTE PROCESO TARDARÁ UNOS SEGUNDOS SEA PACIENTE!!                "
+                        echo "********************************************************************************"
+                        echo "********************************************************************************"                        
                         sudo systemctl restart hbmon
                         sudo systemctl restart hblink
                         break;;
