@@ -31,7 +31,7 @@ MARRON="\33[38;5;138m"
                         
                         line122=$(awk "NR==122" /opt/HBlink3/rules.py)
                         line122=${line122#"#"} #borra la primera letra de la variable
-                        sudo sed -i "112c $line112" /opt/HBlink3/rules.py
+                        sudo sed -i "122c $line122" /opt/HBlink3/rules.py
                         
                         line123=$(awk "NR==123" /opt/HBlink3/rules.py)
                         line123=${line123#"#"} #borra la primera letra de la variable
