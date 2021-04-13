@@ -109,6 +109,8 @@ sudo sed -i "53c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True,
                         sudo sed -i "350c TGID_TS1_ACL: PERMIT:ALL" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "351c TGID_TS2_ACL: PERMIT:ALL" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "23c 2" /home/pi/info.ini # #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO 23
+                        clear
+                        echo "\v\v\v"
                         echo "********************************************************************************"
                         echo "********************************************************************************"
                         echo "       YA PUEDES ABRIR EL DASHBOARD PARA VER  LA CONEXIÓN QUE HAS CREADO        "
@@ -117,6 +119,7 @@ sudo sed -i "53c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True,
                         echo "********************************************************************************"                        
                         sudo systemctl restart hbmon
                         sudo systemctl restart hblink
+                        sleep 10
                         break;;
                         [Nn]* ) echo ""
                         clear
