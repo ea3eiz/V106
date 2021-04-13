@@ -27,7 +27,7 @@ MARRON="\33[38;5;138m"
                         clear
                         echo "${BLANCO}*********************************************************************************"
                         echo ""                       
-                        echo "${MARRON}Configura el Nombre que le darás a tu Conexión ej: Rule2_DMR+437X, Rule2_BM, Rule2_TGIF etc."
+                        echo "${MARRON}Configura el Nombre que le darás a tu Conexión ej: Rule9_DMR+437X, Rule9_BM, Rule9_TGIF etc."
                         read ref
                         sudo sed -i "920c [$ref] " /opt/HBlink3/hblink.cfg
                         echo "${VERDE}Configura el Address del Servidor ej: Brandmeister = master.spain-dmr.es / DMR+= id del reflector "
@@ -49,11 +49,11 @@ MARRON="\33[38;5;138m"
 						read tgid                        
                         echo "Configura el TG por el que quieres que salga tu transmisión ej: DMR+ = 9 Brandmeister = 214"
 						read tgidsalir
-                        echo "${BLANCO}Configura el número que utilizarás para conectarte al Servidor ej: 437X "
+                        echo "${BLANCO}Configura el número que utilizarás para conectarte a esta Regla ej: 437X "
 						read tgc
-                        echo "Configura el número que utilizarás para desconectarte del Servidor ej: 8437X"
+                        echo "Configura el número que utilizarás para desconectarte de esta Regla ej: 8437X"
                         read tgd
-                        echo "${VERDE}Configura Conexión a demanda 10 minutos o Permanente:"
+                        echo "${VERDE}Configura Conexión: a demanda 10 minutos o Permanente"
                         echo "${CIAN}Introduce la letra ${AMARILLO}D${CIAN} para Demanda 10 minutos y ${AMARILLO}P${CIAN} para Permanente"
                         read conexion
                         conexion=`echo "$conexion" | tr [:lower:] [:upper:]`                        
