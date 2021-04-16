@@ -33,7 +33,7 @@ sed -i "62c Enable=1" /opt/MMDVM_Bridge/brandmeister_esp.ini
 sed -i "62c Enable=1" /opt/MMDVM_Bridge/dmrplus.ini
 sed -i "62c Enable=1" /opt/MMDVM_Bridge/especial.ini
 
-sudo systemctl restart ysfgateway.service
+#sudo systemctl restart ysfgateway.service
 sudo systemctl restart dmr2ysf.service
 
 sudo systemctl restart analog_bridge.service
