@@ -69,7 +69,7 @@ MARRON="\33[38;5;138m"
                         
                         # modificacion 26-04-2021
                         cp /home/pi/V106/pararservicios_hblink.sh /home/pi
-                        cp /home/pi/V106/pararservicios_hblink.desktop /home/pi/.config/autostart/pararservicios_hblink.desktop
+                        cp /home/pi/V106/pararservicios_hblink.desktop /home/pi/.config/autostart
                         
                         
                         # 14-08-2020 cambio actualizar para que salgan los indicativos en DVSWITCH:
