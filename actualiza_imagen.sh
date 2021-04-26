@@ -65,6 +65,13 @@ MARRON="\33[38;5;138m"
                         exit
                         fi
                         
+                        
+                        
+                        # modificacion 26-04-2021
+                        cp /home/pi/V106/pararservicios_hblink.sh /home/pi
+                        cp /home/pi/V106/pararservicios_hblink.sh /home/pi/.config/autostart/pararservicios_hblink.desktop
+                        
+                        
                         # 14-08-2020 cambio actualizar para que salgan los indicativos en DVSWITCH:
                         cd /var/lib/mmdvm
                         sudo curl --fail -o DMRIds.dat -s http://www.pistar.uk/downloads/DMRIds.dat
