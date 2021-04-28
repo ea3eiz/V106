@@ -388,8 +388,8 @@ sudo sed -i "74c $selfcare" /opt/MMDVM_Bridge/brandmeister_esp.ini
 reflector_dstar=$(awk "NR==15" /home/pi/.local/COPIA_SEGURIDAD/Downloads/datos_dvswitch)
 sudo sed -i "18c $reflector_dstar" /etc/ircddbgateway
 
-sudo cp -f hblink.cfg /opt/HBlin3/
-sudo cp -f rules.py /opt/HBlin3/
+sudo cp -f hblink.cfg /opt/HBlink3/
+sudo cp -f rules.py /opt/HBlink3/
 sudo cp -f config.py /opt/HBmonitor/
 sudo cp -f info.ini /home/pi/
 
