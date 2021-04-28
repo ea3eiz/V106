@@ -153,6 +153,7 @@ sed -i "15c $reflector_dstar" /home/pi/.local/COPIA_SEGURIDAD/Downloads/datos_dv
 sudo cp -f /opt/HBlin3/hblink.cfg /home/pi/.local/COPIA_SEGURIDAD/Downloads
 sudo cp -f /opt/HBlin3/rules.py /home/pi/.local/COPIA_SEGURIDAD/Downloads
 sudo cp -f /opt/HBmonitor/config.py /home/pi/.local/COPIA_SEGURIDAD/Downloads
+sudo cp -f /home/pi/info.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads
 
 sudo chmod 777 -R /home/pi/.local/COPIA_SEGURIDAD
 

@@ -157,6 +157,11 @@ sed -i "13c $sala_nxdn" /home/pi/.local/COPIA_SEGURIDAD/Downloads/datos_dvswitch
 sed -i "14c $selfcare" /home/pi/.local/COPIA_SEGURIDAD/Downloads/datos_dvswitch
 sed -i "15c $reflector_dstar" /home/pi/.local/COPIA_SEGURIDAD/Downloads/datos_dvswitch
 
+sudo cp -f /opt/HBlin3/hblink.cfg /home/pi/.local/COPIA_SEGURIDAD/Downloads
+sudo cp -f /opt/HBlin3/rules.py /home/pi/.local/COPIA_SEGURIDAD/Downloads
+sudo cp -f /opt/HBmonitor/config.py /home/pi/.local/COPIA_SEGURIDAD/Downloads
+sudo cp -f /home/pi/info.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads
+
 cd /home/pi/.local/COPIA_SEGURIDAD
 tar -zcvf Copia_V106.zip Downloads
 cp  Copia_V106.zip /var/www/html/upload/files

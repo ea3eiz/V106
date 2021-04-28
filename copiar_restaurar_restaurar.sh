@@ -364,3 +364,4 @@ sudo sed -i "18c $reflector_dstar" /etc/ircddbgateway
 sudo cp -f hblink.cfg /opt/HBlin3/
 sudo cp -f rules.py /opt/HBlin3/
 sudo cp -f config.py /opt/HBmonitor/
+sudo cp -f info.ini /home/pi/
