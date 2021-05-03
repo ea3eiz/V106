@@ -82,6 +82,8 @@
             cd /usr/local/etc/svxlink/
             cp -f svxlink.conf /home/pi/.local/COPIA_SEGURIDAD/Downloads
 
+            cp -f /home/pi/.local/ambe_server.ini  /home/pi/.local/COPIA_SEGURIDAD/Downloads
+
             cd /usr/local/etc/svxlink/svxlink.d/
             cp -f ModuleEchoLink.conf /home/pi/.local/COPIA_SEGURIDAD/Downloads
 

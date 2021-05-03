@@ -263,6 +263,8 @@ cd /home/pi/.local/COPIA_SEGURIDAD/Downloads
             cp -f BlueDVconfig.ini /home/pi/bluedv/
 
             cp -f svxlink.conf /usr/local/etc/svxlink/
+
+            cp -f ambe_server.ini  /home/pi/.local/
             
             cp -f ModuleEchoLink.conf /usr/local/etc/svxlink/svxlink.d/
 
