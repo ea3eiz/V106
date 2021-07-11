@@ -10,9 +10,16 @@ usuario="$usuario"
 SCRIPTS_version="V106"
 actualizacion=$(awk "NR==1" /home/pi/.config/autostart/actualizacion)
 
+hblink=$(awk "NR==14" /home/pi/info.ini)
+if [ "$hblink" = 'DVSWIHBLINK_INSTALADO=ON' ];then
+
+version="V106-HBLINK"
+
+else
+
 version="V106-"
 version=$version$actualizacion
-
+fi
 #pone todos los status de inicio en OFF
 sed -i "1c D-STAR=OFF" $usuario/status.ini
 sed -i "2c BlueDV=OFF" $usuario/status.ini
