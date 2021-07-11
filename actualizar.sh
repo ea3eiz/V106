@@ -17,8 +17,10 @@ version="V106-HBLINK"
 
 else
 
-version="V106-"
-version=$version$actualizacion
+version="V106-HBLINK1"
+
+#version="V106-"
+#version=$version$actualizacion
 fi
 #pone todos los status de inicio en OFF
 sed -i "1c D-STAR=OFF" $usuario/status.ini
