@@ -14,7 +14,9 @@ version="V106-"
 version=$version$actualizacion
 
 hblink=$(awk "NR==14" /home/pi/info.ini)
-hblink=$hblink
+largo=`expr substr $hblink 1 6`
+hblink=$largo
+
 
 #pone todos los status de inicio en OFF
 sed -i "1c D-STAR=OFF" $usuario/status.ini
