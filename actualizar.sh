@@ -17,7 +17,6 @@ hblink=$(awk "NR==14" /home/pi/info.ini)
 largo=`expr substr $hblink 1 6`
 hblink=$largo
 
-
 #pone todos los status de inicio en OFF
 sed -i "1c D-STAR=OFF" $usuario/status.ini
 sed -i "2c BlueDV=OFF" $usuario/status.ini
