@@ -13,7 +13,7 @@ actualizacion=$(awk "NR==1" /home/pi/.config/autostart/actualizacion)
 version="V106-"
 version=$version$actualizacion
 
-hblink=$(awk "NR==50" /home/pi/info.ini)
+hblink=$(awk "NR==14" /home/pi/info.ini)
 hblink=$hblink
 
 #pone todos los status de inicio en OFF
