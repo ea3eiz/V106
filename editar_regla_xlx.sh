@@ -83,7 +83,7 @@ sudo sed -i "124c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True
 						read url
                         sudo sed -i "1042c URL: $url" /opt/HBlink3/hblink.cfg
                         sudo sed -i "1043c SOFTWARE_ID: 20191001" /opt/HBlink3/hblink.cfg #no tocar
-                        sudo sed -i "1044c PACKAGE_ID: HBLLINK RASPI" /opt/HBlink3/hblink.cfg #no tocar
+                        sudo sed -i "1044c PACKAGE_ID: HBLINK_V106" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "1045c GROUP_HANGTIME: 5" /opt/HBlink3/hblink.cfg #no tocar
                         sudo sed -i "1046c OPTIONS: " /opt/HBlink3/hblink.cfg
                         sudo sed -i "1047c USE_ACL: True" /opt/HBlink3/hblink.cfg #no tocar
