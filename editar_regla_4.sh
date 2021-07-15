@@ -19,7 +19,7 @@ MARRON="\33[38;5;138m"
                         [sSyY]* ) echo ""
 
                         master=$(awk "NR==153" /opt/HBlink3/hblink.cfg)
-                        copia1=`expr substr $master 2 , 20`
+                        copia1=`expr substr $master 2 20`
                         echo "nombre del master: $copia1"
                         read a
 
