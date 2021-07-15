@@ -45,7 +45,7 @@ MARRON="\33[38;5;138m"
 
 sudo sed -i "120c ]," /opt/HBlink3/rules.py
 sudo sed -i "121c '$ref': [ " /opt/HBlink3/rules.py                        
-sudo sed -i "122c {'SYSTEM': '$ind', 'TS': 2, 'TGID': $tgid, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [$tgc], 'OFF': [$tgd], 'RESET': []}," /opt/HBlink3/rules.py
+sudo sed -i "122c {'SYSTEM': '$master', 'TS': 2, 'TGID': $tgid, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [$tgc], 'OFF': [$tgd], 'RESET': []}," /opt/HBlink3/rules.py
 sudo sed -i "123c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgid, 'ACTIVE': True, 'TIMEOUT': 10, 'TO_TYPE': 'NONE',  'ON': [$tgid], 'OFF': [], 'RESET': []}," /opt/HBlink3/rules.py
 sudo sed -i "124c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True, 'TIMEOUT': 10, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []}," /opt/HBlink3/rules.py
                         sudo sed -i "1020c [$ref] " /opt/HBlink3/hblink.cfg # no tocar 
