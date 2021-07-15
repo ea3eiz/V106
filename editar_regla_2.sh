@@ -17,6 +17,12 @@ MARRON="\33[38;5;138m"
                         actualizar=S
                         case $actualizar in
                         [sSyY]* ) echo ""
+
+                         #Quita los caracteres [] de la linea 153 [MASTER] Y lo carga en la variable $master como: MASTER
+                        master=$(awk "NR==153" /opt/HBlink3/hblink.cfg)
+                        var=`expr substr $master 2 20`
+                        master=${var%]} 
+                                              
 						echo "${VERDE}Configura tu indicativo  ej: EA3EIZ "
 						read ind
                         ind=`echo "$ind" | tr [:lower:] [:upper:]`
