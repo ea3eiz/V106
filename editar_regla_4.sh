@@ -18,11 +18,10 @@ MARRON="\33[38;5;138m"
                         case $actualizar in
                         [sSyY]* ) echo ""
 
+                        #Quita los caracteres [] de la linea 153 [MASTER] Y lo carga en la variable $master como: MASTER
                         master=$(awk "NR==153" /opt/HBlink3/hblink.cfg)
                         var=`expr substr $master 2 20`
                         master=${var%]}
-                        echo "nombre del master: $master"
-                        read a
 
 						echo "${VERDE}Configura tu indicativo  ej: EA3EIZ "
 						read ind
@@ -66,9 +65,9 @@ MARRON="\33[38;5;138m"
                         conexion=`echo "$conexion" | tr [:lower:] [:upper:]`                        
 if [ $conexion = D ]
 then
-sudo sed -i "62c {'SYSTEM': '$ind', 'TS': 2, 'TGID': $tgid, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [$tgc], 'OFF': [$tgd], 'RESET': []}," /opt/HBlink3/rules.py # a demanda
+sudo sed -i "62c {'SYSTEM': '$master', 'TS': 2, 'TGID': $tgid, 'ACTIVE': False, 'TIMEOUT': 10, 'TO_TYPE': 'ON',  'ON': [$tgc], 'OFF': [$tgd], 'RESET': []}," /opt/HBlink3/rules.py # a demanda
 else
-sudo sed -i "62c {'SYSTEM': '$ind', 'TS': 2, 'TGID': $tgid, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE', 'ON': [$tgc], 'OFF': [$tgd],'RESET': []}," /opt/HBlink3/rules.py # permanente                        
+sudo sed -i "62c {'SYSTEM': '$master', 'TS': 2, 'TGID': $tgid, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE', 'ON': [$tgc], 'OFF': [$tgd],'RESET': []}," /opt/HBlink3/rules.py # permanente                        
 fi                                                                                             
                         clear
                         echo "${BLANCO}*********************************************************************************"
