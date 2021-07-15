@@ -19,9 +19,9 @@ MARRON="\33[38;5;138m"
                         [sSyY]* ) echo ""
 
                         master=$(awk "NR==153" /opt/HBlink3/hblink.cfg)
-                        copia=`expr substr $master 2 20`
-                        var=${copia%]}
-                        echo "nombre del master: $var"
+                        var=`expr substr $master 2 20`
+                        master=${var%]}
+                        echo "nombre del master: $master"
                         read a
 
 						echo "${VERDE}Configura tu indicativo  ej: EA3EIZ "
