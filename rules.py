@@ -32,7 +32,7 @@ configuration file.
 
 BRIDGES = {
         'ECHOTEST': [
-            {'SYSTEM': 'EAXXXX', 'TS': 2, 'TGID': 9999, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE', 'ON': [], 'OFF': [],'RESET': []},
+            {'SYSTEM': 'MASTER', 'TS': 2, 'TGID': 9999, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE', 'ON': [], 'OFF': [],'RESET': []},
             {'SYSTEM': 'ECHOTEST', 'TS': 2, 'TGID': 9999, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE', 'ON': [], 'OFF': [],'RESET': []},
         
         
