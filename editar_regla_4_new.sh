@@ -66,9 +66,9 @@ sudo sed -i "437c LATITUDE: $lat" /opt/HBlink3/hblink.cfg
 lon=$(awk "NR==17" /home/pi/.local/regla4) #tu Longitud  ej: 2.xxxxxx
 sudo sed -i "438c LONGITUDE: $lon" /opt/HBlink3/hblink.cfg
 sudo sed -i "439c HEIGHT: 209" /opt/HBlink3/hblink.cfg #no tocar
-ciudad=$(awk "NR==1" /home/pi/.local/regla4) #tu Ciudad ej: Barcelona
+ciudad=$(awk "NR==18" /home/pi/.local/regla4) #tu Ciudad ej: Barcelona
 sudo sed -i "440c LOCATION: $ciudad" /opt/HBlink3/hblink.cfg
-url=$(awk "NR==1" /home/pi/.local/regla4) #tu URL preferida ej: www.associacioader.com
+url=$(awk "NR==19" /home/pi/.local/regla4) #tu URL preferida ej: www.associacioader.com
 sudo sed -i "442c URL: $url" /opt/HBlink3/hblink.cfg						                        
 sudo sed -i "443c SOFTWARE_ID: 20191001" /opt/HBlink3/hblink.cfg #no tocar
 sudo sed -i "444c PACKAGE_ID: HBLINK_V106" /opt/HBlink3/hblink.cfg #no tocar
