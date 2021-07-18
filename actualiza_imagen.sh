@@ -69,7 +69,7 @@ MARRON="\33[38;5;138m"
 
                         if [ -f /home/pi/.local/regla4 ]
                         then
-                        echo "no hace nada"
+                        echo ""
                         else
                         cp /home/pi/V106/regla4 /home/pi/.local
                         fi
