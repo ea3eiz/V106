@@ -65,6 +65,15 @@ MARRON="\33[38;5;138m"
                         exit
                         fi
                         
+
+
+                        if [ -f /home/pi/.local/regla4 ]
+                        then
+                        echo "no hace nada"
+                        else
+                        cp /home/pi/V106/regla4 /home/pi/.local
+                        fi
+
                         
                         
                         # modificacion 26-04-2021
