@@ -16,8 +16,8 @@ echo "**************************************************************************
 echo "********************************************************************************"
 actualizar=S
 case $actualizar in
-[sSyY]* ) ec
-#Quita los caracteres [] de la linea 153 [MASTER] Y lo carga en la variable $master como: MASTER
+[sSyY]* ) echo ""
+
 master=$(awk "NR==1" /home/pi/.local/regla4)
 ind=$(awk "NR==2" /home/pi/.local/regla4)
 
@@ -25,10 +25,10 @@ id=$(awk "NR==3" /home/pi/.local/regla4) #9 dígitos
 sudo sed -i "431c RADIO_ID: $id" /opt/HBlink3/hblink.cfg
 
 ref=$(awk "NR==4" /home/pi/.local/regla4) #nombre de la regla ej: DMR+4370
-sudo sed -i "420c [$ref] " /opt/HBlink3/hblin
+sudo sed -i "420c [$ref] " /opt/HBlink3/hblink.cfg
 
 address=$(awk "NR==5" /home/pi/.local/regla4) #ip del reflector
-sudo sed -i "427c MASTER_IP: $address" /opt/HBlink3/hblin
+sudo sed -i "427c MASTER_IP: $address" /opt/HBlink3/hblink.cfg
 
 puerto=$(awk "NR==6" /home/pi/.local/regla4) #puerto ej: Brandmeister= 62031 / DMR+= 55555
 sudo sed -i "428c MASTER_PORT: $puerto" /opt/HBlink3/hblink.cfg 
