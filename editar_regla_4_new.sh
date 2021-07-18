@@ -21,6 +21,9 @@ case $actualizar in
 master=$(awk "NR==1" /home/pi/.local/regla4)
 ind=$(awk "NR==2" /home/pi/.local/regla4)
 ref=$(awk "NR==4" /home/pi/.local/regla4) #nombre de la regla ej: DMR+4370
+
+ref=`echo "$ref" | tr -d '[[:space:]]'`
+
 tgid=$(awk "NR==9" /home/pi/.local/regla4) #TG que utilizarás para transmitir ej: 437X
 tgidsalir=$(awk "NR==10" /home/pi/.local/regla4) #TG por el que quieres que salga tu transmisión ej: DMR+ = 9 Brandmeister = tg por el que quieres salir
 tgc=$(awk "NR==11" /home/pi/.local/regla4) #TG que utilizas para conectar esta regla ej: 437x
