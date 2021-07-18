@@ -54,7 +54,7 @@ sudo sed -i "429c PASSPHRASE: $password" /opt/HBlink3/hblink.cfg
 sudo sed -i "430c CALLSIGN: $ind" /opt/HBlink3/hblink.cfg #no tocar
 id=$(awk "NR==3" /home/pi/.local/regla4) #9 dígitos
 sudo sed -i "431c RADIO_ID: $id" /opt/HBlink3/hblink.cfg
-rfx=$(awk "NR==14" /home/pi/.local/regla4) #la frecuencia de Recepción  ej: 9 dígitos sin punto
+rxf=$(awk "NR==14" /home/pi/.local/regla4) #la frecuencia de Recepción  ej: 9 dígitos sin punto
 sudo sed -i "432c RX_FREQ: $rxf" /opt/HBlink3/hblink.cfg
 txf=$(awk "NR==15" /home/pi/.local/regla4) #la Frecuencia  Emisión  ej: 9 dígitos sin punto
 sudo sed -i "433c TX_FREQ: $txf" /opt/HBlink3/hblink.cfg
