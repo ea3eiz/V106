@@ -20,6 +20,7 @@ case $actualizar in
 
 master=$(awk "NR==1" /home/pi/.local/regla4)
 ind=$(awk "NR==2" /home/pi/.local/regla4)
+ref=$(awk "NR==4" /home/pi/.local/regla4) #nombre de la regla ej: DMR+4370
 tgid=$(awk "NR==9" /home/pi/.local/regla4) #TG que utilizarás para transmitir ej: 437X
 tgidsalir=$(awk "NR==10" /home/pi/.local/regla4) #TG por el que quieres que salga tu transmisión ej: DMR+ = 9 Brandmeister = tg por el que quieres salir
 tgc=$(awk "NR==11" /home/pi/.local/regla4) #TG que utilizas para conectar esta regla ej: 437x
@@ -37,7 +38,7 @@ sudo sed -i "60c ]," /opt/HBlink3/rules.py
 sudo sed -i "61c '$ref': [ " /opt/HBlink3/rules.py 
 sudo sed -i "63c {'SYSTEM': '$ref', 'TS': 2, 'TGID': $tgidsalir, 'ACTIVE': True, 'TIMEOUT': 2, 'TO_TYPE': 'NONE',  'ON': [], 'OFF': [], 'RESET': []}," /opt/HBlink3/rules.py
 
-ref=$(awk "NR==4" /home/pi/.local/regla4) #nombre de la regla ej: DMR+4370
+
 sudo sed -i "420c [$ref] " /opt/HBlink3/hblink.cfg
 sudo sed -i "421c MODE: PEER" /opt/HBlink3/hblink.cfg # no tocar
 sudo sed -i "422c ENABLED: True" /opt/HBlink3/hblink.cfg # no tocar
