@@ -65,13 +65,67 @@ MARRON="\33[38;5;138m"
                         exit
                         fi
                         
-
-
+                        if [ -f /home/pi/.local/regla2 ]
+                        then
+                        echo ""
+                        else
+                        cp /home/pi/V106/regla2 /home/pi/.local
+                        fi
+                        
+                        if [ -f /home/pi/.local/regla3 ]
+                        then
+                        echo ""
+                        else
+                        cp /home/pi/V106/regla3 /home/pi/.local
+                        fi
+                        
                         if [ -f /home/pi/.local/regla4 ]
                         then
                         echo ""
                         else
                         cp /home/pi/V106/regla4 /home/pi/.local
+                        fi
+                        
+                        if [ -f /home/pi/.local/regla5 ]
+                        then
+                        echo ""
+                        else
+                        cp /home/pi/V106/regla5 /home/pi/.local
+                        fi
+                        
+                        if [ -f /home/pi/.local/regla6 ]
+                        then
+                        echo ""
+                        else
+                        cp /home/pi/V106/regla6 /home/pi/.local
+                        fi
+                        
+                        if [ -f /home/pi/.local/regla7 ]
+                        then
+                        echo ""
+                        else
+                        cp /home/pi/V106/regla7 /home/pi/.local
+                        fi
+                        
+                        if [ -f /home/pi/.local/regla8 ]
+                        then
+                        echo ""
+                        else
+                        cp /home/pi/V106/regla8 /home/pi/.local
+                        fi
+                        
+                        if [ -f /home/pi/.local/regla9 ]
+                        then
+                        echo ""
+                        else
+                        cp /home/pi/V106/regla9 /home/pi/.local
+                        fi
+
+                        if [ -f /home/pi/.local/reglaxlx ]
+                        then
+                        echo ""
+                        else
+                        cp /home/pi/V106/reglaxlx /home/pi/.local
                         fi
 
                         
