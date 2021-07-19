@@ -73,6 +73,7 @@ sudo sed -i "839c HEIGHT: 209" /opt/HBlink3/hblink.cfg #no tocar
 ciudad=$(awk "NR==18" /home/pi/.local/regla8) #tu Ciudad ej: Barcelona
 sudo sed -i "840c LOCATION: $ciudad" /opt/HBlink3/hblink.cfg
 url=$(awk "NR==19" /home/pi/.local/regla8) #tu URL preferida ej: www.associacioader.com
+sudo sed -i "841c DESCRIPTION: This is a cool Hotspot" /opt/HBlink3/hblink.cfg #no tocar
 sudo sed -i "842c URL: $url" /opt/HBlink3/hblink.cfg						                        
 sudo sed -i "843c SOFTWARE_ID: 20191001" /opt/HBlink3/hblink.cfg #no tocar
 sudo sed -i "844c PACKAGE_ID: HBLINK_V106" /opt/HBlink3/hblink.cfg #no tocar
