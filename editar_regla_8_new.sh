@@ -48,7 +48,7 @@ sudo sed -i "822c ENABLED: True" /opt/HBlink3/hblink.cfg # no tocar
 sudo sed -i "823c LOOSE: True" /opt/HBlink3/hblink.cfg # no tocar
 sudo sed -i "824c EXPORT_AMBE: False" /opt/HBlink3/hblink.cfg # no tocar
 sudo sed -i "825c IP: " /opt/HBlink3/hblink.cfg # no tocar
-sudo sed -i "826c PORT: 54003" /opt/HBlink3/hblink.cfg # #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO DIGITOS 54004
+sudo sed -i "826c PORT: 54008" /opt/HBlink3/hblink.cfg # #OJO!! CAMBIAR AL QUE CORRESPONDA EN ESTE CASO DIGITOS 54004
 address=$(awk "NR==5" /home/pi/.local/regla8) #ip del reflector
 sudo sed -i "827c MASTER_IP: $address" /opt/HBlink3/hblink.cfg
 puerto=$(awk "NR==6" /home/pi/.local/regla8) #puerto ej: Brandmeister= 62031 / DMR+= 55555
