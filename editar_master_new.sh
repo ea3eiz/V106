@@ -19,8 +19,8 @@ case $actualizar in
 [sSyY]* ) echo ""
 
 master=$(awk "NR==30" /home/pi/.local/regla2)
-enable=$(awk "NR==31" /home/pi/.local/regla2)
-port=$(awk "NR==32" /home/pi/.local/regla2) #nombre de la regla ej: DMR+4370
+enable=$(awk "NR==32" /home/pi/.local/regla2)
+port=$(awk "NR==31" /home/pi/.local/regla2) #nombre de la regla ej: DMR+4370
 password=$(awk "NR==33" /home/pi/.local/regla2) #TG que utilizarás para transmitir ej: 437X
 
 
@@ -30,7 +30,7 @@ sudo sed -i "272c ENABLED: $enable" /opt/HBlink3/hblink.cfg
 sudo sed -i "273c REPEAT: True" /opt/HBlink3/hblink.cfg # no tocar
 sudo sed -i "274c MAX_PEERS: 10" /opt/HBlink3/hblink.cfg # no tocar
 sudo sed -i "275c EXPORT_AMBE: " /opt/HBlink3/hblink.cfg # no tocar
-sudo sed -i "276c IP: " /opt/HBlink3/hblink.cfg # No tocar
+sudo sed -i "276c IP: " /opt/HBlink3/hblink.cfg # no tocar
 sudo sed -i "277c PORT: $port" /opt/HBlink3/hblink.cfg
 sudo sed -i "278c PASSPHRASE: $password" /opt/HBlink3/hblink.cfg
 sudo sed -i "279c GROUP_HANGTIME: 5" /opt/HBlink3/hblink.cfg #no tocar
