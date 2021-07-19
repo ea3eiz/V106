@@ -6,7 +6,7 @@ sleep 1
 sed -i "4cExec=sh -c 'cd /home/pi/$SCRIPTS_version; sh ejecutar_bluedv.sh'" /home/pi/Abrir_BlueDV.desktop
 sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_BLUEDV_OFF.png" /home/pi/Abrir_BlueDV.desktop
 sed -i "10c Name[es_ES]=Abrir BlueDV" /home/pi/Abrir_BlueDV.desktop
-sed -i "2c BlueDV=OFF" /home/pi/status.ini
+sed -i "3c BlueDV=OFF" /home/pi/status.ini
 sleep 1
 cd /home/pi
 sudo cp Abrir_BlueDV.desktop /home/pi/Desktop
