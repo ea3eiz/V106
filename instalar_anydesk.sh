@@ -29,7 +29,7 @@ MARRON="\33[38;5;138m"
                         echo "***********************************************************************"
                         echo "***********************************************************************"
                         sleep 2  
-                        sudo rm -R /home/pi/.anydesk
+                        #sudo rm -R /home/pi/.anydesk
                         mkdir /home/pi/.temp
                         cd /home/pi/.temp
 
