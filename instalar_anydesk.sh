@@ -63,5 +63,5 @@ MARRON="\33[38;5;138m"
                         echo "***********************************************************************"                      
                         sed -i "12c ANYDESK=ON" /home/pi/info.ini                        
                         sleep 3
-                        #sudo reboot
+                        sudo reboot
                         fi
