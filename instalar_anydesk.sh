@@ -32,10 +32,11 @@ MARRON="\33[38;5;138m"
                         #sudo rm -R /home/pi/.anydesk
                         mkdir /home/pi/.temp
                         cd /home/pi/.temp
+                        sudo killall anydesk
 
                         sudo apt update
                         wget http://download.anydesk.com/rpi/anydesk_2.9.4-1_armhf.deb
-                        sudo dpkg -i anydesk_2.9.4-1_armhf.deb
+                        sudo dpkg -i anydesk_2.9.4-1_armhf.deb -s
                         sudo apt-get install -f -s
                         sudo apt --fix-broken install
                         sudo dpkg -i anydesk_2.9.4-1_armhf.deb
@@ -45,7 +46,7 @@ MARRON="\33[38;5;138m"
                         
                         wget https://download.anydesk.com/rpi/anydesk_6.3.0-1_armhf.deb
                         sudo dpkg --add-architecture armhf
-                        sudo dpkg -i anydesk_6.3.0-1_armhf.deb
+                        sudo dpkg -i anydesk_6.3.0-1_armhf.deb -s
                         sudo apt -f install
                         sudo apt install libraspberrypi0:armhf libraspberrypi-bin:armhf libgudev-1.0-0:armhf libpolkit-gobject-1-0:armhf
                         sudo apt update --fix-missing
