@@ -30,8 +30,8 @@ MARRON="\33[38;5;138m"
                         echo "***********************************************************************"
                         sleep 2  
                         #sudo rm -R /home/pi/.anydesk
-                        mkdir /home/pi/.temp
-                        cd /home/pi/.temp
+                        mkdir /home/pi
+                        cd /home/pi/
                         sudo killall anydesk
 
                         sudo apt update
@@ -45,8 +45,8 @@ MARRON="\33[38;5;138m"
                         sudo sed -i "12c User=pi" /etc/systemd/system/anydesk.service
                         sleep 3
                         sudo systemctl daemon-reload
-                        sudo rm /home/pi/.temp/*.*                                             
-
+                        sudo rm /home/pi/.temp/*.*
+                        sudo rm /home/pi/anydesk_6.3.0-1_armhf.deb
                         clear
                         
                         echo "\v\v\v\v\v\v"
