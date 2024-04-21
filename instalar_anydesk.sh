@@ -46,7 +46,7 @@ MARRON="\33[38;5;138m"
                         sudo sed -i "12c User=pi" /etc/systemd/system/anydesk.service
                         sleep 2
                         sudo systemctl daemon-reload
-                        
+                        sudo rm -R /root/.anydesk                        
 
                         clear
                         
@@ -59,5 +59,5 @@ MARRON="\33[38;5;138m"
                         echo "***********************************************************************"                      
                         sed -i "12c ANYDESK=ON" /home/pi/info.ini                        
                         sleep 3
-                        #sudo reboot
+                        sudo reboot
                         fi
