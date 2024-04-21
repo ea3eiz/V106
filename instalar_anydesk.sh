@@ -42,12 +42,10 @@ MARRON="\33[38;5;138m"
                         sudo apt -f install
                         sudo apt install libraspberrypi0:armhf libraspberrypi-bin:armhf libgudev-1.0-0:armhf libpolkit-gobject-1-0:armhf
                         sudo apt update --fix-missing
-                        sudo rm /home/pi/.local/RESTAURAR/Downloads/anydesk_6.3.0-1_armhf.deb
-                        sudo killall anydesk
                         sudo sed -i "12c User=pi" /etc/systemd/system/anydesk.service
-                        sleep 2
+                        sleep 3
                         sudo systemctl daemon-reload
-                        sudo rm -R /root/.anydesk                        
+                                             
 
                         clear
                         
@@ -60,5 +58,5 @@ MARRON="\33[38;5;138m"
                         echo "***********************************************************************"                      
                         sed -i "12c ANYDESK=ON" /home/pi/info.ini                        
                         sleep 3
-                        sudo reboot
+                        #sudo reboot
                         fi
