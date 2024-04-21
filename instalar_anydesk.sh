@@ -45,7 +45,7 @@ MARRON="\33[38;5;138m"
                         sudo sed -i "12c User=pi" /etc/systemd/system/anydesk.service
                         sleep 3
                         sudo systemctl daemon-reload
-                        rm /home/pi/.temp/*.*                                             
+                        sudo rm /home/pi/.temp/*.*                                             
 
                         clear
                         
