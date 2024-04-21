@@ -44,7 +44,8 @@ MARRON="\33[38;5;138m"
                         sudo apt update --fix-missing
                         sudo rm /home/pi/.local/RESTAURAR/Downloads/anydesk_6.3.0-1_armhf.deb
                         sudo sed -i "12c User=pi" /etc/systemd/system/anydesk.service
-                        #sudo systemctl daemon-reload
+                        sleep 2
+                        sudo systemctl daemon-reload
                         
 
                         clear
@@ -58,5 +59,5 @@ MARRON="\33[38;5;138m"
                         echo "***********************************************************************"                      
                         sed -i "12c ANYDESK=ON" /home/pi/info.ini                        
                         sleep 3
-                        sudo reboot
+                        #sudo reboot
                         fi
