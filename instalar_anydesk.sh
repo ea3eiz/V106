@@ -56,7 +56,7 @@ MARRON="\33[38;5;138m"
                         sudo apt update --fix-missing
                         sudo rm -R /home/pi/.temp
                         sleep 3
-                        sudo sed -i "12c User=pi" /etc/systemd/system  
+                        sudo sed -i "12c User=pi" /etc/systemd/system/anydesk.service
                         sleep 3
                         sudo systemctl daemon-reload
                         sleep 3
