@@ -30,22 +30,32 @@ MARRON="\33[38;5;138m"
                         echo "***********************************************************************"
                         sleep 2  
                         #sudo rm -R /home/pi/.anydesk
-                        #sudo chmod 777 -R /home/pi/.temp
-                        cd /home/pi/
+                        mkdir /home/pi/.temp
+                        sudo chmod 777 -R /home/pi/.temp
+                        cd /home/pi/.temp
+                        
                         sudo killall anydesk
 
                         sudo apt update
-                                               
+                        wget http://associacioader.com/descargas/anydesk_2.9.4-1_armhf.deb
+                        #wget https://raw.githubusercontent.com/ea3eiz/V106/anydesk_2.9.4-1_armhf.deb
+                        #curl -O https://raw.githubusercontent.com/ea3eiz/V106/anydesk_2.9.4-1_armhf.deb                        wget http://associacioader.com/descargas/anydesk_2.9.4-1_armhf.deb
+                        sudo dpkg -i anydesk_2.9.4-1_armhf.deb
+                        sudo apt-get install -f -s
+                        sudo apt --fix-broken install
+                        sudo dpkg -i anydesk_2.9.4-1_armhf.deb
+                        sudo apt-get install -f -s
+                        sudo rm /home/pi/.local/RESTAURAR/Downloads/anydesk_2.9.4-1_armhf.deb
+                        clear
+                        
                         wget https://download.anydesk.com/rpi/anydesk_6.3.0-1_armhf.deb
                         sudo dpkg --add-architecture armhf
                         sudo dpkg -i anydesk_6.3.0-1_armhf.deb
                         sudo apt -f install
                         sudo apt install libraspberrypi0:armhf libraspberrypi-bin:armhf libgudev-1.0-0:armhf libpolkit-gobject-1-0:armhf
                         sudo apt update --fix-missing
-                        sudo sed -i "12c User=pi" /etc/systemd/system/anydesk.service
-                        sleep 3
-                        sudo systemctl daemon-reload
-                        sudo rm /home/pi/anydesk_6.3.0-1_armhf.deb.*
+                        sudo rm /home/pi/.local/RESTAURAR/Downloads/anydesk_6.3.0-1_armhf.deb
+                        
                         clear
                         
                         echo "\v\v\v\v\v\v"
@@ -57,5 +67,5 @@ MARRON="\33[38;5;138m"
                         echo "***********************************************************************"                      
                         sed -i "12c ANYDESK=ON" /home/pi/info.ini                        
                         sleep 3
-                        #sudo reboot
+                        sudo reboot
                         fi
