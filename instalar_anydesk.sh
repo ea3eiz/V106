@@ -37,9 +37,9 @@ MARRON="\33[38;5;138m"
                         sudo killall anydesk
 
                         sudo apt update
-                        #wget http://associacioader.com/descargas/anydesk_2.9.4-1_armhf.deb
+                        wget http://associacioader.com/descargas/anydesk_2.9.4-1_armhf.deb
                         #wget https://raw.githubusercontent.com/ea3eiz/V106/anydesk_2.9.4-1_armhf.deb
-                        curl -O https://raw.githubusercontent.com/ea3eiz/V106/anydesk_2.9.4-1_armhf.deb                        wget http://associacioader.com/descargas/anydesk_2.9.4-1_armhf.deb
+                        #curl -O https://raw.githubusercontent.com/ea3eiz/V106/anydesk_2.9.4-1_armhf.deb                        wget http://associacioader.com/descargas/anydesk_2.9.4-1_armhf.deb
                         sudo dpkg -i anydesk_2.9.4-1_armhf.deb
                         sudo apt-get install -f -s
                         sudo apt --fix-broken install
