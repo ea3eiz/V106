@@ -8,6 +8,6 @@ StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
 Name[en_US]=MMDVM Connect Screen
 Terminal=false
-Name[es_ES]=Actualizar BlueDv
+Name[es_ES]=Actualizar BlueDV
 Hidden=false
 Comment[es_ES]=
