@@ -14,6 +14,9 @@
 
 # recupera los iconos que se han borrado y se han convertido en icono de un libro
 # pero no quita los semaforos que se queden encendidos por error al reiniciar
+
+sudo cp /home/pi/V106/icons.screen0-1904x1023.rc /home/pi/
+
 sudo cp /home/pi/V106/Desktop/*.* /home/pi/Desktop
 sudo chmod 777 -R /home/pi/Desktop
 
