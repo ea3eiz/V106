@@ -35,7 +35,7 @@ sudo cp Abrir_MMDVMPLUS.desktop /home/pi/Desktop
 sudo rm /home/pi/Abrir_MMDVMPLUS.desktop
 
 cd /home/pi/MMDVMHost
-xterm -geometry 88x14+659+762 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T CONSOLA_DMRPLUS -e sudo ./MMDVMPLUS MMDVMPLUS.ini &
+xterm -geometry 88x14+649+762 -bg black -fg white -fa â€verdanaâ€ -fs 9x -T CONSOLA_DMRPLUS -e sudo ./MMDVMPLUS MMDVMPLUS.ini &
 
 cd /home/pi/Desktop
 sudo cp Abrir_MMDVMPLUS.desktop /home/pi
