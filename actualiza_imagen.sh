@@ -21,7 +21,7 @@ MARRON="\33[38;5;138m"
                         #cd /home/pi/V106/Desktop
                         #cp * /home/pi/Desktop
 
-
+sudo apt install xterm
 
                         cd /home/pi/.local
                         git clone http://github.com/ea3eiz/V106 
