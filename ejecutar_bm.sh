@@ -36,7 +36,7 @@ sudo rm /home/pi/Abrir_MMDVMBM.desktop
 
 cd /home/pi/MMDVMHost
 
-xterm -geometry 88x14+22+746 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T CONSOLA_BRANDMEISTER -e sudo ./MMDVMBM MMDVMBM.ini &
+xterm -geometry 88x14+22+756 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T CONSOLA_BRANDMEISTER -e sudo ./MMDVMBM MMDVMBM.ini &
 
 cd /home/pi/Desktop
 sudo cp Abrir_MMDVMBM.desktop /home/pi
