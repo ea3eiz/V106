@@ -35,14 +35,8 @@ sudo cp Abrir_MMDVMPLUS.desktop /home/pi/Desktop
 sudo rm /home/pi/Abrir_MMDVMPLUS.desktop
 
 cd /home/pi/MMDVMHost
-echo "\33[1;37m"
-echo " **************************************************************************"
-echo "                               ABRIENDO DMR                              "
-echo " **************************************************************************"
-sleep 2
-#/home/pi/V106/./qt_info_dmrplus & sudo ./MMDVMPLUS MMDVMPLUS.ini
-sudo ./MMDVMPLUS MMDVMPLUS.ini
-#sudo ./MMDVMPLUS MMDVMPLUS.ini
+xterm -geometry 88x14+659+762 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T CONSOLA_DMRPLUS -e sudo ./MMDVMPLUS MMDVMPLUS.ini &
+
 cd /home/pi/Desktop
 sudo cp Abrir_MMDVMPLUS.desktop /home/pi
 sudo sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version;lxterminal --geometry=88x19 --title=DMR+ -e sudo sh ejecutar_DMRPLUS.sh'" /home/pi/Abrir_MMDVMPLUS.desktop
