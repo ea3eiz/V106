@@ -90,7 +90,7 @@ cd /home/pi/MMDVMHost
 #/home/pi/V106/./qt_info_solodstar & sudo ircddbgateway -gui & sudo ./MMDVMDSTAR MMDVMDSTAR.ini
 sudo ircddbgateway -gui & 
 #sudo ./MMDVMDSTAR MMDVMDSTAR.ini
-xterm -geometry 88x14+1270+762 -bg black -fg green -fa â€verdanaâ€ -fs 9x -T CONSOLA_DSTAR -e sudo ./MMDVMDSTAR MMDVMDSTAR.ini &
+xterm -geometry 88x14+1270+762 -bg black -fg green -fa â€verdanaâ€ -fs 9x -T CONSOLA_DSTAR -e sudo ./MMDVMDSTAR MMDVMDSTAR.ini
 
 # Cierra el icono Abrir Solo Dstar si no hay conexión  
 cd /home/pi/Desktop
@@ -198,7 +198,7 @@ sudo systemctl stop ircddbgateway.service
 cd /home/pi/MMDVMHost
 #/home/pi/V106/./qt_info_solodstar & sudo ircddbgateway -gui & sudo ./MMDVMDSTAR MMDVMDSTAR.ini
 sudo ircddbgateway -gui &
-xterm -geometry 88x14+1270+762 -bg black -fg green -fa â€verdanaâ€ -fs 9x -T CONSOLA_DSTAR -e sudo ./MMDVMDSTAR MMDVMDSTAR.ini &
+xterm -geometry 88x14+1270+762 -bg black -fg green -fa â€verdanaâ€ -fs 9x -T CONSOLA_DSTAR -e sudo ./MMDVMDSTAR MMDVMDSTAR.ini
 
 # Cierra el icono Abrir Solo Dstar si no hay conexión 
 cd /home/pi/Desktop
