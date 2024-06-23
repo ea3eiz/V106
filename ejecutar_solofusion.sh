@@ -42,11 +42,11 @@ sudo rm /home/pi/Abrir_solofusion.desktop
 cd /home/pi/YSFClients/YSFGateway
 #sudo lxterminal --geometry=77x12 -e ./YSFGateway YSFGateway.ini & 
 
-xterm -geometry 88x5+1270+762 -bg black -fg green -fa â€verdanaâ€ -fs 9x -T YSFGateway -e ./YSFGateway YSFGateway.ini &
+xterm -geometry 88x5+1270+600 -bg black -fg brown -fa â€verdanaâ€ -fs 9x -T YSFGateway -e ./YSFGateway YSFGateway.ini &
 
 cd /home/pi/MMDVMHost
 #/home/pi/V106/./qt_info_solofusion & sudo ./MMDVMFUSION MMDVMFUSION.ini
-xterm -geometry 88x14+1270+762 -bg black -fg green -fa â€verdanaâ€ -fs 9x -T CONSOLA_MMDVMFUSION -e sudo ./MMDVMFUSION MMDVMFUSION.ini
+xterm -geometry 88x14+1270+762 -bg black -fg brown -fa â€verdanaâ€ -fs 9x -T CONSOLA_MMDVMFUSION -e sudo ./MMDVMFUSION MMDVMFUSION.ini
 
 
 sudo ./MMDVMFUSION MMDVMFUSION.ini
