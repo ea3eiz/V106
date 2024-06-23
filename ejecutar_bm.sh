@@ -36,11 +36,11 @@ sudo rm /home/pi/Abrir_MMDVMBM.desktop
 
 cd /home/pi/MMDVMHost
 
-xterm -geometry 88x14+22+762 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T CONSOLA_BRANDMEISTER -e sudo ./MMDVMBM MMDVMBM.ini &
+xterm -geometry 88x14+22+762 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T CONSOLA_BRANDMEISTER -e sudo ./MMDVMBM MMDVMBM.ini
 
 cd /home/pi/Desktop
 sudo cp Abrir_MMDVMBM.desktop /home/pi
-sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; lxterminal --geometry=77x18 --title=BRANDMEISTER -e sudo sh ejecutar_bm.sh'" /home/pi/Abrir_MMDVMBM.desktop
+sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh ejecutar_bm.sh'" /home/pi/Abrir_MMDVMBM.desktop
 sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_BM_OFF.png" /home/pi/Abrir_MMDVMBM.desktop
 sed -i "10c Name[es_ES]=Abrir BM" /home/pi/Abrir_MMDVMBM.desktop
 sed -i "7c MMDVMBM=OFF" /home/pi/status.ini
