@@ -34,15 +34,21 @@ sudo cp Abrir_solofusion.desktop /home/pi/Desktop
 
 sudo rm /home/pi/Abrir_solofusion.desktop
 
-echo "\33[38;5;138m"
-echo " **************************************************************************"
-echo "                          ABRIENDO SOLO FUSION                             "
-echo " **************************************************************************"
-sleep 2
+#echo "\33[38;5;138m"
+#echo " **************************************************************************"
+#echo "                          ABRIENDO SOLO FUSION                             "
+#echo " **************************************************************************"
+#sleep 2
 cd /home/pi/YSFClients/YSFGateway
-sudo lxterminal --geometry=77x12 -e ./YSFGateway YSFGateway.ini & 
+#sudo lxterminal --geometry=77x12 -e ./YSFGateway YSFGateway.ini & 
+
+xterm -geometry 88x5+1270+762 -bg black -fg green -fa â€verdanaâ€ -fs 9x -T YSFGateway -e ./YSFGateway YSFGateway.ini &
+
 cd /home/pi/MMDVMHost
 #/home/pi/V106/./qt_info_solofusion & sudo ./MMDVMFUSION MMDVMFUSION.ini
+xterm -geometry 88x14+1270+762 -bg black -fg green -fa â€verdanaâ€ -fs 9x -T CONSOLA_MMDVMFUSION -e sudo ./MMDVMFUSION MMDVMFUSION.ini
+
+
 sudo ./MMDVMFUSION MMDVMFUSION.ini
 cd /home/pi/Desktop
 sudo cp Abrir_solofusion.desktop /home/pi
