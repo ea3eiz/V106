@@ -45,16 +45,12 @@ sudo cp Abrir_ESPECIAL.desktop /home/pi/Desktop
 sudo rm /home/pi/Abrir_ESPECIAL.desktop
 
 cd /home/pi/MMDVMHost
-echo "${AMARILLO}"
-echo " **************************************************************************"
-echo "                            ABRIENDO ESPECIAL                             "
-echo " **************************************************************************"
-sleep 2
-#/home/pi/V106/./qt_info_especial & sudo ./MMDVMESPECIAL MMDVMESPECIAL.ini
-sudo ./MMDVMESPECIAL MMDVMESPECIAL.ini
+
+xterm -geometry 88x14+1271+762 -bg black -fg yellou -fa â€verdanaâ€ -fs 9x -T CONSOLA_ESPECIAL -e sudo ./MMDVMESPECIAL MMDVMESPECIAL.ini
+
 cd /home/pi/Desktop
 sudo cp Abrir_ESPECIAL.desktop /home/pi
-sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; lxterminal --geometry=77x18 --title=ESPECIAL -e sudo sh ejecutar_ESPECIAL.sh'" /home/pi/Abrir_ESPECIAL.desktop
+sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version;sudo sh ejecutar_ESPECIAL.sh'" /home/pi/Abrir_ESPECIAL.desktop
 sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_ESPECIAL_OFF.png" /home/pi/Abrir_ESPECIAL.desktop
 sed -i "10c Name[es_ES]=Abrir Especial" /home/pi/Abrir_ESPECIAL.desktop
 
