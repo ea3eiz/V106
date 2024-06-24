@@ -46,7 +46,7 @@ sudo rm /home/pi/Abrir_ESPECIAL.desktop
 
 cd /home/pi/MMDVMHost
 
-xterm -geometry 88x14+1271+762 -bg black -fg yellou -fa â€verdanaâ€ -fs 9x -T CONSOLA_ESPECIAL -e sudo ./MMDVMESPECIAL MMDVMESPECIAL.ini
+xterm -geometry 88x14+1271+762 -bg black -fg yellow -fa â€verdanaâ€ -fs 9x -T CONSOLA_ESPECIAL -e sudo ./MMDVMESPECIAL MMDVMESPECIAL.ini
 
 cd /home/pi/Desktop
 sudo cp Abrir_ESPECIAL.desktop /home/pi
