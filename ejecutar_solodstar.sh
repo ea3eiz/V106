@@ -12,18 +12,6 @@ GRIS="\033[0m"
 estado_dvswitch=$(awk "NR==18" /home/pi/status.ini)
 if [ "$estado_dvswitch" = 'DVSWITCH=ON' ];then
 
-echo "${ROJO}"
-echo "                  ******************************************"
-echo "                  *        ESTO DESACTIVARÁ DSTAR          *"
-echo "                  *              EN DVSWITCH               *"
-echo "                  ******************************************"
-sleep 3
-clear
-echo "${VERDE}"
-echo " **************************************************************************"
-echo "                          ABRIENDO SOLO DSTAR                              "
-echo " **************************************************************************"
-sleep 2
 #Escribe en el fichero INFO_RXF para poner los datos del icono INFO TXF
 mode=`grep -n -m 1 "^Port=" /home/pi/MMDVMHost/MMDVMDSTAR.ini`
 buscar=":"
