@@ -27,6 +27,7 @@ echo "               ABRIENDO SVXLINK                  "
 echo " ************************************************"
 sleep 2
 
+xterm -geometry 88x14+1271+22 -bg blue -fg white -fa â€verdanaâ€ -fs 9x -T SVXLINK -e sudo svxlink
 
 
 sudo svxlink
