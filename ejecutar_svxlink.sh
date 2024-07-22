@@ -21,7 +21,7 @@ sudo cp Abrir_svxlink.desktop /home/pi/Desktop
 
 sudo rm /home/pi/Abrir_svxlink.desktop
 
-xterm -geometry 88x19+1271+22 -bg black -fg white -fa â€verdanaâ€ -fs 9x -T SVXLINK -e sudo svxlink
+xterm -geometry 88x17+1271+22 -bg black -fg white -fa â€verdanaâ€ -fs 9x -T SVXLINK -e sudo svxlink
 
 cd /home/pi/Desktop
 sudo cp Abrir_svxlink.desktop /home/pi
