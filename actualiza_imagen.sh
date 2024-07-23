@@ -16,7 +16,7 @@ GRIS="\033[0m"
 MARRON="\33[38;5;138m"
 
                         cd /home/pi/.local
-xterm -geometry 88x6+649+136 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T ACTUALIZANDO_IMAGEN -e git clone http://github.com/ea3eiz/V106 &
+xterm -geometry 88x6+649+136 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T ACTUALIZANDO_IMAGEN -e git clone http://github.com/ea3eiz/V106
 
                         #git clone http://github.com/ea3eiz/V106 
                         sleep 2
@@ -44,7 +44,7 @@ xterm -geometry 88x6+649+136 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T
 
                         # Actualiza AUTORRANQUEV106
                         cd /home/pi/.local
-xterm -geometry 88x6+649+136 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T ACTUALIZANDO_IMAGEN -e git clone http://github.com/ea3eiz/AUTOARRANQUEV106 &
+xterm -geometry 88x6+649+136 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T ACTUALIZANDO_IMAGEN -e git clone http://github.com/ea3eiz/AUTOARRANQUEV106
 
                         #git clone http://github.com/ea3eiz/AUTOARRANQUEV106 
                         sleep 2                      
