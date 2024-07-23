@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c 'cd /home/pi/V106;xterm -geometry 88x6+483+49 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T ACTUALIZANDO_IMAGEN -e sh actualiza_imagen.sh'
+Exec=sh -c "cd /home/pi/V106;xterm -geometry 88x6+483+49 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T ACTUALIZANDO_IMAGEN -e sudo sh actualiza_imagen.sh"
 sh actualiza_imagen.sh'
 Icon=/home/pi/V106/ICONO_ACTUALIZAR_IMAGEN1.png
 Type=Application
