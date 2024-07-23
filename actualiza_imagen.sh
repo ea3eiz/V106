@@ -17,10 +17,8 @@ MARRON="\33[38;5;138m"
 
                         cd /home/pi/.local
 xterm -geometry 88x6+649+136 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T ACTUALIZANDO_IMAGEN -e git clone http://github.com/ea3eiz/V106
-xterm -geometry 88x6+649+136 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T ACTUALIZANDO_IMAGEN -e 
-
                         #git clone http://github.com/ea3eiz/V106 
-                        sleep 2
+                        #sleep 2
                         if [ -d /home/pi/.local/V106 ]
                         then
                         sudo rm -R /home/pi/V106
@@ -29,6 +27,8 @@ xterm -geometry 88x6+649+136 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T
                         sudo chmod 777 -R V106
                         cd /home/pi/.local
                         sudo rm -R V106
+                        #sclear
+                        /home/pi/V106/./qt_popus_actualizada
                         else
                         clear
                         echo "${VERDE}"
@@ -44,23 +44,23 @@ xterm -geometry 88x6+649+136 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T
                         fi
 
                         # Actualiza AUTORRANQUEV106
-                        cd /home/pi/.local
-xterm -geometry 88x6+649+136 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T ACTUALIZANDO_IMAGEN -e git clone http://github.com/ea3eiz/AUTOARRANQUEV106
+                        #cd /home/pi/.local
+#xterm -geometry 88x6+649+136 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T ACTUALIZANDO_IMAGEN -e git clone http://github.com/ea3eiz/AUTOARRANQUEV106
 
                         #git clone http://github.com/ea3eiz/AUTOARRANQUEV106 
-                        sleep 2                      
-                        if [ -d /home/pi/.local/AUTOARRANQUEV106 ]
-                        then
-                        sudo rm -R /home/pi/AUTOARRANQUEV106
-                        cp -R /home/pi/.local/AUTOARRANQUEV106 /home/pi   
-                        cd /home/pi                    
-                        sudo chmod 777 -R AUTOARRANQUEV106
-                        cd /home/pi/.local
-                        sudo rm -R AUTOARRANQUEV106
-                        else
-                        echo "Error de red"
-                        exit
-                        fi                                            
+                        #sleep 2                      
+                        #if [ -d /home/pi/.local/AUTOARRANQUEV106 ]
+                        #then
+                        #sudo rm -R /home/pi/AUTOARRANQUEV106
+                        #cp -R /home/pi/.local/AUTOARRANQUEV106 /home/pi   
+                        #cd /home/pi                    
+                        #sudo chmod 777 -R AUTOARRANQUEV106
+                        #cd /home/pi/.local
+                        #sudo rm -R AUTOARRANQUEV106
+                        #else
+                        #echo "Error de red"
+                        #exit
+                        #fi                                            
                         
                         # modificacion 26-04-2021
                         cp /home/pi/V106/pararservicios_hblink.sh /home/pi
@@ -127,5 +127,4 @@ xterm -geometry 88x6+649+136 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T
                         sudo cp RXF_NXDN.desktop $usuario/Desktop
                         sudo rm $usuario/RXF_NXDN.desktop
 
-clear
-/home/pi/V106/./qt_popus_actualizada
+
