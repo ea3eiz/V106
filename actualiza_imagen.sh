@@ -15,11 +15,17 @@ CIAN="\033[1;36m"
 GRIS="\033[0m"
 MARRON="\33[38;5;138m"
 
+
+                        # Actualiza V106
+                        
+                        #cd /home/pi/V106/Desktop
+                        #cp * /home/pi/Desktop
+
+
+
                         cd /home/pi/.local
-xterm -geometry 88x6+649+136 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T ACTUALIZANDO_IMAGEN -e git clone http://github.com/ea3eiz/V106
-                        /home/pi/V106/./qt_popus_actualizada
-                        #git clone http://github.com/ea3eiz/V106 
-                        #sleep 2
+                        git clone http://github.com/ea3eiz/V106 
+                        sleep 2
                         if [ -d /home/pi/.local/V106 ]
                         then
                         sudo rm -R /home/pi/V106
@@ -28,8 +34,6 @@ xterm -geometry 88x6+649+136 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T
                         sudo chmod 777 -R V106
                         cd /home/pi/.local
                         sudo rm -R V106
-                        #sclear
-                        
                         else
                         clear
                         echo "${VERDE}"
@@ -45,24 +49,23 @@ xterm -geometry 88x6+649+136 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T
                         fi
 
                         # Actualiza AUTORRANQUEV106
-                        #cd /home/pi/.local
-#xterm -geometry 88x6+649+136 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T ACTUALIZANDO_IMAGEN -e git clone http://github.com/ea3eiz/AUTOARRANQUEV106
-
-                        #git clone http://github.com/ea3eiz/AUTOARRANQUEV106 
-                        #sleep 2                      
-                        #if [ -d /home/pi/.local/AUTOARRANQUEV106 ]
-                        #then
-                        #sudo rm -R /home/pi/AUTOARRANQUEV106
-                        #cp -R /home/pi/.local/AUTOARRANQUEV106 /home/pi   
-                        #cd /home/pi                    
-                        #sudo chmod 777 -R AUTOARRANQUEV106
-                        #cd /home/pi/.local
-                        #sudo rm -R AUTOARRANQUEV106
-                        #else
-                        #echo "Error de red"
-                        #exit
-                        #fi                                            
-                        
+                        cd /home/pi/.local
+                        git clone http://github.com/ea3eiz/AUTOARRANQUEV106 
+                        sleep 2                      
+                        if [ -d /home/pi/.local/AUTOARRANQUEV106 ]
+                        then
+                        sudo rm -R /home/pi/AUTOARRANQUEV106
+                        cp -R /home/pi/.local/AUTOARRANQUEV106 /home/pi   
+                        cd /home/pi                    
+                        sudo chmod 777 -R AUTOARRANQUEV106
+                        cd /home/pi/.local
+                        sudo rm -R AUTOARRANQUEV106
+                        else
+                        echo "Error de red"
+                        exit
+                        fi
+    clear
+/home/pi/V106/./qt_imagen_actualizada                    
                         # modificacion 26-04-2021
                         cp /home/pi/V106/pararservicios_hblink.sh /home/pi
                         cp /home/pi/V106/pararservicios_hblink.desktop /home/pi/.config/autostart
@@ -94,6 +97,125 @@ xterm -geometry 88x6+649+136 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T
                         
                         # 26-08-2020 actualizar salas dv4mini
                         sudo cp DExtra_Hosts.txt $usuario/dv4mini/xref.ip 
+
+                        # Cambio 04-10-2020 para que funcione el cambiar de sistemas desde la app dvswitch
+                        #sudo cp $usuario/$SCRIPTS_version/ab-restart.sh /usr/local/sbin/
+                        #sudo cp $usuario/$SCRIPTS_version/call_id.sh /usr/local/sbin/
+                        #sudo cp $usuario/$SCRIPTS_version/ssz.sh /usr/local/sbin/
+                        #sudo cp $usuario/$SCRIPTS_version/test.sh /usr/local/sbin/
+#
+                        #sudo chmod +x /usr/local/sbin/ab-restart.sh
+                        #sudo chmod +x /usr/local/sbin/call_id.sh
+                        #sudo chmod +x /usr/local/sbin/ssz.sh
+                        #sudo chmod +x /usr/local/sbin/test.sh
+                        #sudo chmod +x /usr/local/sbin/tune.sh
+
+#Cambios 01-11-2020
+
+#if [ -f /home/pi/.local/memoria_bm ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/memoria_bm /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/memoria_dmrplus ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/memoria_dmrplus /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/memoria_radio ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/memoria_radio /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/memoria_especial ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/memoria_especial /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/memoria_solofusion ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/memoria_solofusion /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/memoria_solo_dstar ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/memoria_solo_dstar /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/memoria_ysf2dmr ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/memoria_ysf2dmr /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/memoria_dmr2ysf ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/memoria_dmr2ysf /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/memoria_dmr2nxdn ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/memoria_dmr2nxdn /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/memoria_nxdn ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/memoria_nxdn /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/memorias ] 
+#then
+#echo ""
+#else
+#cp /home/pi/V106/memorias /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/nextion_bm ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/nextion_bm /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/oled_bm ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/oled_bm /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/nextion_plus ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/nextion_plus /home/pi/.local/
+#fi
+#
+#if [ -f /home/pi/.local/oled_plus ]
+#then
+#echo ""
+#else
+#cp /home/pi/V106/oled_plus /home/pi/.local/
+#fi
 
                         #Lee el fichero INFO_RXF para poner los datos en los iconos INFO TXF 
                         frecuencia=$(awk "NR==1" $usuario/INFO_RXF)
