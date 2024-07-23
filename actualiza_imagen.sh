@@ -64,8 +64,8 @@ MARRON="\33[38;5;138m"
                         echo "Error de red"
                         exit
                         fi
-    clear
-/home/pi/V106/./qt_imagen_actualizada                    
+    #clear
+/home/pi/V106/./qt_popus_actualizada                   
                         # modificacion 26-04-2021
                         cp /home/pi/V106/pararservicios_hblink.sh /home/pi
                         cp /home/pi/V106/pararservicios_hblink.desktop /home/pi/.config/autostart
