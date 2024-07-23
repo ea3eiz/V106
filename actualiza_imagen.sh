@@ -17,6 +17,7 @@ MARRON="\33[38;5;138m"
 
                         cd /home/pi/.local
 xterm -geometry 88x6+649+136 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T ACTUALIZANDO_IMAGEN -e git clone http://github.com/ea3eiz/V106
+                        /home/pi/V106/./qt_popus_actualizada
                         #git clone http://github.com/ea3eiz/V106 
                         #sleep 2
                         if [ -d /home/pi/.local/V106 ]
@@ -28,7 +29,7 @@ xterm -geometry 88x6+649+136 -bg brown -fg white -fa â€verdanaâ€ -fs 9x -T
                         cd /home/pi/.local
                         sudo rm -R V106
                         #sclear
-                        /home/pi/V106/./qt_popus_actualizada
+                        
                         else
                         clear
                         echo "${VERDE}"
