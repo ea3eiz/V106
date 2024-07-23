@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c 'cd /home/pi/V106;./qt_actualizar_imagen'
+Exec=sh -c 'cd /home/pi/V106;sh actualiza_imagen.sh'
 Icon=/home/pi/V106/ICONO_ACTUALIZAR_IMAGEN1.png
 Type=Application
 StartupNotify=false
