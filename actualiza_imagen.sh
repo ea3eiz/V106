@@ -315,4 +315,4 @@ sudo apt install xterm
                         sudo rm $usuario/RXF_NXDN.desktop
 
 clear
-/home/pi/V106/./qt_imagen_actualizada
+/home/pi/V106/./qt_popus_actualizando
