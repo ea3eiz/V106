@@ -9,8 +9,8 @@ GRIS="\033[0m"
 MARRON="\33[38;5;138m"
 
 			cd /home/pi/YSFClients/YSFGateway
-			sudo wget -O YSFHosts.txt http://register.ysfreflector.de/export_csv.php
-            clear
+   			curl http://www.pistar.uk/downloads/YSF_Hosts.txt > /home/pi/YSFClients/YSFGateway/YSFHosts.txt			sudo wget -O YSFHosts.txt http://register.ysfreflector.de/export_csv.php
+            		clear
 			echo "${VERDE}*********************************"
 					echo "* ACTUALIZANDO REFLECTORES YSF  *"
 					echo "*********************************"
