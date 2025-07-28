@@ -163,7 +163,7 @@ letra=c
 linea_sed_OPTIONS=$numero_linea$letra
 
 echo -n "\33[1;36m   1)\33[0m EDITOR GRAFICO  - \33[1;33m"
-echo "$INDICATIVO"
+
 
 
 echo ""
