@@ -162,7 +162,7 @@ OPTIONS=$(awk "NR==$numero_linea" $usuario/YSFClients/YSFGateway/YSFGateway.ini)
 letra=c
 linea_sed_OPTIONS=$numero_linea$letra
 echo "   ${AMARILLO}"
-echo -n "   1)                EDITOR GRAFICO"
+echo -n "   1) EDITOR GRAFICO"
 
 
 
