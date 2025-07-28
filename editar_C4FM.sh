@@ -161,7 +161,7 @@ numero_linea=`expr $numero_linea + 5` # y le suma uno qudando coomo: (75)
 OPTIONS=$(awk "NR==$numero_linea" $usuario/YSFClients/YSFGateway/YSFGateway.ini)
 letra=c
 linea_sed_OPTIONS=$numero_linea$letra
-
+echo "   ${ROJO}"
 echo -n "\33[1;36m   1)\33[0m EDITOR GRAFICO  - \33[1;33m"
 
 
