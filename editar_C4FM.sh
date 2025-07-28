@@ -183,7 +183,7 @@ echo "Valor actual:   \33[1;33m$INDICATIVO"
 			                     [sS]* ) echo ""
                             #Convierte de minúsculas a Mayúsculas 
                           cd /home/pi/V106
-                          ./qt_editor_ysf_fcs_ycs &
+                          ./qt_editor_ysf_fcs_ycs
                           exit;
                           		 break;;
                                 
