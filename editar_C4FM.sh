@@ -176,7 +176,7 @@ case $escoger_menu in
 1) echo ""
 while true
 do
-echo "Valor actual:   \33[1;33m$INDICATIVO"
+
            	                                   
                            actualizar=S 
                            case $actualizar in
