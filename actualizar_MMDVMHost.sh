@@ -1,6 +1,6 @@
 ﻿#!/bin/bash
 
-                    exit;# Antes de actualizar, hace una copia de seguridad para que cuando acabe la restaure
+                    #exit;# Antes de actualizar, hace una copia de seguridad para que cuando acabe la restaure
                     cd /home/pi/V106
                     sudo sh copiar_restaurar_copiar.sh
                     
