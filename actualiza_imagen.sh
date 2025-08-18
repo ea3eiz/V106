@@ -24,7 +24,7 @@ MARRON="\33[38;5;138m"
 
 
                         cd /home/pi/.local
-                        git clone http://github.com/ea3eiz/V106 
+                        git clone https://github.com/ea3eiz/V106 
                         sleep 2
                         if [ -d /home/pi/.local/V106 ]
                         then
