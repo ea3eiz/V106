@@ -8,9 +8,9 @@ CIAN="\033[1;36m"
 GRIS="\033[0m"
 MARRON="\33[38;5;138m"
 
-            cd /home/pi/YSFClients/YSFGateway
+            cp home/pi/V106/YSFHosts.txt /home/pi/YSFClients/YSFGateway/
 			
-            curl https://dvref.com/downloads/YSFHosts-resolved.txt > home/pi/YSFClients/YSFGateway/YSFHosts
+            #curl https://dvref.com/downloads/YSFHosts-resolved.txt > home/pi/YSFClients/YSFGateway/YSFHosts
 			
 			echo "${VERDE}*********************************"
 					echo "* ACTUALIZANDO REFLECTORES YSF  *"
