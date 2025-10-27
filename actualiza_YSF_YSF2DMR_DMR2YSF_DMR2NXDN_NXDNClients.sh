@@ -10,10 +10,8 @@ MARRON="\33[38;5;138m"
 
             cp /home/pi/V106/YSFHosts.txt /home/pi/YSFClients/YSFGateway/
 			
-            #curl https://dvref.com/downloads/YSFHosts-resolved.txt > home/pi/YSFClients/YSFGateway/YSFHosts
-			
 			echo "${VERDE}*********************************"
-					echo "* ACTUALIZANDO REFLECTORES YSF  *"
+					echo "* ACTUALIZANDO REFLECTORES YSF  hoy *"
 					echo "*********************************"
 			sleep 3
 
