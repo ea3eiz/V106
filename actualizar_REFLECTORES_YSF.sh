@@ -8,16 +8,10 @@ CIAN="\033[1;36m"
 GRIS="\033[0m"
 MARRON="\33[38;5;138m"
 
-						cd /home/pi/YSFClients/YSFGateway
-			#sudo wget -O YSFHosts.txt http://register.ysfreflector.de/export_csv.php
-            
-			#curl https://dvref.com/downloads/YSFHosts-resolved.txt > /home/pi/YSFClients/YSFGateway/YSFHosts.txt
-			#curl http://www.pistar.uk/downloads/YSF_Hosts.txt > /home/pi/YSFClients/YSFGateway/YSFHosts.txt
-			curl https://dvref.com/downloads/YSFHosts.txt > /home/pi/YSFClients/YSFGateway/YSFHosts.txt
+            cp /home/pi/V106/YSFHosts.txt /home/pi/YSFClients/YSFGateway/
 			
-			clear
 			echo "${VERDE}*********************************"
-					echo "* ACTUALIZANDO REFLECTORES YSF  *"
+					echo "* ACTUALIZANDO REFLECTORES YSF  hoy *"
 					echo "*********************************"
 			sleep 3
 
